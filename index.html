@@ -72,6 +72,9 @@ main.wrap{padding-block:18px 40px;display:flex;flex-direction:column;gap:26px}
 .v{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.35em;row-gap:0}
 .v b{font-size:1.26em;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
 .v span{font-size:.8em;font-weight:600;color:var(--soft)}
+.a{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.35em;row-gap:0}
+.a b{font-size:1.08em;font-weight:700;letter-spacing:-.01em;white-space:nowrap;color:var(--ink)}
+.a span{font-size:.8em;font-weight:600;color:var(--soft)}
 .x{font-size:.86em;color:var(--soft);line-height:1.3}
 .x b{font-weight:700;color:var(--ink);white-space:nowrap}
 .empty{text-align:center;color:var(--soft);padding:40px 0}
@@ -138,8 +141,9 @@ footer img{width:120px;height:auto;opacity:.75}
     else ph.append(el('span', 'none'));
     const pr = el('div', 'pr num');
     const v = el('div', 'v'); v.append(el('b', '', 'R$ ' + money(p.vista)), el('span', '', 'à vista'));
-    const x = el('div', 'x'); x.append('ou ' + N + 'x de ', el('b', '', 'R$ ' + money(parc(p.parcelado))));
-    pr.append(v, x);
+    const ap = el('div', 'a'); ap.append(el('b', '', 'R$ ' + money(p.parcelado)), el('span', '', 'a prazo'));
+    const x = el('div', 'x'); x.append('em até ' + N + 'x de ', el('b', '', 'R$ ' + money(parc(p.parcelado))));
+    pr.append(v, ap, x);
     a.append(ph, el('div', 'mk', p.marca), el('div', 'nm', p.nome), el('div', 'mt', [p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · ')), pr);
     return a;
   }
