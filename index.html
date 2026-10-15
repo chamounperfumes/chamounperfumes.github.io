@@ -36,7 +36,7 @@ button,input{font:inherit;color:inherit}
 .top .wrap{padding-block:26px 18px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
 .top img{width:min(220px,56vw);height:auto;display:block}
 .top .upd{font-size:12px;color:var(--soft);font-weight:500}
-.dl{display:inline-flex;align-items:center;gap:8px;margin-top:6px;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:10px 18px;min-height:44px;font-weight:700;font-size:14px;cursor:pointer}
+.dl{text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-top:6px;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:10px 18px;min-height:44px;font-weight:700;font-size:14px;cursor:pointer}
 .dl svg{width:18px;height:18px;flex:none}
 .dl[disabled]{opacity:.75;cursor:progress}
 
@@ -90,7 +90,7 @@ footer img{width:120px;height:auto;opacity:.75}
   <div class="wrap">
     <img src="img/logo-preto.png" alt="Chamoun Perfumes Importados" width="600" height="132">
     <span class="upd num" id="upd"></span>
-    <button class="dl" id="dl" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg><span>Baixar catálogo em PDF</span></button>
+    <a class="dl" id="dl" href="catalogo.pdf" download="Catalogo-Chamoun.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg><span>Baixar catálogo em PDF</span></a>
   </div>
 </header>
 
@@ -169,112 +169,14 @@ footer img{width:120px;height:auto;opacity:.75}
   const sb = document.getElementById('search-btn'), sr = document.getElementById('search'), qi = document.getElementById('q');
   sb.onclick = () => { const open = sr.hidden; sr.hidden = !open; sb.setAttribute('aria-expanded', String(open)); if (open) qi.focus(); else if (q) { q = ''; qi.value = ''; render(); } };
   qi.addEventListener('input', (e) => { q = e.target.value; render(); });
-  /* ---------- Baixar catálogo em PDF (gerado na hora, com os preços atuais) ---------- */
-  const JSPDF_URL = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
-  function loadJsPDF() {
-    if (window.jspdf && window.jspdf.jsPDF) return Promise.resolve(window.jspdf.jsPDF);
-    return new Promise((ok, fail) => {
-      const s = document.createElement('script'); s.src = JSPDF_URL; s.async = true;
-      s.onload = () => (window.jspdf && window.jspdf.jsPDF ? ok(window.jspdf.jsPDF) : fail(new Error('jspdf')));
-      s.onerror = () => fail(new Error('jspdf')); document.head.append(s);
-    });
-  }
-  const imgCache = new Map();
-  function loadImg(src, maxPx, keepAlpha) {
-    const key = src + '|' + maxPx;
-    if (imgCache.has(key)) return imgCache.get(key);
-    const pr = new Promise((ok) => {
-      const im = new Image();
-      im.onload = () => {
-        const k = Math.min(1, maxPx / Math.max(im.naturalWidth, im.naturalHeight));
-        const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(im.naturalWidth * k)); c.height = Math.max(1, Math.round(im.naturalHeight * k));
-        const x = c.getContext('2d'); if (!keepAlpha) { x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); }
-        x.drawImage(im, 0, 0, c.width, c.height);
-        ok({ data: keepAlpha ? c.toDataURL('image/png') : c.toDataURL('image/jpeg', 0.82), w: c.width, h: c.height, fmt: keepAlpha ? 'PNG' : 'JPEG' });
-      };
-      im.onerror = () => ok(null);
-      im.src = src;
-    });
-    imgCache.set(key, pr); return pr;
-  }
-  async function gerarPDF(btn) {
-    const label = btn.querySelector('span'); const original = label.textContent;
-    btn.disabled = true; label.textContent = 'Preparando o PDF…';
-    try {
-      const JsPDF = await loadJsPDF();
-      const lista = secoes.map((s) => ({ s, ps: D.produtos.filter((p) => p.secao === s) })).filter((g) => g.ps.length);
-      const todos = lista.flatMap((g) => g.ps);
-      let feitos = 0;
-      const imgs = await Promise.all(todos.map((p) => (p.img ? loadImg(p.img, 360, false) : Promise.resolve(null)).then((r) => { feitos++; label.textContent = 'Gerando PDF… ' + Math.round((feitos / todos.length) * 100) + '%'; return r; })));
-      const imgOf = new Map(todos.map((p, i) => [p, imgs[i]]));
-      const logo = await loadImg('img/logo-preto.png', 900, true);
-
-      const doc = new JsPDF({ unit: 'mm', format: 'a4', compress: true });
-      const W = 210, H = 297, M = 10, GAP = 3.5, COLS = 4, CW = (W - 2 * M - (COLS - 1) * GAP) / COLS, CH = 63, FOOT = 8;
-      const PAD = 2.4, IMGH = 28, IW = CW - 2 * PAD;
-      const INK = [18, 18, 18], SOFT = [111, 111, 107], FAINT = [150, 150, 144], LINE = [228, 228, 223];
-      let y = M;
-      // Cabeçalho
-      if (logo) { const lw = 64, lh = lw * logo.h / logo.w; doc.addImage(logo.data, logo.fmt, (W - lw) / 2, y + 2, lw, lh); y += lh + 5; }
-      doc.setFont('helvetica', 'normal'); doc.setFontSize(8.5); doc.setTextColor(...SOFT);
-      doc.text('Tabela de preços' + (D.atualizado_em ? ' · atualizada em ' + D.atualizado_em : ''), W / 2, y, { align: 'center', baseline: 'top' });
-      y += 9;
-      const fit = (txt, size, style, maxW) => { doc.setFont('helvetica', style); doc.setFontSize(size); let t = txt; if (doc.getTextWidth(t) <= maxW) return t; while (t.length > 1 && doc.getTextWidth(t + '…') > maxW) t = t.slice(0, -1); return t.trimEnd() + '…'; };
-      const novaPagina = () => { doc.addPage(); y = M; };
-      for (const g of lista) {
-        if (y + 13 + CH > H - M - FOOT) novaPagina();
-        // Faixa da seção
-        doc.setFillColor(...INK); doc.roundedRect(M, y, W - 2 * M, 14, 3, 3, 'F');
-        doc.setTextColor(165, 165, 160); doc.setFont('helvetica', 'bold'); doc.setFontSize(6); doc.text('PERFUMES', M + 5, y + 3.4, { baseline: 'top', charSpace: 0.6 });
-        doc.setTextColor(255, 255, 255); doc.setFontSize(14); doc.text(g.s.toUpperCase(), M + 5, y + 6.4, { baseline: 'top' });
-        doc.setFontSize(8); doc.setFont('helvetica', 'bold'); doc.text(g.ps.length + (g.ps.length === 1 ? ' perfume' : ' perfumes'), W - M - 5, y + 7, { align: 'right', baseline: 'middle' });
-        y += 14 + GAP;
-        for (let i = 0; i < g.ps.length; i += COLS) {
-          if (y + CH > H - M - FOOT) novaPagina();
-          g.ps.slice(i, i + COLS).forEach((p, c) => {
-            const x = M + c * (CW + GAP);
-            doc.setDrawColor(...LINE); doc.setFillColor(255, 255, 255); doc.setLineWidth(0.25); doc.roundedRect(x, y, CW, CH, 3, 3, 'FD');
-            const im = imgOf.get(p);
-            if (im) { let w = IW, h = IW * im.h / im.w; if (h > IMGH) { h = IMGH; w = IMGH * im.w / im.h; } doc.addImage(im.data, im.fmt, x + PAD + (IW - w) / 2, y + PAD + (IMGH - h) / 2, w, h, undefined, 'FAST'); }
-            let ty = y + PAD + IMGH + 2.6;
-            doc.setTextColor(...FAINT); doc.text(fit(String(p.marca || '').toUpperCase(), 5.6, 'bold', IW), x + PAD, ty, { baseline: 'top', charSpace: 0.25 }); ty += 2.9;
-            doc.setTextColor(...INK); doc.setFont('helvetica', 'bold'); doc.setFontSize(7.8);
-            const linhas = doc.splitTextToSize(String(p.nome || ''), IW);
-            const l2 = linhas.length > 2 ? [linhas[0], fit(linhas.slice(1).join(' '), 7.8, 'bold', IW)] : linhas;
-            doc.text(l2, x + PAD, ty, { baseline: 'top', lineHeightFactor: 1.15 }); ty += 3.45 * 2;
-            doc.setTextColor(...SOFT); doc.text(fit([p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · '), 6.4, 'normal', IW), x + PAD, ty, { baseline: 'top' });
-            // Preços (alinhados no pé do card)
-            let py = y + CH - PAD - 11.2;
-            doc.setTextColor(...INK); doc.setFont('helvetica', 'bold'); doc.setFontSize(9.6); const v = 'R$ ' + money(p.vista); doc.text(v, x + PAD, py, { baseline: 'top' });
-            let vw = doc.getTextWidth(v); doc.setFont('helvetica', 'normal'); doc.setFontSize(6.2); doc.setTextColor(...SOFT); doc.text('à vista', x + PAD + vw + 1.1, py + 1.1, { baseline: 'top' });
-            py += 4.3;
-            doc.setTextColor(...INK); doc.setFont('helvetica', 'bold'); doc.setFontSize(8.2); const a = 'R$ ' + money(p.parcelado); doc.text(a, x + PAD, py, { baseline: 'top' });
-            vw = doc.getTextWidth(a); doc.setFont('helvetica', 'normal'); doc.setFontSize(6.2); doc.setTextColor(...SOFT); doc.text('a prazo', x + PAD + vw + 1.1, py + 0.6, { baseline: 'top' });
-            py += 3.7;
-            doc.setFontSize(6.2); doc.setTextColor(...SOFT); const pre = 'em até ' + N + 'x de '; doc.text(pre, x + PAD, py, { baseline: 'top' });
-            const pw = doc.getTextWidth(pre); doc.setFont('helvetica', 'bold'); doc.setTextColor(...INK); doc.text('R$ ' + money(parc(p.parcelado)), x + PAD + pw, py, { baseline: 'top' });
-          });
-          y += CH + GAP;
-        }
-        y += 3;
-      }
-      const n = doc.getNumberOfPages();
-      for (let i = 1; i <= n; i++) {
-        doc.setPage(i); doc.setFont('helvetica', 'normal'); doc.setFontSize(6.5); doc.setTextColor(...FAINT);
-        doc.text('chamounperfumes.github.io', M, H - 6, { baseline: 'middle' });
-        doc.text('Página ' + i + ' de ' + n, W - M, H - 6, { align: 'right', baseline: 'middle' });
-      }
-      const nome = 'Catalogo-Chamoun' + (D.atualizado_em ? '-' + D.atualizado_em.replace(/\//g, '-') : '') + '.pdf';
-      try { doc.save(nome); } catch (e) { window.open(doc.output('bloburl'), '_blank'); }
-      label.textContent = 'PDF pronto';
-      setTimeout(() => { label.textContent = original; }, 2500);
-    } catch (e) {
-      label.textContent = 'Não deu certo. Toque para tentar de novo.';
-      setTimeout(() => { label.textContent = original; }, 4000);
-    } finally { btn.disabled = false; }
-  }
+  /* ---------- Link do PDF: muda a versão sempre que a tabela muda, para o celular não mostrar um PDF antigo ---------- */
   const dl = document.getElementById('dl');
-  if (dl) dl.addEventListener('click', () => gerarPDF(dl));
+  if (dl) {
+    const txt = document.getElementById('dados').textContent; let h = 0;
+    for (let i = 0; i < txt.length; i++) h = (h * 31 + txt.charCodeAt(i)) | 0;
+    dl.href = 'catalogo.pdf?v=' + (h >>> 0).toString(36);
+    if (D.atualizado_em) dl.setAttribute('download', 'Catalogo-Chamoun-' + D.atualizado_em.replace(/\//g, '-') + '.pdf');
+  }
 
   seg(); render();
 })();
