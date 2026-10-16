@@ -10,6 +10,7 @@
 <meta property="og:description" content="Tabela de preços atualizada: perfumes masculinos e femininos, à vista e em até 6x.">
 <meta property="og:image" content="https://chamounperfumes.github.io/img/og.jpg">
 <meta property="og:url" content="https://chamounperfumes.github.io/">
+<link rel="canonical" href="https://chamounperfumes.github.io/">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="img/icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,7 +177,7 @@ footer img{width:120px;height:auto;opacity:.75}
     <span class="upd num" id="upd"></span>
     <div class="acts">
       <button class="ask" id="ask-top" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span>Me ajuda a escolher</span></button>
-      <a class="dl" id="dl" href="catalogo.pdf" download="Catalogo-Chamoun.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg><span>Baixar catálogo em PDF</span></a>
+      <a class="dl" id="dl" href="catalogo.pdf" download="Catalogo-Chamoun.pdf" target="_blank" rel="noopener" data-goatcounter-click="Baixou o PDF" data-goatcounter-title="Baixou o PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg><span>Baixar catálogo em PDF</span></a>
     </div>
     <span class="hint">Toque em um perfume para ver as notas</span>
   </div>
@@ -225,6 +226,8 @@ footer img{width:120px;height:auto;opacity:.75}
   const parc = (t) => Math.floor(Math.round(Number(t) * 100) / N) / 100;
   const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+  // Contagem anônima (GoatCounter, sem cookies): perfumes abertos e buscas no assistente.
+  const contar = (oque) => { try { const gc = window.goatcounter; oque = String(oque).replace(/\s+/g, ' ').trim().slice(0, 90); if (oque && gc && gc.count) gc.count({ path: oque, title: oque, event: true }); } catch {} };
   if (D.atualizado_em) { document.getElementById('upd').textContent = 'Tabela de preços · atualizada em ' + D.atualizado_em; document.getElementById('upd2').textContent = 'Atualizada em ' + D.atualizado_em; }
 
   let sec = 'Todos', q = '';
@@ -496,6 +499,7 @@ footer img{width:120px;height:auto;opacity:.75}
   function abrir(tela) {
     if (pilha.length) pilha[pilha.length - 1].sc = shB.scrollTop;
     pilha.push(tela);
+    contar(tela.tipo === 'det' ? 'Abriu: ' + tela.g.p.marca + ' ' + tela.g.p.nome : 'Abriu o assistente');
     try { history.pushState({ sh: pilha.length }, ''); } catch {}
     if (!aberta()) {
       focoAntes = document.activeElement;
@@ -576,7 +580,7 @@ footer img{width:120px;height:auto;opacity:.75}
     campo = el('input'); campo.type = 'text'; campo.placeholder = 'Ex.: perfume doce pra noite'; campo.setAttribute('enterkeyhint', 'search'); campo.setAttribute('aria-label', 'O que você procura?'); campo.autocomplete = 'off'; campo.value = Atexto;
     const bt = el('button', '', 'Buscar'); bt.type = 'submit';
     f.append(campo, bt);
-    f.onsubmit = (e) => { e.preventDefault(); Atexto = campo.value.trim(); A = interpretar(Atexto); Alim = 8; desenharChips(); desenharResultados(); campo.blur(); if (resBox) resBox.scrollIntoView({ block: 'start', behavior: 'smooth' }); };
+    f.onsubmit = (e) => { e.preventDefault(); Atexto = campo.value.trim(); if (Atexto) contar('Busca: ' + Atexto.toLowerCase()); A = interpretar(Atexto); Alim = 8; desenharChips(); desenharResultados(); campo.blur(); if (resBox) resBox.scrollIntoView({ block: 'start', behavior: 'smooth' }); };
     shB.append(f);
     chipsBox = el('div'); shB.append(chipsBox);
     resBox = el('div'); resBox.setAttribute('aria-live', 'polite'); shB.append(resBox);
@@ -630,7 +634,7 @@ footer img{width:120px;height:auto;opacity:.75}
       const s = el('div', 'sugs');
       ['Procuro um perfume mais doce', 'Fresco para o dia a dia, masculino', 'Parecido com Sauvage', 'Feminino floral até R$ 500', 'Árabe amadeirado', 'Marcante para a noite, sem ser doce'].forEach((q) => {
         const b = el('button', 'sug', q); b.type = 'button';
-        b.onclick = () => { campo.value = q; Atexto = q; A = interpretar(q); Alim = 8; desenharChips(); desenharResultados(); resBox.scrollIntoView({ block: 'start', behavior: 'smooth' }); };
+        b.onclick = () => { contar('Busca (exemplo): ' + q.toLowerCase()); campo.value = q; Atexto = q; A = interpretar(q); Alim = 8; desenharChips(); desenharResultados(); resBox.scrollIntoView({ block: 'start', behavior: 'smooth' }); };
         s.append(b);
       });
       resBox.append(s);
@@ -690,5 +694,6 @@ footer img{width:120px;height:auto;opacity:.75}
   seg(); render();
 })();
 </script>
+<script data-goatcounter="https://chamoun.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

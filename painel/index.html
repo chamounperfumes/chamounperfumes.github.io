@@ -143,6 +143,18 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
 .sheet-foot .right{display:flex;gap:10px;flex-wrap:wrap}
 .confirm{background:var(--ground);border-radius:14px;padding:12px 14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
 .toast{position:fixed;left:50%;transform:translateX(-50%);top:calc(14px + env(safe-area-inset-top,0px));background:var(--ink);color:#fff;padding:12px 18px;border-radius:14px;z-index:30;max-width:calc(100% - 32px);box-shadow:0 10px 30px -10px rgba(0,0,0,.4);font-weight:600;font-size:13.5px}
+/* Acessos (GoatCounter) */
+.acessos{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;padding:18px 20px}
+.ac-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ac-head h2{margin:0;font-size:16px;font-weight:800;letter-spacing:-.01em}
+.ac-head a{text-decoration:none;white-space:nowrap}
+.ac-nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ac-nums div{background:var(--ground);border-radius:14px;padding:12px 14px;min-width:0}
+.ac-nums b{display:block;font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.ac-nums span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+@media (max-width:420px){.ac-nums{gap:6px}.ac-nums div{padding:10px}.ac-nums b{font-size:20px}.ac-nums span{font-size:11px}}
+.ac-msg{margin:0;font-size:12.5px;color:var(--muted);line-height:1.4}
+.acessos .check{font-size:12.5px}
 .foot{color:var(--faint);font-size:12.5px;text-align:center;margin-top:8px}
 .foot a{color:inherit}
 </style>
@@ -170,6 +182,16 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   </section>
 
   <div id="app" hidden>
+    <section class="card acessos" aria-labelledby="ac-t">
+      <div class="ac-head"><h2 id="ac-t">Visitas no site dos clientes</h2><a class="btn-text" href="https://chamoun.goatcounter.com" target="_blank" rel="noopener">Ver detalhes</a></div>
+      <div class="ac-nums num">
+        <div><b id="ac-hoje">–</b><span>Hoje</span></div>
+        <div><b id="ac-7">–</b><span>Últimos 7 dias</span></div>
+        <div><b id="ac-30">–</b><span>Últimos 30 dias</span></div>
+      </div>
+      <p class="ac-msg" id="ac-msg">Carregando…</p>
+      <label class="check"><input type="checkbox" id="ac-skip"> Não contar as visitas feitas deste aparelho</label>
+    </section>
     <div class="tools">
       <div class="seg" role="group" aria-label="Situação">
         <button type="button" id="tab-ativo" aria-pressed="true">No catálogo <span class="count num" id="c-ativo">0</span></button>
@@ -601,6 +623,38 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     catch { st.textContent = 'Não consegui abrir essa imagem. Tente outra (JPG ou PNG).'; }
   }
 
+  /* ---------- visitas (GoatCounter: contador público de chamoun.goatcounter.com) ---------- */
+  const GC = 'https://chamoun.goatcounter.com/counter/';
+  async function contagem(qs) {
+    const r = await fetch(GC + encodeURIComponent('/') + '.json' + qs);
+    if (!r.ok && r.status !== 404) throw new ErroGH(r.status, '');
+    const j = await r.json();   // 404 = ainda sem visitas no período (vem {"count":"0"})
+    return parseInt(String(j.count || '0').replace(/\D/g, ''), 10) || 0;
+  }
+  async function acessos() {
+    const msg = $('#ac-msg');
+    const hoje = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+    const alvos = [['#ac-hoje', '?start=' + hoje], ['#ac-7', '?start=week'], ['#ac-30', '?start=month']];
+    try {
+      const ns = await Promise.all(alvos.map(([, qs]) => contagem(qs)));
+      alvos.forEach(([s], i) => { $(s).textContent = ns[i].toLocaleString('pt-BR'); });
+      msg.textContent = 'Pessoas que abriram o link dos clientes. Os números podem levar algumas horas para atualizar. Em “Ver detalhes” dá para ver os perfumes mais abertos, as buscas no assistente e de onde vieram as visitas.';
+    } catch (e) {
+      alvos.forEach(([s]) => { $(s).textContent = '–'; });
+      // Com o contador desligado o GoatCounter responde sem liberar a leitura, então o navegador só diz "falhou".
+      msg.textContent = 'Não consegui ler as visitas. Confira se, no GoatCounter (Settings), está marcado “Allow adding visitor counts on your website” e salve. Se já está, confira a internet e recarregue esta página.';
+    }
+  }
+  const K_GC = 'chamoun-painel-contagem';
+  function prepararSkip() {
+    const cx = $('#ac-skip');
+    try {
+      if (!localStorage.getItem(K_GC)) { localStorage.setItem('skipgc', 't'); localStorage.setItem(K_GC, '1'); }   // padrão: quem edita não entra na contagem
+      cx.checked = localStorage.getItem('skipgc') === 't';
+      cx.onchange = () => { try { if (cx.checked) localStorage.setItem('skipgc', 't'); else localStorage.removeItem('skipgc'); } catch {} };
+    } catch { cx.closest('label').hidden = true; }
+  }
+
   /* ---------- entrada ---------- */
   async function entrar(chave, lembrar) {
     S.chave = chave; $('#login-err').textContent = '';
@@ -610,7 +664,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       if (!repo.permissions || !repo.permissions.push) throw new ErroGH(403, 'sem permissão');
       const c = await carregar(); S.base = c.lista; S.baseCommit = c.sha; if (c.cfg) S.cfg = c.cfg;
       store.set(K_CHAVE, chave, lembrar);
-      $('#carregando').hidden = true; $('#app').hidden = false; lerPend(); listChips(); tudo(); infoPub();
+      $('#carregando').hidden = true; $('#app').hidden = false; lerPend(); listChips(); tudo(); infoPub(); prepararSkip(); acessos();
     } catch (e) {
       S.chave = ''; if (e && [401, 403, 404].includes(e.status)) store.del(K_CHAVE);
       $('#carregando').hidden = true; $('#login').hidden = false; $('#login-err').textContent = msgErro(e); renderHeader();
