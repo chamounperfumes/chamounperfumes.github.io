@@ -1,21 +1,29 @@
-"""Preenche o bloco de dados do index.html (<script id="dados">) a partir do banco do painel.
+"""Preenche o bloco de dados do index.html (<script id="dados">) a partir dos dados dos perfumes.
 
 Uso (na pasta do site):
-  python3 -I ferramentas/montar_dados.py <pasta com os JSON dos perfumes> <config.json> <dd/mm/aaaa>
+  python3 -I ferramentas/montar_dados.py dados/perfumes.json dados/config.json <dd/mm/aaaa>
 
-Imprime quantos perfumes ativos entraram no site.
+O primeiro argumento também pode ser uma pasta com um JSON por perfume (formato antigo,
+exportado do painel do Claude). Imprime quantos perfumes ativos entraram no site.
 """
 import glob, json, os, re, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pdir, cfgp, data = sys.argv[1:4]
+fonte, cfgp, data = sys.argv[1:4]
 
 cfg = json.load(open(cfgp, encoding="utf-8")); cfg = cfg.get("data", cfg)
 secoes = cfg.get("secoes") or ["Masculinos", "Femininos"]
 
+if os.path.isdir(fonte):
+    brutos = [json.load(open(f, encoding="utf-8")) for f in glob.glob(os.path.join(fonte, "**", "*.json"), recursive=True)]
+else:
+    brutos = json.load(open(fonte, encoding="utf-8"))
+    if isinstance(brutos, dict):
+        brutos = brutos.get("perfumes", list(brutos.values()))
+
 docs = []
-for f in glob.glob(os.path.join(pdir, "**", "*.json"), recursive=True):
-    d = json.load(open(f, encoding="utf-8")); d = d.get("data", d)
+for d in brutos:
+    d = d.get("data", d) if isinstance(d, dict) else {}
     if "secao" not in d or "vista" not in d or d.get("status", "ativo") != "ativo":
         continue
     docs.append(d)

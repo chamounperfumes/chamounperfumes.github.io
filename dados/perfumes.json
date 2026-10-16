@@ -1,0 +1,4583 @@
+[
+ {
+  "id": "nautica-voyage-100",
+  "secao": "Masculinos",
+  "marca": "Nautica",
+  "nome": "Voyage",
+  "tipo": "",
+  "ml": 100,
+  "vista": 140,
+  "parcelado": 160,
+  "status": "ativo",
+  "foto": "bc2ace4d21737984d3dd48431476dff1",
+  "ordem": 10,
+  "acordes": [
+   "Verde",
+   "Frutado",
+   "Floral",
+   "Fresco",
+   "Atalcado",
+   "Almiscarado",
+   "Aquático",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "lótus, mimosa",
+   "fundo": "almíscar, cedro, musgo de carvalho, âmbar",
+   "topo": "folhas verdes, maçã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Nautica/Nautica-Voyage-913.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 160,
+    "vista": 140
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-victory-extreme-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Victory Extreme",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
+  "foto": "36f85de809c822c4d382d69ab524559c",
+  "ordem": 20,
+  "acordes": [
+   "Baunilha",
+   "Âmbar",
+   "Doce",
+   "Aromático",
+   "Especiado suave",
+   "Lavanda",
+   "Atalcado",
+   "Especiado fresco",
+   "Cítrico",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "olíbano, lavanda",
+   "fundo": "baunilha, fava tonka, âmbar",
+   "topo": "pimenta rosa, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 540,
+    "vista": 500
+   }
+  ]
+ },
+ {
+  "id": "prada-luna-rossa-carbon-100",
+  "secao": "Masculinos",
+  "marca": "Prada",
+  "nome": "Luna Rossa Carbon",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 750,
+  "parcelado": 790,
+  "status": "arquivado",
+  "foto": "b4ee7799c337cad19b39d2ea29ec2db4",
+  "ordem": 30,
+  "acordes": [
+   "Especiado fresco",
+   "Âmbar",
+   "Lavanda",
+   "Aromático",
+   "Metálico",
+   "Cítrico",
+   "Almiscarado",
+   "Amadeirado",
+   "Mineral",
+   "Aquático"
+  ],
+  "notas": {
+   "coracao": "lavanda, notas metálicas, notas aquáticas, carvão",
+   "fundo": "ambroxan, patchouli",
+   "topo": "bergamota, pimenta"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Luna-Rossa-Carbon-Eau-de-Toilette-43402.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:21:53.399Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 790,
+    "vista": 750
+   }
+  ]
+ },
+ {
+  "id": "azzaro-the-most-wanted-intense-100",
+  "secao": "Masculinos",
+  "marca": "Azzaro",
+  "nome": "The Most Wanted Intense",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "ad1c5f31a5ecf05a95057243baa02a4d",
+  "ordem": 40,
+  "acordes": [
+   "Lavanda",
+   "Cítrico",
+   "Especiado fresco",
+   "Aromático",
+   "Musgo",
+   "Alcoólico",
+   "Terroso",
+   "Amadeirado",
+   "Herbal",
+   "Floral"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "licor, musgo",
+   "topo": "bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Azzaro/The-Most-Wanted-Intense-90953.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T18:17:41.779Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   },
+   {
+    "em": "2026-10-15T18:17:33.000Z",
+    "parcelado": 640.01,
+    "vista": 600
+   },
+   {
+    "em": "2026-10-15T18:17:35.464Z",
+    "parcelado": 640,
+    "vista": 600
+   },
+   {
+    "em": "2026-10-15T18:17:38.892Z",
+    "parcelado": 645,
+    "vista": 600
+   },
+   {
+    "em": "2026-10-15T18:17:41.779Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "yves-saint-laurent-y-100",
+  "secao": "Masculinos",
+  "marca": "Yves Saint Laurent",
+  "nome": "Y",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "4b4d89e573d9ae416f411d73bd15e451",
+  "ordem": 50,
+  "acordes": [
+   "Aromático",
+   "Especiado fresco",
+   "Amadeirado",
+   "Frutado",
+   "Fresco",
+   "Âmbar",
+   "Cítrico",
+   "Herbal",
+   "Verde",
+   "Especiado quente"
+  ],
+  "notas": {
+   "coracao": "sálvia, zimbro, gerânio",
+   "fundo": "amberwood, fava tonka, cedro, vetiver, olíbano",
+   "topo": "maçã, gengibre, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Y-Eau-de-Parfum-50757.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:24:51.215Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   },
+   {
+    "em": "2026-10-15T21:24:45.884Z",
+    "parcelado": 680,
+    "vista": 650
+   },
+   {
+    "em": "2026-10-15T21:24:51.213Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-le-male-le-parfum-125",
+  "secao": "Masculinos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Le Male Le Parfum",
+  "tipo": "",
+  "ml": 125,
+  "vista": 520,
+  "parcelado": 560,
+  "status": "ativo",
+  "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
+  "ordem": 60,
+  "acordes": [
+   "Especiado quente",
+   "Baunilha",
+   "Lavanda",
+   "Aromático",
+   "Atalcado",
+   "Íris",
+   "Amadeirado",
+   "Âmbar",
+   "Violeta"
+  ],
+  "notas": {
+   "coracao": "lavanda, íris",
+   "fundo": "baunilha, notas orientais, notas amadeiradas",
+   "topo": "cardamomo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-Le-Parfum-61856.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 560,
+    "vista": 520
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-le-male-le-parfum-200",
+  "secao": "Masculinos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Le Male Le Parfum",
+  "tipo": "",
+  "ml": 200,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
+  "ordem": 70,
+  "acordes": [
+   "Especiado quente",
+   "Baunilha",
+   "Lavanda",
+   "Aromático",
+   "Atalcado",
+   "Íris",
+   "Amadeirado",
+   "Âmbar",
+   "Violeta"
+  ],
+  "notas": {
+   "coracao": "lavanda, íris",
+   "fundo": "baunilha, notas orientais, notas amadeiradas",
+   "topo": "cardamomo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-Le-Parfum-61856.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:25:10.319Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 700,
+    "vista": 660
+   },
+   {
+    "em": "2026-10-15T21:24:27.957Z",
+    "parcelado": 700,
+    "vista": 700
+   },
+   {
+    "em": "2026-10-15T21:24:31.683Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "azzaro-the-most-wanted-parfum-100",
+  "secao": "Masculinos",
+  "marca": "Azzaro",
+  "nome": "The Most Wanted Parfum",
+  "tipo": "",
+  "ml": 100,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "402778df53ce9c6c709030320e8c6e56",
+  "ordem": 80,
+  "acordes": [
+   "Baunilha",
+   "Amadeirado",
+   "Especiado fresco",
+   "Atalcado",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "notas amadeiradas",
+   "fundo": "baunilha bourbon",
+   "topo": "gengibre"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Azzaro/The-Most-Wanted-Parfum-73664.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus",
+  "tipo": "Tradicional",
+  "ml": 200,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "7cdee38eae1529ebef8739fb7637442a",
+  "ordem": 90,
+  "acordes": [
+   "Cítrico",
+   "Marinho",
+   "Aromático",
+   "Especiado fresco",
+   "Amadeirado",
+   "Salgado",
+   "Âmbar",
+   "Floral branco",
+   "Aquático",
+   "Terroso"
+  ],
+  "notas": {
+   "coracao": "louro, jasmim",
+   "fundo": "âmbar cinza, guaiaco, musgo de carvalho, patchouli",
+   "topo": "notas marinhas, toranja, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-18471.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:23:43.750Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   },
+   {
+    "em": "2026-10-15T21:23:40.785Z",
+    "parcelado": 660,
+    "vista": 640
+   },
+   {
+    "em": "2026-10-15T21:23:43.746Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-victory-elixir-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Victory Elixir",
+  "tipo": "Parfum Intense",
+  "ml": 200,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "arquivado",
+  "foto": "dddd45d54872aafd447e29fd66c0763c",
+  "ordem": 100,
+  "acordes": [
+   "Baunilha",
+   "Especiado quente",
+   "Âmbar",
+   "Aromático",
+   "Doce",
+   "Balsâmico",
+   "Lavanda",
+   "Especiado fresco",
+   "Defumado"
+  ],
+  "notas": {
+   "coracao": "incenso, patchouli",
+   "fundo": "fava de baunilha, fava tonka",
+   "topo": "lavanda, cardamomo, pimenta-do-reino"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Elixir-78575.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:24:05.311Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   },
+   {
+    "em": "2026-10-15T21:23:58.779Z",
+    "parcelado": 750,
+    "vista": 800
+   },
+   {
+    "em": "2026-10-15T21:24:05.311Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "hugo-boss-bottled-absolu-100",
+  "secao": "Masculinos",
+  "marca": "Hugo Boss",
+  "nome": "Bottled Absolu",
+  "tipo": "Parfum",
+  "ml": 100,
+  "vista": 540,
+  "parcelado": 580,
+  "status": "arquivado",
+  "foto": "ac892a3307c7bd1f8d89e77471a8e279",
+  "ordem": 110,
+  "acordes": [
+   "Âmbar",
+   "Balsâmico",
+   "Amadeirado",
+   "Especiado quente",
+   "Defumado",
+   "Patchouli",
+   "Couro",
+   "Aromático",
+   "Animálico",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "mirra, patchouli",
+   "fundo": "cedro, davana",
+   "topo": "incenso, couro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Hugo-Boss/Bottled-Absolu-96246.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:22:25.623Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 580,
+    "vista": 540
+   }
+  ]
+ },
+ {
+  "id": "hugo-boss-bottled-absolu-200",
+  "secao": "Masculinos",
+  "marca": "Hugo Boss",
+  "nome": "Bottled Absolu",
+  "tipo": "Parfum",
+  "ml": 200,
+  "vista": 660,
+  "parcelado": 700,
+  "status": "arquivado",
+  "foto": "ac892a3307c7bd1f8d89e77471a8e279",
+  "ordem": 120,
+  "acordes": [
+   "Âmbar",
+   "Balsâmico",
+   "Amadeirado",
+   "Especiado quente",
+   "Defumado",
+   "Patchouli",
+   "Couro",
+   "Aromático",
+   "Animálico",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "mirra, patchouli",
+   "fundo": "cedro, davana",
+   "topo": "incenso, couro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Hugo-Boss/Bottled-Absolu-96246.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:22:21.948Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 700,
+    "vista": 660
+   }
+  ]
+ },
+ {
+  "id": "rasasi-hawas-verde-100",
+  "secao": "Masculinos",
+  "marca": "Rasasi",
+  "nome": "Hawas Verde",
+  "tipo": "",
+  "ml": 100,
+  "vista": 300,
+  "parcelado": 340,
+  "status": "arquivado",
+  "foto": "3045320b4fae7bb06e3f72c76cb22c60",
+  "ordem": 130,
+  "acordes": [
+   "Cítrico",
+   "Aromático",
+   "Especiado fresco",
+   "Amadeirado",
+   "Frutado",
+   "Verde",
+   "Patchouli",
+   "Conífero",
+   "Fresco",
+   "Âmbar"
+  ],
+  "notas": {
+   "todas": "lima, alecrim, maçã verde, patchouli, âmbar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Verde-117625.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T21:22:26.465Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 340,
+    "vista": 300
+   }
+  ]
+ },
+ {
+  "id": "armaf-club-de-nuit-blue-iconic-105",
+  "secao": "Masculinos",
+  "marca": "Armaf",
+  "nome": "Club de Nuit Blue Iconic",
+  "tipo": "",
+  "ml": 105,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "e8f47c47a3313420aeac6622b7bcfa9c",
+  "ordem": 140,
+  "acordes": [
+   "Cítrico",
+   "Amadeirado",
+   "Especiado fresco",
+   "Âmbar",
+   "Aromático",
+   "Fresco",
+   "Especiado quente",
+   "Balsâmico",
+   "Defumado",
+   "Verde"
+  ],
+  "notas": {
+   "coracao": "gengibre, melão, jasmim, noz-moscada",
+   "fundo": "notas amadeiradas, incenso, sândalo, âmbar, cedro, patchouli, láudano",
+   "topo": "toranja, limão, hortelã, pimenta rosa, coentro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Blue-Iconic-78475.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "armaf-club-de-nuit-urban-elixir-105",
+  "secao": "Masculinos",
+  "marca": "Armaf",
+  "nome": "Club de Nuit Urban Elixir",
+  "tipo": "",
+  "ml": 105,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "e9c4ca2117b9e819b5558e8b19accaaa",
+  "ordem": 150,
+  "acordes": [
+   "Âmbar",
+   "Aromático",
+   "Cítrico",
+   "Especiado fresco",
+   "Almiscarado",
+   "Amadeirado",
+   "Lavanda",
+   "Especiado suave",
+   "Especiado quente",
+   "Herbal"
+  ],
+  "notas": {
+   "coracao": "lavanda, elemi, gerânio, vetiver, açafrão, calêndula",
+   "fundo": "ambroxan, âmbar, cedro, patchouli, láudano",
+   "topo": "bergamota, pimenta rosa, flor de laranjeira, jasmim"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Club-De-Nuit-Urban-Elixir-77860.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-ch-men-200",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "CH Men",
+  "tipo": "",
+  "ml": 200,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "54b54d3a4b3b1b0221b71fc80a32f902",
+  "ordem": 160,
+  "acordes": [
+   "Couro",
+   "Baunilha",
+   "Doce",
+   "Amadeirado",
+   "Atalcado",
+   "Verde",
+   "Animálico",
+   "Especiado fresco",
+   "Cítrico",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "notas amadeiradas, noz-moscada, violeta, açafrão, jasmim",
+   "fundo": "açúcar, couro, baunilha, camurça, âmbar, madeira de cashmere, sândalo, musgo de carvalho, vetiver",
+   "topo": "grama, bergamota, toranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/CH-Men-6759.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T19:36:15.961Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   },
+   {
+    "em": "2026-10-15T19:36:08.775Z",
+    "parcelado": 660,
+    "vista": 640
+   },
+   {
+    "em": "2026-10-15T19:36:15.960Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "rasasi-hawas-black-100",
+  "secao": "Masculinos",
+  "marca": "Rasasi",
+  "nome": "Hawas Black",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 300,
+  "parcelado": 340,
+  "status": "ativo",
+  "foto": "1740e57fb43fb3e8f1f3244d8b5f8964",
+  "ordem": 170,
+  "acordes": [
+   "Amadeirado",
+   "Cítrico",
+   "Musgo",
+   "Terroso",
+   "Especiado fresco",
+   "Frutado",
+   "Patchouli",
+   "Doce",
+   "Aromático"
+  ],
+  "notas": {
+   "coracao": "patchouli, cedro, jasmim",
+   "fundo": "musgo de carvalho, notas amadeiradas, âmbar",
+   "topo": "bergamota, abacaxi, toranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Black-96817.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 340,
+    "vista": 300
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-elixir-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Elixir",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 680,
+  "parcelado": 720,
+  "status": "ativo",
+  "foto": "0a41011dd44870e333cd05205a0aed37",
+  "ordem": 180,
+  "acordes": [
+   "Baunilha",
+   "Frutado",
+   "Rosa",
+   "Doce",
+   "Amadeirado",
+   "Verde",
+   "Atalcado",
+   "Balsâmico",
+   "Aromático",
+   "Floral"
+  ],
+  "notas": {
+   "coracao": "rosa damascena, cedro, osmanthus",
+   "fundo": "baunilha, fava tonka, patchouli",
+   "topo": "maçã, davana"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Elixir-71708.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 720,
+    "vista": 680
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-men-200",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "212 Men",
+  "tipo": "EDT",
+  "ml": 200,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "4bf71a045bcf14e155cc412dbad0cb97",
+  "ordem": 190,
+  "acordes": [
+   "Cítrico",
+   "Verde",
+   "Especiado fresco",
+   "Aromático",
+   "Amadeirado",
+   "Atalcado",
+   "Especiado quente",
+   "Almiscarado",
+   "Lavanda",
+   "Herbal"
+  ],
+  "notas": {
+   "coracao": "gengibre, violeta, gardênia, sálvia, pimenta verde",
+   "fundo": "almíscar, sândalo, vetiver, incenso, guaiaco, láudano",
+   "topo": "notas verdes, toranja, especiarias, bergamota, lavanda, petitgrain"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-royal-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Royal",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "6737341ff59f24a9bfd70cfa159d3d9a",
+  "ordem": 200,
+  "acordes": [
+   "Especiado quente",
+   "Aromático",
+   "Âmbar",
+   "Cítrico",
+   "Amadeirado",
+   "Lavanda",
+   "Patchouli",
+   "Herbal",
+   "Especiado fresco",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "lavanda, sálvia, folha de violeta",
+   "fundo": "benjoim, cedro, patchouli",
+   "topo": "cardamomo, tangerina, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Royal-79159.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 450,
+  "parcelado": 490,
+  "status": "ativo",
+  "foto": "dcc068c928c34246be190e6f42f40681",
+  "ordem": 210,
+  "acordes": [
+   "Especiado quente",
+   "Canela",
+   "Cítrico",
+   "Âmbar",
+   "Amadeirado",
+   "Couro",
+   "Rosa",
+   "Animálico",
+   "Verde",
+   "Patchouli"
+  ],
+  "notas": {
+   "coracao": "canela, especiarias, rosa",
+   "fundo": "âmbar, couro, notas amadeiradas, patchouli indiano",
+   "topo": "tangerina vermelha, toranja, hortelã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-3747.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 490,
+    "vista": 450
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million",
+  "tipo": "EDT",
+  "ml": 200,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "dcc068c928c34246be190e6f42f40681",
+  "ordem": 220,
+  "acordes": [
+   "Especiado quente",
+   "Canela",
+   "Cítrico",
+   "Âmbar",
+   "Amadeirado",
+   "Couro",
+   "Rosa",
+   "Animálico",
+   "Verde",
+   "Patchouli"
+  ],
+  "notas": {
+   "coracao": "canela, especiarias, rosa",
+   "fundo": "âmbar, couro, notas amadeiradas, patchouli indiano",
+   "topo": "tangerina vermelha, toranja, hortelã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-3747.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-parfum-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Parfum",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
+  "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
+  "ordem": 230,
+  "acordes": [
+   "Floral branco",
+   "Tuberosa",
+   "Âmbar",
+   "Animálico",
+   "Amadeirado",
+   "Salgado",
+   "Couro",
+   "Tropical",
+   "Almiscarado",
+   "Coco"
+  ],
+  "notas": {
+   "todas": "tuberosa, notas solares, sal, óleo de monoi, âmbar cinza, couro, cashmeran, láudano, pinho"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Parfum-60035.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 540,
+    "vista": 500
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-parfum-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Parfum",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
+  "ordem": 240,
+  "acordes": [
+   "Floral branco",
+   "Tuberosa",
+   "Âmbar",
+   "Animálico",
+   "Amadeirado",
+   "Salgado",
+   "Couro",
+   "Tropical",
+   "Almiscarado",
+   "Coco"
+  ],
+  "notas": {
+   "todas": "tuberosa, notas solares, sal, óleo de monoi, âmbar cinza, couro, cashmeran, láudano, pinho"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Parfum-60035.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-black-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Black",
+  "tipo": "",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
+  "ordem": 241,
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Frutado",
+   "Tropical",
+   "Especiado quente",
+   "Coco",
+   "Aromático",
+   "Amadeirado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "baunilha, coco, sálvia esclareia",
+   "fundo": "fava tonka, ébano, patchouli",
+   "topo": "abacaxi, cardamomo, laranja sanguínea"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-black-150",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Black",
+  "tipo": "",
+  "ml": 150,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "ativo",
+  "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
+  "ordem": 242,
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Frutado",
+   "Tropical",
+   "Especiado quente",
+   "Coco",
+   "Aromático",
+   "Amadeirado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "baunilha, coco, sálvia esclareia",
+   "fundo": "fava tonka, ébano, patchouli",
+   "topo": "abacaxi, cardamomo, laranja sanguínea"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-scandal-le-parfum-100",
+  "secao": "Masculinos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Scandal Le Parfum",
+  "tipo": "",
+  "ml": 100,
+  "vista": 550,
+  "parcelado": 590,
+  "status": "ativo",
+  "foto": "8192dd308c678d498cec427f3e74cba9",
+  "ordem": 250,
+  "acordes": [
+   "Aromático",
+   "Baunilha",
+   "Amadeirado",
+   "Especiado quente",
+   "Especiado fresco",
+   "Âmbar",
+   "Doce",
+   "Atalcado",
+   "Rosa",
+   "Herbal"
+  ],
+  "notas": {
+   "coracao": "fava tonka",
+   "fundo": "sândalo",
+   "topo": "gerânio"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-Pour-Homme-Le-Parfum-74915.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 590,
+    "vista": 550
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-scandal-le-parfum-150",
+  "secao": "Masculinos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Scandal Le Parfum",
+  "tipo": "",
+  "ml": 150,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "8192dd308c678d498cec427f3e74cba9",
+  "ordem": 260,
+  "acordes": [
+   "Aromático",
+   "Baunilha",
+   "Amadeirado",
+   "Especiado quente",
+   "Especiado fresco",
+   "Âmbar",
+   "Doce",
+   "Atalcado",
+   "Rosa",
+   "Herbal"
+  ],
+  "notas": {
+   "coracao": "fava tonka",
+   "fundo": "sândalo",
+   "topo": "gerânio"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-Pour-Homme-Le-Parfum-74915.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-vip-black-100",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "212 VIP Black",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 480,
+  "parcelado": 520,
+  "status": "ativo",
+  "foto": "57295b6e7b3c908356408f323f04cfdf",
+  "ordem": 270,
+  "acordes": [
+   "Aromático",
+   "Baunilha",
+   "Especiado suave",
+   "Lavanda",
+   "Anis",
+   "Almiscarado",
+   "Atalcado",
+   "Amargo",
+   "Doce",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "fava de baunilha negra, almíscar",
+   "topo": "absinto, anis, erva-doce"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 520,
+    "vista": 480
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-vip-black-200",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "212 VIP Black",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "57295b6e7b3c908356408f323f04cfdf",
+  "ordem": 280,
+  "acordes": [
+   "Aromático",
+   "Baunilha",
+   "Especiado suave",
+   "Lavanda",
+   "Anis",
+   "Almiscarado",
+   "Atalcado",
+   "Amargo",
+   "Doce",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "fava de baunilha negra, almíscar",
+   "topo": "absinto, anis, erva-doce"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "yves-saint-laurent-myslf-100",
+  "secao": "Masculinos",
+  "marca": "Yves Saint Laurent",
+  "nome": "MYSLF",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "39755d6991574b6bdd1fca444d4ff414",
+  "ordem": 290,
+  "acordes": [
+   "Cítrico",
+   "Floral branco",
+   "Patchouli",
+   "Especiado fresco",
+   "Amadeirado",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira",
+   "fundo": "ambrofix, patchouli",
+   "topo": "bergamota da Calábria"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/MYSLF-Eau-de-Parfum-84094.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "dior-sauvage-100",
+  "secao": "Masculinos",
+  "marca": "Dior",
+  "nome": "Sauvage",
+  "tipo": "Parfum",
+  "ml": 100,
+  "vista": 900,
+  "parcelado": 950,
+  "status": "ativo",
+  "foto": "7904b6785f8ca196dce2c02f8cd9002c",
+  "ordem": 300,
+  "acordes": [
+   "Cítrico",
+   "Amadeirado",
+   "Âmbar",
+   "Aromático",
+   "Baunilha",
+   "Especiado fresco",
+   "Especiado quente",
+   "Atalcado",
+   "Balsâmico",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "sândalo",
+   "fundo": "olíbano, fava tonka, baunilha",
+   "topo": "bergamota, tangerina, elemi"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dior/Sauvage-Parfum-56324.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 950,
+    "vista": 900
+   }
+  ]
+ },
+ {
+  "id": "emporio-armani-stronger-with-you-intensely-100",
+  "secao": "Masculinos",
+  "marca": "Emporio Armani",
+  "nome": "Stronger With You Intensely",
+  "tipo": "",
+  "ml": 100,
+  "vista": 550,
+  "parcelado": 590,
+  "status": "ativo",
+  "foto": "fed233ccbea842c3e171b44d8834e4aa",
+  "ordem": 310,
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Âmbar",
+   "Canela",
+   "Especiado quente",
+   "Atalcado",
+   "Aromático",
+   "Especiado suave",
+   "Caramelo"
+  ],
+  "notas": {
+   "coracao": "toffee, canela, lavanda, sálvia",
+   "fundo": "baunilha, âmbar, fava tonka, camurça",
+   "topo": "pimenta rosa, zimbro, violeta"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Intensely-52802.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 590,
+    "vista": 550
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-scandal-150",
+  "secao": "Masculinos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Scandal",
+  "tipo": "Tradicional",
+  "ml": 150,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "6c1e27e0e2c1644153c4e9435f3ca3af",
+  "ordem": 320,
+  "acordes": [
+   "Caramelo",
+   "Aromático",
+   "Doce",
+   "Cítrico",
+   "Baunilha",
+   "Âmbar",
+   "Especiado suave",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "caramelo, fava tonka",
+   "fundo": "vetiver",
+   "topo": "tangerina, sálvia esclareia"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-Pour-Homme-68074.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "lattafa-asad-bourbon-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Asad Bourbon",
+  "tipo": "",
+  "ml": 100,
+  "vista": 270,
+  "parcelado": 300,
+  "status": "ativo",
+  "foto": "4f6d95be757937934d5f0dd8992dae41",
+  "ordem": 330,
+  "acordes": [
+   "Baunilha",
+   "Cacau",
+   "Doce",
+   "Lavanda",
+   "Especiado fresco",
+   "Especiado quente",
+   "Âmbar",
+   "Aromático",
+   "Atalcado",
+   "Especiado suave"
+  ],
+  "notas": {
+   "coracao": "cacau, noz-moscada, davana",
+   "fundo": "baunilha bourbon, âmbar, vetiver",
+   "topo": "lavanda, ameixa mirabela, pimenta rosa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Bourbon-101124.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 300,
+    "vista": 270
+   }
+  ]
+ },
+ {
+  "id": "prada-paradigme-100",
+  "secao": "Masculinos",
+  "marca": "Prada",
+  "nome": "Paradigme",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 750,
+  "parcelado": 800,
+  "status": "ativo",
+  "foto": "87a0b0260330ec05a6843844ae1ee661",
+  "ordem": 340,
+  "acordes": [
+   "Especiado fresco",
+   "Âmbar",
+   "Aromático",
+   "Amadeirado",
+   "Balsâmico",
+   "Cítrico",
+   "Almiscarado",
+   "Especiado quente",
+   "Rosa",
+   "Atalcado"
+  ],
+  "notas": {
+   "coracao": "gerânio bourbon, gerânio rosa",
+   "fundo": "benjoim, bálsamo-do-peru, guaiaco",
+   "topo": "bergamota da Calábria, almíscar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Paradigme-110661.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 800,
+    "vista": 750
+   }
+  ]
+ },
+ {
+  "id": "gucci-guilty-pour-homme-elixir-60",
+  "secao": "Masculinos",
+  "marca": "Gucci",
+  "nome": "Guilty Pour Homme Elixir",
+  "tipo": "Elixir de Parfum",
+  "ml": 60,
+  "vista": 680,
+  "parcelado": 720,
+  "status": "ativo",
+  "foto": "cbafa1f1451d7998ff5e43845543cf0c",
+  "ordem": 350,
+  "acordes": [
+   "Baunilha",
+   "Floral branco",
+   "Especiado quente",
+   "Atalcado",
+   "Íris",
+   "Âmbar",
+   "Cítrico",
+   "Floral",
+   "Doce",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, íris, osmanthus",
+   "fundo": "baunilha, ambrofix, benjoim, patchouli",
+   "topo": "flor de laranjeira, noz-moscada, pimenta-da-jamaica"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Guilty-Elixir-de-Parfum-pour-Homme-84547.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 720,
+    "vista": 680
+   }
+  ]
+ },
+ {
+  "id": "french-avenue-vulcan-feu-100",
+  "secao": "Masculinos",
+  "marca": "French Avenue",
+  "nome": "Vulcan Feu",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "11957ad3f9392394c85c12fb4eada1af",
+  "ordem": 360,
+  "acordes": [
+   "Tropical",
+   "Frutado",
+   "Doce",
+   "Cítrico",
+   "Amadeirado",
+   "Fresco",
+   "Especiado fresco",
+   "Aromático",
+   "Terpênico",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "pimenta rosa, jasmim, violeta, praliné",
+   "fundo": "fava tonka, cedro, âmbar cinza, musgo",
+   "topo": "manga, limão, gengibre, ruibarbo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/French-Avenue/Vulcan-Feu-105520.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "afnan-turathi-blue-90",
+  "secao": "Masculinos",
+  "marca": "Afnan",
+  "nome": "Turathi Blue",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "db815c7ddccabbcff8fdb27036b7c402",
+  "ordem": 370,
+  "acordes": [
+   "Cítrico",
+   "Almiscarado",
+   "Amadeirado",
+   "Fresco",
+   "Âmbar",
+   "Atalcado",
+   "Especiado quente",
+   "Patchouli"
+  ],
+  "notas": {
+   "coracao": "notas amadeiradas, âmbar",
+   "fundo": "almíscar, especiarias, patchouli",
+   "topo": "cítricos"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Turathi-Blue-70839.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 400,
+    "vista": 360
+   },
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "french-avenue-liquid-brun-100",
+  "secao": "Masculinos",
+  "marca": "French Avenue",
+  "nome": "Liquid Brun",
+  "tipo": "",
+  "ml": 100,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "4e59b2ebf32859c057fbc5d61f399be0",
+  "ordem": 380,
+  "acordes": [
+   "Doce",
+   "Especiado quente",
+   "Baunilha",
+   "Canela",
+   "Floral branco",
+   "Atalcado",
+   "Aromático",
+   "Cítrico",
+   "Almiscarado",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "baunilha bourbon, elemi",
+   "fundo": "praliné, ambroxan, almíscar, guaiaco",
+   "topo": "canela, flor de laranjeira, cardamomo, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/French-Avenue/Liquid-Brun-94713.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "armaf-private-key-to-my-dreams-100",
+  "secao": "Masculinos",
+  "marca": "Armaf",
+  "nome": "Private Key to My Dreams",
+  "tipo": "Extrait de Parfum",
+  "ml": 100,
+  "vista": 400,
+  "parcelado": 440,
+  "status": "ativo",
+  "foto": "cf0d03e4ada2624b2ca4e596d4b62f42",
+  "ordem": 390,
+  "acordes": [
+   "Aromático",
+   "Especiado quente",
+   "Especiado fresco",
+   "Couro",
+   "Amadeirado",
+   "Doce",
+   "Lavanda",
+   "Especiado suave",
+   "Frutado",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "lavanda, flor de laranjeira, gerânio bourbon, maçã",
+   "fundo": "couro, baunilha, cedro, patchouli, vetiver",
+   "topo": "pimenta rosa, cardamomo, folha de abacaxi, pimenta-do-reino"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Private-Key-To-My-Dreams-87086.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 440,
+    "vista": 400
+   }
+  ]
+ },
+ {
+  "id": "armaf-private-key-to-my-life-100",
+  "secao": "Masculinos",
+  "marca": "Armaf",
+  "nome": "Private Key to My Life",
+  "tipo": "Extrait de Parfum",
+  "ml": 100,
+  "vista": 400,
+  "parcelado": 440,
+  "status": "ativo",
+  "foto": "aef4112d2c4e0c85e87be7900aef57d5",
+  "ordem": 400,
+  "acordes": [
+   "Cítrico",
+   "Especiado fresco",
+   "Floral branco",
+   "Doce",
+   "Almiscarado",
+   "Amadeirado",
+   "Aromático",
+   "Especiado suave"
+  ],
+  "notas": {
+   "coracao": "flores brancas, lírio-do-vale, frésia, rosa, jasmim, gerânio, magnólia",
+   "fundo": "almíscar branco, notas amadeiradas, patchouli, âmbar, couro",
+   "topo": "pimenta rosa, toranja, bergamota, limão, lima, pimenta-do-reino, laranja, melão, abacaxi, tangerina, ameixa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Private-Key-To-My-Life-87084.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 440,
+    "vista": 400
+   }
+  ]
+ },
+ {
+  "id": "giorgio-armani-acqua-di-gio-200",
+  "secao": "Masculinos",
+  "marca": "Giorgio Armani",
+  "nome": "Acqua di Giò",
+  "tipo": "",
+  "ml": 200,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "a12be4c28b44782162f8fe86482bf6b1",
+  "ordem": 410,
+  "acordes": [
+   "Cítrico",
+   "Aromático",
+   "Marinho",
+   "Especiado fresco",
+   "Floral",
+   "Amadeirado",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "notas marinhas, jasmim, calone (nota marinha), alecrim, pêssego, frésia, jacinto, violeta, cíclame, coentro, rosa, noz-moscada",
+   "fundo": "almíscar branco, cedro, musgo de carvalho, patchouli, âmbar",
+   "topo": "lima, limão, bergamota, jasmim, laranja, tangerina, neroli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Acqua-di-Gio-410.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "lattafa-fakhar-black-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Fakhar Black",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "8a34e536bf19dedb36ba73cd92b1404f",
+  "ordem": 420,
+  "acordes": [
+   "Aromático",
+   "Especiado fresco",
+   "Amadeirado",
+   "Frutado",
+   "Fresco",
+   "Cítrico",
+   "Lavanda",
+   "Verde",
+   "Herbal",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "lavanda, sálvia, zimbro, gerânio",
+   "fundo": "fava tonka, cedro, amberwood, vetiver",
+   "topo": "maçã, bergamota, gengibre"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Fakhar-Black-70465.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "valentino-uomo-born-in-roma-intense-100",
+  "secao": "Masculinos",
+  "marca": "Valentino",
+  "nome": "Uomo Born in Roma Intense",
+  "tipo": "",
+  "ml": 100,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "e56d1c065c05747eee202f2018335f24",
+  "ordem": 430,
+  "acordes": [
+   "Lavanda",
+   "Baunilha",
+   "Aromático",
+   "Amadeirado",
+   "Especiado fresco",
+   "Terroso",
+   "Atalcado",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "vetiver",
+   "topo": "baunilha"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Valentino/Valentino-Uomo-Born-In-Roma-Intense-78740.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "montblanc-explorer-extreme-100",
+  "secao": "Masculinos",
+  "marca": "Montblanc",
+  "nome": "Explorer Extreme",
+  "tipo": "",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "f71da8eb1728ad36d5dad389bf7dd1b7",
+  "ordem": 440,
+  "acordes": [
+   "Cítrico",
+   "Couro",
+   "Patchouli",
+   "Amadeirado",
+   "Especiado fresco",
+   "Animálico",
+   "Especiado quente",
+   "Terroso",
+   "Aromático",
+   "Defumado"
+  ],
+  "notas": {
+   "coracao": "patchouli, lavanda, ambrofix",
+   "fundo": "couro, vetiver, notas amadeiradas",
+   "topo": "bergamota, cardamomo, sálvia esclareia"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Montblanc/Explorer-Extreme-106403.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "lattafa-asad-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Asad",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "4b83235a5a228dd825ddd0ec5d7c6454",
+  "ordem": 450,
+  "acordes": [
+   "Âmbar",
+   "Especiado fresco",
+   "Amadeirado",
+   "Especiado quente",
+   "Baunilha",
+   "Doce",
+   "Tabaco",
+   "Atalcado",
+   "Patchouli",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "patchouli, café, íris",
+   "fundo": "baunilha, âmbar, madeira seca, benjoim, láudano",
+   "topo": "pimenta-do-reino, tabaco, abacaxi"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-72821.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "lattafa-asad-elixir-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Asad Elixir",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 270,
+  "parcelado": 300,
+  "status": "ativo",
+  "foto": "ee0aae9fc57540a20fddac848d2c7ce0",
+  "ordem": 460,
+  "acordes": [
+   "Âmbar",
+   "Amadeirado",
+   "Tabaco",
+   "Baunilha",
+   "Doce",
+   "Especiado quente",
+   "Atalcado",
+   "Especiado suave",
+   "Patchouli",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "tabaco, baunilha, cedro",
+   "fundo": "âmbar, incenso, patchouli, cashmeran",
+   "topo": "pimenta rosa, açafrão, toranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Asad-Elixir-117616.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 300,
+    "vista": 270
+   }
+  ]
+ },
+ {
+  "id": "rayhaan-pacific-aura-100",
+  "secao": "Masculinos",
+  "marca": "Rayhaan",
+  "nome": "Pacific Aura",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 380,
+  "parcelado": 420,
+  "status": "ativo",
+  "foto": "9928cdba355f59265c1cfc9c7d5a3b69",
+  "ordem": 470,
+  "acordes": [
+   "Cítrico",
+   "Verde",
+   "Aromático",
+   "Especiado fresco",
+   "Frutado",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "manjericão, cenoura, rosa",
+   "fundo": "figo, ambroxan, âmbar",
+   "topo": "tangerina, hortelã, cidra, bergamota, cassis, coentro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rayhaan/Pacific-Aura-109709.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 420,
+    "vista": 380
+   }
+  ]
+ },
+ {
+  "id": "maison-alhambra-salvo-100",
+  "secao": "Masculinos",
+  "marca": "Maison Alhambra",
+  "nome": "Salvo",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 180,
+  "parcelado": 200,
+  "status": "ativo",
+  "foto": "79130dfb9dcf463407d96df550436668",
+  "ordem": 480,
+  "acordes": [
+   "Especiado fresco",
+   "Cítrico",
+   "Âmbar",
+   "Lavanda",
+   "Aromático",
+   "Almiscarado",
+   "Herbal",
+   "Floral",
+   "Anis",
+   "Especiado suave"
+  ],
+  "notas": {
+   "coracao": "lavanda, pimenta de Sichuan, anis-estrelado, noz-moscada",
+   "fundo": "ambroxan, baunilha",
+   "topo": "bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Maison-Alhambra/Salvo-93538.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 200,
+    "vista": 180
+   }
+  ]
+ },
+ {
+  "id": "armaf-club-de-nuit-intense-man-105",
+  "secao": "Masculinos",
+  "marca": "Armaf",
+  "nome": "Club de Nuit Intense Man",
+  "tipo": "EDT",
+  "ml": 105,
+  "vista": 270,
+  "parcelado": 300,
+  "status": "ativo",
+  "foto": "ec0b5ae8452d10c5650ea748fc31b31f",
+  "ordem": 490,
+  "acordes": [
+   "Cítrico",
+   "Frutado",
+   "Couro",
+   "Defumado",
+   "Amadeirado",
+   "Aromático",
+   "Doce",
+   "Fresco",
+   "Almiscarado"
+  ],
+  "notas": {
+   "coracao": "bétula, jasmim, rosa",
+   "fundo": "almíscar, âmbar cinza, patchouli, baunilha",
+   "topo": "limão, abacaxi, bergamota, cassis, maçã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Intense-Man-34696.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 300,
+    "vista": 270
+   }
+  ]
+ },
+ {
+  "id": "lattafa-art-of-universe-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Art of Universe",
+  "tipo": "",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "a6e90445b8f80293a19fe09136ba7151",
+  "ordem": 500,
+  "acordes": [
+   "Cítrico",
+   "Frutado",
+   "Especiado fresco",
+   "Doce",
+   "Almiscarado",
+   "Verde",
+   "Fresco",
+   "Floral branco",
+   "Atalcado",
+   "Aromático"
+  ],
+  "notas": {
+   "coracao": "pera, flor de laranjeira",
+   "fundo": "almíscar, âmbar, cedro",
+   "topo": "tangerina, gengibre, bergamota, hortelã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Art-Of-Universe-101314.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-elixir-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Elixir",
+  "tipo": "",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "a0f2fd0243be937c5a2dffe500436336",
+  "ordem": 510,
+  "acordes": [
+   "Baunilha",
+   "Amadeirado",
+   "Mineral",
+   "Coco",
+   "Aromático",
+   "Lavanda",
+   "Salgado",
+   "Especiado fresco",
+   "Âmbar",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "coco, lavanda, cipreste",
+   "fundo": "baunilha, benjoim, cedro, musgo",
+   "topo": "notas minerais, sal, toranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Elixir-126365.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-elixir-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Elixir",
+  "tipo": "",
+  "ml": 200,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "ativo",
+  "foto": "a0f2fd0243be937c5a2dffe500436336",
+  "ordem": 520,
+  "acordes": [
+   "Baunilha",
+   "Amadeirado",
+   "Mineral",
+   "Coco",
+   "Aromático",
+   "Lavanda",
+   "Salgado",
+   "Especiado fresco",
+   "Âmbar",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "coco, lavanda, cipreste",
+   "fundo": "baunilha, benjoim, cedro, musgo",
+   "topo": "notas minerais, sal, toranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Elixir-126365.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 800,
+    "vista": 750
+   },
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "prada-l-homme-100",
+  "secao": "Masculinos",
+  "marca": "Prada",
+  "nome": "L'Homme",
+  "tipo": "",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "c334b97ccd2df5a92bdbce7d5151ddef",
+  "ordem": 530,
+  "acordes": [
+   "Atalcado",
+   "Íris",
+   "Violeta",
+   "Amadeirado",
+   "Especiado fresco",
+   "Especiado quente",
+   "Aromático",
+   "Terroso",
+   "Âmbar",
+   "Floral"
+  ],
+  "notas": {
+   "coracao": "íris, violeta, gerânio, erva-mate",
+   "fundo": "âmbar, cedro, sândalo, patchouli",
+   "topo": "neroli, pimenta-do-reino, cardamomo, semente de cenoura"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-L-Homme-39029.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "hugo-boss-the-scent-elixir-for-him-100",
+  "secao": "Masculinos",
+  "marca": "Hugo Boss",
+  "nome": "The Scent Elixir For Him",
+  "tipo": "",
+  "ml": 100,
+  "vista": 560,
+  "parcelado": 600,
+  "status": "ativo",
+  "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
+  "ordem": 540,
+  "acordes": [
+   "Especiado quente",
+   "Lavanda",
+   "Amadeirado",
+   "Aromático",
+   "Atalcado",
+   "Fresco",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "sândalo",
+   "topo": "pimenta vermelha"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-The-Scent-Elixir-For-Him-88879.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 600,
+    "vista": 560
+   }
+  ]
+ },
+ {
+  "id": "afnan-9-pm-night-out-100",
+  "secao": "Masculinos",
+  "marca": "Afnan",
+  "nome": "9 PM Night Out",
+  "tipo": "Extrait de Parfum",
+  "ml": 100,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "d71308b26769c889bcc444183431e056",
+  "ordem": 550,
+  "acordes": [
+   "Amadeirado",
+   "Frutado",
+   "Especiado quente",
+   "Doce",
+   "Tropical",
+   "Aromático",
+   "Lavanda",
+   "Floral",
+   "Baunilha",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "toffee, camurça, cardamomo, cedro, mahonial",
+   "fundo": "fava tonka, akigalawood, ambrofix, patchouli",
+   "topo": "pitaia, conhaque, lavanda, maçã, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/9-PM-Night-Out-123313.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:08:21.000Z",
+  "atualizado_em": "2026-10-16T10:44:01.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 300,
+    "vista": 270
+   },
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "afnan-supremacy-collector-s-edition-100",
+  "secao": "Masculinos",
+  "marca": "Afnan",
+  "nome": "Supremacy Collector's Edition",
+  "tipo": "",
+  "ml": 100,
+  "vista": 400,
+  "parcelado": 440,
+  "status": "ativo",
+  "foto": "5235c59cb10c44c19f7396fa49432ce0",
+  "ordem": 560,
+  "acordes": [
+   "Frutado",
+   "Doce",
+   "Floral branco",
+   "Cítrico",
+   "Âmbar",
+   "Musgo",
+   "Tropical",
+   "Animálico",
+   "Fresco",
+   "Almiscarado"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, bétula, âmbar",
+   "fundo": "musgo de carvalho, almíscar, âmbar cinza",
+   "topo": "abacaxi, bergamota, flores brancas, maçã"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Collector-s-Edition-Pour-Homme-98689.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 440,
+    "vista": 400
+   }
+  ]
+ },
+ {
+  "id": "afnan-rare-reef-100",
+  "secao": "Masculinos",
+  "marca": "Afnan",
+  "nome": "Rare Reef",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 270,
+  "parcelado": 300,
+  "status": "ativo",
+  "foto": "d701d73a14f56dba4e0778a18d41ddc1",
+  "ordem": 570,
+  "acordes": [
+   "Cítrico",
+   "Aromático",
+   "Verde",
+   "Especiado fresco",
+   "Frutado",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "damasco, manjericão, folha de violeta, rosa",
+   "fundo": "figo, ambreta, amberwood, tâmaras",
+   "topo": "laranja, hortelã, cidra, toranja, cassis, coentro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Rare-Reef-106835.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 300,
+    "vista": 270
+   }
+  ]
+ },
+ {
+  "id": "lattafa-dalal-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Dalal",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "arquivado",
+  "foto": "571de6f6271d4d6aa44d4d44c502925a",
+  "ordem": 10,
+  "acordes": [
+   "Cítrico",
+   "Floral branco",
+   "Floral amarelo",
+   "Doce",
+   "Frutado",
+   "Baunilha",
+   "Fresco",
+   "Almiscarado",
+   "Atalcado",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "jasmim, ylang-ylang, laranja",
+   "fundo": "baunilha, almíscar, musgo de carvalho",
+   "topo": "maçã, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/p/119588",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "lattafa-atheeri-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Atheeri",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 440,
+  "parcelado": 480,
+  "status": "ativo",
+  "foto": "16d3331e50f52e7d4d76ec4f390de7f6",
+  "ordem": 20,
+  "acordes": [
+   "Floral",
+   "Baunilha",
+   "Doce",
+   "Aquático",
+   "Âmbar",
+   "Atalcado",
+   "Frutado",
+   "Floral branco",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "orquídea, jasmim",
+   "fundo": "baunilha, amberwood",
+   "topo": "flor de maracujá, gota de orvalho"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Atheeri-105152.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 480,
+    "vista": 440
+   }
+  ]
+ },
+ {
+  "id": "lattafa-afeef-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Afeef",
+  "tipo": "",
+  "ml": 100,
+  "vista": 450,
+  "parcelado": 490,
+  "status": "arquivado",
+  "foto": "fbd2315b8ffd8795f032041b6f8ad4f4",
+  "ordem": 30,
+  "acordes": [
+   "Floral branco",
+   "Doce",
+   "Amadeirado",
+   "Cítrico",
+   "Frutado",
+   "Tuberosa",
+   "Âmbar",
+   "Atalcado",
+   "Animálico",
+   "Especiado suave"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, tuberosa, jasmim",
+   "fundo": "praliné, âmbar, sândalo, patchouli",
+   "topo": "pêssego, pimenta rosa, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Afeef-100126.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 490,
+    "vista": 450
+   }
+  ]
+ },
+ {
+  "id": "armaf-kayaan-caramel-100",
+  "secao": "Femininos",
+  "marca": "Armaf",
+  "nome": "Kayaan Caramel",
+  "tipo": "",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "decc1c8e10a78ef0eccf88e2af4c8647",
+  "ordem": 40,
+  "acordes": [
+   "Doce",
+   "Caramelo",
+   "Baunilha",
+   "Mel",
+   "Almiscarado"
+  ],
+  "notas": {
+   "coracao": "cumarina, mel",
+   "fundo": "baunilha, almíscar branco",
+   "topo": "caramelo"
+  },
+  "perfil_fonte": "https://www.orientfragance.com/en/products/armaf-kayaan-caramel-100ml-eau-de-parfum-perfume-unisex",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "maison-asrar-vanilla-aura-100",
+  "secao": "Femininos",
+  "marca": "Maison Asrar",
+  "nome": "Vanilla Aura",
+  "tipo": "",
+  "ml": 100,
+  "vista": 350,
+  "parcelado": 390,
+  "status": "ativo",
+  "foto": "b9616ed3287fb869acf304b38df2b4be",
+  "ordem": 50,
+  "acordes": [
+   "Baunilha",
+   "Âmbar",
+   "Atalcado",
+   "Doce",
+   "Amadeirado",
+   "Especiado quente",
+   "Cítrico",
+   "Floral branco",
+   "Aromático",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "baunilha, chocolate amargo, caramelo",
+   "fundo": "baunilha, âmbar, sândalo, fava tonka",
+   "topo": "lírio-do-vale, bergamota, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/MAISON-ASRAR/Vanilla-Aura-117517.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 390,
+    "vista": 350
+   }
+  ]
+ },
+ {
+  "id": "montblanc-signature-100",
+  "secao": "Femininos",
+  "marca": "Montblanc",
+  "nome": "Signature",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
+  "foto": "28dc9f459305ade95ca8888bd791dbf7",
+  "ordem": 60,
+  "acordes": [
+   "Baunilha",
+   "Floral",
+   "Cítrico",
+   "Almiscarado",
+   "Doce",
+   "Atalcado",
+   "Floral amarelo",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "magnólia, ylang-ylang, peônia",
+   "fundo": "baunilha, almíscar branco, benjoim",
+   "topo": "clementina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Montblanc/Signature-60962.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 540,
+    "vista": 500
+   }
+  ]
+ },
+ {
+  "id": "hugo-boss-the-scent-elixir-for-her-50",
+  "secao": "Femininos",
+  "marca": "Hugo Boss",
+  "nome": "The Scent Elixir For Her",
+  "tipo": "",
+  "ml": 50,
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
+  "foto": "3ebe46ca6f0366976390657074579a52",
+  "ordem": 70,
+  "acordes": [
+   "Floral",
+   "Âmbar",
+   "Especiado suave",
+   "Animálico",
+   "Almiscarado",
+   "Doce",
+   "Balsâmico",
+   "Frutado"
+  ],
+  "notas": {
+   "coracao": "beladona",
+   "fundo": "âmbar cinza",
+   "topo": "pimenta rosa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Hugo-Boss/Boss-The-Scent-Elixir-For-Her-88880.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 540,
+    "vista": 500
+   }
+  ]
+ },
+ {
+  "id": "dior-miss-dior-100",
+  "secao": "Femininos",
+  "marca": "Dior",
+  "nome": "Miss Dior",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 900,
+  "parcelado": 950,
+  "status": "ativo",
+  "foto": "ba4202a3769f3263f397346259c898d8",
+  "ordem": 80,
+  "acordes": [
+   "Atalcado",
+   "Baunilha",
+   "Rosa",
+   "Floral",
+   "Frutado",
+   "Doce",
+   "Fresco",
+   "Íris",
+   "Almiscarado",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "rosa, damasco, pêssego",
+   "fundo": "baunilha, almíscar, fava tonka, sândalo, benjoim",
+   "topo": "íris, peônia, lírio-do-vale"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dior/Miss-Dior-Eau-de-Parfum-2021-68905.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 950,
+    "vista": 900
+   }
+  ]
+ },
+ {
+  "id": "bvlgari-rose-goldea-blossom-delight-75",
+  "secao": "Femininos",
+  "marca": "Bvlgari",
+  "nome": "Rose Goldea Blossom Delight",
+  "tipo": "EDP",
+  "ml": 75,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "e4d424aec054fdc7cb801a3a78d0d47f",
+  "ordem": 90,
+  "acordes": [
+   "Rosa",
+   "Verde",
+   "Floral branco",
+   "Almiscarado",
+   "Floral",
+   "Tropical",
+   "Ozônico",
+   "Fresco",
+   "Atalcado",
+   "Aquático"
+  ],
+  "notas": {
+   "coracao": "rosa, folha de rosa, lírio-do-vale",
+   "fundo": "rosa búlgara, almíscar branco, âmbar",
+   "topo": "mamão, folha de violeta, jasmim"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Rose-Goldea-Blossom-Delight-55754.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "bvlgari-omnia-coral-100",
+  "secao": "Femininos",
+  "marca": "Bvlgari",
+  "nome": "Omnia Coral",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "bbc8455e10c4f4ba8774bac04d26ed68",
+  "ordem": 100,
+  "acordes": [
+   "Floral",
+   "Amadeirado",
+   "Especiado fresco",
+   "Frutado",
+   "Almiscarado",
+   "Cítrico",
+   "Aquático",
+   "Atalcado",
+   "Ácido",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "romã, hibisco, lírio d'água",
+   "fundo": "almíscar, cedro",
+   "topo": "bergamota, goji berry"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Coral-14297.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "bvlgari-omnia-crystalline-100",
+  "secao": "Femininos",
+  "marca": "Bvlgari",
+  "nome": "Omnia Crystalline",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "c43c16fb52dbb03f9fa377eb45727f93",
+  "ordem": 110,
+  "acordes": [
+   "Amadeirado",
+   "Floral",
+   "Almiscarado",
+   "Verde",
+   "Aquático",
+   "Ozônico",
+   "Frutado",
+   "Fresco",
+   "Atalcado",
+   "Terroso"
+  ],
+  "notas": {
+   "coracao": "lótus, chá, cássia",
+   "fundo": "almíscar, guaiaco, musgo de carvalho",
+   "topo": "bambu, pera"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Crystalline-152.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "bvlgari-omnia-amethyste-100",
+  "secao": "Femininos",
+  "marca": "Bvlgari",
+  "nome": "Omnia Amethyste",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "8dc34792c1ae4e06d8a761ab8f6da742",
+  "ordem": 120,
+  "acordes": [
+   "Atalcado",
+   "Íris",
+   "Baunilha",
+   "Amadeirado",
+   "Amêndoa",
+   "Floral",
+   "Verde",
+   "Violeta",
+   "Terroso",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "íris, rosa búlgara",
+   "fundo": "heliotrópio, notas amadeiradas",
+   "topo": "notas verdes, toranja rosa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Amethyste-780.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "givenchy-l-interdit-80",
+  "secao": "Femininos",
+  "marca": "Givenchy",
+  "nome": "L'Interdit",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "a41917c67e317083193b5573a7f6b52b",
+  "ordem": 130,
+  "acordes": [
+   "Floral branco",
+   "Tuberosa",
+   "Doce",
+   "Cítrico",
+   "Amadeirado",
+   "Patchouli",
+   "Baunilha",
+   "Frutado",
+   "Animálico"
+  ],
+  "notas": {
+   "coracao": "tuberosa, flor de laranjeira, jasmim sambac",
+   "fundo": "patchouli, baunilha, ambroxan, vetiver",
+   "topo": "pera, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Givenchy/L-Interdit-Eau-de-Parfum-51488.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-olympea-parfum-80",
+  "secao": "Femininos",
+  "marca": "Paco Rabanne",
+  "nome": "Olympéa Parfum",
+  "tipo": "",
+  "ml": 80,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "ee08836baeee70373713a79a1bf7900a",
+  "ordem": 140,
+  "acordes": [
+   "Floral branco",
+   "Baunilha",
+   "Especiado suave",
+   "Âmbar",
+   "Almiscarado",
+   "Doce",
+   "Aromático",
+   "Atalcado",
+   "Especiado quente",
+   "Verde"
+  ],
+  "notas": {
+   "coracao": "jasmim, flor de laranjeira, óleo de rosa",
+   "fundo": "baunilha, benjoim, almíscar",
+   "topo": "sálvia esclareia, pimenta rosa, acorde verde"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Parfum-90432.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "chloe-signature-75",
+  "secao": "Femininos",
+  "marca": "Chloé",
+  "nome": "Signature",
+  "tipo": "EDP",
+  "ml": 75,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "376befa17d6215e6954a16aea1c31448",
+  "ordem": 150,
+  "acordes": [
+   "Floral",
+   "Rosa",
+   "Fresco",
+   "Frutado",
+   "Floral branco"
+  ],
+  "notas": {
+   "coracao": "rosa, lírio-do-vale, magnólia",
+   "fundo": "cedro, âmbar",
+   "topo": "peônia, lichia, frésia"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Chloe/Chloe-Eau-de-Parfum-1733.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 580,
+    "vista": 540
+   },
+   {
+    "em": "2026-10-16T10:01:35.000Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "calvin-klein-euphoria-100",
+  "secao": "Femininos",
+  "marca": "Calvin Klein",
+  "nome": "Euphoria",
+  "tipo": "",
+  "ml": 100,
+  "vista": 440,
+  "parcelado": 480,
+  "status": "arquivado",
+  "foto": "ccd1687a221d153e33443957c108e47e",
+  "ordem": 160,
+  "acordes": [
+   "Amadeirado",
+   "Floral",
+   "Doce",
+   "Atalcado",
+   "Âmbar",
+   "Frutado",
+   "Violeta",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "orquídea negra, lótus, champaca",
+   "fundo": "mogno, âmbar, violeta negra, chantilly",
+   "topo": "romã, caqui, acorde verde"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-253.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 480,
+    "vista": 440
+   }
+  ]
+ },
+ {
+  "id": "yves-saint-laurent-libre-90",
+  "secao": "Femininos",
+  "marca": "Yves Saint Laurent",
+  "nome": "Libre",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "e029596c45f2968e59a6a09671d4cc4a",
+  "ordem": 170,
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Lavanda",
+   "Baunilha",
+   "Aromático",
+   "Doce",
+   "Atalcado",
+   "Animálico",
+   "Almiscarado",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "lavanda, flor de laranjeira, jasmim",
+   "fundo": "baunilha de Madagascar, almíscar, cedro, âmbar cinza",
+   "topo": "lavanda, tangerina, cassis, petitgrain"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 700,
+    "vista": 660
+   },
+   {
+    "em": "2026-10-16T10:01:35.000Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ },
+ {
+  "id": "armaf-club-de-nuit-woman-105",
+  "secao": "Femininos",
+  "marca": "Armaf",
+  "nome": "Club de Nuit Woman",
+  "tipo": "EDP",
+  "ml": 105,
+  "vista": 260,
+  "parcelado": 290,
+  "status": "arquivado",
+  "foto": "8a39511da809c979d308c0efe5fdb029",
+  "ordem": 180,
+  "acordes": [
+   "Cítrico",
+   "Patchouli",
+   "Rosa",
+   "Amadeirado",
+   "Especiado fresco",
+   "Aromático",
+   "Terroso",
+   "Atalcado",
+   "Almiscarado",
+   "Especiado quente"
+  ],
+  "notas": {
+   "coracao": "rosa, jasmim, gerânio, lichia",
+   "fundo": "patchouli, almíscar, baunilha, vetiver",
+   "topo": "laranja, bergamota, toranja, pêssego"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Armaf/Club-de-Nuit-Woman-27655.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 290,
+    "vista": 260
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-scandal-80",
+  "secao": "Femininos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Scandal",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "dfa9f00835eec72f7bf7e895415e8118",
+  "ordem": 190,
+  "acordes": [
+   "Mel",
+   "Doce",
+   "Floral branco",
+   "Cítrico",
+   "Caramelo",
+   "Animálico",
+   "Cera de abelha",
+   "Patchouli",
+   "Floral",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "mel, gardênia, flor de laranjeira, jasmim, pêssego",
+   "fundo": "cera de abelha, caramelo, patchouli, alcaçuz",
+   "topo": "laranja sanguínea, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-45651.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-scandal-le-parfum-80",
+  "secao": "Femininos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "Scandal Le Parfum",
+  "tipo": "",
+  "ml": 80,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "3aab9125a3e4c3caeaae236b29181c34",
+  "ordem": 200,
+  "acordes": [
+   "Caramelo",
+   "Baunilha",
+   "Floral branco",
+   "Doce",
+   "Salgado",
+   "Atalcado",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "caramelo, sal",
+   "fundo": "baunilha",
+   "topo": "jasmim"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Scandal-Le-Parfum-74914.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-devotion-100",
+  "secao": "Femininos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Devotion",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "ativo",
+  "foto": "ef75d1b8869dffc41c47eb087a4a19a0",
+  "ordem": 210,
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Floral branco",
+   "Lactônico",
+   "Rum",
+   "Atalcado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "panna cotta, flor de laranjeira, rum",
+   "fundo": "baunilha",
+   "topo": "limão cristalizado"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-84951.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "giorgio-armani-power-of-you-90",
+  "secao": "Femininos",
+  "marca": "Giorgio Armani",
+  "nome": "Power of You",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "63a2c6d70bda32feaf9626eafbb0653a",
+  "ordem": 220,
+  "acordes": [
+   "Tropical",
+   "Baunilha",
+   "Doce",
+   "Frutado",
+   "Cítrico",
+   "Fresco",
+   "Floral",
+   "Atalcado",
+   "Âmbar"
+  ],
+  "notas": {
+   "coracao": "jasmim-manga, notas solares",
+   "fundo": "baunilha de Madagascar, benjoim, láudano",
+   "topo": "maracujá, laranja amarga, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Power-Of-You-121870.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "jean-paul-gaultier-la-belle-flower-edition-100",
+  "secao": "Femininos",
+  "marca": "Jean Paul Gaultier",
+  "nome": "La Belle Flower Edition",
+  "tipo": "",
+  "ml": 100,
+  "vista": 400,
+  "parcelado": 440,
+  "status": "ativo",
+  "foto": "0b7c1c65dadd4649a0ffafee604c0715",
+  "ordem": 230,
+  "acordes": [
+   "Floral",
+   "Frutado",
+   "Baunilha",
+   "Atalcado",
+   "Lactônico",
+   "Doce",
+   "Floral branco",
+   "Amadeirado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "magnólia, osmanthus, jasmim",
+   "fundo": "baunilha, vetiver, patchouli",
+   "topo": "damasco"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/La-Belle-Flower-Edition-101157.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 440,
+    "vista": 400
+   }
+  ]
+ },
+ {
+  "id": "lattafa-musaman-white-intense-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Musaman White Intense",
+  "tipo": "",
+  "ml": 100,
+  "vista": 350,
+  "parcelado": 390,
+  "status": "ativo",
+  "foto": "5c211785692b1de0fa59af2b25b7bfc6",
+  "ordem": 240,
+  "acordes": [
+   "Amadeirado",
+   "Especiado quente",
+   "Coco",
+   "Doce",
+   "Cítrico",
+   "Atalcado",
+   "Almiscarado",
+   "Âmbar",
+   "Floral amarelo",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "coco, ylang-ylang, ambroxan, mahonial",
+   "fundo": "sândalo, almíscar, benjoim",
+   "topo": "especiarias, bergamota, laranja"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Musamam-White-Intense-85087.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 390,
+    "vista": 350
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-vip-rose-125",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "212 VIP Rosé",
+  "tipo": "EDP",
+  "ml": 125,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "236797194a60f1bca673574eb18b0512",
+  "ordem": 250,
+  "acordes": [
+   "Floral",
+   "Almiscarado",
+   "Frutado",
+   "Amadeirado",
+   "Atalcado",
+   "Rosa"
+  ],
+  "notas": {
+   "coracao": "flor de pessegueiro, rosa",
+   "fundo": "almíscar branco, notas amadeiradas",
+   "topo": "champanhe rosé, pimenta rosa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Rose-22857.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-vip-rose-elixir-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "212 VIP Rosé Elixir",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 540,
+  "parcelado": 580,
+  "status": "ativo",
+  "foto": "03a88ad578b37bbde69b667471dc6598",
+  "ordem": 260,
+  "acordes": [
+   "Frutado",
+   "Floral",
+   "Almiscarado",
+   "Patchouli",
+   "Fresco",
+   "Rosa",
+   "Tropical",
+   "Amadeirado",
+   "Atalcado",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "rosa, flor de pessegueiro, frésia",
+   "fundo": "almíscar, patchouli, baunilha",
+   "topo": "lichia, cassis, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Rose-Elixir-91736.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 580,
+    "vista": 540
+   }
+  ]
+ },
+ {
+  "id": "prada-paradoxe-30",
+  "secao": "Femininos",
+  "marca": "Prada",
+  "nome": "Paradoxe",
+  "tipo": "EDP",
+  "ml": 30,
+  "vista": 450,
+  "parcelado": 490,
+  "status": "ativo",
+  "foto": "f3b7274e9d3dead4b6a3174ce22af378",
+  "ordem": 268,
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Doce",
+   "Âmbar",
+   "Baunilha",
+   "Frutado",
+   "Atalcado",
+   "Almiscarado",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, neroli, jasmim sambac",
+   "fundo": "baunilha bourbon, âmbar, almíscar branco, benjoim",
+   "topo": "pera, tangerina, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:08:21.000Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 490,
+    "vista": 450
+   }
+  ]
+ },
+ {
+  "id": "prada-paradoxe-50",
+  "secao": "Femininos",
+  "marca": "Prada",
+  "nome": "Paradoxe",
+  "tipo": "EDP",
+  "ml": 50,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "ativo",
+  "foto": "f3b7274e9d3dead4b6a3174ce22af378",
+  "ordem": 269,
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Doce",
+   "Âmbar",
+   "Baunilha",
+   "Frutado",
+   "Atalcado",
+   "Almiscarado",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, neroli, jasmim sambac",
+   "fundo": "baunilha bourbon, âmbar, almíscar branco, benjoim",
+   "topo": "pera, tangerina, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:08:21.000Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "prada-paradoxe-90",
+  "secao": "Femininos",
+  "marca": "Prada",
+  "nome": "Paradoxe",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 750,
+  "parcelado": 800,
+  "status": "ativo",
+  "foto": "f3b7274e9d3dead4b6a3174ce22af378",
+  "ordem": 270,
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Doce",
+   "Âmbar",
+   "Baunilha",
+   "Frutado",
+   "Atalcado",
+   "Almiscarado",
+   "Fresco"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, neroli, jasmim sambac",
+   "fundo": "baunilha bourbon, âmbar, almíscar branco, benjoim",
+   "topo": "pera, tangerina, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 800,
+    "vista": 750
+   }
+  ]
+ },
+ {
+  "id": "prada-paradoxe-intense-90",
+  "secao": "Femininos",
+  "marca": "Prada",
+  "nome": "Paradoxe Intense",
+  "tipo": "",
+  "ml": 90,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "ativo",
+  "foto": "c03be27cb10af039fe73ae999eab9af0",
+  "ordem": 280,
+  "acordes": [
+   "Floral branco",
+   "Baunilha",
+   "Cítrico",
+   "Musgo",
+   "Âmbar",
+   "Frutado",
+   "Doce",
+   "Fresco",
+   "Terroso",
+   "Atalcado"
+  ],
+  "notas": {
+   "coracao": "jasmim, neroli, musgo",
+   "fundo": "baunilha bourbon, âmbar, ambrofix, serenolide (almíscar)",
+   "topo": "neroli, pera, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-Intense-83988.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 900,
+    "vista": 850
+   },
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-good-girl-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "Good Girl",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 550,
+  "parcelado": 590,
+  "status": "ativo",
+  "foto": "42ebe68564d18e213102f67be49aa1c2",
+  "ordem": 290,
+  "acordes": [
+   "Doce",
+   "Floral branco",
+   "Baunilha",
+   "Especiado quente",
+   "Âmbar",
+   "Cacau",
+   "Amadeirado",
+   "Tuberosa",
+   "Amêndoa",
+   "Atalcado"
+  ],
+  "notas": {
+   "coracao": "tuberosa, jasmim sambac, flor de laranjeira, rosa búlgara, íris",
+   "fundo": "fava tonka, cacau, baunilha, praliné, sândalo, almíscar, âmbar, madeira de cashmere, patchouli, canela, cedro",
+   "topo": "amêndoa, café, bergamota, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-39681.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 590,
+    "vista": 550
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-good-girl-150",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "Good Girl",
+  "tipo": "EDP",
+  "ml": 150,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "42ebe68564d18e213102f67be49aa1c2",
+  "ordem": 300,
+  "acordes": [
+   "Doce",
+   "Floral branco",
+   "Baunilha",
+   "Especiado quente",
+   "Âmbar",
+   "Cacau",
+   "Amadeirado",
+   "Tuberosa",
+   "Amêndoa",
+   "Atalcado"
+  ],
+  "notas": {
+   "coracao": "tuberosa, jasmim sambac, flor de laranjeira, rosa búlgara, íris",
+   "fundo": "fava tonka, cacau, baunilha, praliné, sândalo, almíscar, âmbar, madeira de cashmere, patchouli, canela, cedro",
+   "topo": "amêndoa, café, bergamota, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-39681.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "lattafa-tharway-gold-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Tharway Gold",
+  "tipo": "",
+  "ml": 100,
+  "vista": 350,
+  "parcelado": 390,
+  "status": "ativo",
+  "foto": "2eb2de9cf21e8c492b66bdee32da18e3",
+  "ordem": 310,
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Baunilha",
+   "Lavanda",
+   "Âmbar",
+   "Aromático",
+   "Doce",
+   "Especiado fresco",
+   "Atalcado",
+   "Animálico"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, jasmim egípcio",
+   "fundo": "baunilha, âmbar, vetiver",
+   "topo": "lavanda, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Tharwah-Gold-82004.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 390,
+    "vista": 350
+   }
+  ]
+ },
+ {
+  "id": "gucci-guilty-pour-femme-elixir-60",
+  "secao": "Femininos",
+  "marca": "Gucci",
+  "nome": "Guilty Pour Femme Elixir",
+  "tipo": "Elixir de Parfum",
+  "ml": 60,
+  "vista": 680,
+  "parcelado": 720,
+  "status": "ativo",
+  "foto": "e3abc97a2be9515124a159501d653c70",
+  "ordem": 320,
+  "acordes": [
+   "Floral",
+   "Baunilha",
+   "Atalcado",
+   "Violeta",
+   "Doce",
+   "Cítrico",
+   "Patchouli",
+   "Fresco",
+   "Amadeirado",
+   "Especiado quente"
+  ],
+  "notas": {
+   "coracao": "glicínia, rosa, osmanthus",
+   "fundo": "fava tonka, baunilha, patchouli",
+   "topo": "violeta, mandora, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Gucci-Guilty-Elixir-de-Parfum-pour-Femme-84546.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 720,
+    "vista": 680
+   }
+  ]
+ },
+ {
+  "id": "lattafa-yara-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Yara",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "b91f5a90dcdf65b849731172067c424f",
+  "ordem": 330,
+  "acordes": [
+   "Doce",
+   "Baunilha",
+   "Atalcado",
+   "Tropical",
+   "Almiscarado",
+   "Frutado",
+   "Floral",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "acorde gourmand, frutas tropicais",
+   "fundo": "baunilha, almíscar, sândalo",
+   "topo": "orquídea, heliotrópio, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Yara-76880.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-good-girl-blush-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "Good Girl Blush",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "ee9f04ac31a802480419fe2aa3905315",
+  "ordem": 340,
+  "acordes": [
+   "Floral",
+   "Baunilha",
+   "Fresco",
+   "Cítrico",
+   "Doce",
+   "Floral amarelo",
+   "Rosa",
+   "Amêndoa",
+   "Amadeirado",
+   "Aromático"
+  ],
+  "notas": {
+   "coracao": "peônia, ylang-ylang",
+   "fundo": "baunilha, cumarina",
+   "topo": "bergamota, amêndoa amarga"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-Blush-78576.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-light-blue-100",
+  "secao": "Femininos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Light Blue",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "arquivado",
+  "foto": "69f52b215b5a4de8de7f4d918347eda7",
+  "ordem": 350,
+  "acordes": [
+   "Cítrico",
+   "Amadeirado",
+   "Fresco",
+   "Frutado",
+   "Aromático",
+   "Almiscarado",
+   "Atalcado",
+   "Verde"
+  ],
+  "notas": {
+   "coracao": "bambu, jasmim, rosa branca",
+   "fundo": "cedro, almíscar, âmbar",
+   "topo": "limão siciliano, maçã, cedro, campânula"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-485.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-light-blue-100-edp",
+  "secao": "Femininos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Light Blue",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
+  "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
+  "ordem": 360,
+  "acordes": [
+   "Cítrico",
+   "Almiscarado",
+   "Fresco",
+   "Frutado",
+   "Aromático",
+   "Âmbar",
+   "Atalcado",
+   "Amadeirado",
+   "Floral branco",
+   "Verde"
+  ],
+  "notas": {
+   "coracao": "jasmim, calêndula",
+   "fundo": "almíscar, amberwood",
+   "topo": "limão, maçã verde"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 690,
+    "vista": 650
+   }
+  ]
+ },
+ {
+  "id": "gucci-guilty-pour-femme-intense-90",
+  "secao": "Femininos",
+  "marca": "Gucci",
+  "nome": "Guilty Pour Femme Intense",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 740,
+  "parcelado": 780,
+  "status": "ativo",
+  "foto": "9ad6ad609f2d995f2a853c898fb0fc2a",
+  "ordem": 370,
+  "acordes": [
+   "Amadeirado",
+   "Frutado",
+   "Doce",
+   "Patchouli",
+   "Violeta",
+   "Atalcado",
+   "Terroso",
+   "Tuberosa",
+   "Floral amarelo",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "ameixa, tuberosa, ylang-ylang",
+   "fundo": "patchouli, baunilha, vetiver",
+   "topo": "violeta, mandora, lichia"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Gucci-Guilty-Eau-de-Parfum-Intense-Pour-Femme-71377.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 750,
+    "vista": 700
+   },
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 780,
+    "vista": 740
+   }
+  ]
+ },
+ {
+  "id": "valentino-donna-born-in-roma-intense-100",
+  "secao": "Femininos",
+  "marca": "Valentino",
+  "nome": "Donna Born in Roma Intense",
+  "tipo": "",
+  "ml": 100,
+  "vista": 800,
+  "parcelado": 850,
+  "status": "ativo",
+  "foto": "bda7f77f44b39cc3ee8a2f240fa35081",
+  "ordem": 380,
+  "acordes": [
+   "Âmbar",
+   "Baunilha",
+   "Floral branco",
+   "Atalcado",
+   "Especiado quente",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "jasmim",
+   "fundo": "benjoim",
+   "topo": "baunilha bourbon, âmbar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Valentino/Valentino-Donna-Born-In-Roma-Intense-78739.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 850,
+    "vista": 800
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-olympea-80",
+  "secao": "Femininos",
+  "marca": "Paco Rabanne",
+  "nome": "Olympéa",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 550,
+  "parcelado": 590,
+  "status": "ativo",
+  "foto": "64925b69c20fff2b87aa3ee7e6c692ac",
+  "ordem": 390,
+  "acordes": [
+   "Baunilha",
+   "Salgado",
+   "Floral branco",
+   "Amadeirado",
+   "Âmbar",
+   "Atalcado",
+   "Cítrico",
+   "Balsâmico",
+   "Marinho",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "baunilha, sal",
+   "fundo": "madeira de cashmere, âmbar cinza, sândalo",
+   "topo": "jasmim d'água, tangerina verde, flor de gengibre"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-31666.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 590,
+    "vista": 550
+   }
+  ]
+ },
+ {
+  "id": "giorgio-armani-my-way-90",
+  "secao": "Femininos",
+  "marca": "Giorgio Armani",
+  "nome": "My Way",
+  "tipo": "EDP",
+  "ml": 90,
+  "vista": 620,
+  "parcelado": 660,
+  "status": "arquivado",
+  "foto": "dac1aa2b9a9e9c93d1cd6ff32b683ff2",
+  "ordem": 400,
+  "acordes": [
+   "Floral branco",
+   "Tuberosa",
+   "Cítrico",
+   "Animálico",
+   "Baunilha"
+  ],
+  "notas": {
+   "coracao": "tuberosa, jasmim indiano",
+   "fundo": "baunilha de Madagascar, almíscar branco, cedro",
+   "topo": "flor de laranjeira, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/My-Way-62036.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-16T10:08:21.000Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 660,
+    "vista": 620
+   }
+  ]
+ },
+ {
+  "id": "britney-spears-fantasy-100",
+  "secao": "Femininos",
+  "marca": "Britney Spears",
+  "nome": "Fantasy",
+  "tipo": "",
+  "ml": 100,
+  "vista": 260,
+  "parcelado": 290,
+  "status": "ativo",
+  "foto": "8be408cc000119a6b9747457ed8a9a35",
+  "ordem": 410,
+  "acordes": [
+   "Doce",
+   "Frutado",
+   "Tropical",
+   "Fresco",
+   "Chocolate"
+  ],
+  "notas": {
+   "coracao": "chocolate branco, cupcake, orquídea, jasmim",
+   "fundo": "almíscar, raiz de íris, notas amadeiradas",
+   "topo": "kiwi, lichia, marmelo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Britney-Spears/Fantasy-600.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 290,
+    "vista": 260
+   }
+  ]
+ },
+ {
+  "id": "lancome-la-vie-est-belle-100",
+  "secao": "Femininos",
+  "marca": "Lancôme",
+  "nome": "La Vie Est Belle",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "001fc1f11e83816102ea979a7ef2b077",
+  "ordem": 420,
+  "acordes": [
+   "Doce",
+   "Baunilha",
+   "Frutado",
+   "Patchouli",
+   "Amadeirado",
+   "Floral branco",
+   "Atalcado",
+   "Íris",
+   "Terroso",
+   "Especiado quente"
+  ],
+  "notas": {
+   "coracao": "íris, jasmim, flor de laranjeira",
+   "fundo": "praliné, baunilha, patchouli, fava tonka",
+   "topo": "cassis, pera"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "burberry-goddess-100",
+  "secao": "Femininos",
+  "marca": "Burberry",
+  "nome": "Goddess",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "bff84042e3c43626ed1423060527e17e",
+  "ordem": 430,
+  "acordes": [
+   "Baunilha",
+   "Lavanda",
+   "Especiado fresco",
+   "Cacau",
+   "Doce"
+  ],
+  "notas": {
+   "coracao": "baunilha",
+   "fundo": "baunilha",
+   "topo": "baunilha, lavanda, cacau, gengibre"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Burberry/Goddess-83483.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "maison-alhambra-delilah-100",
+  "secao": "Femininos",
+  "marca": "Maison Alhambra",
+  "nome": "Delilah",
+  "tipo": "",
+  "ml": 100,
+  "vista": 200,
+  "parcelado": 220,
+  "status": "ativo",
+  "foto": "ae1a6b82108ae55a0dac9b78955603e4",
+  "ordem": 440,
+  "acordes": [
+   "Rosa",
+   "Floral",
+   "Frutado",
+   "Almiscarado",
+   "Fresco",
+   "Atalcado",
+   "Verde",
+   "Aromático",
+   "Cítrico",
+   "Tropical"
+  ],
+  "notas": {
+   "coracao": "rosa turca, peônia, lírio",
+   "fundo": "almíscar branco, cashmeran, baunilha",
+   "topo": "ruibarbo, lichia, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Maison-Alhambra/Delilah-90273.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 220,
+    "vista": 200
+   }
+  ]
+ },
+ {
+  "id": "burberry-her-elixir-100",
+  "secao": "Femininos",
+  "marca": "Burberry",
+  "nome": "Her Elixir",
+  "tipo": "Elixir de Parfum",
+  "ml": 100,
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
+  "foto": "1bb6a57a5d9fc886fcbd335a37ae9949",
+  "ordem": 450,
+  "acordes": [
+   "Frutado",
+   "Doce",
+   "Baunilha",
+   "Atalcado",
+   "Âmbar",
+   "Floral branco",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "jasmim",
+   "fundo": "baunilha, âmbar, sândalo",
+   "topo": "morango, amora"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Burberry/Burberry-Her-Elixir-de-Parfum-75968.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 680,
+    "vista": 640
+   }
+  ]
+ },
+ {
+  "id": "lattafa-lattafa-feminino-100",
+  "secao": "Femininos",
+  "marca": "Lattafa",
+  "nome": "Lattafa Feminino",
+  "tipo": "",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "status": "ativo",
+  "foto": "953e1f939c2d45b7e8a9253ba5ef25bc",
+  "ordem": 460,
+  "acordes": [
+   "Floral branco",
+   "Frutado",
+   "Tuberosa",
+   "Doce",
+   "Amadeirado",
+   "Animálico"
+  ],
+  "notas": {
+   "coracao": "tuberosa, jasmim, gardênia, ylang-ylang, rosa, madressilva, peônia",
+   "fundo": "baunilha, almíscar branco, sândalo, ambroxan",
+   "topo": "frutas, lírio, romã, aldeídos"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Fakhar-Rose-70466.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 280,
+    "vista": 250
+   }
+  ]
+ },
+ {
+  "id": "mugler-angel-200",
+  "secao": "Femininos",
+  "marca": "Mugler",
+  "nome": "Angel",
+  "tipo": "Hidratante corporal",
+  "ml": 200,
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
+  "foto": "883ff5f899070cc98ffa615668df2ee2",
+  "ordem": 470,
+  "acordes": [
+   "Doce",
+   "Patchouli",
+   "Especiado quente",
+   "Frutado",
+   "Caramelo",
+   "Baunilha",
+   "Amadeirado",
+   "Mel",
+   "Atalcado",
+   "Chocolate"
+  ],
+  "notas": {
+   "coracao": "mel, frutas vermelhas, amora, ameixa, damasco, jasmim, pêssego, noz-moscada, orquídea, rosa",
+   "fundo": "patchouli, chocolate, caramelo, baunilha, fava tonka, âmbar, almíscar, sândalo",
+   "topo": "algodão-doce, coco, cassis, melão, jasmim, bergamota, abacaxi, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
+  "perfil_em": "2026-10-15",
+  "criado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-15T17:36:14Z",
+  "historico": [
+   {
+    "em": "2026-10-15T17:36:14Z",
+    "parcelado": 540,
+    "vista": 500
+   }
+  ]
+ },
+ {
+  "id": "afnan-mystique-bouquet-80",
+  "secao": "Femininos",
+  "marca": "Afnan",
+  "nome": "Mystique Bouquet",
+  "tipo": "EDP",
+  "ml": 80,
+  "vista": 320,
+  "parcelado": 360,
+  "status": "ativo",
+  "foto": "cdcaac0eab37de54bda7499fb21f5f80",
+  "ordem": 480,
+  "acordes": [
+   "Cítrico",
+   "Almiscarado",
+   "Frutado",
+   "Atalcado",
+   "Doce",
+   "Âmbar",
+   "Floral",
+   "Floral branco",
+   "Fresco",
+   "Terroso"
+  ],
+  "notas": {
+   "coracao": "flor de laranjeira, peônia, vetiver, mahonia",
+   "fundo": "almíscar, ambroxan, musgo de carvalho, baunilha",
+   "topo": "pêssego branco, tangerina, bergamota, lichia"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Mystique-Bouquet-92434.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:08:21.000Z",
+  "atualizado_em": "2026-10-16T10:40:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:08:21.000Z",
+    "parcelado": 360,
+    "vista": 320
+   }
+  ]
+ },
+ {
+  "id": "lancome-la-vie-est-belle-l-elixir-very-cherry-100",
+  "secao": "Femininos",
+  "marca": "Lancôme",
+  "nome": "La Vie Est Belle L'Elixir Very Cherry",
+  "tipo": "",
+  "ml": 100,
+  "vista": 780,
+  "parcelado": 830,
+  "status": "ativo",
+  "foto": "0ef22f1b57679104aed41c73d4e5a163",
+  "ordem": 490,
+  "acordes": [
+   "Cereja",
+   "Ozônico",
+   "Oud",
+   "Aquático",
+   "Verde"
+  ],
+  "notas": {
+   "coracao": "folha de violeta",
+   "fundo": "oud",
+   "topo": "cereja negra"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Elixir-Very-Cherry-133579.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 830,
+    "vista": 780
+   }
+  ]
+ },
+ {
+  "id": "versace-dylan-turquoise-100",
+  "secao": "Femininos",
+  "marca": "Versace",
+  "nome": "Dylan Turquoise",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
+  "foto": "dd20e66f4f48afee832f86f772aa0611",
+  "ordem": 500,
+  "acordes": [
+   "Cítrico",
+   "Amadeirado",
+   "Frutado",
+   "Almiscarado",
+   "Especiado suave",
+   "Aromático",
+   "Floral",
+   "Fresco",
+   "Atalcado",
+   "Tropical"
+  ],
+  "notas": {
+   "coracao": "goiaba, frésia, cassis, jasmim",
+   "fundo": "almíscar, clearwood, cedro",
+   "topo": "limão, tangerina, pimenta rosa"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Versace/Versace-Pour-Femme-Dylan-Turquoise-62966.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 640,
+    "vista": 600
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-good-girl-jasmine-absolute-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "Good Girl Jasmine Absolute",
+  "tipo": "",
+  "ml": 80,
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
+  "foto": "4e8f8dbda46995c9107603d2a8a72087",
+  "ordem": 510,
+  "acordes": [
+   "Doce",
+   "Floral branco",
+   "Amêndoa",
+   "Frutado",
+   "Baunilha",
+   "Caramelo",
+   "Âmbar",
+   "Amendoado",
+   "Floral"
+  ],
+  "notas": {
+   "coracao": "jasmim, amêndoa amarga",
+   "fundo": "toffee, fava tonka",
+   "topo": "cassis, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-Jasmine-Absolute-120291.html",
+  "perfil_em": "2026-10-16",
+  "criado_em": "2026-10-16T10:44:01.000Z",
+  "atualizado_em": "2026-10-16T10:50:00.000Z",
+  "historico": [
+   {
+    "em": "2026-10-16T10:44:01.000Z",
+    "parcelado": 750,
+    "vista": 700
+   }
+  ]
+ }
+]
