@@ -295,7 +295,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   async function gh(path, opts = {}) {
     const r = await fetch(path.startsWith('http') ? path : API + path, {
       ...opts, cache: 'no-store',
-      headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + S.chave, 'X-GitHub-Api-Version': '2022-11-28', ...(opts.body ? { 'Content-Type': 'application/json' } : {}), ...(opts.headers || {}) },
+      headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + S.chave, ...(opts.body ? { 'Content-Type': 'application/json' } : {}), ...(opts.headers || {}) },
     });
     if (!r.ok) { let m = ''; try { m = (await r.json()).message || ''; } catch {} throw new ErroGH(r.status, m); }
     if (r.status === 204) return null;
