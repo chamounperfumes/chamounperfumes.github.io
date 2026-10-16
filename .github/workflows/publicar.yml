@@ -1,0 +1,41 @@
+name: Publicar catálogo
+
+# Toda vez que o painel (ou o Claude) grava em dados/ ou img/, este robô
+# monta o bloco de dados do index.html e o catalogo.pdf e publica no site.
+on:
+  push:
+    branches: [main]
+    paths: ['dados/**', 'img/**', 'ferramentas/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependências
+        run: pip install reportlab pillow pypdf
+      - name: Monta a tabela e o PDF
+        run: |
+          HOJE=$(TZ=America/Sao_Paulo date +%d/%m/%Y)
+          python3 -I ferramentas/montar_dados.py dados/perfumes.json dados/config.json "$HOJE"
+          python3 ferramentas/gerar_pdf.py
+      - name: Publica
+        run: |
+          git config user.name "Chamoun Perfumes"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html catalogo.pdf
+          if git diff --cached --quiet; then echo "Nada mudou."; exit 0; fi
+          git commit -m "Atualiza tabela de preços ($(TZ=America/Sao_Paulo date +%d/%m/%Y))"
+          for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1
