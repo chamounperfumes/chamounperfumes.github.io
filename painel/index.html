@@ -195,7 +195,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     <div class="tools">
       <div class="seg" role="group" aria-label="Situação">
         <button type="button" id="tab-ativo" aria-pressed="true">No catálogo <span class="count num" id="c-ativo">0</span></button>
-        <button type="button" id="tab-arquivado" aria-pressed="false">Já trabalhei <span class="count num" id="c-arquivado">0</span></button>
+        <button type="button" id="tab-arquivado" aria-pressed="false">Inativos <span class="count num" id="c-arquivado">0</span></button>
       </div>
       <div class="filters">
         <div class="chips" id="chips" role="group" aria-label="Seção"></div>
@@ -245,7 +245,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       <div class="fld"><label for="f-vista">Preço à vista (R$)</label><input id="f-vista" type="number" min="0" step="0.01" inputmode="decimal"></div>
       <div class="fld"><label for="f-parcelado">Preço a prazo (R$)</label><input id="f-parcelado" type="number" min="0" step="0.01" inputmode="decimal"></div>
       <div class="fld"><label for="f-secao">Seção</label><select id="f-secao"></select></div>
-      <div class="fld"><label for="f-status">Situação</label><select id="f-status"><option value="ativo">No catálogo</option><option value="arquivado">Já trabalhei (fora do catálogo)</option></select></div>
+      <div class="fld"><label for="f-status">Situação</label><select id="f-status"><option value="ativo">No catálogo</option><option value="arquivado">Inativo (fora do catálogo)</option></select></div>
     </div>
     <div class="calc" id="ed-calc"></div>
     <div class="perfil-ed">
@@ -260,7 +260,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     </div>
     <div id="ed-hist-wrap" hidden><div class="eyebrow" style="color:var(--muted);margin-bottom:6px">Histórico de preços</div><ul class="hist" id="ed-hist"></ul></div>
     <div class="confirm" id="ed-confirm" hidden>
-      <span>Excluir de vez? Para guardar o histórico, prefira “Já trabalhei”.</span>
+      <span>Excluir de vez? Para guardar o histórico, prefira deixar como inativo.</span>
       <span style="display:flex;gap:8px"><button class="btn btn-line" type="button" id="ed-del-no">Manter</button><button class="btn btn-danger" type="button" id="ed-del-yes">Excluir</button></span>
     </div>
     <div class="sheet-foot">
@@ -506,7 +506,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const q = norm(S.q).split(/\s+/).filter(Boolean);
     const itens = ordenar(todos.filter((p) => (p.status || 'ativo') === S.status && (S.secao === 'Todas' || p.secao === S.secao) && q.every((w) => norm([p.marca, p.nome, p.tipo, p.ml + 'ml', p.secao].join(' ')).includes(w))));
     list.replaceChildren();
-    if (!itens.length) { list.append(el('div', { class: 'notice' }, S.q ? 'Nenhum perfume encontrado para “' + S.q + '”.' : (S.status === 'arquivado' ? 'Nenhum perfume em “Já trabalhei”.' : 'Nenhum perfume nesta seção.'))); return; }
+    if (!itens.length) { list.append(el('div', { class: 'notice' }, S.q ? 'Nenhum perfume encontrado para “' + S.q + '”.' : (S.status === 'arquivado' ? 'Nenhum perfume inativo.' : 'Nenhum perfume nesta seção.'))); return; }
     const grupos = new Map(); for (const p of itens) { if (!grupos.has(p.secao)) grupos.set(p.secao, []); grupos.get(p.secao).push(p); }
     for (const [sec, ps] of grupos) {
       list.append(el('div', { class: 'section-head' }, el('h2', { text: sec || 'Sem seção' }), el('span', { class: 'num', text: ps.length + (ps.length === 1 ? ' perfume' : ' perfumes') })));
@@ -533,7 +533,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     };
     const acts = el('div', { class: 'acts' },
       el('button', { type: 'button', class: 'btn-text', onclick: () => abrirEditor(p.id) }, 'Editar'),
-      el('button', { type: 'button', class: 'btn-text', onclick: () => { addPend({ op: 'upd', id: p.id, campos: { status: p.status === 'arquivado' ? 'ativo' : 'arquivado' } }); toast(p.status === 'arquivado' ? label(p) + ' volta ao catálogo ao publicar.' : label(p) + ' sai do catálogo ao publicar (fica em “Já trabalhei”).'); } }, p.status === 'arquivado' ? 'Voltar ao catálogo' : 'Tirar'));
+      el('button', { type: 'button', class: 'btn-text', onclick: () => { addPend({ op: 'upd', id: p.id, campos: { status: p.status === 'arquivado' ? 'ativo' : 'arquivado' } }); toast(p.status === 'arquivado' ? label(p) + ' volta ao catálogo ao publicar.' : label(p) + ' sai do catálogo ao publicar (fica em “Inativos”).'); } }, p.status === 'arquivado' ? 'Voltar ao catálogo' : 'Tirar'));
     return el('article', { class: 'row' + (pend ? ' pend' : '') }, thumb, info, el('div', { class: 'pgroup' }, field('vista', 'À vista'), field('parcelado', 'A prazo'), inst), acts);
   }
   function tudo() { render(); renderBar(); renderHeader(); }
