@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-19.3">
+<meta name="painel-versao" content="2026-10-19.4">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -158,7 +158,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
 .acessos .check{font-size:12.5px}
 /* Catálogo | Lista de espera */
 .views{display:flex;width:max-content;max-width:100%;margin-bottom:16px}
-.views button{padding:9px 18px;min-height:42px;font-size:14px}
+.views button{padding:9px 18px;min-height:42px;font-size:14px;position:relative}
+.views .alerta{position:absolute;top:-6px;right:-2px;margin:0;box-shadow:0 0 0 2px var(--chip)}
 @media (max-width:520px){.views{width:100%}.views button{flex:1}}
 .esp-dot{border:0;cursor:pointer;font-family:inherit;color:var(--ok);background:#E3F1E8}
 /* Lista de espera */
@@ -185,6 +186,29 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
 .esp-aviso .passos{margin:0;padding-left:22px;line-height:1.7}
 .esp-aviso a{color:var(--ink);font-weight:700}
 .sheet-foot .right{margin-left:auto}
+.pedido.pz-verde{background:#F1F9F4;box-shadow:inset 4px 0 0 #1F7A4D}
+.pedido.pz-amarelo{background:#FFF8E1;box-shadow:inset 4px 0 0 #D9A400}
+.pedido.pz-vermelho{background:#FDEEEC;box-shadow:inset 4px 0 0 #C0392B}
+.pz-linha{grid-column:1/-1;margin-top:-6px}
+#e-prazo-info{align-self:flex-start}
+.pz-tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+.pz-verde .pz-tag,.pz-tag.pz-verde{background:#DCEFE3;color:#17603C}
+.pz-amarelo .pz-tag,.pz-tag.pz-amarelo{background:#FBE7A6;color:#6E5200}
+.pz-vermelho .pz-tag,.pz-tag.pz-vermelho{background:#F8D2CD;color:#9A2618}
+.pz-nada{font-size:12.5px;color:var(--muted);margin-top:4px}
+.esp-dot.pz-a{color:#6E5200;background:#FBE7A6}
+.esp-dot.pz-v{color:#9A2618;background:#F8D2CD}
+.alerta{display:inline-block;margin-left:6px;min-width:20px;padding:1px 6px;border-radius:999px;background:#C0392B;color:#fff;font-size:11.5px;font-weight:800;text-align:center}
+.filtros-pz{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.filtros-pz button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 13px;min-height:38px;font-weight:700;font-size:13px;cursor:pointer;color:var(--muted)}
+.filtros-pz button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.filtros-pz .n-v{color:#C0392B}.filtros-pz .n-a{color:#9A7400}
+.filtros-pz button[aria-pressed="true"] span{color:#fff}
+.prazo-linha{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.prazo-linha input{flex:1 1 170px;width:auto}
+.fld input[type=date]{-webkit-appearance:none;appearance:none;text-align:left;background:#fff;color:var(--ink)}
+.atalhos{display:flex;gap:6px;flex-wrap:wrap}
+.atalhos button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 11px;min-height:36px;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink)}
 .fld textarea{min-height:84px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;width:100%;font:inherit;font-size:16px;resize:vertical}
 .escolhido{display:flex;align-items:center;gap:10px;background:var(--ground);border-radius:12px;padding:8px 6px 8px 8px}
 .escolhido .thumb{width:44px;height:44px;flex:none;border-radius:10px}
@@ -227,7 +251,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   <div id="app" hidden>
     <div class="seg views" role="group" aria-label="Área do painel">
       <button type="button" id="v-cat" aria-pressed="true">Catálogo</button>
-      <button type="button" id="v-esp" aria-pressed="false">Lista de espera <span class="count num" id="c-esp"></span></button>
+      <button type="button" id="v-esp" aria-pressed="false">Lista de espera <span class="count num" id="c-esp"></span><span class="alerta num" id="c-esp-alerta" hidden></span></button>
     </div>
     <div id="view-cat">
     <section class="card acessos" aria-labelledby="ac-t">
@@ -349,6 +373,14 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     <div class="grid2">
       <div class="fld"><label for="e-cliente">Nome do cliente</label><input id="e-cliente" autocomplete="off" autocapitalize="words"></div>
       <div class="fld"><label for="e-tel">Telefone (WhatsApp)</label><input id="e-tel" type="tel" inputmode="tel" autocomplete="off" placeholder="(11) 98765-4321"></div>
+    </div>
+    <div class="fld">
+      <label for="e-prazo">Prazo para avisar o cliente (opcional)</label>
+      <div class="prazo-linha">
+        <input id="e-prazo" type="date">
+        <div class="atalhos" id="e-atalhos"><button type="button" data-d="7">7 dias</button><button type="button" data-d="15">15 dias</button><button type="button" data-d="30">30 dias</button><button type="button" data-d="">Sem prazo</button></div>
+      </div>
+      <span id="e-prazo-info"></span>
     </div>
     <div class="fld"><label for="e-obs">Observação</label><textarea id="e-obs" rows="3" placeholder="Ex.: quer o de 200 ml, já deu sinal, avisar à tarde…"></textarea></div>
     <div class="confirm" id="e-confirm" hidden>
@@ -609,7 +641,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const src = fotoSrc(p);
     const thumb = el('div', { class: 'thumb' }, src ? el('img', { src, alt: '', loading: 'lazy' }) : el('span', { class: 'nofoto', text: 'sem foto' }));
     const info = el('div', { class: 'info' }, el('div', { class: 'mk', text: p.marca || '' }), el('div', { class: 'nm' }, p.nome || '', pend ? el('span', { class: 'dot', text: 'não publicado' }) : null,
-        S.espCont.get(p.id) ? el('button', { type: 'button', class: 'dot esp-dot', title: 'Ver na lista de espera', onclick: () => { S.esp.aba = 'aguardando'; S.esp.q = label(p); $('#esp-q').value = label(p); mostrarVista('esp'); } }, S.espCont.get(p.id) + ' na espera') : null),
+        S.espCont.get(p.id) ? el('button', { type: 'button', class: 'dot esp-dot' + ({ vermelho: ' pz-v', amarelo: ' pz-a' }[S.espPior.get(p.id)] || ''), title: 'Ver na lista de espera', onclick: () => { S.esp.aba = 'aguardando'; S.esp.q = label(p); $('#esp-q').value = label(p); mostrarVista('esp'); } }, S.espCont.get(p.id) + ' na espera') : null),
       el('div', { class: 'mt', text: [p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · ') }));
     const inst = el('div', { class: 'inst num' }, nParc() + 'x de', el('strong', { text: 'R$ ' + money(parcela(p.parcelado || 0)) }));
     const field = (key, lbl) => {
@@ -854,10 +886,32 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       return false;
     } finally { S.esp.salvando = false; }
   }
+  /* prazo para avisar o cliente: vermelho = passou, amarelo = faltam 7 dias ou menos (inclui hoje), verde = mais de 7 dias */
+  const hojeSP = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+  const dataValida = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || '');
+  function diasAte(iso) { const [a, m, d] = iso.split('-').map(Number), [ha, hm, hd] = hojeSP().split('-').map(Number); return Math.round((Date.UTC(a, m - 1, d) - Date.UTC(ha, hm - 1, hd)) / 864e5); }
+  function somarDias(n) { const [a, m, d] = hojeSP().split('-').map(Number); return new Date(Date.UTC(a, m - 1, d + n)).toISOString().slice(0, 10); }
+  function dataPrazo(iso) { const [a, m, d] = iso.split('-'); return d + '/' + m + (a === hojeSP().slice(0, 4) ? '' : '/' + a.slice(2)); }
+  function prazoInfo(prazo) {
+    if (!dataValida(prazo)) return null;
+    const n = diasAte(prazo), dt = ' · prazo ' + dataPrazo(prazo);
+    if (n < 0) return { cor: 'vermelho', dias: n, texto: 'Atrasado há ' + (n === -1 ? '1 dia' : -n + ' dias') + dt };
+    if (n === 0) return { cor: 'amarelo', dias: 0, texto: 'Vence hoje' + dt };
+    if (n <= 7) return { cor: 'amarelo', dias: n, texto: (n === 1 ? 'Vence amanhã' : 'Faltam ' + n + ' dias') + dt };
+    return { cor: 'verde', dias: n, texto: 'Faltam ' + n + ' dias' + dt };
+  }
+  const PESO = { vermelho: 3, amarelo: 2, verde: 1 };
   function espContagens() {
-    const m = new Map(); if (S.esp.estado !== 'ok') return m;
-    for (const x of S.esp.lista) if (x.status !== 'concluido' && x.perfume_id) m.set(x.perfume_id, (m.get(x.perfume_id) || 0) + 1);
+    const m = new Map(); S.espPior = new Map(); if (S.esp.estado !== 'ok') return m;
+    for (const x of S.esp.lista) if (x.status !== 'concluido' && x.perfume_id) {
+      m.set(x.perfume_id, (m.get(x.perfume_id) || 0) + 1);
+      const pz = prazoInfo(x.prazo); if (pz && PESO[pz.cor] > (PESO[S.espPior.get(x.perfume_id)] || 0)) S.espPior.set(x.perfume_id, pz.cor);
+    }
     return m;
+  }
+  function editorPrazoInfo() {
+    const pz = prazoInfo($('#e-prazo').value); const info = $('#e-prazo-info');
+    info.className = pz ? 'pz-tag pz-' + pz.cor : 'small'; info.textContent = pz ? pz.texto : 'Sem prazo: o pedido fica sem cor.';
   }
   function thumbDe(p, txt) { const src = p ? fotoSrc(p) : ''; return el('div', { class: 'thumb' }, src ? el('img', { src, alt: '', loading: 'lazy' }) : el('span', { class: 'nofoto', text: txt || 'sem foto' })); }
   function espAviso() {
@@ -887,8 +941,10 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const btnWa = wa
       ? el('a', { class: 'btn btn-wa', href: 'https://wa.me/' + wa, target: '_blank', rel: 'noopener', 'aria-label': 'Abrir a conversa com ' + (x.cliente || 'o cliente') + ' no WhatsApp' }, svgIcone(IC_CONVERSA), 'WhatsApp')
       : el('span', { class: 'small', text: 'Telefone inválido' });
-    const quem = el('div', {}, el('div', { class: 'cli', text: x.cliente || 'Cliente' }), el('div', { class: 'tel num', text: [telBonito(x.telefone), 'desde ' + dataCurta(x.criado_em)].filter(Boolean).join(' · ') }));
-    return el('article', { class: 'pedido' }, quem, btnWa, x.obs ? el('div', { class: 'obs', text: x.obs }) : null,
+    const pz = concl ? null : prazoInfo(x.prazo);
+    const quem = el('div', {}, el('div', { class: 'cli', text: x.cliente || 'Cliente' }), el('div', { class: 'tel num', text: [telBonito(x.telefone), 'desde ' + dataCurta(x.criado_em)].filter(Boolean).join(' · ') }),
+      !pz && concl && dataValida(x.prazo) ? el('div', { class: 'pz-nada num', text: 'Prazo era ' + dataPrazo(x.prazo) }) : null);
+    return el('article', { class: 'pedido' + (pz ? ' pz-' + pz.cor : '') }, quem, btnWa, pz ? el('div', { class: 'pz-linha' }, el('span', { class: 'pz-tag num', text: pz.texto })) : null, x.obs ? el('div', { class: 'obs', text: x.obs }) : null,
       el('div', { class: 'pacts' },
         concl && x.concluido_em ? el('span', { class: 'small', text: 'Concluído em ' + dataCurta(x.concluido_em) }) : null,
         el('button', { type: 'button', class: 'btn-text', onclick: () => espAbrirEditor(x.id) }, 'Editar'),
@@ -898,6 +954,9 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const box = $('#esp-list'); const pronto = S.esp.estado === 'ok';
     const ag = S.esp.lista.filter((x) => x.status !== 'concluido'), ok = S.esp.lista.filter((x) => x.status === 'concluido');
     $('#c-esp').textContent = pronto && ag.length ? String(ag.length) : '';
+    const infos = new Map(ag.map((x) => [x.id, prazoInfo(x.prazo)]));
+    const nV = ag.filter((x) => (infos.get(x.id) || {}).cor === 'vermelho').length, nA = ag.filter((x) => (infos.get(x.id) || {}).cor === 'amarelo').length;
+    const al = $('#c-esp-alerta'); al.hidden = !(pronto && nV); al.textContent = nV ? String(nV) : ''; al.title = nV === 1 ? '1 pedido atrasado' : nV + ' pedidos atrasados';
     $('#c-esp-ag').textContent = ag.length; $('#c-esp-ok').textContent = ok.length;
     $('#esp-tab-ag').setAttribute('aria-pressed', String(S.esp.aba !== 'concluido')); $('#esp-tab-ok').setAttribute('aria-pressed', String(S.esp.aba === 'concluido'));
     $('#esp-tools').hidden = !pronto; box.replaceChildren();
@@ -905,15 +964,24 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const byId = new Map(atual().map((p) => [p.id, p]));
     const nomeP = (x) => { const p = byId.get(x.perfume_id); return p ? label(p) : (x.perfume_txt || ''); };
     const q = norm(S.esp.q).split(/\s+/).filter(Boolean);
-    const itens = (S.esp.aba === 'concluido' ? ok : ag).filter((x) => q.every((w) => norm([x.cliente, x.telefone, soDigitos(x.telefone), x.obs, nomeP(x)].join(' ')).includes(w)));
+    const fpz = S.esp.aba === 'concluido' ? 'todos' : (S.esp.filtro || 'todos');
+    const passa = (x) => fpz === 'todos' || (infos.get(x.id) || {}).cor === (fpz === 'atrasados' ? 'vermelho' : 'amarelo');
+    const itens = (S.esp.aba === 'concluido' ? ok : ag).filter((x) => passa(x) && q.every((w) => norm([x.cliente, x.telefone, soDigitos(x.telefone), x.obs, nomeP(x)].join(' ')).includes(w)));
+    if (S.esp.aba !== 'concluido' && (nV || nA || fpz !== 'todos')) {
+      const bt = (k, rot, n, cls) => el('button', { type: 'button', 'aria-pressed': String(fpz === k), onclick: () => { S.esp.filtro = k; espRender(); } }, rot, n !== null ? el('span', { class: cls || '', text: ' ' + n }) : null);
+      box.append(el('div', { class: 'filtros-pz', role: 'group', 'aria-label': 'Filtrar por prazo' }, bt('todos', 'Todos', null), bt('atrasados', 'Atrasados', nV, 'n-v'), bt('semana', 'Próximos 7 dias', nA, 'n-a')));
+    }
     if (!itens.length) {
-      box.append(el('div', { class: 'notice' }, S.esp.q ? 'Nenhum pedido encontrado para “' + S.esp.q + '”.' : (S.esp.aba === 'concluido' ? 'Nenhum pedido concluído ainda.' : 'Ninguém na lista de espera. Toque em “Novo pedido” para adicionar um cliente.')));
+      box.append(el('div', { class: 'notice' }, S.esp.q ? 'Nenhum pedido encontrado para “' + S.esp.q + '”.' : fpz !== 'todos' ? (fpz === 'atrasados' ? 'Nenhum pedido atrasado.' : 'Nenhum pedido vencendo nos próximos 7 dias.') : (S.esp.aba === 'concluido' ? 'Nenhum pedido concluído ainda.' : 'Ninguém na lista de espera. Toque em “Novo pedido” para adicionar um cliente.')));
       return;
     }
-    // Agrupa por perfume; dentro de cada perfume, por ordem de chegada (concluídos: mais recentes primeiro).
-    const ord = S.esp.aba === 'concluido' ? (a, b) => String(b.concluido_em || '').localeCompare(String(a.concluido_em || '')) : (a, b) => String(a.criado_em || '').localeCompare(String(b.criado_em || ''));
+    // Agrupa por perfume. Aguardando: o prazo mais apertado primeiro (sem prazo vai depois, por ordem de chegada).
+    // Concluídos: os mais recentes primeiro.
+    const urg = (x) => { const pz = infos.get(x.id); return pz ? pz.dias : Infinity; };
+    const ord = S.esp.aba === 'concluido' ? (a, b) => String(b.concluido_em || '').localeCompare(String(a.concluido_em || ''))
+      : (a, b) => (urg(a) - urg(b)) || String(a.criado_em || '').localeCompare(String(b.criado_em || ''));
     const grupos = new Map();
-    for (const x of itens.slice().sort(ord)) { const k = x.perfume_id || 'txt:' + norm(x.perfume_txt); if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(x); }
+    for (const x of itens.slice().sort((a, b) => { const r = ord(a, b); return isNaN(r) ? String(a.criado_em || '').localeCompare(String(b.criado_em || '')) : r; })) { const k = x.perfume_id || 'txt:' + norm(x.perfume_txt); if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(x); }
     for (const xs of grupos.values()) {
       const p = byId.get(xs[0].perfume_id);
       const tag = p ? el('span', { class: 'esp-tag' + (p.status === 'arquivado' ? '' : ' on'), text: p.status === 'arquivado' ? 'Inativo' : 'No catálogo' }) : el('span', { class: 'esp-tag', text: 'Fora da tabela' });
@@ -934,6 +1002,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     S.espEd = { id: x ? x.id : null, perfume: x ? { id: x.perfume_id || '', txt: x.perfume_txt || '' } : (perfume || null) };
     $('#e-title').textContent = x ? 'Editar pedido' : 'Novo pedido';
     $('#e-cliente').value = x ? x.cliente || '' : ''; $('#e-tel').value = x ? telBonito(x.telefone) : ''; $('#e-obs').value = x ? x.obs || '' : '';
+    $('#e-prazo').value = x && dataValida(x.prazo) ? x.prazo : ''; editorPrazoInfo();
     $('#e-busca').value = ''; $('#e-del').hidden = !x; $('#e-confirm').hidden = true;
     $('#e-save').disabled = false; $('#e-save').textContent = 'Salvar';
     espEscolhido(); $('#esp-editor').hidden = false;
@@ -963,7 +1032,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const falta = []; if (!pf) falta.push('perfume'); if (!cliente) falta.push('nome do cliente'); if (!telefone) falta.push('telefone');
     if (falta.length) { toast('Falta preencher: ' + falta.join(', ') + '.'); return; }
     if (!waNumero(telefone)) { toast('Confira o telefone: coloque o DDD, por exemplo (11) 98765-4321.'); return; }
-    const campos = { perfume_id: pf.id, perfume_txt: pf.txt, cliente, telefone: telBonito(telefone), obs };
+    const prazo = $('#e-prazo').value; if (prazo && !dataValida(prazo)) { toast('Confira a data do prazo.'); return; }
+    const campos = { perfume_id: pf.id, perfume_txt: pf.txt, cliente, telefone: telBonito(telefone), obs, prazo: prazo || '' };
     const b = $('#e-save'); b.disabled = true; b.textContent = 'Salvando…';
     const ok = ed.id ? await espSalvar({ op: 'upd', id: ed.id, campos }, 'pedido editado') : await espSalvar({ op: 'add', doc: { id: hex(8), status: 'aguardando', ...campos } }, 'novo pedido');
     b.disabled = false; b.textContent = 'Salvar';
@@ -1011,9 +1081,10 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const quando = (iso) => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); };
     const byId = new Map(S.base.map((p) => [p.id, p]));
     const ped = S.esp.lista.slice().sort((a, b) => ((a.status === 'concluido') - (b.status === 'concluido')) || String(a.criado_em || '').localeCompare(String(b.criado_em || '')));
-    const espera = [['Situação', 'Perfume', 'Cliente', 'Telefone', 'Observação', 'Pedido em', 'Concluído em', 'Link do WhatsApp']]
-      .concat(ped.map((x) => { const p = byId.get(x.perfume_id); const wa = waNumero(x.telefone);
-        return [x.status === 'concluido' ? 'Concluído' : 'Aguardando', p ? label(p) : (x.perfume_txt || ''), x.cliente || '', telBonito(x.telefone), x.obs || '', quando(x.criado_em), x.status === 'concluido' ? quando(x.concluido_em) : '', wa ? 'https://wa.me/' + wa : '']; }));
+    const espera = [['Situação', 'Perfume', 'Cliente', 'Telefone', 'Observação', 'Prazo', 'Situação do prazo', 'Pedido em', 'Concluído em', 'Link do WhatsApp']]
+      .concat(ped.map((x) => { const p = byId.get(x.perfume_id); const wa = waNumero(x.telefone); const concl = x.status === 'concluido'; const pz = concl ? null : prazoInfo(x.prazo);
+        return [concl ? 'Concluído' : 'Aguardando', p ? label(p) : (x.perfume_txt || ''), x.cliente || '', telBonito(x.telefone), x.obs || '',
+          dataValida(x.prazo) ? x.prazo.split('-').reverse().join('/') : '', pz ? pz.texto.split(' · ')[0] : '', quando(x.criado_em), concl ? quando(x.concluido_em) : '', wa ? 'https://wa.me/' + wa : '']; }));
     const cont = espContagens();
     const cat = [['Seção', 'Marca', 'Perfume', 'ml', 'Concentração', 'Situação', 'À vista (R$)', 'A prazo (R$)', nParc() + 'x de (R$)', 'Clientes na espera']]
       .concat(ordenar(S.base.slice()).map((p) => [p.secao || '', p.marca || '', p.nome || '', Number(p.ml) || '', p.tipo || '', p.status === 'arquivado' ? 'Inativo' : 'No catálogo',
@@ -1025,7 +1096,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       { nome: 'xl/workbook.xml', texto: X + '<workbook xmlns="' + NS + 'spreadsheetml/2006/main" xmlns:r="' + NS + 'officeDocument/2006/relationships"><sheets><sheet name="Lista de espera" sheetId="1" r:id="rId1"/><sheet name="Catálogo" sheetId="2" r:id="rId2"/></sheets></workbook>' },
       { nome: 'xl/_rels/workbook.xml.rels', texto: X + '<Relationships xmlns="' + NS + 'package/2006/relationships"><Relationship Id="rId1" Type="' + NS + 'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="' + NS + 'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="' + NS + 'officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>' },
       { nome: 'xl/styles.xml', texto: X + '<styleSheet xmlns="' + NS + 'spreadsheetml/2006/main"><numFmts count="1"><numFmt numFmtId="164" formatCode="#,##0.00"/></numFmts><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/><xf numFmtId="164" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>' },
-      { nome: 'xl/worksheets/sheet1.xml', texto: abaXml(espera, [13, 34, 24, 18, 44, 17, 17, 30], []) },
+      { nome: 'xl/worksheets/sheet1.xml', texto: abaXml(espera, [13, 34, 24, 18, 44, 12, 20, 17, 17, 30], []) },
       { nome: 'xl/worksheets/sheet2.xml', texto: abaXml(cat, [12, 20, 34, 7, 16, 13, 13, 13, 13, 12], [6, 7, 8]) },
     ], 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
   }
@@ -1102,6 +1173,9 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   $('#esp-q').addEventListener('input', (e) => { S.esp.q = e.target.value; espRender(); });
   $('#esp-novo').onclick = () => espAbrirEditor(null);
   $('#esp-baixar').onclick = baixarPlanilha; mostrarUltimaCopia();
+  $('#e-prazo').addEventListener('input', editorPrazoInfo); $('#e-prazo').addEventListener('change', editorPrazoInfo);
+  $('#e-atalhos').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; $('#e-prazo').value = b.dataset.d ? somarDias(Number(b.dataset.d)) : ''; editorPrazoInfo(); });
+  $('#esp-tab-ag').addEventListener('click', () => { S.esp.filtro = 'todos'; espRender(); });
   $('#e-busca').addEventListener('input', espOpcoes);
   $('#e-busca').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); const b = $('#e-opcoes .opcao'); if (b) b.click(); } });
   $('#e-cancel').onclick = espFecharEditor; $('#e-save').onclick = espSalvarEditor;
@@ -1132,7 +1206,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, '1'); } catch {}   // uma tentativa por versão
     location.replace(location.pathname + '?v=' + encodeURIComponent(versaoNova));
   }
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checarVersao(); });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') { checarVersao(); if (S.esp.estado === 'ok') { espRender(); render(); } } });   // virou o dia: atualiza as cores
   window.addEventListener('pageshow', (e) => { if (e.persisted) checarVersao(); });
   checarVersao();
 
