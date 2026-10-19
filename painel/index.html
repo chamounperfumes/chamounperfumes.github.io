@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-19.2">
+<meta name="painel-versao" content="2026-10-19.3">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -270,11 +270,12 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
             <label for="esp-q" style="position:absolute;left:-9999px">Buscar na lista de espera</label>
             <input id="esp-q" type="search" placeholder="Buscar cliente, telefone ou perfume" autocomplete="off">
           </div>
+          <button class="btn btn-line" id="esp-baixar" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>Baixar planilha</button>
           <button class="btn btn-ink" id="esp-novo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Novo pedido</button>
         </div>
       </div>
       <div id="esp-list" style="margin-top:16px"></div>
-      <p class="foot">A lista de espera é privada: fica num arquivo do GitHub separado do site e não aparece para os clientes.</p>
+      <p class="foot">A lista de espera é privada: fica num arquivo do GitHub separado do site e não aparece para os clientes.<br><span id="esp-ultima"></span></p>
     </div>
   </div>
   <div class="notice" id="carregando" hidden>Carregando os perfumes…</div>
@@ -968,6 +969,86 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     b.disabled = false; b.textContent = 'Salvar';
     if (ok) { espFecharEditor(); toast(ed.id ? 'Pedido atualizado.' : cliente + ' entrou na lista de espera.'); }
   }
+  /* ---------- cópia em planilha (.xlsx feito aqui mesmo, sem biblioteca externa) ----------
+     Aba "Lista de espera" (todos os pedidos) + aba "Catálogo" (o que está no site). No celular abre o menu
+     de compartilhar (Salvar em Arquivos, iCloud, Drive…); no computador baixa o arquivo. */
+  const K_COPIA = 'chamoun-painel-ultima-copia';
+  const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+  function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_T[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zipSimples(arquivos, tipo) {   // ZIP sem compressão (o .xlsx é um ZIP de XMLs)
+    const enc = new TextEncoder(), d = new Date();
+    const hora = (d.getHours() << 11) | (d.getMinutes() << 5) | (d.getSeconds() >> 1), dia = ((d.getFullYear() - 1980) << 9) | ((d.getMonth() + 1) << 5) | d.getDate();
+    const partes = [], central = []; let pos = 0;
+    for (const a of arquivos) {
+      const nome = enc.encode(a.nome), dados = enc.encode(a.texto), crc = crc32(dados), n = dados.length;
+      const h = new DataView(new ArrayBuffer(30));
+      [[0, 0x04034b50, 4], [4, 20, 2], [6, 0x0800, 2], [8, 0, 2], [10, hora, 2], [12, dia, 2], [14, crc, 4], [18, n, 4], [22, n, 4], [26, nome.length, 2], [28, 0, 2]].forEach(([o, v, t]) => (t === 4 ? h.setUint32(o, v, true) : h.setUint16(o, v, true)));
+      partes.push(new Uint8Array(h.buffer), nome, dados);
+      const c = new DataView(new ArrayBuffer(46));
+      [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [8, 0x0800, 2], [10, 0, 2], [12, hora, 2], [14, dia, 2], [16, crc, 4], [20, n, 4], [24, n, 4], [28, nome.length, 2], [30, 0, 2], [32, 0, 2], [34, 0, 2], [36, 0, 2], [38, 0, 4], [42, pos, 4]].forEach(([o, v, t]) => (t === 4 ? c.setUint32(o, v, true) : c.setUint16(o, v, true)));
+      central.push(new Uint8Array(c.buffer), nome);
+      pos += 30 + nome.length + n;
+    }
+    const tam = central.reduce((s, x) => s + x.length, 0), e = new DataView(new ArrayBuffer(22));
+    e.setUint32(0, 0x06054b50, true); e.setUint16(8, arquivos.length, true); e.setUint16(10, arquivos.length, true); e.setUint32(12, tam, true); e.setUint32(16, pos, true);
+    return new Blob([...partes, ...central, new Uint8Array(e.buffer)], { type: tipo });
+  }
+  function abaXml(linhas, larguras, colsDinheiro) {
+    const letra = (i) => { let s = ''; i++; while (i) { const m = (i - 1) % 26; s = String.fromCharCode(65 + m) + s; i = Math.floor((i - 1) / 26); } return s; };
+    const esc = (v) => String(v).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const rows = linhas.map((l, r) => '<row r="' + (r + 1) + '">' + l.map((v, c) => {
+      if (v === null || v === undefined || v === '') return '';
+      const ref = letra(c) + (r + 1);
+      if (r > 0 && typeof v === 'number' && isFinite(v)) return '<c r="' + ref + '"' + (colsDinheiro.includes(c) ? ' s="2"' : '') + '><v>' + v + '</v></c>';
+      return '<c r="' + ref + '" t="inlineStr"' + (r === 0 ? ' s="1"' : ' s="3"') + '><is><t xml:space="preserve">' + esc(v) + '</t></is></c>';
+    }).join('') + '</row>').join('');
+    return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+      + '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>'
+      + '<cols>' + larguras.map((w, i) => '<col min="' + (i + 1) + '" max="' + (i + 1) + '" width="' + w + '" customWidth="1"/>').join('') + '</cols>'
+      + '<sheetData>' + rows + '</sheetData></worksheet>';
+  }
+  function montarPlanilha() {
+    const quando = (iso) => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); };
+    const byId = new Map(S.base.map((p) => [p.id, p]));
+    const ped = S.esp.lista.slice().sort((a, b) => ((a.status === 'concluido') - (b.status === 'concluido')) || String(a.criado_em || '').localeCompare(String(b.criado_em || '')));
+    const espera = [['Situação', 'Perfume', 'Cliente', 'Telefone', 'Observação', 'Pedido em', 'Concluído em', 'Link do WhatsApp']]
+      .concat(ped.map((x) => { const p = byId.get(x.perfume_id); const wa = waNumero(x.telefone);
+        return [x.status === 'concluido' ? 'Concluído' : 'Aguardando', p ? label(p) : (x.perfume_txt || ''), x.cliente || '', telBonito(x.telefone), x.obs || '', quando(x.criado_em), x.status === 'concluido' ? quando(x.concluido_em) : '', wa ? 'https://wa.me/' + wa : '']; }));
+    const cont = espContagens();
+    const cat = [['Seção', 'Marca', 'Perfume', 'ml', 'Concentração', 'Situação', 'À vista (R$)', 'A prazo (R$)', nParc() + 'x de (R$)', 'Clientes na espera']]
+      .concat(ordenar(S.base.slice()).map((p) => [p.secao || '', p.marca || '', p.nome || '', Number(p.ml) || '', p.tipo || '', p.status === 'arquivado' ? 'Inativo' : 'No catálogo',
+        Number(p.vista) || '', Number(p.parcelado) || '', p.parcelado ? parcela(p.parcelado) : '', cont.get(p.id) || '']));
+    const NS = 'http://schemas.openxmlformats.org/', X = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+    return zipSimples([
+      { nome: '[Content_Types].xml', texto: X + '<Types xmlns="' + NS + 'package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet2.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>' },
+      { nome: '_rels/.rels', texto: X + '<Relationships xmlns="' + NS + 'package/2006/relationships"><Relationship Id="rId1" Type="' + NS + 'officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>' },
+      { nome: 'xl/workbook.xml', texto: X + '<workbook xmlns="' + NS + 'spreadsheetml/2006/main" xmlns:r="' + NS + 'officeDocument/2006/relationships"><sheets><sheet name="Lista de espera" sheetId="1" r:id="rId1"/><sheet name="Catálogo" sheetId="2" r:id="rId2"/></sheets></workbook>' },
+      { nome: 'xl/_rels/workbook.xml.rels', texto: X + '<Relationships xmlns="' + NS + 'package/2006/relationships"><Relationship Id="rId1" Type="' + NS + 'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="' + NS + 'officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="' + NS + 'officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>' },
+      { nome: 'xl/styles.xml', texto: X + '<styleSheet xmlns="' + NS + 'spreadsheetml/2006/main"><numFmts count="1"><numFmt numFmtId="164" formatCode="#,##0.00"/></numFmts><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/><xf numFmtId="164" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>' },
+      { nome: 'xl/worksheets/sheet1.xml', texto: abaXml(espera, [13, 34, 24, 18, 44, 17, 17, 30], []) },
+      { nome: 'xl/worksheets/sheet2.xml', texto: abaXml(cat, [12, 20, 34, 7, 16, 13, 13, 13, 13, 12], [6, 7, 8]) },
+    ], 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  }
+  function mostrarUltimaCopia() {
+    let d = null; try { d = localStorage.getItem(K_COPIA); } catch {}
+    $('#esp-ultima').textContent = d ? 'Última planilha baixada neste aparelho: ' + new Date(d).toLocaleDateString('pt-BR') + '.' : 'Dica: toque em “Baixar planilha” de vez em quando e guarde no iCloud ou no Drive, como cópia de segurança.';
+  }
+  function baixarPlanilha() {
+    if (S.esp.estado !== 'ok') return;
+    const hoje = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+    const nome = 'Chamoun-planilha-' + hoje + '.xlsx';
+    const blob = montarPlanilha();
+    const marcar = () => { try { localStorage.setItem(K_COPIA, new Date().toISOString()); } catch {} mostrarUltimaCopia(); };
+    let arq = null; try { arq = new File([blob], nome, { type: blob.type }); } catch {}
+    const celular = matchMedia('(pointer: coarse)').matches;
+    if (celular && arq && navigator.canShare && navigator.canShare({ files: [arq] })) {
+      navigator.share({ files: [arq], title: 'Planilha da Chamoun' }).then(() => { marcar(); toast('Planilha pronta. Guarde em Arquivos, iCloud ou Drive.'); }).catch((e) => { if (e && e.name !== 'AbortError') toast('Não consegui abrir o compartilhamento. Tente de novo.'); });
+      return;
+    }
+    const url = URL.createObjectURL(blob); const a = el('a', { href: url, download: nome }); document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 60000); marcar(); toast('Planilha baixada: ' + nome);
+  }
+
   const K_ABA = 'chamoun-painel-aba';
   function mostrarVista(v) {
     S.vista = v === 'esp' ? 'esp' : 'cat'; try { localStorage.setItem(K_ABA, S.vista); } catch {}
@@ -1020,6 +1101,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   $('#esp-tab-ok').onclick = () => { S.esp.aba = 'concluido'; espRender(); };
   $('#esp-q').addEventListener('input', (e) => { S.esp.q = e.target.value; espRender(); });
   $('#esp-novo').onclick = () => espAbrirEditor(null);
+  $('#esp-baixar').onclick = baixarPlanilha; mostrarUltimaCopia();
   $('#e-busca').addEventListener('input', espOpcoes);
   $('#e-busca').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); const b = $('#e-opcoes .opcao'); if (b) b.click(); } });
   $('#e-cancel').onclick = espFecharEditor; $('#e-save').onclick = espSalvarEditor;
