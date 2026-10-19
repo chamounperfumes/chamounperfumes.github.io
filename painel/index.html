@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-16.1">
+<meta name="painel-versao" content="2026-10-19.1">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -156,6 +156,48 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
 @media (max-width:420px){.ac-nums{gap:6px}.ac-nums div{padding:10px}.ac-nums b{font-size:20px}.ac-nums span{font-size:11px}}
 .ac-msg{margin:0;font-size:12.5px;color:var(--muted);line-height:1.4}
 .acessos .check{font-size:12.5px}
+/* Catálogo | Lista de espera */
+.views{display:flex;width:max-content;max-width:100%;margin-bottom:16px}
+.views button{padding:9px 18px;min-height:42px;font-size:14px}
+@media (max-width:520px){.views{width:100%}.views button{flex:1}}
+.esp-dot{border:0;cursor:pointer;font-family:inherit;color:var(--ok);background:#E3F1E8}
+/* Lista de espera */
+.esp-grupo{background:var(--surface);border-radius:18px;overflow:hidden;margin-bottom:14px}
+.esp-head{display:flex;align-items:center;gap:12px;padding:12px 12px 12px 16px;border-bottom:1px solid var(--line);background:#FBFBFA}
+.esp-head .thumb{width:52px;height:52px;flex:none}
+.esp-head .info{flex:1}
+.esp-head .nm{font-size:15px}
+.esp-head .side{display:flex;flex-direction:column;align-items:flex-end;gap:2px;flex:none}
+.esp-n{font-size:12.5px;color:var(--muted);font-weight:700;white-space:nowrap;padding-right:8px}
+.esp-tag{display:inline-block;margin-top:3px;font-size:10.5px;font-weight:700;border-radius:999px;padding:2px 8px;background:var(--chip);color:var(--muted)}
+.esp-tag.on{background:#E3F1E8;color:var(--ok)}
+.pedido{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:12px 16px;border-top:1px solid var(--line)}
+.esp-head + .pedido{border-top:0}
+.pedido .cli{font-weight:700;font-size:15.5px;line-height:1.25;overflow-wrap:anywhere}
+.pedido .tel{font-size:13px;color:var(--muted)}
+.pedido .obs{grid-column:1/-1;font-size:13.5px;background:var(--ground);border-radius:10px;padding:8px 11px;white-space:pre-wrap;overflow-wrap:anywhere}
+.pedido .pacts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:2px 4px;justify-content:flex-end;align-items:center;margin:-6px -8px -6px 0}
+.pedido .pacts .small{margin-right:auto}
+.btn-wa{background:#1F7A4D;color:#fff;padding:9px 16px;min-height:42px}
+.esp-aviso{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.esp-aviso h2{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.esp-aviso p{margin:0;color:var(--muted)}
+.esp-aviso .passos{margin:0;padding-left:22px;line-height:1.7}
+.esp-aviso a{color:var(--ink);font-weight:700}
+.sheet-foot .right{margin-left:auto}
+.fld textarea{min-height:84px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;width:100%;font:inherit;font-size:16px;resize:vertical}
+.escolhido{display:flex;align-items:center;gap:10px;background:var(--ground);border-radius:12px;padding:8px 6px 8px 8px}
+.escolhido .thumb{width:44px;height:44px;flex:none;border-radius:10px}
+.escolhido .info{flex:1}
+.escolhido .nm{font-size:14.5px}
+.opcoes{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.opcoes:empty{display:none}
+.opcao{display:flex;align-items:center;gap:10px;padding:7px 10px;border:0;border-top:1px solid var(--line);background:#fff;text-align:left;cursor:pointer;min-height:52px;width:100%}
+.opcao:first-child{border-top:0}
+.opcao .thumb{width:38px;height:38px;border-radius:8px;flex:none}
+.opcao .ol{font-size:14px;font-weight:600;line-height:1.3}
+.opcao .esp-tag{margin:0 0 0 6px;vertical-align:1px}
+.opcao.outro .ol{color:var(--muted);font-weight:600}
 .foot{color:var(--faint);font-size:12.5px;text-align:center;margin-top:8px}
 .foot a{color:inherit}
 </style>
@@ -183,6 +225,11 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   </section>
 
   <div id="app" hidden>
+    <div class="seg views" role="group" aria-label="Área do painel">
+      <button type="button" id="v-cat" aria-pressed="true">Catálogo</button>
+      <button type="button" id="v-esp" aria-pressed="false">Lista de espera <span class="count num" id="c-esp"></span></button>
+    </div>
+    <div id="view-cat">
     <section class="card acessos" aria-labelledby="ac-t">
       <div class="ac-head"><h2 id="ac-t">Visitas no site dos clientes</h2><a class="btn-text" href="https://chamoun.goatcounter.com" target="_blank" rel="noopener">Ver detalhes</a></div>
       <div class="ac-nums num">
@@ -210,6 +257,25 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     </div>
     <div id="list" style="margin-top:16px"></div>
     <p class="foot">Pedidos por print do WhatsApp: mande para o Claude no chat que ele atualiza tudo.</p>
+    </div>
+    <div id="view-esp" hidden>
+      <div class="tools" id="esp-tools" hidden>
+        <div class="seg" role="group" aria-label="Situação dos pedidos">
+          <button type="button" id="esp-tab-ag" aria-pressed="true">Aguardando <span class="count num" id="c-esp-ag">0</span></button>
+          <button type="button" id="esp-tab-ok" aria-pressed="false">Concluídos <span class="count num" id="c-esp-ok">0</span></button>
+        </div>
+        <div class="filters">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <label for="esp-q" style="position:absolute;left:-9999px">Buscar na lista de espera</label>
+            <input id="esp-q" type="search" placeholder="Buscar cliente, telefone ou perfume" autocomplete="off">
+          </div>
+          <button class="btn btn-ink" id="esp-novo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Novo pedido</button>
+        </div>
+      </div>
+      <div id="esp-list" style="margin-top:16px"></div>
+      <p class="foot">A lista de espera é privada: fica num arquivo do GitHub separado do site e não aparece para os clientes.</p>
+    </div>
   </div>
   <div class="notice" id="carregando" hidden>Carregando os perfumes…</div>
 </main>
@@ -267,6 +333,30 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     <div class="sheet-foot">
       <button class="btn-text" type="button" id="ed-del">Excluir perfume</button>
       <div class="right"><button class="btn btn-line" type="button" id="ed-cancel">Cancelar</button><button class="btn btn-ink" type="button" id="ed-save">Salvar</button></div>
+    </div>
+  </div>
+</div>
+<div class="scrim" id="esp-editor" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="e-title">
+    <h2 id="e-title">Novo pedido</h2>
+    <div class="fld">
+      <label for="e-busca">Perfume</label>
+      <div class="escolhido" id="e-escolhido" hidden></div>
+      <input id="e-busca" type="search" autocomplete="off" placeholder="Digite a marca ou o nome do perfume">
+      <div class="opcoes" id="e-opcoes"></div>
+    </div>
+    <div class="grid2">
+      <div class="fld"><label for="e-cliente">Nome do cliente</label><input id="e-cliente" autocomplete="off" autocapitalize="words"></div>
+      <div class="fld"><label for="e-tel">Telefone (WhatsApp)</label><input id="e-tel" type="tel" inputmode="tel" autocomplete="off" placeholder="(11) 98765-4321"></div>
+    </div>
+    <div class="fld"><label for="e-obs">Observação</label><textarea id="e-obs" rows="3" placeholder="Ex.: quer o de 200 ml, já deu sinal, avisar à tarde…"></textarea></div>
+    <div class="confirm" id="e-confirm" hidden>
+      <span>Excluir este pedido de vez?</span>
+      <span style="display:flex;gap:8px"><button class="btn btn-line" type="button" id="e-del-no">Manter</button><button class="btn btn-danger" type="button" id="e-del-yes">Excluir</button></span>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn-text" type="button" id="e-del">Excluir pedido</button>
+      <div class="right"><button class="btn btn-line" type="button" id="e-cancel">Cancelar</button><button class="btn btn-ink" type="button" id="e-save">Salvar</button></div>
     </div>
   </div>
 </div>
@@ -500,7 +590,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const list = $('#list'); const a = document.activeElement;
     if (a && list.contains(a) && a.tagName === 'INPUT') { S.renderDepois = true; return; }
     S.renderDepois = false;
-    const todos = atual(); const pid = pendIds();
+    const todos = atual(); const pid = pendIds(); S.espCont = espContagens();
     let ca = 0, cr = 0; for (const p of todos) (p.status === 'arquivado' ? cr++ : ca++);
     $('#c-ativo').textContent = ca; $('#c-arquivado').textContent = cr;
     $('#marcas').replaceChildren(...[...new Set(todos.map((p) => p.marca).filter(Boolean))].sort().map((m) => el('option', { value: m })));
@@ -517,7 +607,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   function row(p, pend) {
     const src = fotoSrc(p);
     const thumb = el('div', { class: 'thumb' }, src ? el('img', { src, alt: '', loading: 'lazy' }) : el('span', { class: 'nofoto', text: 'sem foto' }));
-    const info = el('div', { class: 'info' }, el('div', { class: 'mk', text: p.marca || '' }), el('div', { class: 'nm' }, p.nome || '', pend ? el('span', { class: 'dot', text: 'não publicado' }) : null),
+    const info = el('div', { class: 'info' }, el('div', { class: 'mk', text: p.marca || '' }), el('div', { class: 'nm' }, p.nome || '', pend ? el('span', { class: 'dot', text: 'não publicado' }) : null,
+        S.espCont.get(p.id) ? el('button', { type: 'button', class: 'dot esp-dot', title: 'Ver na lista de espera', onclick: () => { S.esp.aba = 'aguardando'; S.esp.q = label(p); $('#esp-q').value = label(p); mostrarVista('esp'); } }, S.espCont.get(p.id) + ' na espera') : null),
       el('div', { class: 'mt', text: [p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · ') }));
     const inst = el('div', { class: 'inst num' }, nParc() + 'x de', el('strong', { text: 'R$ ' + money(parcela(p.parcelado || 0)) }));
     const field = (key, lbl) => {
@@ -534,7 +625,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     };
     const acts = el('div', { class: 'acts' },
       el('button', { type: 'button', class: 'btn-text', onclick: () => abrirEditor(p.id) }, 'Editar'),
-      el('button', { type: 'button', class: 'btn-text', onclick: () => { addPend({ op: 'upd', id: p.id, campos: { status: p.status === 'arquivado' ? 'ativo' : 'arquivado' } }); toast(p.status === 'arquivado' ? label(p) + ' volta ao catálogo ao publicar.' : label(p) + ' sai do catálogo ao publicar (fica em “Inativos”).'); } }, p.status === 'arquivado' ? 'Voltar ao catálogo' : 'Tirar'));
+      el('button', { type: 'button', class: 'btn-text', onclick: () => { addPend({ op: 'upd', id: p.id, campos: { status: p.status === 'arquivado' ? 'ativo' : 'arquivado' } }); const ne = S.espCont.get(p.id); toast(p.status === 'arquivado' ? label(p) + ' volta ao catálogo ao publicar.' + (ne ? ' ' + (ne === 1 ? '1 cliente está' : ne + ' clientes estão') + ' na lista de espera dele.' : '') : label(p) + ' sai do catálogo ao publicar (fica em “Inativos”).'); } }, p.status === 'arquivado' ? 'Voltar ao catálogo' : 'Tirar'));
     return el('article', { class: 'row' + (pend ? ' pend' : '') }, thumb, info, el('div', { class: 'pgroup' }, field('vista', 'À vista'), field('parcelado', 'A prazo'), inst), acts);
   }
   function tudo() { render(); renderBar(); renderHeader(); }
@@ -656,6 +747,231 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     } catch { cx.closest('label').hidden = true; }
   }
 
+  /* ---------- lista de espera ----------
+     Nome e telefone de cliente NÃO podem ir para o repositório do site (ele é público).
+     A lista fica em lista.json num repositório PRIVADO (chamounperfumes/lista-de-espera) e é salva na hora,
+     sem passar pelo "Publicar no site". O painel nunca grava se o repositório não for privado. */
+  const ESP_DONO = 'chamounperfumes', ESP_NOME = 'lista-de-espera', ESP_ARQ = 'lista.json';
+  const ESP_API = 'https://api.github.com/repos/' + ESP_DONO + '/' + ESP_NOME;
+  const espVazio = () => ({ estado: 'nada', lista: [], sha: '', aba: 'aguardando', q: '', msg: '' });
+  S.esp = espVazio(); S.espCont = new Map(); S.vista = 'cat';
+  const deB64 = (s) => new TextDecoder().decode(Uint8Array.from(atob(String(s).replace(/\s/g, '')), (c) => c.charCodeAt(0)));
+  const soDigitos = (s) => String(s || '').replace(/\D/g, '');
+  function waNumero(tel) {
+    const t = String(tel || '').trim(); let d = soDigitos(t);
+    if (t.startsWith('+')) return d.length >= 8 && d.length <= 15 ? d : '';
+    d = d.replace(/^0+/, ''); if (d.length === 10 || d.length === 11) d = '55' + d;
+    return /^55\d{10,11}$/.test(d) ? d : '';
+  }
+  function telBonito(tel) {
+    const t = String(tel || '').trim(); if (t.startsWith('+') && !t.startsWith('+55')) return t;
+    let d = soDigitos(t).replace(/^0+/, ''); if (d.length >= 12 && d.startsWith('55')) d = d.slice(2);
+    if (d.length === 11) return '(' + d.slice(0, 2) + ') ' + d.slice(2, 7) + '-' + d.slice(7);
+    if (d.length === 10) return '(' + d.slice(0, 2) + ') ' + d.slice(2, 6) + '-' + d.slice(6);
+    return t;
+  }
+  const dataCurta = (iso) => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: '2-digit' }); };
+  function svgIcone(miolo) {
+    const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    for (const [k, v] of Object.entries({ viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true' })) s.setAttribute(k, v);
+    s.innerHTML = miolo; return s;
+  }
+  const IC_CONVERSA = '<path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/>';
+  function espErro(e) { return e && e.status === 401 ? 'A chave de acesso não funcionou (pode ter vencido ou sido cancelada).' : 'Confira a internet e tente de novo.'; }
+
+  async function espLerArquivo() {
+    try { const f = await gh(ESP_API + '/contents/' + ESP_ARQ); const o = JSON.parse(deB64(f.content)); S.esp.lista = Array.isArray(o.pedidos) ? o.pedidos : []; S.esp.sha = f.sha; }
+    catch (e) { if (e.status !== 404) throw e; S.esp.lista = []; S.esp.sha = ''; }   // ainda sem nenhum pedido
+  }
+  async function espCarregar() {
+    S.esp.estado = 'carregando'; espRender();
+    try {
+      let repo = null;
+      try { repo = await gh(ESP_API); } catch (e) { if (e.status !== 404) throw e; }
+      if (!repo) S.esp.estado = await espSemRepo();
+      else if (!repo.private) S.esp.estado = 'publico';
+      else { await espLerArquivo(); S.esp.estado = 'ok'; }
+    } catch (e) { S.esp.estado = 'erro'; S.esp.msg = espErro(e); }
+    espRender(); render();
+  }
+  // O repositório não apareceu: ou ainda não existe, ou a chave não enxerga repositórios privados.
+  async function espSemRepo() {
+    try {
+      const r = await fetch('https://api.github.com/user', { cache: 'no-store', headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + S.chave } });
+      const esc = r.headers.get('x-oauth-scopes'); const u = r.ok ? await r.json() : {};
+      if (esc !== null && !esc.split(',').map((s) => s.trim()).includes('repo')) return 'sem-escopo';
+      return String(u.login || '').toLowerCase() === ESP_DONO ? 'criar' : 'sem-acesso';
+    } catch { return 'erro'; }
+  }
+  async function espCriar() {
+    S.esp.estado = 'carregando'; espRender();
+    try {
+      const u = await gh('https://api.github.com/user');
+      if (String(u.login || '').toLowerCase() !== ESP_DONO) { S.esp.estado = 'sem-acesso'; espRender(); return; }
+      const r = await gh('https://api.github.com/user/repos', { method: 'POST', body: JSON.stringify({ name: ESP_NOME, private: true, auto_init: true, description: 'Lista de espera da Chamoun (privada). Usada pelo painel.', has_issues: false, has_projects: false, has_wiki: false }) });
+      if (!r.private) { S.esp.estado = 'publico'; espRender(); return; }
+      S.esp.lista = []; S.esp.sha = ''; S.esp.estado = 'ok';
+      toast('Lista de espera criada. Ela é privada: só abre com a chave do painel.');
+    } catch (e) {
+      if (e.status === 422) return espCarregar();   // já existia
+      S.esp.estado = (e.status === 403 || e.status === 404) ? 'sem-escopo' : 'erro'; S.esp.msg = espErro(e);
+    }
+    espRender(); render();
+  }
+  function espAplicar(lista, op) {
+    const now = nowISO();
+    if (op.op === 'add') return [...lista.filter((p) => p.id !== op.doc.id), { ...op.doc, criado_em: op.doc.criado_em || now, atualizado_em: now }];
+    if (op.op === 'upd') return lista.map((p) => (p.id === op.id ? { ...p, ...op.campos, atualizado_em: now } : p));
+    if (op.op === 'del') return lista.filter((p) => p.id !== op.id);
+    return lista;
+  }
+  // Grava na hora. Se outra pessoa salvou antes, pega a versão nova e refaz a alteração por cima.
+  async function espSalvar(op, resumo) {
+    if (S.esp.estado !== 'ok') return false;
+    const antes = S.esp.lista; S.esp.salvando = true;
+    S.esp.lista = espAplicar(S.esp.lista, op); espRender(); render();
+    try {
+      for (let t = 0; t < 4; t++) {
+        try {
+          const texto = JSON.stringify({ pedidos: S.esp.lista }, null, 1) + '\n';
+          const r = await gh(ESP_API + '/contents/' + ESP_ARQ, { method: 'PUT', body: JSON.stringify({ message: 'Lista de espera: ' + resumo, content: b64utf8(texto), ...(S.esp.sha ? { sha: S.esp.sha } : {}) }) });
+          S.esp.sha = r.content.sha; return true;
+        } catch (e) {
+          if (e.status !== 409 && e.status !== 422) throw e;
+          await espLerArquivo(); S.esp.lista = espAplicar(S.esp.lista, op); espRender(); render();
+        }
+      }
+      throw new Error('conflito');
+    } catch (e) {
+      try { await espLerArquivo(); } catch { S.esp.lista = antes; }
+      espRender(); render();
+      toast('Não consegui salvar na lista de espera. ' + (e.message === 'conflito' ? 'Outra pessoa estava mexendo nela ao mesmo tempo; tente de novo.' : espErro(e)), 7000);
+      return false;
+    } finally { S.esp.salvando = false; }
+  }
+  function espContagens() {
+    const m = new Map(); if (S.esp.estado !== 'ok') return m;
+    for (const x of S.esp.lista) if (x.status !== 'concluido' && x.perfume_id) m.set(x.perfume_id, (m.get(x.perfume_id) || 0) + 1);
+    return m;
+  }
+  function thumbDe(p, txt) { const src = p ? fotoSrc(p) : ''; return el('div', { class: 'thumb' }, src ? el('img', { src, alt: '', loading: 'lazy' }) : el('span', { class: 'nofoto', text: txt || 'sem foto' })); }
+  function espAviso() {
+    const st = S.esp.estado; const c = el('section', { class: 'card esp-aviso' });
+    const tentar = (txt) => el('button', { type: 'button', class: 'btn btn-ink', onclick: espCarregar }, txt || 'Tentar de novo');
+    if (st === 'carregando' || st === 'nada') c.append(el('p', { text: 'Carregando a lista de espera…' }));
+    else if (st === 'criar') c.append(el('h2', { text: 'Criar a lista de espera' }),
+      el('p', { text: 'Os nomes e telefones dos clientes ficam num arquivo privado da conta ' + ESP_DONO + ' no GitHub, separado do site (o site é público). Só quem tem a chave do painel consegue abrir.' }),
+      el('button', { type: 'button', class: 'btn btn-ink', onclick: espCriar }, 'Criar lista de espera'));
+    else if (st === 'sem-escopo') c.append(el('h2', { text: 'Falta liberar a lista de espera na sua chave' }),
+      el('p', { text: 'Os nomes e telefones dos clientes ficam num arquivo privado no GitHub, separado do site (o site é público). Para o painel abrir esse arquivo, a chave precisa da permissão “repo”:' }),
+      el('ol', { class: 'passos' },
+        el('li', {}, 'Abra ', el('a', { href: 'https://github.com/settings/tokens', target: '_blank', rel: 'noopener', text: 'github.com/settings/tokens' }), '.'),
+        el('li', { text: 'Toque no nome da chave do painel.' }),
+        el('li', { text: 'Marque a caixa “repo” (a primeira da lista).' }),
+        el('li', { text: 'Role até o fim e toque em “Update token”.' })),
+      el('p', { class: 'small', text: 'A chave continua a mesma: não precisa entrar de novo no painel.' }), tentar('Já liberei, tentar de novo'));
+    else if (st === 'sem-acesso') c.append(el('h2', { text: 'Esta chave não abre a lista de espera' }),
+      el('p', { text: 'A lista fica na conta ' + ESP_DONO + ' do GitHub. Entre no painel com a chave dessa conta (com a permissão “repo”) ou peça para o dono adicionar a sua conta no repositório “' + ESP_NOME + '”.' }), tentar());
+    else if (st === 'publico') c.append(el('h2', { text: 'A lista de espera não está privada' }),
+      el('p', { text: 'Por segurança, o painel não grava dados de clientes num repositório público. Avise o Claude no chat.' }));
+    else c.append(el('h2', { text: 'Não consegui abrir a lista de espera' }), el('p', { text: S.esp.msg || 'Confira a internet e tente de novo.' }), tentar());
+    return c;
+  }
+  function pedidoEl(x) {
+    const wa = waNumero(x.telefone); const concl = x.status === 'concluido';
+    const btnWa = wa
+      ? el('a', { class: 'btn btn-wa', href: 'https://wa.me/' + wa, target: '_blank', rel: 'noopener', 'aria-label': 'Abrir a conversa com ' + (x.cliente || 'o cliente') + ' no WhatsApp' }, svgIcone(IC_CONVERSA), 'WhatsApp')
+      : el('span', { class: 'small', text: 'Telefone inválido' });
+    const quem = el('div', {}, el('div', { class: 'cli', text: x.cliente || 'Cliente' }), el('div', { class: 'tel num', text: [telBonito(x.telefone), 'desde ' + dataCurta(x.criado_em)].filter(Boolean).join(' · ') }));
+    return el('article', { class: 'pedido' }, quem, btnWa, x.obs ? el('div', { class: 'obs', text: x.obs }) : null,
+      el('div', { class: 'pacts' },
+        concl && x.concluido_em ? el('span', { class: 'small', text: 'Concluído em ' + dataCurta(x.concluido_em) }) : null,
+        el('button', { type: 'button', class: 'btn-text', onclick: () => espAbrirEditor(x.id) }, 'Editar'),
+        el('button', { type: 'button', class: 'btn-text', onclick: () => espStatus(x, !concl) }, concl ? 'Voltar para a espera' : 'Concluir')));
+  }
+  function espRender() {
+    const box = $('#esp-list'); const pronto = S.esp.estado === 'ok';
+    const ag = S.esp.lista.filter((x) => x.status !== 'concluido'), ok = S.esp.lista.filter((x) => x.status === 'concluido');
+    $('#c-esp').textContent = pronto && ag.length ? String(ag.length) : '';
+    $('#c-esp-ag').textContent = ag.length; $('#c-esp-ok').textContent = ok.length;
+    $('#esp-tab-ag').setAttribute('aria-pressed', String(S.esp.aba !== 'concluido')); $('#esp-tab-ok').setAttribute('aria-pressed', String(S.esp.aba === 'concluido'));
+    $('#esp-tools').hidden = !pronto; box.replaceChildren();
+    if (!pronto) { box.append(espAviso()); return; }
+    const byId = new Map(atual().map((p) => [p.id, p]));
+    const nomeP = (x) => { const p = byId.get(x.perfume_id); return p ? label(p) : (x.perfume_txt || ''); };
+    const q = norm(S.esp.q).split(/\s+/).filter(Boolean);
+    const itens = (S.esp.aba === 'concluido' ? ok : ag).filter((x) => q.every((w) => norm([x.cliente, x.telefone, soDigitos(x.telefone), x.obs, nomeP(x)].join(' ')).includes(w)));
+    if (!itens.length) {
+      box.append(el('div', { class: 'notice' }, S.esp.q ? 'Nenhum pedido encontrado para “' + S.esp.q + '”.' : (S.esp.aba === 'concluido' ? 'Nenhum pedido concluído ainda.' : 'Ninguém na lista de espera. Toque em “Novo pedido” para adicionar um cliente.')));
+      return;
+    }
+    // Agrupa por perfume; dentro de cada perfume, por ordem de chegada (concluídos: mais recentes primeiro).
+    const ord = S.esp.aba === 'concluido' ? (a, b) => String(b.concluido_em || '').localeCompare(String(a.concluido_em || '')) : (a, b) => String(a.criado_em || '').localeCompare(String(b.criado_em || ''));
+    const grupos = new Map();
+    for (const x of itens.slice().sort(ord)) { const k = x.perfume_id || 'txt:' + norm(x.perfume_txt); if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(x); }
+    for (const xs of grupos.values()) {
+      const p = byId.get(xs[0].perfume_id);
+      const tag = p ? el('span', { class: 'esp-tag' + (p.status === 'arquivado' ? '' : ' on'), text: p.status === 'arquivado' ? 'Inativo' : 'No catálogo' }) : el('span', { class: 'esp-tag', text: 'Fora da tabela' });
+      const info = el('div', { class: 'info' }, p ? el('div', { class: 'mk', text: p.marca || '' }) : null,
+        el('div', { class: 'nm', text: p ? [p.nome, p.ml ? p.ml + ' ml' : ''].filter(Boolean).join(' ') : (xs[0].perfume_txt || 'Perfume') }), tag);
+      const side = el('div', { class: 'side' }, el('span', { class: 'esp-n num', text: xs.length + (xs.length === 1 ? ' cliente' : ' clientes') }),
+        S.esp.aba === 'concluido' ? null : el('button', { type: 'button', class: 'btn-text', onclick: () => espAbrirEditor(null, { id: xs[0].perfume_id || '', txt: p ? label(p) : xs[0].perfume_txt }) }, '+ Cliente'));
+      box.append(el('section', { class: 'esp-grupo' }, el('div', { class: 'esp-head' }, thumbDe(p), info, side), xs.map(pedidoEl)));
+    }
+  }
+  async function espStatus(x, concluir) {
+    const ok = await espSalvar({ op: 'upd', id: x.id, campos: concluir ? { status: 'concluido', concluido_em: nowISO() } : { status: 'aguardando', concluido_em: '' } }, concluir ? 'pedido concluído' : 'pedido reaberto');
+    if (ok) toast(concluir ? 'Pedido de ' + x.cliente + ' concluído (fica em “Concluídos”).' : 'Pedido de ' + x.cliente + ' voltou para a espera.');
+  }
+  /* editor de pedido */
+  function espAbrirEditor(id, perfume) {
+    const x = id ? S.esp.lista.find((p) => p.id === id) : null;
+    S.espEd = { id: x ? x.id : null, perfume: x ? { id: x.perfume_id || '', txt: x.perfume_txt || '' } : (perfume || null) };
+    $('#e-title').textContent = x ? 'Editar pedido' : 'Novo pedido';
+    $('#e-cliente').value = x ? x.cliente || '' : ''; $('#e-tel').value = x ? telBonito(x.telefone) : ''; $('#e-obs').value = x ? x.obs || '' : '';
+    $('#e-busca').value = ''; $('#e-del').hidden = !x; $('#e-confirm').hidden = true;
+    $('#e-save').disabled = false; $('#e-save').textContent = 'Salvar';
+    espEscolhido(); $('#esp-editor').hidden = false;
+  }
+  function espFecharEditor() { $('#esp-editor').hidden = true; S.espEd = null; }
+  function espEscolhido() {
+    const box = $('#e-escolhido'); const pf = S.espEd.perfume; box.replaceChildren(); $('#e-opcoes').replaceChildren();
+    if (pf) {
+      const p = pf.id ? atual().find((x) => x.id === pf.id) : null;
+      box.append(thumbDe(p, p ? '' : 'fora'), el('div', { class: 'info' }, el('div', { class: 'nm', text: p ? label(p) : pf.txt }), el('div', { class: 'mt', text: p ? (p.status === 'arquivado' ? 'Inativo' : 'No catálogo') : 'Fora da tabela' })),
+        el('button', { type: 'button', class: 'btn-text', onclick: () => { S.espEd.perfume = null; espEscolhido(); $('#e-busca').focus(); } }, 'Trocar'));
+    }
+    box.hidden = !pf; $('#e-busca').hidden = !!pf;
+  }
+  function espOpcoes() {
+    const ops = $('#e-opcoes'); ops.replaceChildren(); const t = $('#e-busca').value.trim(); if (!t) return;
+    const q = norm(t).split(/\s+/).filter(Boolean);
+    const achados = atual().filter((p) => q.every((w) => norm([p.marca, p.nome, p.tipo, p.ml + 'ml', p.ml + ' ml'].join(' ')).includes(w)))
+      .sort((a, b) => ((a.status === 'arquivado') - (b.status === 'arquivado')) || label(a).localeCompare(label(b))).slice(0, 6);
+    for (const p of achados) ops.append(el('button', { type: 'button', class: 'opcao', onclick: () => { S.espEd.perfume = { id: p.id, txt: label(p) }; espEscolhido(); } },
+      thumbDe(p), el('span', { class: 'ol' }, label(p), p.status === 'arquivado' ? el('span', { class: 'esp-tag', text: 'Inativo' }) : null)));
+    ops.append(el('button', { type: 'button', class: 'opcao outro', onclick: () => { S.espEd.perfume = { id: '', txt: t }; espEscolhido(); } }, el('span', { class: 'ol', text: 'Usar “' + t + '” (não está na tabela)' })));
+  }
+  async function espSalvarEditor() {
+    const ed = S.espEd; if (!ed || S.esp.salvando) return;
+    const cliente = $('#e-cliente').value.trim(), telefone = $('#e-tel').value.trim(), obs = $('#e-obs').value.trim(), pf = ed.perfume;
+    const falta = []; if (!pf) falta.push('perfume'); if (!cliente) falta.push('nome do cliente'); if (!telefone) falta.push('telefone');
+    if (falta.length) { toast('Falta preencher: ' + falta.join(', ') + '.'); return; }
+    if (!waNumero(telefone)) { toast('Confira o telefone: coloque o DDD, por exemplo (11) 98765-4321.'); return; }
+    const campos = { perfume_id: pf.id, perfume_txt: pf.txt, cliente, telefone: telBonito(telefone), obs };
+    const b = $('#e-save'); b.disabled = true; b.textContent = 'Salvando…';
+    const ok = ed.id ? await espSalvar({ op: 'upd', id: ed.id, campos }, 'pedido editado') : await espSalvar({ op: 'add', doc: { id: hex(8), status: 'aguardando', ...campos } }, 'novo pedido');
+    b.disabled = false; b.textContent = 'Salvar';
+    if (ok) { espFecharEditor(); toast(ed.id ? 'Pedido atualizado.' : cliente + ' entrou na lista de espera.'); }
+  }
+  const K_ABA = 'chamoun-painel-aba';
+  function mostrarVista(v) {
+    S.vista = v === 'esp' ? 'esp' : 'cat'; try { localStorage.setItem(K_ABA, S.vista); } catch {}
+    $('#view-cat').hidden = S.vista !== 'cat'; $('#view-esp').hidden = S.vista !== 'esp';
+    $('#v-cat').setAttribute('aria-pressed', String(S.vista === 'cat')); $('#v-esp').setAttribute('aria-pressed', String(S.vista === 'esp'));
+    if (S.vista === 'esp' && ['erro', 'sem-escopo', 'sem-acesso'].includes(S.esp.estado)) espCarregar(); else espRender();
+  }
+
   /* ---------- entrada ---------- */
   async function entrar(chave, lembrar) {
     S.chave = chave; $('#login-err').textContent = '';
@@ -666,6 +982,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       const c = await carregar(); S.base = c.lista; S.baseCommit = c.sha; if (c.cfg) S.cfg = c.cfg;
       store.set(K_CHAVE, chave, lembrar);
       $('#carregando').hidden = true; $('#app').hidden = false; lerPend(); listChips(); tudo(); infoPub(); prepararSkip(); acessos();
+      let aba = 'cat'; try { aba = localStorage.getItem(K_ABA) || 'cat'; } catch {}
+      mostrarVista(aba); espCarregar();
     } catch (e) {
       S.chave = ''; if (e && [401, 403, 404].includes(e.status)) store.del(K_CHAVE);
       $('#carregando').hidden = true; $('#login').hidden = false; $('#login-err').textContent = msgErro(e); renderHeader();
@@ -675,7 +993,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   $('#chave').addEventListener('keydown', (e) => { if (e.key === 'Enter') $('#entrar').click(); });
   $('#sair').onclick = () => {
     if (S.pend.length && !confirm('Há alterações que ainda não foram publicadas. Sair mesmo assim? Elas continuam guardadas neste aparelho.')) return;
-    store.del(K_CHAVE); S.chave = ''; $('#app').hidden = true; $('#pubbar').hidden = true; $('#login').hidden = false; $('#chave').value = ''; renderHeader();
+    store.del(K_CHAVE); S.chave = ''; S.esp = espVazio(); S.espCont = new Map(); espFecharEditor(); $('#app').hidden = true; $('#pubbar').hidden = true; $('#login').hidden = false; $('#chave').value = ''; renderHeader();
   };
   $('#tab-ativo').onclick = () => { S.status = 'ativo'; $('#tab-ativo').setAttribute('aria-pressed', 'true'); $('#tab-arquivado').setAttribute('aria-pressed', 'false'); render(); };
   $('#tab-arquivado').onclick = () => { S.status = 'arquivado'; $('#tab-arquivado').setAttribute('aria-pressed', 'true'); $('#tab-ativo').setAttribute('aria-pressed', 'false'); render(); };
@@ -691,7 +1009,20 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   ['#f-vista', '#f-parcelado'].forEach((s) => $(s).addEventListener('input', edCalc));
   $('#editor').addEventListener('click', (e) => { if (e.target.id === 'editor') fecharEditor(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#editor').hidden) fecharEditor(); });
-  window.addEventListener('beforeunload', (e) => { if (S.publicando) { e.preventDefault(); e.returnValue = ''; } });
+  window.addEventListener('beforeunload', (e) => { if (S.publicando || S.esp.salvando) { e.preventDefault(); e.returnValue = ''; } });
+  // lista de espera
+  $('#v-cat').onclick = () => mostrarVista('cat'); $('#v-esp').onclick = () => mostrarVista('esp');
+  $('#esp-tab-ag').onclick = () => { S.esp.aba = 'aguardando'; espRender(); };
+  $('#esp-tab-ok').onclick = () => { S.esp.aba = 'concluido'; espRender(); };
+  $('#esp-q').addEventListener('input', (e) => { S.esp.q = e.target.value; espRender(); });
+  $('#esp-novo').onclick = () => espAbrirEditor(null);
+  $('#e-busca').addEventListener('input', espOpcoes);
+  $('#e-busca').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); const b = $('#e-opcoes .opcao'); if (b) b.click(); } });
+  $('#e-cancel').onclick = espFecharEditor; $('#e-save').onclick = espSalvarEditor;
+  $('#e-del').onclick = () => { $('#e-confirm').hidden = false; }; $('#e-del-no').onclick = () => { $('#e-confirm').hidden = true; };
+  $('#e-del-yes').onclick = async () => { const ed = S.espEd; if (!ed || !ed.id) return; const x = S.esp.lista.find((p) => p.id === ed.id); if (await espSalvar({ op: 'del', id: ed.id }, 'pedido excluído')) { espFecharEditor(); toast('Pedido de ' + ((x && x.cliente) || 'cliente') + ' excluído.'); } };
+  $('#esp-editor').addEventListener('click', (e) => { if (e.target.id === 'esp-editor' && !S.esp.salvando) espFecharEditor(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#esp-editor').hidden && !S.esp.salvando) espFecharEditor(); });
 
   /* ---------- versão nova do painel: atualiza sozinho ----------
      O app na tela de início do celular não tem botão de recarregar. Ao abrir (ou voltar para) o painel,
@@ -709,7 +1040,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   }
   function atualizarSePuder() {
     if (!versaoNova) return;
-    const ocupado = S.publicando || !$('#editor').hidden || (document.activeElement && /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName));
+    const ocupado = S.publicando || S.esp.salvando || !$('#editor').hidden || !$('#esp-editor').hidden || (document.activeElement && /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName));
     if (ocupado) { setTimeout(atualizarSePuder, 3000); return; }
     const k = 'painel-atualizou-' + versaoNova;
     try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, '1'); } catch {}   // uma tentativa por versão
