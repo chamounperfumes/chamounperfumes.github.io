@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-19.1">
+<meta name="painel-versao" content="2026-10-19.2">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -799,22 +799,26 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     try {
       const r = await fetch('https://api.github.com/user', { cache: 'no-store', headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + S.chave } });
       const esc = r.headers.get('x-oauth-scopes'); const u = r.ok ? await r.json() : {};
-      if (esc !== null && !esc.split(',').map((s) => s.trim()).includes('repo')) return 'sem-escopo';
-      return String(u.login || '').toLowerCase() === ESP_DONO ? 'criar' : 'sem-acesso';
+      S.esp.escopoOk = esc === null ? null : esc.split(',').map((s) => s.trim()).includes('repo');
+      if (S.esp.escopoOk === false) return 'sem-escopo';
+      return r.ok ? 'criar' : 'erro';
     } catch { return 'erro'; }
   }
   async function espCriar() {
     S.esp.estado = 'carregando'; espRender();
     try {
+      // chamounperfumes é uma ORGANIZAÇÃO: cria o repositório dentro dela (ou na própria conta, se a chave for dela).
       const u = await gh('https://api.github.com/user');
-      if (String(u.login || '').toLowerCase() !== ESP_DONO) { S.esp.estado = 'sem-acesso'; espRender(); return; }
-      const r = await gh('https://api.github.com/user/repos', { method: 'POST', body: JSON.stringify({ name: ESP_NOME, private: true, auto_init: true, description: 'Lista de espera da Chamoun (privada). Usada pelo painel.', has_issues: false, has_projects: false, has_wiki: false }) });
+      const url = String(u.login || '').toLowerCase() === ESP_DONO ? 'https://api.github.com/user/repos' : 'https://api.github.com/orgs/' + ESP_DONO + '/repos';
+      const r = await gh(url, { method: 'POST', body: JSON.stringify({ name: ESP_NOME, private: true, auto_init: true, description: 'Lista de espera da Chamoun (privada). Usada pelo painel.', has_issues: false, has_projects: false, has_wiki: false }) });
       if (!r.private) { S.esp.estado = 'publico'; espRender(); return; }
       S.esp.lista = []; S.esp.sha = ''; S.esp.estado = 'ok';
       toast('Lista de espera criada. Ela é privada: só abre com a chave do painel.');
     } catch (e) {
-      if (e.status === 422) return espCarregar();   // já existia
-      S.esp.estado = (e.status === 403 || e.status === 404) ? 'sem-escopo' : 'erro'; S.esp.msg = espErro(e);
+      if (e.status === 422) {   // já existe: se esta chave enxerga, é só carregar; se não, falta acesso
+        try { await gh(ESP_API); return espCarregar(); } catch { S.esp.estado = 'sem-acesso'; espRender(); return; }
+      }
+      S.esp.estado = (e.status === 403 || e.status === 404) ? (S.esp.escopoOk ? 'sem-acesso' : 'sem-escopo') : 'erro'; S.esp.msg = espErro(e);
     }
     espRender(); render();
   }
@@ -860,7 +864,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const tentar = (txt) => el('button', { type: 'button', class: 'btn btn-ink', onclick: espCarregar }, txt || 'Tentar de novo');
     if (st === 'carregando' || st === 'nada') c.append(el('p', { text: 'Carregando a lista de espera…' }));
     else if (st === 'criar') c.append(el('h2', { text: 'Criar a lista de espera' }),
-      el('p', { text: 'Os nomes e telefones dos clientes ficam num arquivo privado da conta ' + ESP_DONO + ' no GitHub, separado do site (o site é público). Só quem tem a chave do painel consegue abrir.' }),
+      el('p', { text: 'Os nomes e telefones dos clientes ficam num arquivo privado da organização ' + ESP_DONO + ' no GitHub, separado do site (o site é público). Só quem tem a chave do painel consegue abrir.' }),
       el('button', { type: 'button', class: 'btn btn-ink', onclick: espCriar }, 'Criar lista de espera'));
     else if (st === 'sem-escopo') c.append(el('h2', { text: 'Falta liberar a lista de espera na sua chave' }),
       el('p', { text: 'Os nomes e telefones dos clientes ficam num arquivo privado no GitHub, separado do site (o site é público). Para o painel abrir esse arquivo, a chave precisa da permissão “repo”:' }),
@@ -871,7 +875,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
         el('li', { text: 'Role até o fim e toque em “Update token”.' })),
       el('p', { class: 'small', text: 'A chave continua a mesma: não precisa entrar de novo no painel.' }), tentar('Já liberei, tentar de novo'));
     else if (st === 'sem-acesso') c.append(el('h2', { text: 'Esta chave não abre a lista de espera' }),
-      el('p', { text: 'A lista fica na conta ' + ESP_DONO + ' do GitHub. Entre no painel com a chave dessa conta (com a permissão “repo”) ou peça para o dono adicionar a sua conta no repositório “' + ESP_NOME + '”.' }), tentar());
+      el('p', { text: 'A lista fica na organização ' + ESP_DONO + ' do GitHub, e a sua conta não tem permissão para criar ou abrir o repositório “' + ESP_NOME + '” lá. Quem é dono (owner) da organização precisa criar a lista pelo painel ou dar acesso a esse repositório para a sua conta.' }), tentar());
     else if (st === 'publico') c.append(el('h2', { text: 'A lista de espera não está privada' }),
       el('p', { text: 'Por segurança, o painel não grava dados de clientes num repositório público. Avise o Claude no chat.' }));
     else c.append(el('h2', { text: 'Não consegui abrir a lista de espera' }), el('p', { text: S.esp.msg || 'Confira a internet e tente de novo.' }), tentar());
