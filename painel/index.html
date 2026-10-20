@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-19.4">
+<meta name="painel-versao" content="2026-10-19.5">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -936,10 +936,12 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     else c.append(el('h2', { text: 'Não consegui abrir a lista de espera' }), el('p', { text: S.esp.msg || 'Confira a internet e tente de novo.' }), tentar());
     return c;
   }
-  function pedidoEl(x) {
+  // Mensagem pronta do botão WhatsApp (dá para editar no WhatsApp antes de enviar).
+  const msgChegou = (perfume) => 'Opa, tudo certinho seu ' + (perfume || 'perfume') + ' chegou, como podemos combinar entrega?';
+  function pedidoEl(x, perfume) {
     const wa = waNumero(x.telefone); const concl = x.status === 'concluido';
     const btnWa = wa
-      ? el('a', { class: 'btn btn-wa', href: 'https://wa.me/' + wa, target: '_blank', rel: 'noopener', 'aria-label': 'Abrir a conversa com ' + (x.cliente || 'o cliente') + ' no WhatsApp' }, svgIcone(IC_CONVERSA), 'WhatsApp')
+      ? el('a', { class: 'btn btn-wa', href: 'https://wa.me/' + wa + '?text=' + encodeURIComponent(msgChegou(perfume)), target: '_blank', rel: 'noopener', 'aria-label': 'Abrir a conversa com ' + (x.cliente || 'o cliente') + ' no WhatsApp' }, svgIcone(IC_CONVERSA), 'WhatsApp')
       : el('span', { class: 'small', text: 'Telefone inválido' });
     const pz = concl ? null : prazoInfo(x.prazo);
     const quem = el('div', {}, el('div', { class: 'cli', text: x.cliente || 'Cliente' }), el('div', { class: 'tel num', text: [telBonito(x.telefone), 'desde ' + dataCurta(x.criado_em)].filter(Boolean).join(' · ') }),
@@ -989,7 +991,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
         el('div', { class: 'nm', text: p ? [p.nome, p.ml ? p.ml + ' ml' : ''].filter(Boolean).join(' ') : (xs[0].perfume_txt || 'Perfume') }), tag);
       const side = el('div', { class: 'side' }, el('span', { class: 'esp-n num', text: xs.length + (xs.length === 1 ? ' cliente' : ' clientes') }),
         S.esp.aba === 'concluido' ? null : el('button', { type: 'button', class: 'btn-text', onclick: () => espAbrirEditor(null, { id: xs[0].perfume_id || '', txt: p ? label(p) : xs[0].perfume_txt }) }, '+ Cliente'));
-      box.append(el('section', { class: 'esp-grupo' }, el('div', { class: 'esp-head' }, thumbDe(p), info, side), xs.map(pedidoEl)));
+      box.append(el('section', { class: 'esp-grupo' }, el('div', { class: 'esp-head' }, thumbDe(p), info, side), xs.map((x) => pedidoEl(x, nomeP(x)))));
     }
   }
   async function espStatus(x, concluir) {
