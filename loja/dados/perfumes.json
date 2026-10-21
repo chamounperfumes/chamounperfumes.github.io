@@ -281,9 +281,9 @@
   "ml": 200,
   "vista": 700,
   "parcelado": 750,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
-  "ordem": 70,
+  "ordem": 60,
   "acordes": [
    "Especiado quente",
    "Baunilha",
@@ -303,7 +303,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Jean-Paul-Gaultier/Le-Male-Le-Parfum-61856.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -924,11 +924,11 @@
   "nome": "1 Million",
   "tipo": "EDT",
   "ml": 200,
-  "vista": 620,
-  "parcelado": 660,
-  "status": "arquivado",
+  "vista": 660,
+  "parcelado": 700,
+  "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 220,
+  "ordem": 70,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -949,12 +949,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-3747.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 660,
     "vista": 620
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 660,
+    "parcelado": 700
    }
   ]
  },
@@ -963,13 +968,13 @@
   "secao": "Masculinos",
   "marca": "Paco Rabanne",
   "nome": "1 Million Parfum",
-  "tipo": "EDP",
+  "tipo": "Parfum",
   "ml": 100,
-  "vista": 500,
-  "parcelado": 540,
-  "status": "arquivado",
+  "vista": 560,
+  "parcelado": 600,
+  "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 230,
+  "ordem": 110,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -988,12 +993,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Parfum-60035.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 540,
     "vista": 500
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 560,
+    "parcelado": 600
    }
   ]
  },
@@ -1002,13 +1012,13 @@
   "secao": "Masculinos",
   "marca": "Paco Rabanne",
   "nome": "1 Million Parfum",
-  "tipo": "EDP",
+  "tipo": "Parfum",
   "ml": 200,
-  "vista": 640,
-  "parcelado": 680,
-  "status": "arquivado",
+  "vista": 700,
+  "parcelado": 750,
+  "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 240,
+  "ordem": 120,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1027,12 +1037,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Parfum-60035.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 680,
     "vista": 640
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 700,
+    "parcelado": 750
    }
   ]
  },
@@ -1041,13 +1056,13 @@
   "secao": "Masculinos",
   "marca": "Paco Rabanne",
   "nome": "1 Million Black",
-  "tipo": "",
+  "tipo": "EDP",
   "ml": 100,
   "vista": 600,
   "parcelado": 640,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 241,
+  "ordem": 80,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1067,7 +1082,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
@@ -1489,7 +1504,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 10,
+  "ordem": 170,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -2171,13 +2186,13 @@
   "secao": "Masculinos",
   "marca": "Paco Rabanne",
   "nome": "Invictus Elixir",
-  "tipo": "",
+  "tipo": "Parfum Elixir",
   "ml": 100,
-  "vista": 600,
-  "parcelado": 640,
-  "status": "arquivado",
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 510,
+  "ordem": 130,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2198,12 +2213,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Elixir-126365.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 640,
     "vista": 600
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 640,
+    "parcelado": 680
    }
   ]
  },
@@ -2212,13 +2232,13 @@
   "secao": "Masculinos",
   "marca": "Paco Rabanne",
   "nome": "Invictus Elixir",
-  "tipo": "",
+  "tipo": "Parfum Elixir",
   "ml": 200,
-  "vista": 800,
-  "parcelado": 850,
-  "status": "arquivado",
+  "vista": 830,
+  "parcelado": 880,
+  "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 520,
+  "ordem": 140,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2239,7 +2259,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Elixir-126365.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -2250,6 +2270,11 @@
     "em": "2026-10-16T10:08:21.000Z",
     "parcelado": 850,
     "vista": 800
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 830,
+    "parcelado": 880
    }
   ]
  },
@@ -2305,7 +2330,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
-  "ordem": 30,
+  "ordem": 50,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -2710,7 +2735,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "3ebe46ca6f0366976390657074579a52",
-  "ordem": 90,
+  "ordem": 110,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -3075,13 +3100,13 @@
   "secao": "Femininos",
   "marca": "Calvin Klein",
   "nome": "Euphoria",
-  "tipo": "",
+  "tipo": "EDP",
   "ml": 100,
-  "vista": 440,
-  "parcelado": 480,
-  "status": "arquivado",
+  "vista": 450,
+  "parcelado": 490,
+  "status": "ativo",
   "foto": "ccd1687a221d153e33443957c108e47e",
-  "ordem": 160,
+  "ordem": 10,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -3100,12 +3125,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-253.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-16T10:01:35.000Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 480,
     "vista": 440
+   },
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 450,
+    "parcelado": 490
    }
   ]
  },
@@ -3445,7 +3475,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "236797194a60f1bca673574eb18b0512",
-  "ordem": 60,
+  "ordem": 20,
   "acordes": [
    "Floral",
    "Almiscarado",
@@ -3735,7 +3765,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "42ebe68564d18e213102f67be49aa1c2",
-  "ordem": 40,
+  "ordem": 30,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -3980,30 +4010,29 @@
   "ml": 100,
   "vista": 650,
   "parcelado": 690,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
-  "ordem": 360,
+  "ordem": 80,
   "acordes": [
    "Cítrico",
-   "Almiscarado",
-   "Fresco",
-   "Frutado",
-   "Aromático",
    "Âmbar",
-   "Atalcado",
+   "Floral",
+   "Aromático",
    "Amadeirado",
-   "Floral branco",
-   "Verde"
+   "Especiado quente",
+   "Especiado fresco",
+   "Tropical",
+   "Balsâmico"
   ],
   "notas": {
-   "coracao": "jasmim, calêndula",
-   "fundo": "almíscar, amberwood",
-   "topo": "limão, maçã verde"
+   "topo": "limão siciliano, bergamota da Calábria, pimenta rosa",
+   "coracao": "frangipani, calêndula, canela",
+   "fundo": "madeira de âmbar, benjoim"
   },
-  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-Intense-44034.html",
-  "perfil_em": "2026-10-15",
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Light-Blue-Eau-de-Parfum-128390.html",
+  "perfil_em": "2026-10-21",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -4403,16 +4432,16 @@
  },
  {
   "id": "mugler-angel-200",
-  "secao": "Femininos",
+  "secao": "Outros produtos",
   "marca": "Mugler",
   "nome": "Angel",
   "tipo": "Hidratante corporal",
   "ml": 200,
   "vista": 500,
   "parcelado": 540,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "883ff5f899070cc98ffa615668df2ee2",
-  "ordem": 470,
+  "ordem": 10,
   "acordes": [
    "Doce",
    "Patchouli",
@@ -4433,7 +4462,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -4571,7 +4600,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "4e8f8dbda46995c9107603d2a8a72087",
-  "ordem": 50,
+  "ordem": 40,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4609,7 +4638,7 @@
   "ml": 80,
   "vista": 700,
   "parcelado": 750,
-  "ordem": 10,
+  "ordem": 50,
   "acordes": [
    "Floral",
    "Tropical",
@@ -4646,7 +4675,7 @@
   "ml": 50,
   "vista": 620,
   "parcelado": 660,
-  "ordem": 20,
+  "ordem": 60,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4682,7 +4711,7 @@
   "ml": 80,
   "vista": 750,
   "parcelado": 790,
-  "ordem": 30,
+  "ordem": 70,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4718,7 +4747,7 @@
   "ml": 50,
   "vista": 460,
   "parcelado": 500,
-  "ordem": 70,
+  "ordem": 120,
   "acordes": [
    "Frutado",
    "Floral",
@@ -4754,7 +4783,7 @@
   "ml": 30,
   "vista": 270,
   "parcelado": 300,
-  "ordem": 80,
+  "ordem": 100,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -4793,7 +4822,7 @@
   "ml": 50,
   "vista": 350,
   "parcelado": 390,
-  "ordem": 20,
+  "ordem": 40,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -4819,6 +4848,409 @@
     "em": "2026-10-21T09:50:05Z",
     "vista": 350,
     "parcelado": 390
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-men-100",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "212 Men",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 620,
+  "parcelado": 660,
+  "foto": "4bf71a045bcf14e155cc412dbad0cb97",
+  "acordes": [
+   "Cítrico",
+   "Verde",
+   "Especiado fresco",
+   "Aromático",
+   "Amadeirado",
+   "Atalcado",
+   "Especiado quente",
+   "Almiscarado",
+   "Lavanda",
+   "Herbal"
+  ],
+  "notas": {
+   "coracao": "gengibre, violeta, gardênia, sálvia, pimenta verde",
+   "fundo": "almíscar, sândalo, vetiver, incenso, guaiaco, láudano",
+   "topo": "notas verdes, toranja, especiarias, bergamota, lavanda, petitgrain"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 10,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 620,
+    "parcelado": 660
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-212-vip-black-kit-100",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "212 VIP Black",
+  "tipo": "Kit com sabonete de banho",
+  "ml": 100,
+  "vista": 550,
+  "parcelado": 590,
+  "foto": "",
+  "acordes": [
+   "Aromático",
+   "Baunilha",
+   "Especiado suave",
+   "Lavanda",
+   "Anis",
+   "Almiscarado",
+   "Atalcado",
+   "Amargo",
+   "Doce",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "coracao": "lavanda",
+   "fundo": "fava de baunilha negra, almíscar",
+   "topo": "absinto, anis, erva-doce"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 20,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 550,
+    "parcelado": 590
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-bad-boy-cobalt-150",
+  "secao": "Masculinos",
+  "marca": "Carolina Herrera",
+  "nome": "Bad Boy Cobalt",
+  "tipo": "EDP Électrique",
+  "ml": 150,
+  "vista": 500,
+  "parcelado": 550,
+  "foto": "",
+  "acordes": [
+   "Aromático",
+   "Amadeirado",
+   "Frutado",
+   "Lavanda",
+   "Especiado fresco",
+   "Terroso",
+   "Doce",
+   "Especiado suave",
+   "Herbal",
+   "Rosa"
+  ],
+  "notas": {
+   "topo": "lavanda, pimenta rosa",
+   "coracao": "ameixa, gerânio",
+   "fundo": "cedro, vetiver, trufa, carvalho"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 30,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 500,
+    "parcelado": 550
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-black-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Black",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 770,
+  "parcelado": 820,
+  "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Frutado",
+   "Tropical",
+   "Especiado quente",
+   "Coco",
+   "Aromático",
+   "Amadeirado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "baunilha, coco, sálvia esclareia",
+   "fundo": "fava tonka, ébano, patchouli",
+   "topo": "abacaxi, cardamomo, laranja sanguínea"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
+  "perfil_em": "2026-10-16",
+  "status": "ativo",
+  "ordem": 90,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 770,
+    "parcelado": 820
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-1-million-night-elixir-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "1 Million Night Elixir",
+  "tipo": "Parfum Elixir",
+  "ml": 100,
+  "vista": 640,
+  "parcelado": 680,
+  "foto": "",
+  "acordes": [
+   "Âmbar",
+   "Baunilha",
+   "Doce",
+   "Especiado quente",
+   "Canela",
+   "Cítrico",
+   "Frutado",
+   "Balsâmico",
+   "Atalcado"
+  ],
+  "notas": {
+   "topo": "tangerina, bergamota, limão",
+   "coracao": "xarope de bordo, canela, lavanda",
+   "fundo": "baunilha, benjoim, ládano"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 100,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 640,
+    "parcelado": 680
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-victory-absolu-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Victory Absolu",
+  "tipo": "Parfum Intense",
+  "ml": 100,
+  "vista": 640,
+  "parcelado": 680,
+  "foto": "",
+  "acordes": [
+   "Âmbar",
+   "Amadeirado",
+   "Especiado fresco",
+   "Especiado quente",
+   "Atalcado",
+   "Animálico",
+   "Balsâmico"
+  ],
+  "notas": {
+   "topo": "pimenta-do-reino",
+   "coracao": "âmbar, âmbar cinza, notas amadeiradas",
+   "fundo": "sândalo, olíbano, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 150,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 640,
+    "parcelado": 680
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-invictus-victory-extreme-200",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Victory Extreme",
+  "tipo": "EDP",
+  "ml": 200,
+  "vista": 750,
+  "parcelado": 800,
+  "foto": "36f85de809c822c4d382d69ab524559c",
+  "acordes": [
+   "Baunilha",
+   "Âmbar",
+   "Doce",
+   "Aromático",
+   "Especiado suave",
+   "Lavanda",
+   "Atalcado",
+   "Especiado fresco",
+   "Cítrico",
+   "Balsâmico"
+  ],
+  "notas": {
+   "coracao": "olíbano, lavanda",
+   "fundo": "baunilha, fava tonka, âmbar",
+   "topo": "pimenta rosa, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 160,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 750,
+    "parcelado": 800
+   }
+  ]
+ },
+ {
+  "id": "paco-rabanne-olympea-absolu-80",
+  "secao": "Femininos",
+  "marca": "Paco Rabanne",
+  "nome": "Olympéa Absolu",
+  "tipo": "Parfum Intense",
+  "ml": 80,
+  "vista": 660,
+  "parcelado": 700,
+  "foto": "",
+  "acordes": [
+   "Baunilha",
+   "Floral branco",
+   "Âmbar",
+   "Atalcado",
+   "Frutado",
+   "Doce",
+   "Animálico",
+   "Lactônico"
+  ],
+  "notas": {
+   "topo": "damasco, canela",
+   "coracao": "jasmim, jasmim sambac, flor de laranjeira, café",
+   "fundo": "baunilha, âmbar, benjoim"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 140,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 660,
+    "parcelado": 700
+   }
+  ]
+ },
+ {
+  "id": "mugler-angel-100",
+  "secao": "Femininos",
+  "marca": "Mugler",
+  "nome": "Angel",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 900,
+  "parcelado": 950,
+  "foto": "",
+  "acordes": [
+   "Doce",
+   "Patchouli",
+   "Especiado quente",
+   "Frutado",
+   "Caramelo",
+   "Baunilha",
+   "Amadeirado",
+   "Mel",
+   "Atalcado",
+   "Chocolate"
+  ],
+  "notas": {
+   "coracao": "mel, frutas vermelhas, amora, ameixa, damasco, jasmim, pêssego, noz-moscada, orquídea, rosa",
+   "fundo": "patchouli, chocolate, caramelo, baunilha, fava tonka, âmbar, almíscar, sândalo",
+   "topo": "algodão-doce, coco, cassis, melão, jasmim, bergamota, abacaxi, tangerina"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 130,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 900,
+    "parcelado": 950
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-the-one-75",
+  "secao": "Femininos",
+  "marca": "Dolce & Gabbana",
+  "nome": "The One",
+  "tipo": "EDP",
+  "ml": 75,
+  "vista": 800,
+  "parcelado": 850,
+  "foto": "",
+  "acordes": [
+   "Frutado",
+   "Floral branco",
+   "Baunilha",
+   "Atalcado",
+   "Doce",
+   "Âmbar",
+   "Cítrico",
+   "Fresco",
+   "Almiscarado",
+   "Especiado suave"
+  ],
+  "notas": {
+   "topo": "pêssego, lichia, tangerina, bergamota",
+   "coracao": "lírio, ameixa, jasmim, lírio-do-vale",
+   "fundo": "baunilha, âmbar, almíscar, vetiver"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 90,
+  "criado_em": "2026-10-21T10:01:50Z",
+  "atualizado_em": "2026-10-21T10:01:50Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:01:50Z",
+    "vista": 800,
+    "parcelado": 850
    }
   ]
  }
