@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="painel-versao" content="2026-10-20.1">
+<title>Painel da Loja · Chamoun</title>
+<meta name="theme-color" content="#FFFFFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Painel Loja">
+<link rel="icon" href="../img/icone.png">
+<link rel="apple-touch-icon" href="../img/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Painel da LOJA FÍSICA (separado do painel do site online).
+   Os dados ficam no GitHub (loja/dados/perfumes.json e loja/dados/config.json); o botão "Publicar"
+   grava lá e o robô "Publicar loja" monta loja/index.html e loja/catalogo.pdf. */
+:root{
+  --ground:#F4F4F2; --surface:#FFFFFF; --ink:#121212; --muted:#6B6B66; --faint:#97978F; --line:#E6E6E1;
+  --chip:#ECECE8; --ok:#22704A; --warn:#8A5A12; --danger:#B03A2B; --scrim:rgba(18,18,18,.42);
+  --sans:'Plus Jakarta Sans','Avenir Next','Segoe UI',system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:14.5px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+img{max-width:100%}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.num{font-variant-numeric:lining-nums tabular-nums}
+
+.band{background:var(--surface);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.band .wrap{padding-block:14px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{height:30px;width:auto;display:block}
+.tag{background:var(--chip);color:var(--muted);border-radius:999px;padding:4px 10px}
+.hright{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;justify-content:flex-end}
+.hmsg{margin:0;color:var(--muted);font-size:13px}
+.hmsg strong{color:var(--ink)}
+.btn{appearance:none;border:1px solid transparent;border-radius:999px;padding:10px 18px;min-height:44px;font-weight:700;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;white-space:nowrap}
+.btn[disabled]{opacity:.45;cursor:default}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-line{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-text{background:none;border:none;padding:8px;min-height:36px;color:var(--muted);cursor:pointer;border-radius:999px;font-weight:600;font-size:13px}
+.btn-text:hover{color:var(--ink);background:var(--chip)}
+.btn-text[disabled]{opacity:.45;cursor:default;background:none}
+.btn svg{width:18px;height:18px;flex:none}
+
+main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
+.card{background:var(--surface);border-radius:18px;padding:20px}
+.login{max-width:520px;margin:6vh auto 0;display:flex;flex-direction:column;gap:14px}
+.login h1{margin:0;font-size:22px;font-weight:800;letter-spacing:-.02em}
+.login p{margin:0;color:var(--muted)}
+.check{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13.5px}
+.check input{width:18px;height:18px;accent-color:var(--ink)}
+.err{color:var(--danger);font-size:13.5px;margin:0}
+.notice{background:var(--surface);border-radius:16px;padding:16px 18px;color:var(--muted)}
+
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.seg{display:inline-flex;background:var(--chip);border-radius:999px;padding:4px;gap:4px}
+.seg button{border:0;background:none;border-radius:999px;padding:7px 14px;min-height:38px;cursor:pointer;color:var(--muted);font-weight:700;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.seg .count{color:var(--faint);font-weight:500;margin-left:3px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;flex:1 1 420px;justify-content:flex-end;min-width:0}
+.search{flex:1 1 200px;min-width:0;position:relative}
+.search input{width:100%;min-height:44px;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:10px 14px 10px 40px;font-size:16px}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--muted)}
+.chips{display:flex;gap:4px;flex-wrap:wrap;background:var(--chip);border-radius:999px;padding:4px}
+.chip{border:0;background:none;border-radius:999px;padding:7px 12px;min-height:36px;cursor:pointer;color:var(--muted);font-weight:700;font-size:13px}
+.chip[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+
+.section-head{display:flex;align-items:baseline;gap:8px;margin:6px 2px 10px}
+.section-head h2{margin:0;font-size:20px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.section-head span{color:var(--faint);font-weight:600;font-size:13px}
+.rows{background:var(--surface);border-radius:18px;overflow:hidden}
+.row{display:grid;grid-template-columns:56px minmax(0,1fr) 116px 116px 128px auto;gap:14px;align-items:center;padding:12px 16px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row.pend{background:#FFFBEF}
+.thumb{width:56px;height:56px;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line)}
+.thumb img{width:100%;height:100%;object-fit:contain}
+.nofoto{font-size:10px;color:var(--muted);text-align:center;line-height:1.1;padding:4px}
+.info{min-width:0}
+.info .mk{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.info .nm{font-size:15.5px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.info .mt{font-size:12.5px;color:var(--muted)}
+.dot{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:700;color:var(--warn);background:#FFF1CC;border-radius:999px;padding:1px 7px;vertical-align:2px}
+.price{display:flex;flex-direction:column;gap:3px}
+.price span{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.price .field{position:relative}
+.price .field::before{content:"R$";position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:12.5px;font-weight:600}
+.price input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:8px 8px 8px 34px;font-weight:700;font-variant-numeric:tabular-nums;font-size:16px}
+.price input.saved{border-color:var(--ok)}
+.price input.bad{border-color:var(--danger)}
+.inst{font-size:12.5px;color:var(--muted);line-height:1.25}
+.inst strong{display:block;color:var(--ink);font-weight:700;font-size:14.5px}
+.acts{display:flex;gap:2px;justify-content:flex-end}
+@media (max-width:860px){
+  .row{grid-template-columns:56px minmax(0,1fr) auto;grid-template-areas:"t i a" "p p p";row-gap:10px}
+  .row .thumb{grid-area:t}.row .info{grid-area:i}.row .acts{grid-area:a}.row .pgroup{grid-area:p}
+}
+.pgroup{display:contents}
+@media (max-width:860px){.pgroup{display:grid;grid-template-columns:1fr 1fr minmax(0,1.1fr);gap:10px;align-items:end}}
+@media (max-width:420px){.acts{flex-direction:column;align-items:flex-end;gap:0}}
+
+/* Barra de publicar (fixa embaixo) */
+.pubbar{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--ink);color:#fff;padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px -12px rgba(0,0,0,.4)}
+.pubbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pubbar p{margin:0;font-size:14px;font-weight:600}
+.pubbar p small{display:block;font-weight:500;color:rgba(255,255,255,.7);font-size:12.5px}
+.pubbar .b{display:flex;gap:8px}
+.pubbar .btn-pub{background:#fff;color:var(--ink)}
+.pubbar .btn-des{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.pubbar.ok{background:var(--ok)}
+
+/* Editor */
+.scrim{position:fixed;inset:0;background:var(--scrim);display:grid;place-items:center;padding:16px;z-index:20}
+.sheet{background:var(--surface);border-radius:22px;width:min(640px,100%);max-height:calc(100% - 16px);overflow:auto;padding:22px;display:flex;flex-direction:column;gap:16px;box-shadow:0 24px 60px -20px rgba(0,0,0,.45);overscroll-behavior:contain}
+.sheet h2{margin:0;font-size:20px;font-weight:800;letter-spacing:-.02em}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.grid2{grid-template-columns:1fr}}
+.fld{display:flex;flex-direction:column;gap:5px;min-width:0}
+.fld label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.fld input,.fld select{min-height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;width:100%;font-size:16px}
+.photo-edit{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.photo-edit .big{width:110px;height:110px;border-radius:14px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.photo-edit .big img{width:100%;height:100%;object-fit:contain}
+.file-pill{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border-radius:999px;padding:8px 14px;color:var(--muted);cursor:pointer;min-height:44px;font-weight:600;font-size:13px;position:relative}
+.file-pill input{position:absolute;opacity:0;width:1px;height:1px}
+.file-pill:focus-within{outline:2px solid var(--ink);outline-offset:2px}
+.small{color:var(--muted);font-size:13px}
+.calc{background:var(--ground);border-radius:14px;padding:12px 14px;color:var(--muted)}
+.calc strong{color:var(--ink);font-weight:700}
+.perfil-ed{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.perfil-src{margin:0;font-size:12px;color:var(--muted);line-height:1.4}
+.perfil-src a{color:inherit}
+.hist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.sheet-foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:14px}
+.sheet-foot .right{display:flex;gap:10px;flex-wrap:wrap}
+.confirm{background:var(--ground);border-radius:14px;padding:12px 14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.toast{position:fixed;left:50%;transform:translateX(-50%);top:calc(14px + env(safe-area-inset-top,0px));background:var(--ink);color:#fff;padding:12px 18px;border-radius:14px;z-index:30;max-width:calc(100% - 32px);box-shadow:0 10px 30px -10px rgba(0,0,0,.4);font-weight:600;font-size:13.5px}
+/* Acessos (GoatCounter) */
+.acessos{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;padding:18px 20px}
+.ac-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ac-head h2{margin:0;font-size:16px;font-weight:800;letter-spacing:-.01em}
+.ac-head a{text-decoration:none;white-space:nowrap}
+.ac-nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ac-nums div{background:var(--ground);border-radius:14px;padding:12px 14px;min-width:0}
+.ac-nums b{display:block;font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.ac-nums span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+@media (max-width:420px){.ac-nums{gap:6px}.ac-nums div{padding:10px}.ac-nums b{font-size:20px}.ac-nums span{font-size:11px}}
+.ac-msg{margin:0;font-size:12.5px;color:var(--muted);line-height:1.4}
+.acessos .check{font-size:12.5px}
+/* Catálogo | Lista de espera */
+.views{display:flex;width:max-content;max-width:100%;margin-bottom:16px}
+.views button{padding:9px 18px;min-height:42px;font-size:14px;position:relative}
+.views .alerta{position:absolute;top:-6px;right:-2px;margin:0;box-shadow:0 0 0 2px var(--chip)}
+@media (max-width:520px){.views{width:100%}.views button{flex:1}}
+.esp-dot{border:0;cursor:pointer;font-family:inherit;color:var(--ok);background:#E3F1E8}
+.sheet-foot .right{margin-left:auto}
+.alerta{display:inline-block;margin-left:6px;min-width:20px;padding:1px 6px;border-radius:999px;background:#C0392B;color:#fff;font-size:11.5px;font-weight:800;text-align:center}
+.fld input[type=date]{-webkit-appearance:none;appearance:none;text-align:left;background:#fff;color:var(--ink)}
+.fld textarea{min-height:84px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;width:100%;font:inherit;font-size:16px;resize:vertical}
+.foot{color:var(--faint);font-size:12.5px;text-align:center;margin-top:8px}
+.lj{display:flex;flex-direction:column;gap:14px;margin-bottom:16px}
+.lj-h{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.lj-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lj-foot .btn{margin-left:auto}
+.lj-secs{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.lj-sec{display:flex;align-items:center;gap:10px;padding:10px 6px 10px 14px;border-top:1px solid var(--line)}
+.lj-sec:first-child{border-top:0}
+.lj-sec .info{flex:1}
+.lj-sec .nm{font-size:15px}
+.lj-sec .acts{flex-direction:row;align-items:center}
+.lj-sec .btn-text{min-width:36px;font-size:14px}
+.lj-add{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.lj-add .btn{align-self:flex-start}
+.foot a{color:inherit}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="brand"><img src="../img/logo-preto.png" alt="Chamoun Perfumes Importados" width="600" height="132"><span class="tag eyebrow">Painel da loja</span></div>
+    <div class="hright">
+      <p class="hmsg num" id="hmsg"></p>
+      <a class="btn btn-line" href="../" target="_blank" rel="noopener">Ver site</a>
+      <button class="btn-text" type="button" id="sair" hidden>Sair</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section class="card login" id="login" hidden>
+    <h1>Entrar no painel</h1>
+    <p>Cole a chave de acesso do GitHub (a mesma do painel do site). Ela fica guardada só neste aparelho.</p>
+    <div class="fld"><label for="chave">Chave de acesso</label><input id="chave" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ghp_… ou github_pat_…"></div>
+    <label class="check"><input type="checkbox" id="lembrar" checked> Lembrar neste aparelho</label>
+    <p class="err" id="login-err" role="alert"></p>
+    <button class="btn btn-ink" type="button" id="entrar">Entrar</button>
+    <button class="btn btn-line" type="button" id="usar-principal" hidden>Usar a mesma chave do painel do site</button>
+  </section>
+
+  <div id="app" hidden>
+    <div class="seg views" role="group" aria-label="Área do painel">
+      <button type="button" id="v-cat" aria-pressed="true">Catálogo</button>
+      <button type="button" id="v-loja" aria-pressed="false">Dados da loja</button>
+    </div>
+    <div id="view-cat">
+    <section class="card acessos" aria-labelledby="ac-t">
+      <div class="ac-head"><h2 id="ac-t">Visitas no site da loja</h2><a class="btn-text" href="https://chamoun.goatcounter.com" target="_blank" rel="noopener">Ver detalhes</a></div>
+      <div class="ac-nums num">
+        <div><b id="ac-hoje">–</b><span>Hoje</span></div>
+        <div><b id="ac-7">–</b><span>Últimos 7 dias</span></div>
+        <div><b id="ac-30">–</b><span>Últimos 30 dias</span></div>
+      </div>
+      <p class="ac-msg" id="ac-msg">Carregando…</p>
+      <label class="check"><input type="checkbox" id="ac-skip"> Não contar as visitas feitas deste aparelho</label>
+    </section>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Situação">
+        <button type="button" id="tab-ativo" aria-pressed="true">No catálogo <span class="count num" id="c-ativo">0</span></button>
+        <button type="button" id="tab-arquivado" aria-pressed="false">Inativos <span class="count num" id="c-arquivado">0</span></button>
+      </div>
+      <div class="filters">
+        <div class="chips" id="chips" role="group" aria-label="Seção"></div>
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <label for="q" style="position:absolute;left:-9999px">Buscar produto</label>
+          <input id="q" type="search" placeholder="Buscar marca ou produto" autocomplete="off">
+        </div>
+        <button class="btn btn-ink" id="novo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Novo produto</button>
+      </div>
+    </div>
+    <div id="list" style="margin-top:16px"></div>
+    <p class="foot">Pedidos por print do WhatsApp: mande para o Claude no chat e diga que é da loja.<br><a href="../../painel/">Ir para o painel do site online</a></p>
+    </div>
+    <div id="view-loja" hidden>
+      <section class="card lj" aria-labelledby="l-t">
+        <h2 class="lj-h" id="l-t">Dados da loja</h2>
+        <p class="small" style="margin:-6px 0 0">Aparecem no topo do site e na lista que o cliente separa. Deixe em branco o que não quiser mostrar.</p>
+        <div class="fld"><label for="l-endereco">Endereço</label><input id="l-endereco" autocomplete="off" placeholder="Rua, número, bairro, cidade"></div>
+        <div class="fld"><label for="l-horario">Horário de funcionamento</label><textarea id="l-horario" rows="3" placeholder="Seg a sex: 9h às 18h&#10;Sábado: 9h às 13h"></textarea></div>
+        <div class="grid2">
+          <div class="fld"><label for="l-whatsapp">WhatsApp da loja</label><input id="l-whatsapp" type="tel" inputmode="tel" autocomplete="off" placeholder="(11) 98765-4321"></div>
+          <div class="fld"><label for="l-instagram">Instagram</label><input id="l-instagram" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@sualoja"></div>
+          <div class="fld"><label for="l-parcelas">Parcelar em até</label><select id="l-parcelas"></select></div>
+          <div class="fld"><label for="l-mapa">Link do mapa (opcional)</label><input id="l-mapa" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Se ficar vazio, uso o endereço"></div>
+        </div>
+        <div class="lj-foot"><span class="small" id="l-status"></span><button class="btn btn-ink" type="button" id="l-guardar">Guardar dados</button></div>
+      </section>
+      <section class="card lj" aria-labelledby="l-t2">
+        <h2 class="lj-h" id="l-t2">Seções do catálogo</h2>
+        <p class="small" style="margin:-6px 0 0">A ordem daqui é a ordem no site. Seção vazia não aparece para os clientes.</p>
+        <div id="l-secoes" class="lj-secs"></div>
+        <div class="lj-add">
+          <div class="fld"><label for="l-nova">Nova seção</label><input id="l-nova" autocomplete="off" placeholder="Ex.: Body splash, Kits, Hidratantes"></div>
+          <label class="check"><input type="checkbox" id="l-nova-perf"> É de perfumes (com notas e no “Me ajuda a escolher”)</label>
+          <button class="btn btn-line" type="button" id="l-add">Adicionar seção</button>
+        </div>
+      </section>
+      <p class="foot">O que muda aqui também só vai para o site depois de “Publicar no site”.<br>A lista de espera continua no <a href="../../painel/">painel do site online</a>.</p>
+    </div>
+  </div>
+  <div class="notice" id="carregando" hidden>Carregando a loja…</div>
+</main>
+
+<div class="pubbar" id="pubbar" hidden>
+  <div class="wrap">
+    <p id="pub-txt"></p>
+    <div class="b" id="pub-btns">
+      <button class="btn btn-des" type="button" id="descartar">Descartar</button>
+      <button class="btn btn-pub" type="button" id="publicar">Publicar no site</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="editor" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ed-title">
+    <h2 id="ed-title">Editar produto</h2>
+    <div class="photo-edit">
+      <div class="big" id="ed-photo"></div>
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+        <label class="file-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" width="18" height="18"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5-5-9 8"/></svg>
+          <span id="ed-foto-label">Trocar foto</span>
+          <input type="file" id="ed-foto" accept="image/*">
+        </label>
+        <span class="small" id="ed-foto-status"></span>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="fld"><label for="f-marca" id="f-marca-l">Marca</label><input id="f-marca" autocomplete="off" list="marcas"></div>
+      <div class="fld"><label for="f-nome">Nome</label><input id="f-nome" autocomplete="off"></div>
+      <div class="fld"><label for="f-tipo" id="f-tipo-l">Concentração</label><input id="f-tipo" list="tipos" autocomplete="off" placeholder="EDP, EDT, Parfum…"></div>
+      <div class="fld"><label for="f-ml" id="f-ml-l">Volume (ml)</label><input id="f-ml" type="number" min="1" step="1" inputmode="numeric"></div>
+      <div class="fld"><label for="f-vista">Preço à vista (R$)</label><input id="f-vista" type="number" min="0" step="0.01" inputmode="decimal"></div>
+      <div class="fld"><label for="f-parcelado">Preço a prazo (R$)</label><input id="f-parcelado" type="number" min="0" step="0.01" inputmode="decimal"></div>
+      <div class="fld"><label for="f-secao">Seção</label><select id="f-secao"></select></div>
+      <div class="fld"><label for="f-status">Situação</label><select id="f-status"><option value="ativo">No catálogo</option><option value="arquivado">Inativo (fora do catálogo)</option></select></div>
+    </div>
+    <div class="calc" id="ed-calc"></div>
+    <div class="perfil-ed" id="ed-perfil">
+      <div class="eyebrow" style="color:var(--muted)">Perfil olfativo · usado pelo assistente do site</div>
+      <div class="fld"><label for="f-acordes">Acordes (do mais forte ao mais fraco, separados por vírgula)</label><input id="f-acordes" autocomplete="off" placeholder="Ex.: Baunilha, Âmbar, Doce, Amadeirado"></div>
+      <div class="grid2">
+        <div class="fld"><label for="f-n-topo">Notas de saída</label><input id="f-n-topo" autocomplete="off"></div>
+        <div class="fld"><label for="f-n-coracao">Notas de coração</label><input id="f-n-coracao" autocomplete="off"></div>
+        <div class="fld"><label for="f-n-fundo">Notas de fundo</label><input id="f-n-fundo" autocomplete="off"></div>
+      </div>
+      <p class="perfil-src" id="ed-perfil-src"></p>
+    </div>
+    <div id="ed-hist-wrap" hidden><div class="eyebrow" style="color:var(--muted);margin-bottom:6px">Histórico de preços</div><ul class="hist" id="ed-hist"></ul></div>
+    <div class="confirm" id="ed-confirm" hidden>
+      <span>Excluir de vez? Para guardar o histórico, prefira deixar como inativo.</span>
+      <span style="display:flex;gap:8px"><button class="btn btn-line" type="button" id="ed-del-no">Manter</button><button class="btn btn-danger" type="button" id="ed-del-yes">Excluir</button></span>
+    </div>
+    <div class="sheet-foot">
+      <button class="btn-text" type="button" id="ed-del">Excluir</button>
+      <div class="right"><button class="btn btn-line" type="button" id="ed-cancel">Cancelar</button><button class="btn btn-ink" type="button" id="ed-save">Salvar</button></div>
+    </div>
+  </div>
+</div>
+<datalist id="tipos"><option value="EDP"><option value="EDT"><option value="Parfum"><option value="Parfum Intense"><option value="Elixir de Parfum"><option value="Extrait de Parfum"><option value="Tradicional"></datalist>
+<datalist id="tipos-outros"><option value="Body splash"><option value="Hidratante"><option value="Kit"><option value="Óleo corporal"><option value="Sabonete"><option value="Desodorante"><option value="Creme"></datalist>
+<datalist id="marcas"></datalist>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(() => {
+  const REPO = 'chamounperfumes/chamounperfumes.github.io', BRANCH = 'main', ARQ = 'loja/dados/perfumes.json', CFG = 'loja/dados/config.json', IMG = 'loja/img/';
+  const API = 'https://api.github.com/repos/' + REPO;
+  const K_CHAVE = 'chamoun-loja-painel-chave', K_PEND = 'chamoun-loja-painel-pendentes', K_CHAVE_SITE = 'chamoun-painel-chave';
+  const $ = (s) => document.querySelector(s);
+  const S = {
+    chave: '', base: [], baseCommit: '', cfg: { parcelas: 6, secoes: ['Masculinos', 'Femininos'] },
+    pend: [], fotos: {}, preview: {}, status: 'ativo', secao: 'Todas', q: '',
+    editing: null, edFoto: '', publicando: false, ultimaPub: '',
+  };
+
+  /* ---------- utilidades ---------- */
+  const money = (v) => Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const nParc = () => Number(cfgAtual().parcelas) || 6;
+  const parcela = (t) => Math.floor(Math.round(Number(t) * 100) / nParc()) / 100;
+  const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const nowISO = () => new Date().toISOString();
+  const secoes = () => { const c = cfgAtual(); return Array.isArray(c.secoes) && c.secoes.length ? c.secoes : ['Masculinos', 'Femininos']; };
+  const label = (p) => [p.marca, p.nome, p.ml ? p.ml + ' ml' : ''].filter(Boolean).join(' ');
+  const slug = (s) => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'produto';
+  const toNum = (v) => { if (v === null || v === undefined || v === '') return NaN; return Number(String(v).replace(/\./g, (m, i, s) => (s.includes(',') ? '' : m)).replace(',', '.')); };
+  const hex = (n) => [...crypto.getRandomValues(new Uint8Array(n))].map((b) => b.toString(16).padStart(2, '0')).join('');
+  const store = { get(k) { try { return localStorage.getItem(k) || sessionStorage.getItem(k); } catch { return null; } },
+    set(k, v, lembrar = true) { try { (lembrar ? localStorage : sessionStorage).setItem(k, v); } catch {} },
+    del(k) { try { localStorage.removeItem(k); sessionStorage.removeItem(k); } catch {} } };
+  function el(tag, attrs, ...kids) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v === undefined || v === null || v === false) continue;
+      if (k === 'class') n.className = v; else if (k === 'text') n.textContent = v;
+      else if (k.startsWith('on')) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v === true ? '' : v);
+    }
+    for (const c of kids.flat()) if (c !== null && c !== undefined && c !== false) n.append(c.nodeType ? c : document.createTextNode(String(c)));
+    return n;
+  }
+  let toastT;
+  function toast(msg, ms = 4200) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, ms); }
+
+  /* ---------- GitHub ---------- */
+  class ErroGH extends Error { constructor(status, msg) { super(msg); this.status = status; } }
+  async function gh(path, opts = {}) {
+    const r = await fetch(path.startsWith('http') ? path : API + path, {
+      ...opts, cache: 'no-store',
+      headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + S.chave, ...(opts.body ? { 'Content-Type': 'application/json' } : {}), ...(opts.headers || {}) },
+    });
+    if (!r.ok) { let m = ''; try { m = (await r.json()).message || ''; } catch {} throw new ErroGH(r.status, m); }
+    if (r.status === 204) return null;
+    const ct = r.headers.get('content-type') || '';
+    return ct.includes('json') && !(opts.headers && opts.headers.Accept === 'application/vnd.github.raw') ? r.json() : r.text();
+  }
+  const b64utf8 = (s) => { const b = new TextEncoder().encode(s); let x = ''; for (let i = 0; i < b.length; i += 0x8000) x += String.fromCharCode(...b.subarray(i, i + 0x8000)); return btoa(x); };
+  async function lerArquivo(caminho, ref) {
+    const t = await gh('/contents/' + caminho + '?ref=' + encodeURIComponent(ref), { headers: { Accept: 'application/vnd.github.raw' } });
+    return typeof t === 'string' ? JSON.parse(t) : t;
+  }
+  async function carregar() {
+    const ref = await gh('/git/ref/heads/' + BRANCH);
+    const sha = ref.object.sha;
+    const [lista, cfg] = await Promise.all([lerArquivo(ARQ, sha), lerArquivo(CFG, sha).catch(() => null)]);
+    return { sha, lista: Array.isArray(lista) ? lista : [], cfg };
+  }
+  function msgErro(e) {
+    if (e && e.status === 401) return 'A chave de acesso não funcionou (pode ter vencido ou sido cancelada).';
+    if (e && e.status === 403) return 'O GitHub recusou: a chave não tem permissão ou o limite de uso foi atingido. Tente de novo em alguns minutos.';
+    if (e && e.status === 404) return 'Não encontrei o site com essa chave. Confira se ela tem acesso ao repositório chamounperfumes.github.io.';
+    return 'Não consegui falar com o GitHub agora. Confira a internet e tente de novo.';
+  }
+
+  /* ---------- alterações pendentes (ficam no aparelho até publicar) ---------- */
+  function salvarPend() { try { localStorage.setItem(K_PEND, JSON.stringify({ pend: S.pend, fotos: S.fotos })); } catch { /* sem espaço: segue só na memória */ } }
+  function lerPend() { try { const o = JSON.parse(localStorage.getItem(K_PEND) || 'null'); if (o && Array.isArray(o.pend)) { S.pend = o.pend; S.fotos = o.fotos || {}; } } catch {} }
+  function proximaOrdem(lista, secao) { let m = 0; for (const p of lista) if (p.secao === secao) m = Math.max(m, Number(p.ordem) || 0); return m + 10; }
+  // Aplica as alterações pendentes sobre uma lista (a do GitHub). Retorna a nova lista e avisos.
+  function aplicar(lista, pend) {
+    const L = lista.map((p) => ({ ...p })); const idx = new Map(L.map((p, i) => [p.id, i])); const avisos = [];
+    const now = nowISO();
+    for (const op of pend) {
+      if (op.op === 'add') {
+        let id = op.doc.id, n = 2; while (idx.has(id)) id = op.doc.id + '-' + n++;
+        const d = { ...op.doc, id, ordem: op.doc.ordem || proximaOrdem(L, op.doc.secao), criado_em: now, atualizado_em: now, historico: [{ em: now, vista: op.doc.vista, parcelado: op.doc.parcelado }] };
+        idx.set(id, L.length); L.push(d);
+      } else if (op.op === 'upd') {
+        const i = idx.get(op.id); if (i === undefined || !L[i]) { avisos.push('Um perfume foi apagado por outra pessoa; a alteração nele foi ignorada.'); continue; }
+        const p = L[i]; const c = { ...op.campos };
+        if (c.secao && c.secao !== p.secao) c.ordem = proximaOrdem(L, c.secao);
+        if (('vista' in c && Number(c.vista) !== Number(p.vista)) || ('parcelado' in c && Number(c.parcelado) !== Number(p.parcelado))) {
+          const h = Array.isArray(p.historico) ? p.historico.slice(-29) : [];
+          h.push({ em: now, vista: 'vista' in c ? c.vista : p.vista, parcelado: 'parcelado' in c ? c.parcelado : p.parcelado }); c.historico = h;
+        }
+        L[i] = { ...p, ...c, atualizado_em: now };
+      } else if (op.op === 'del') {
+        const i = idx.get(op.id); if (i !== undefined) L[i] = null;
+      }
+    }
+    return { lista: L.filter(Boolean), avisos };
+  }
+  function addPend(op) {
+    if (op.op === 'upd') {
+      const prev = S.pend.find((o) => (o.op === 'upd' && o.id === op.id) || (o.op === 'add' && o.doc.id === op.id));
+      if (prev && prev.op === 'upd') Object.assign(prev.campos, op.campos);
+      else if (prev && prev.op === 'add') Object.assign(prev.doc, op.campos);
+      else S.pend.push(op);
+    } else if (op.op === 'del') {
+      const iAdd = S.pend.findIndex((o) => o.op === 'add' && o.doc.id === op.id);
+      S.pend = S.pend.filter((o) => !(o.op === 'upd' && o.id === op.id));
+      if (iAdd >= 0) S.pend.splice(iAdd, 1); else S.pend.push(op);
+    } else S.pend.push(op);
+    // fotos que ninguém mais usa saem da fila
+    const usadas = new Set(); for (const o of S.pend) { const f = o.op === 'add' ? o.doc.foto : o.campos && o.campos.foto; if (f) usadas.add(f); }
+    for (const k of Object.keys(S.fotos)) if (!usadas.has(k)) delete S.fotos[k];
+    salvarPend(); tudo();
+  }
+  const atual = () => aplicar(S.base, S.pend).lista;
+  const pendIds = () => new Set(S.pend.map((o) => (o.op === 'add' ? o.doc.id : o.id)));
+  function resumoPend() {
+    const nomes = []; const byId = new Map(S.base.map((p) => [p.id, p]));
+    for (const o of S.pend) {
+      if (o.op === 'cfg') { nomes.push([o.cfg.loja || o.cfg.parcelas ? 'dados da loja' : '', o.cfg.secoes || o.cfg.outras ? 'seções' : ''].filter(Boolean).join(' e ')); continue; }
+      if (o.op === 'add') nomes.push('novo: ' + label(o.doc));
+      else if (o.op === 'del') nomes.push('excluído: ' + label(byId.get(o.id) || { nome: o.id }));
+      else { const p = byId.get(o.id) || {}; const c = o.campos; const partes = [];
+        if ('vista' in c || 'parcelado' in c) partes.push(money(c.vista ?? p.vista) + '/' + money(c.parcelado ?? p.parcelado));
+        if (c.status) partes.push(c.status === 'arquivado' ? 'tirado' : 'voltou');
+        nomes.push(label({ ...p, ...c }) + (partes.length ? ' (' + partes.join(', ') + ')' : '')); }
+    }
+    return nomes;
+  }
+
+  /* ---------- publicar: um commit com os dados e as fotos novas ---------- */
+  async function publicar() {
+    if (!S.pend.length || S.publicando) return;
+    S.publicando = true; renderBar('Publicando…');
+    try {
+      let ok = false, avisos = [], novo = null, commitSha = '', novoCfg = null;
+      for (let t = 0; t < 4 && !ok; t++) {
+        const ref = await gh('/git/ref/heads/' + BRANCH); const head = ref.object.sha;
+        let base = S.base;
+        if (head !== S.baseCommit) { const c = await carregar(); base = c.lista; S.base = base; S.baseCommit = c.sha; if (c.cfg) S.cfg = c.cfg; }
+        const r = aplicar(base, S.pend); novo = r.lista; avisos = r.avisos;
+        const usadas = new Set(novo.map((p) => p.foto).filter(Boolean));
+        const itens = [];
+        for (const [id, b64] of Object.entries(S.fotos)) {
+          if (!usadas.has(id)) continue;
+          const bl = await gh('/git/blobs', { method: 'POST', body: JSON.stringify({ content: b64, encoding: 'base64' }) });
+          itens.push({ path: IMG + id + '.jpg', mode: '100644', type: 'blob', sha: bl.sha });
+        }
+        const texto = JSON.stringify(novo, null, 1) + '\n';
+        const bj = await gh('/git/blobs', { method: 'POST', body: JSON.stringify({ content: b64utf8(texto), encoding: 'base64' }) });
+        itens.push({ path: ARQ, mode: '100644', type: 'blob', sha: bj.sha });
+        const pc = cfgPend(); novoCfg = null;
+        if (pc) {
+          novoCfg = { ...(S.cfg || {}), ...pc };
+          const bc = await gh('/git/blobs', { method: 'POST', body: JSON.stringify({ content: b64utf8(JSON.stringify(novoCfg, null, 1) + '\n'), encoding: 'base64' }) });
+          itens.push({ path: CFG, mode: '100644', type: 'blob', sha: bc.sha });
+        }
+        const hc = await gh('/git/commits/' + head);
+        const tree = await gh('/git/trees', { method: 'POST', body: JSON.stringify({ base_tree: hc.tree.sha, tree: itens }) });
+        const nomes = resumoPend();
+        const msg = 'Painel da loja: ' + (nomes.length === 1 ? nomes[0] : nomes.length + ' alterações') + '\n\n' + nomes.map((n) => '- ' + n).join('\n');
+        const cm = await gh('/git/commits', { method: 'POST', body: JSON.stringify({ message: msg, tree: tree.sha, parents: [head] }) });
+        try { await gh('/git/refs/heads/' + BRANCH, { method: 'PATCH', body: JSON.stringify({ sha: cm.sha, force: false }) }); ok = true; commitSha = cm.sha; }
+        catch (e) { if (e.status !== 422) throw e; /* alguém publicou ao mesmo tempo: tenta de novo por cima */ }
+      }
+      if (!ok) throw new Error('conflito');
+      for (const [id, b64] of Object.entries(S.fotos)) S.preview[id] = 'data:image/jpeg;base64,' + b64;
+      S.base = novo; S.baseCommit = commitSha; if (novoCfg) S.cfg = novoCfg; S.pend = []; S.fotos = {}; salvarPend(); listChips(); if (S.vista === 'loja') { lojaPreencher(); lojaRender(); }
+      S.publicando = false; tudo();
+      if (avisos.length) toast(avisos[0], 7000);
+      acompanhar(commitSha);
+    } catch (e) {
+      S.publicando = false; tudo();
+      toast(e && e.message === 'conflito' ? 'Outra pessoa estava publicando ao mesmo tempo. Toque em Publicar de novo.' : msgErro(e), 7000);
+    }
+  }
+  // Acompanha o robô do GitHub que monta o site e o PDF.
+  async function acompanhar(sha) {
+    const bar = $('#pubbar'); bar.hidden = false; bar.classList.remove('ok'); S.acompanhando = true;
+    $('#pub-btns').hidden = true; $('#pub-txt').replaceChildren('Salvo! Atualizando o site e o PDF…', el('small', { text: 'Leva cerca de 1 a 2 minutos. Pode continuar editando.' }));
+    const fim = Date.now() + 6 * 60 * 1000; let estado = '';
+    while (Date.now() < fim) {
+      await new Promise((r) => setTimeout(r, 8000));
+      if (S.pend.length || !S.acompanhando) return tudo();
+      try {
+        const r = await gh('/actions/runs?head_sha=' + sha + '&per_page=5');
+        const run = (r.workflow_runs || []).find((w) => /Publicar loja/i.test(w.name));
+        if (run && run.status === 'completed') { estado = run.conclusion; break; }
+      } catch { /* sem acesso ao andamento: só espera */ }
+    }
+    if (S.pend.length || !S.acompanhando) return tudo();
+    if (estado === 'success') {
+      bar.classList.add('ok'); $('#pub-txt').replaceChildren('Pronto! O site da loja e o PDF foram atualizados.', el('small', { text: 'Em até 1 minuto aparece no link da loja.' }));
+    } else if (estado) {
+      $('#pub-txt').replaceChildren('Os dados foram salvos, mas o robô não conseguiu montar o site.', el('small', { text: 'Avise o Claude no chat para ele verificar.' }));
+    } else {
+      $('#pub-txt').replaceChildren('Os dados foram salvos.', el('small', { text: 'O site deve atualizar em alguns minutos.' }));
+    }
+    infoPub();
+    setTimeout(() => { if (!S.pend.length && S.acompanhando) { S.acompanhando = false; bar.hidden = true; bar.classList.remove('ok'); } }, 12000);
+  }
+  async function infoPub() {
+    try {
+      const c = await gh('/commits?path=loja/index.html&per_page=1');
+      if (c && c[0]) { const d = new Date(c[0].commit.committer.date); S.ultimaPub = d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) + ' às ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }); }
+    } catch {}
+    renderHeader();
+  }
+
+  /* ---------- telas ---------- */
+  function renderHeader() {
+    const m = $('#hmsg'); m.replaceChildren();
+    if (S.chave && S.ultimaPub) m.append('Site atualizado em ', el('strong', { text: S.ultimaPub }));
+    $('#sair').hidden = !S.chave;
+  }
+  function renderBar(txt) {
+    const bar = $('#pubbar');
+    if (!S.pend.length && !txt) { if (!S.acompanhando) bar.hidden = true; return; }
+    S.acompanhando = false;
+    bar.hidden = false; bar.classList.remove('ok'); $('#pub-btns').hidden = !!txt;
+    const n = S.pend.length;
+    $('#pub-txt').replaceChildren(txt || (n === 1 ? '1 alteração ainda não está no site' : n + ' alterações ainda não estão no site'), el('small', { text: txt ? 'Não feche a página.' : resumoPend().slice(0, 3).join(' · ') + (n > 3 ? ' · …' : '') }));
+    $('#publicar').disabled = S.publicando; $('#descartar').disabled = S.publicando;
+  }
+  function listChips() {
+    const box = $('#chips'); box.replaceChildren();
+    for (const s of ['Todas', ...secoes()]) box.append(el('button', { type: 'button', class: 'chip', 'aria-pressed': String(S.secao === s), onclick: () => { S.secao = s; listChips(); render(); } }, s));
+  }
+  function ordenar(arr) { const o = secoes(); return arr.sort((a, b) => (o.indexOf(a.secao) - o.indexOf(b.secao)) || ((a.ordem || 0) - (b.ordem || 0)) || label(a).localeCompare(label(b))); }
+  function fotoSrc(p) { if (!p.foto) return ''; if (S.fotos[p.foto]) return 'data:image/jpeg;base64,' + S.fotos[p.foto]; return S.preview[p.foto] || ('../img/' + p.foto + '.jpg'); }   // ../img = loja/img
+  function render() {
+    const list = $('#list'); const a = document.activeElement;
+    if (a && list.contains(a) && a.tagName === 'INPUT') { S.renderDepois = true; return; }
+    S.renderDepois = false;
+    const todos = atual(); const pid = pendIds(); S.espCont = espContagens();
+    let ca = 0, cr = 0; for (const p of todos) (p.status === 'arquivado' ? cr++ : ca++);
+    $('#c-ativo').textContent = ca; $('#c-arquivado').textContent = cr;
+    $('#marcas').replaceChildren(...[...new Set(todos.map((p) => p.marca).filter(Boolean))].sort().map((m) => el('option', { value: m })));
+    const q = norm(S.q).split(/\s+/).filter(Boolean);
+    const itens = ordenar(todos.filter((p) => (p.status || 'ativo') === S.status && (S.secao === 'Todas' || p.secao === S.secao) && q.every((w) => norm([p.marca, p.nome, p.tipo, p.ml + 'ml', p.secao].join(' ')).includes(w))));
+    list.replaceChildren();
+    if (!itens.length) { list.append(el('div', { class: 'notice' }, S.q ? 'Nada encontrado para “' + S.q + '”.' : (S.status === 'arquivado' ? 'Nenhum produto inativo.' : 'Nada nesta seção ainda. Toque em “Novo produto” para adicionar.'))); return; }
+    const grupos = new Map(); for (const p of itens) { if (!grupos.has(p.secao)) grupos.set(p.secao, []); grupos.get(p.secao).push(p); }
+    for (const [sec, ps] of grupos) {
+      list.append(el('div', { class: 'section-head' }, el('h2', { text: sec || 'Sem seção' }), el('span', { class: 'num', text: ps.length + unid(sec, ps.length) })));
+      list.append(el('div', { class: 'rows' }, ps.map((p) => row(p, pid.has(p.id)))));
+    }
+  }
+  function row(p, pend) {
+    const src = fotoSrc(p);
+    const thumb = el('div', { class: 'thumb' }, src ? el('img', { src, alt: '', loading: 'lazy' }) : el('span', { class: 'nofoto', text: 'sem foto' }));
+    const info = el('div', { class: 'info' }, el('div', { class: 'mk', text: p.marca || '' }), el('div', { class: 'nm' }, p.nome || '', pend ? el('span', { class: 'dot', text: 'não publicado' }) : null,
+        S.espCont.get(p.id) ? el('button', { type: 'button', class: 'dot esp-dot' + ({ vermelho: ' pz-v', amarelo: ' pz-a' }[S.espPior.get(p.id)] || ''), title: 'Ver na lista de espera', onclick: () => { S.esp.aba = 'aguardando'; S.esp.q = label(p); $('#esp-q').value = label(p); mostrarVista('esp'); } }, S.espCont.get(p.id) + ' na espera') : null),
+      el('div', { class: 'mt', text: [p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · ') }));
+    const inst = el('div', { class: 'inst num' }, nParc() + 'x de', el('strong', { text: 'R$ ' + money(parcela(p.parcelado || 0)) }));
+    const field = (key, lbl) => {
+      const inp = el('input', { type: 'number', min: '0', step: '0.01', inputmode: 'decimal', value: p[key] ?? '', 'aria-label': lbl + ' de ' + label(p) });
+      inp.addEventListener('change', () => {
+        const v = toNum(inp.value);
+        if (!isFinite(v) || v <= 0) { inp.classList.add('bad'); toast('Digite um preço válido, por exemplo 950 ou 950,50.'); inp.value = p[key]; setTimeout(() => inp.classList.remove('bad'), 1500); return; }
+        if (v === Number(p[key])) return;
+        addPend({ op: 'upd', id: p.id, campos: { [key]: Math.round(v * 100) / 100 } });
+        toast(label(p) + ': ' + (key === 'vista' ? 'à vista' : 'a prazo') + ' R$ ' + money(v) + '. Toque em “Publicar no site” quando terminar.');
+      });
+      inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') inp.blur(); });
+      return el('label', { class: 'price' }, el('span', { text: lbl }), el('div', { class: 'field' }, inp));
+    };
+    const acts = el('div', { class: 'acts' },
+      el('button', { type: 'button', class: 'btn-text', onclick: () => abrirEditor(p.id) }, 'Editar'),
+      el('button', { type: 'button', class: 'btn-text', onclick: () => { addPend({ op: 'upd', id: p.id, campos: { status: p.status === 'arquivado' ? 'ativo' : 'arquivado' } }); const ne = S.espCont.get(p.id); toast(p.status === 'arquivado' ? label(p) + ' volta ao catálogo ao publicar.' + (ne ? ' ' + (ne === 1 ? '1 cliente está' : ne + ' clientes estão') + ' na lista de espera dele.' : '') : label(p) + ' sai do catálogo ao publicar (fica em “Inativos”).'); } }, p.status === 'arquivado' ? 'Voltar ao catálogo' : 'Tirar'));
+    return el('article', { class: 'row' + (pend ? ' pend' : '') }, thumb, info, el('div', { class: 'pgroup' }, field('vista', 'À vista'), field('parcelado', 'A prazo'), inst), acts);
+  }
+  function tudo() { render(); renderBar(); renderHeader(); }
+
+  /* ---------- editor ---------- */
+  function fillSecoes(sel, val) { sel.replaceChildren(...secoes().map((s) => el('option', { value: s, selected: s === val }, s))); }
+  function edCalc() {
+    const pv = toNum($('#f-parcelado').value), vv = toNum($('#f-vista').value); const c = $('#ed-calc'); c.replaceChildren();
+    if (isFinite(pv) && pv > 0) c.append('No catálogo: ', el('strong', { text: 'R$ ' + money(isFinite(vv) && vv > 0 ? vv : 0) + ' à vista' }), ' ou R$ ' + money(pv) + ' em até ', el('strong', { text: nParc() + 'x de R$ ' + money(parcela(pv)) }));
+    else c.textContent = 'Preencha o preço a prazo para ver a parcela.';
+  }
+  function edPhoto() {
+    const box = $('#ed-photo'); box.replaceChildren(); const src = S.edFoto ? fotoSrc({ foto: S.edFoto }) : '';
+    box.append(src ? el('img', { src, alt: 'Foto do perfume' }) : el('span', { class: 'nofoto', text: 'sem foto' }));
+    $('#ed-foto-label').textContent = S.edFoto ? 'Trocar foto' : 'Adicionar foto';
+  }
+  function perfilDoForm() {
+    const ac = $('#f-acordes').value.split(',').map((s) => s.trim()).filter(Boolean).map((s) => s.charAt(0).toUpperCase() + s.slice(1));
+    const notas = {}; for (const k of ['topo', 'coracao', 'fundo']) { const v = $('#f-n-' + k).value.trim(); if (v) notas[k] = v; }
+    if (S.edTodas && notas.topo && !notas.coracao && !notas.fundo) { notas.todas = notas.topo; delete notas.topo; }
+    return { acordes: ac, notas };
+  }
+  function abrirEditor(id) {
+    const p = id ? atual().find((x) => x.id === id) : null;
+    S.editing = id || null; S.edFoto = p ? (p.foto || '') : ''; S.edNovaFoto = null;
+    $('#ed-title').textContent = p ? label(p) : 'Novo produto';
+    $('#f-marca').value = p ? p.marca || '' : ''; $('#f-nome').value = p ? p.nome || '' : '';
+    $('#f-tipo').value = p ? p.tipo || '' : ''; $('#f-ml').value = p ? p.ml || '' : '100';
+    $('#f-vista').value = p ? p.vista ?? '' : ''; $('#f-parcelado').value = p ? p.parcelado ?? '' : '';
+    fillSecoes($('#f-secao'), p ? p.secao : (S.secao !== 'Todas' ? S.secao : secoes()[0]));
+    edTipoSecao(false); if (!p && !ehPerf($('#f-secao').value)) $('#f-ml').value = '';
+    $('#f-status').value = p ? p.status || 'ativo' : 'ativo';
+    const nt = (p && p.notas) || {};
+    $('#f-acordes').value = p && Array.isArray(p.acordes) ? p.acordes.join(', ') : '';
+    $('#f-n-topo').value = nt.topo || nt.todas || ''; $('#f-n-coracao').value = nt.coracao || ''; $('#f-n-fundo').value = nt.fundo || '';
+    S.edTodas = !!(nt.todas && !nt.topo); S.edPerfil = perfilDoForm();
+    const src = $('#ed-perfil-src'); src.replaceChildren();
+    if (p && /^https?:/.test(p.perfil_fonte || '')) src.append('Fonte: ', el('a', { href: p.perfil_fonte, target: '_blank', rel: 'noopener', text: /fragrantica/.test(p.perfil_fonte) ? 'Fragrantica' : 'página da loja' }), '. ');
+    src.append('Se ficar vazio, o site usa as notas do mesmo perfume no catálogo online (se tiver lá). Ou peça ao Claude para buscar no Fragrantica.');
+    $('#ed-del').hidden = !p; $('#ed-confirm').hidden = true; $('#ed-foto-status').textContent = '';
+    const hist = p && Array.isArray(p.historico) ? p.historico.slice().reverse() : [];
+    $('#ed-hist-wrap').hidden = !hist.length;
+    $('#ed-hist').replaceChildren(...hist.slice(0, 8).map((h) => el('li', { class: 'num', text: new Date(h.em).toLocaleDateString('pt-BR') + ' — R$ ' + money(h.vista) + ' à vista · R$ ' + money(h.parcelado) + ' a prazo' })));
+    edPhoto(); edCalc();
+    $('#editor').hidden = false;
+  }
+  function fecharEditor() { $('#editor').hidden = true; S.editing = null; if (S.renderDepois) render(); }
+  function salvarEditor() {
+    const d = {
+      marca: $('#f-marca').value.trim(), nome: $('#f-nome').value.trim(), tipo: $('#f-tipo').value.trim(),
+      ml: (() => { const v = toNum($('#f-ml').value); return isFinite(v) && v > 0 ? Math.round(v) : null; })(), vista: Math.round(toNum($('#f-vista').value) * 100) / 100,
+      parcelado: Math.round(toNum($('#f-parcelado').value) * 100) / 100, secao: $('#f-secao').value, status: $('#f-status').value,
+    };
+    const falta = [];
+    const perf = ehPerf(d.secao);
+    if (!d.marca && perf) falta.push('marca'); if (!d.nome) falta.push(perf ? 'nome do perfume' : 'nome do produto');
+    if (!(d.ml > 0) && perf) falta.push('volume'); if (!(d.vista > 0)) falta.push('preço à vista'); if (!(d.parcelado > 0)) falta.push('preço a prazo');
+    if (falta.length) { toast('Falta preencher: ' + falta.join(', ') + '.'); return; }
+    if (S.edNovaFoto) { S.fotos[S.edNovaFoto.id] = S.edNovaFoto.b64; d.foto = S.edNovaFoto.id; }
+    const pf = perfilDoForm(); const mudouPerfil = perf && JSON.stringify(pf) !== JSON.stringify(S.edPerfil);
+    if (!S.editing) {
+      if (!d.foto) d.foto = '';
+      if (mudouPerfil) Object.assign(d, pf, { perfil_em: nowISO().slice(0, 10) });
+      const usados = new Set(atual().map((p) => p.id)); const base = slug([d.marca, d.nome, d.ml].filter(Boolean).join('-')); let id = base, i = 2; while (usados.has(id)) id = base + '-' + i++;
+      addPend({ op: 'add', doc: { id, ...d } }); toast(label(d) + ' adicionado. Toque em “Publicar no site” quando terminar.');
+    } else {
+      const p = atual().find((x) => x.id === S.editing); const c = {};
+      for (const k of ['marca', 'nome', 'tipo', 'ml', 'vista', 'parcelado', 'secao', 'status', 'foto']) if (d[k] !== undefined && (d[k] ?? null) !== (p[k] ?? null)) c[k] = d[k];
+      if (mudouPerfil) { Object.assign(c, pf, { perfil_em: nowISO().slice(0, 10) }); if (!pf.acordes.length) c.perfil_fonte = ''; }
+      else if (c.marca || c.nome) Object.assign(c, { acordes: [], notas: {}, perfil_fonte: '' });
+      if (Object.keys(c).length) { addPend({ op: 'upd', id: p.id, campos: c }); toast('Alterações guardadas. Toque em “Publicar no site” quando terminar.'); }
+    }
+    fecharEditor();
+  }
+  async function toJpeg(file) {
+    let src, w, h;
+    try { src = await createImageBitmap(file); w = src.width; h = src.height; }
+    catch { const img = new Image(); img.src = URL.createObjectURL(file); await img.decode(); src = img; w = img.naturalWidth; h = img.naturalHeight; }
+    // quadrado com fundo branco, como as outras fotos do catálogo
+    const lado = Math.round(Math.max(w, h) * 1.06); const k = Math.min(1, 900 / lado);
+    const c = document.createElement('canvas'); c.width = c.height = Math.max(1, Math.round(lado * k));
+    const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height);
+    x.drawImage(src, Math.round((lado - w) / 2 * k), Math.round((lado - h) / 2 * k), Math.round(w * k), Math.round(h * k));
+    return c.toDataURL('image/jpeg', 0.86).split(',')[1];
+  }
+  async function escolherFoto(file) {
+    const st = $('#ed-foto-status'); st.textContent = 'Preparando a foto…';
+    try { const b64 = await toJpeg(file); const id = hex(16); S.edNovaFoto = { id, b64 }; S.preview[id] = 'data:image/jpeg;base64,' + b64; S.edFoto = id; edPhoto(); st.textContent = 'Foto pronta. Toque em Salvar.'; }
+    catch { st.textContent = 'Não consegui abrir essa imagem. Tente outra (JPG ou PNG).'; }
+  }
+
+  /* ---------- visitas (GoatCounter: contador público de chamoun.goatcounter.com) ---------- */
+  const GC = 'https://chamoun.goatcounter.com/counter/';
+  async function contagem(qs) {
+    const r = await fetch(GC + encodeURIComponent('/loja/') + '.json' + qs);
+    if (!r.ok && r.status !== 404) throw new ErroGH(r.status, '');
+    const j = await r.json();   // 404 = ainda sem visitas no período (vem {"count":"0"})
+    return parseInt(String(j.count || '0').replace(/\D/g, ''), 10) || 0;
+  }
+  async function acessos() {
+    const msg = $('#ac-msg');
+    const hoje = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+    const alvos = [['#ac-hoje', '?start=' + hoje], ['#ac-7', '?start=week'], ['#ac-30', '?start=month']];
+    try {
+      const ns = await Promise.all(alvos.map(([, qs]) => contagem(qs)));
+      alvos.forEach(([s], i) => { $(s).textContent = ns[i].toLocaleString('pt-BR'); });
+      msg.textContent = 'Pessoas que abriram o site da loja. Os números podem levar algumas horas para atualizar. Em “Ver detalhes”, o que começa com “Loja ·” é deste site: perfumes abertos, separados para experimentar, buscas e listas enviadas.';
+    } catch (e) {
+      alvos.forEach(([s]) => { $(s).textContent = '–'; });
+      // Com o contador desligado o GoatCounter responde sem liberar a leitura, então o navegador só diz "falhou".
+      msg.textContent = 'Não consegui ler as visitas. Confira se, no GoatCounter (Settings), está marcado “Allow adding visitor counts on your website” e salve. Se já está, confira a internet e recarregue esta página.';
+    }
+  }
+  const K_GC = 'chamoun-painel-contagem';
+  function prepararSkip() {
+    const cx = $('#ac-skip');
+    try {
+      if (!localStorage.getItem(K_GC)) { localStorage.setItem('skipgc', 't'); localStorage.setItem(K_GC, '1'); }   // padrão: quem edita não entra na contagem
+      cx.checked = localStorage.getItem('skipgc') === 't';
+      cx.onchange = () => { try { if (cx.checked) localStorage.setItem('skipgc', 't'); else localStorage.removeItem('skipgc'); } catch {} };
+    } catch { cx.closest('label').hidden = true; }
+  }
+
+  /* ---------- a lista de espera fica só no painel do site online ---------- */
+  S.vista = 'cat';
+  function espContagens() { S.espPior = new Map(); return new Map(); }
+
+  /* ---------- dados da loja e seções: vão para loja/dados/config.json ao publicar ---------- */
+  const cfgPend = () => { const o = S.pend.find((x) => x.op === 'cfg'); return o ? o.cfg : null; };
+  const cfgAtual = () => ({ ...S.cfg, ...(cfgPend() || {}) });
+  const outras = () => { const c = cfgAtual(); return Array.isArray(c.outras) ? c.outras : []; };
+  const ehPerf = (secao) => !outras().includes(secao);
+  const unid = (secao, n) => (ehPerf(secao) ? (n === 1 ? ' perfume' : ' perfumes') : (n === 1 ? ' produto' : ' produtos'));
+  const limpo = (o) => JSON.stringify(Object.entries(o || {}).filter(([, v]) => String(v || '').trim()).sort());
+  const igualCfg = (k, a, b) => (k === 'loja' ? limpo(a) === limpo(b) : JSON.stringify(a ?? null) === JSON.stringify(b ?? null));
+  function mudarCfg(campos, msg) {
+    const novo = { ...(cfgPend() || {}), ...campos };
+    for (const k of Object.keys(novo)) if (igualCfg(k, novo[k], S.cfg[k])) delete novo[k];   // igual ao que já está no site
+    S.pend = S.pend.filter((x) => x.op !== 'cfg');
+    if (Object.keys(novo).length) S.pend.push({ op: 'cfg', cfg: novo });
+    if (S.secao !== 'Todas' && !secoes().includes(S.secao)) S.secao = 'Todas';
+    salvarPend(); listChips(); tudo(); lojaRender();
+    if (msg) toast(msg + (Object.keys(novo).length ? ' Toque em “Publicar no site” quando terminar.' : ''));
+  }
+  function lojaPreencher() {
+    const l = cfgAtual().loja || {};
+    $('#l-endereco').value = l.endereco || ''; $('#l-horario').value = l.horario || ''; $('#l-whatsapp').value = l.whatsapp || '';
+    $('#l-instagram').value = l.instagram || ''; $('#l-mapa').value = l.mapa || ''; $('#l-parcelas').value = String(nParc());
+    $('#l-status').textContent = cfgPend() && cfgPend().loja ? 'Guardado. Falta publicar.' : '';
+  }
+  function lojaGuardar() {
+    let ig = $('#l-instagram').value.trim().replace(/^(https?:\/\/)?(www\.)?instagram\.com\//i, '').replace(/[/?#].*$/, '').replace(/^@+/, '');
+    const l = {
+      endereco: $('#l-endereco').value.trim(),
+      horario: $('#l-horario').value.split('\n').map((s) => s.trim()).filter(Boolean).join('\n'),
+      whatsapp: $('#l-whatsapp').value.trim(), instagram: ig ? '@' + ig : '', mapa: $('#l-mapa').value.trim(),
+    };
+    if (l.whatsapp && l.whatsapp.replace(/\D/g, '').length < 10) { toast('Confira o WhatsApp: coloque o DDD e o número, por exemplo (11) 98765-4321.'); return; }
+    if (l.mapa && !/^https?:\/\//.test(l.mapa)) { toast('O link do mapa precisa começar com https://'); return; }
+    mudarCfg({ loja: l, parcelas: Number($('#l-parcelas').value) || 6 }, 'Dados da loja guardados.');
+    lojaPreencher();
+  }
+  function lojaRender() {
+    const box = $('#l-secoes'); if (!box) return; box.replaceChildren();
+    const ss = secoes(); const todos = atual();
+    ss.forEach((s, i) => {
+      const n = todos.filter((p) => p.secao === s).length, nAt = todos.filter((p) => p.secao === s && (p.status || 'ativo') === 'ativo').length;
+      const det = n ? nAt + ' no catálogo' + (n > nAt ? ' · ' + (n - nAt) + (n - nAt === 1 ? ' inativo' : ' inativos') : '') : 'vazia (não aparece no site)';
+      const info = el('div', { class: 'info' }, el('div', { class: 'nm', text: s }), el('div', { class: 'mt', text: (ehPerf(s) ? 'Perfumes' : 'Outros produtos') + ' · ' + det }));
+      const acts = el('div', { class: 'acts' },
+        el('button', { type: 'button', class: 'btn-text', 'aria-label': 'Subir ' + s, disabled: i === 0, onclick: () => mover(i, -1) }, '↑'),
+        el('button', { type: 'button', class: 'btn-text', 'aria-label': 'Descer ' + s, disabled: i === ss.length - 1, onclick: () => mover(i, 1) }, '↓'),
+        el('button', { type: 'button', class: 'btn-text', disabled: n > 0 || ss.length <= 1, title: n ? 'Só dá para remover uma seção vazia' : null, onclick: () => remover(s) }, 'Remover'));
+      box.append(el('div', { class: 'lj-sec' }, info, acts));
+    });
+  }
+  function mover(i, d) { const ss = secoes().slice(); const j = i + d; if (j < 0 || j >= ss.length) return; [ss[i], ss[j]] = [ss[j], ss[i]]; mudarCfg({ secoes: ss }, 'Ordem das seções mudada.'); }
+  function remover(s) {
+    if (atual().some((p) => p.secao === s)) { toast('Essa seção ainda tem produtos. Mude eles de seção ou exclua antes.'); return; }
+    mudarCfg({ secoes: secoes().filter((x) => x !== s), outras: outras().filter((x) => x !== s) }, 'Seção “' + s + '” removida.');
+  }
+  function adicionarSecao() {
+    const nome = $('#l-nova').value.trim().replace(/\s+/g, ' ');
+    if (!nome) { toast('Escreva o nome da seção.'); return; }
+    if (secoes().some((x) => norm(x) === norm(nome))) { toast('Já existe uma seção com esse nome.'); return; }
+    const perf = $('#l-nova-perf').checked;
+    mudarCfg({ secoes: [...secoes(), nome], outras: perf ? outras() : [...outras(), nome] }, 'Seção “' + nome + '” criada.');
+    $('#l-nova').value = ''; $('#l-nova-perf').checked = false;
+  }
+  function edTipoSecao(trocou) {
+    const perf = ehPerf($('#f-secao').value);
+    $('#f-tipo-l').textContent = perf ? 'Concentração' : 'Tipo / detalhe';
+    $('#f-tipo').setAttribute('list', perf ? 'tipos' : 'tipos-outros');
+    $('#f-tipo').placeholder = perf ? 'EDP, EDT, Parfum…' : 'Body splash, Kit, Hidratante…';
+    $('#f-ml-l').textContent = perf ? 'Volume (ml)' : 'Volume (ml, se tiver)';
+    $('#f-marca-l').textContent = perf ? 'Marca' : 'Marca (se tiver)';
+    $('#ed-perfil').hidden = !perf;
+    if (trocou && !S.editing) { const m = $('#f-ml'); if (!perf && m.value === '100') m.value = ''; if (perf && !m.value) m.value = '100'; }
+  }
+  const K_ABA = 'chamoun-loja-painel-aba';
+  function mostrarVista(v) {
+    S.vista = v === 'loja' ? 'loja' : 'cat'; try { localStorage.setItem(K_ABA, S.vista); } catch {}
+    $('#view-cat').hidden = S.vista !== 'cat'; $('#view-loja').hidden = S.vista !== 'loja';
+    $('#v-cat').setAttribute('aria-pressed', String(S.vista === 'cat')); $('#v-loja').setAttribute('aria-pressed', String(S.vista === 'loja'));
+    if (S.vista === 'loja') { lojaPreencher(); lojaRender(); }
+  }
+
+  /* ---------- entrada ---------- */
+  async function entrar(chave, lembrar) {
+    S.chave = chave; $('#login-err').textContent = '';
+    $('#login').hidden = true; $('#carregando').hidden = false;
+    try {
+      const repo = await gh('');
+      if (!repo.permissions || !repo.permissions.push) throw new ErroGH(403, 'sem permissão');
+      const c = await carregar(); S.base = c.lista; S.baseCommit = c.sha; if (c.cfg) S.cfg = c.cfg;
+      store.set(K_CHAVE, chave, lembrar);
+      $('#carregando').hidden = true; $('#app').hidden = false; lerPend(); listChips(); tudo(); infoPub(); prepararSkip(); acessos();
+      let aba = 'cat'; try { aba = localStorage.getItem(K_ABA) || 'cat'; } catch {}
+      mostrarVista(aba);
+    } catch (e) {
+      S.chave = ''; if (e && [401, 403, 404].includes(e.status)) store.del(K_CHAVE);
+      $('#carregando').hidden = true; $('#login').hidden = false; $('#login-err').textContent = msgErro(e); renderHeader();
+    }
+  }
+  $('#entrar').onclick = () => { const v = $('#chave').value.trim(); if (!v) { $('#login-err').textContent = 'Cole a chave de acesso.'; return; } entrar(v, $('#lembrar').checked); };
+  $('#chave').addEventListener('keydown', (e) => { if (e.key === 'Enter') $('#entrar').click(); });
+  $('#sair').onclick = () => {
+    if (S.pend.length && !confirm('Há alterações que ainda não foram publicadas. Sair mesmo assim? Elas continuam guardadas neste aparelho.')) return;
+    store.del(K_CHAVE); S.chave = ''; $('#app').hidden = true; $('#pubbar').hidden = true; $('#login').hidden = false; $('#chave').value = ''; renderHeader();
+  };
+  $('#tab-ativo').onclick = () => { S.status = 'ativo'; $('#tab-ativo').setAttribute('aria-pressed', 'true'); $('#tab-arquivado').setAttribute('aria-pressed', 'false'); render(); };
+  $('#tab-arquivado').onclick = () => { S.status = 'arquivado'; $('#tab-arquivado').setAttribute('aria-pressed', 'true'); $('#tab-ativo').setAttribute('aria-pressed', 'false'); render(); };
+  $('#q').addEventListener('input', (e) => { S.q = e.target.value; render(); });
+  $('#list').addEventListener('focusout', () => setTimeout(() => { if (S.renderDepois) render(); }, 0));
+  $('#novo').onclick = () => abrirEditor(null);
+  $('#publicar').onclick = publicar;
+  $('#descartar').onclick = () => { if (confirm('Descartar todas as alterações que ainda não foram publicadas?')) { S.pend = []; S.fotos = {}; salvarPend(); listChips(); tudo(); if (S.vista === 'loja') { lojaPreencher(); lojaRender(); } } };
+  $('#ed-cancel').onclick = fecharEditor; $('#ed-save').onclick = salvarEditor;
+  $('#ed-del').onclick = () => { $('#ed-confirm').hidden = false; }; $('#ed-del-no').onclick = () => { $('#ed-confirm').hidden = true; };
+  $('#ed-del-yes').onclick = () => { const id = S.editing; const p = atual().find((x) => x.id === id); addPend({ op: 'del', id }); fecharEditor(); toast(label(p || {}) + ' será excluído ao publicar.'); };
+  $('#ed-foto').addEventListener('change', (e) => { const f = e.target.files && e.target.files[0]; if (f) escolherFoto(f); e.target.value = ''; });
+  ['#f-vista', '#f-parcelado'].forEach((s) => $(s).addEventListener('input', edCalc));
+  $('#editor').addEventListener('click', (e) => { if (e.target.id === 'editor') fecharEditor(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#editor').hidden) fecharEditor(); });
+  window.addEventListener('beforeunload', (e) => { if (S.publicando) { e.preventDefault(); e.returnValue = ''; } });
+  // dados da loja
+  $('#v-cat').onclick = () => mostrarVista('cat'); $('#v-loja').onclick = () => mostrarVista('loja');
+  $('#l-parcelas').replaceChildren(...Array.from({ length: 11 }, (_, i) => el('option', { value: String(i + 2) }, 'em até ' + (i + 2) + 'x')));
+  $('#l-guardar').onclick = lojaGuardar; $('#l-add').onclick = adicionarSecao;
+  $('#l-nova').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); adicionarSecao(); } });
+  ['#l-endereco', '#l-horario', '#l-whatsapp', '#l-instagram', '#l-mapa', '#l-parcelas'].forEach((q) => $(q).addEventListener('input', () => { $('#l-status').textContent = 'Toque em “Guardar dados” para levar ao site.'; }));
+  $('#f-secao').addEventListener('change', () => edTipoSecao(true));
+  { let k = null; try { k = localStorage.getItem(K_CHAVE_SITE); } catch {} const b = $('#usar-principal'); if (k) { b.hidden = false; b.onclick = () => entrar(k, $('#lembrar').checked); } }
+
+  /* ---------- versão nova do painel: atualiza sozinho ----------
+     O app na tela de início do celular não tem botão de recarregar. Ao abrir (ou voltar para) o painel,
+     confere a <meta name="painel-versao"> no servidor; se mudou, recarrega num endereço novo (fura o cache).
+     As alterações não publicadas ficam guardadas no aparelho, então recarregar não perde nada. */
+  const VERSAO = ($('meta[name="painel-versao"]') || {}).content || '';
+  let versaoNova = '', ultimaChecagem = 0;
+  async function checarVersao() {
+    if (Date.now() - ultimaChecagem < 30000) return; ultimaChecagem = Date.now();
+    try {
+      const t = await (await fetch(location.pathname + '?nc=' + Date.now(), { cache: 'no-store' })).text();
+      const m = t.match(/<meta name="painel-versao" content="([^"]+)"/);
+      if (m && m[1] !== VERSAO) { versaoNova = m[1]; atualizarSePuder(); }
+    } catch {}
+  }
+  function atualizarSePuder() {
+    if (!versaoNova) return;
+    const ocupado = S.publicando || !$('#editor').hidden || (document.activeElement && /^(INPUT|SELECT|TEXTAREA)$/.test(document.activeElement.tagName));
+    if (ocupado) { setTimeout(atualizarSePuder, 3000); return; }
+    const k = 'painel-atualizou-' + versaoNova;
+    try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, '1'); } catch {}   // uma tentativa por versão
+    location.replace(location.pathname + '?v=' + encodeURIComponent(versaoNova));
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checarVersao(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) checarVersao(); });
+  checarVersao();
+
+  const salva = store.get(K_CHAVE);
+  if (salva) entrar(salva, true); else { $('#login').hidden = false; renderHeader(); }
+})();
+</script>
+</body>
+</html>

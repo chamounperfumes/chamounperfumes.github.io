@@ -1,0 +1,18 @@
+{
+ "parcelas": 6,
+ "secoes": [
+  "Masculinos",
+  "Femininos",
+  "Outros produtos"
+ ],
+ "outras": [
+  "Outros produtos"
+ ],
+ "catalogo_url": "https://chamounperfumes.github.io/loja/",
+ "loja": {
+  "endereco": "",
+  "horario": "",
+  "whatsapp": "",
+  "instagram": ""
+ }
+}
