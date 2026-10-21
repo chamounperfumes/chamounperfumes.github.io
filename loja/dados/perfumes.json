@@ -7208,7 +7208,7 @@
   "parcelas": 3,
   "foto": "",
   "status": "ativo",
-  "ordem": 20,
+  "ordem": 70,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7231,7 +7231,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 80,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7254,7 +7254,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 40,
+  "ordem": 120,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7277,7 +7277,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 60,
+  "ordem": 140,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7300,7 +7300,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 50,
+  "ordem": 130,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7323,7 +7323,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 10,
+  "ordem": 30,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
@@ -7331,6 +7331,224 @@
     "em": "2026-10-21T12:00:06Z",
     "vista": 89.9,
     "parcelado": 99.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-acerola-body-spray-150",
+  "nome": "Acerola",
+  "tipo": "Body spray",
+  "ml": 150,
+  "vista": 110,
+  "parcelado": 119.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 10,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 110,
+    "parcelado": 119.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-acerola-sabonete-liquido-200",
+  "nome": "Acerola",
+  "tipo": "Calda de banho · sabonete líquido",
+  "ml": 200,
+  "vista": 60,
+  "parcelado": 64.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 20,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 60,
+    "parcelado": 64.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-jenipa-espuma-banho-150",
+  "nome": "Jenipá",
+  "tipo": "Espuma de banho · sabonete corporal",
+  "ml": 150,
+  "vista": 70,
+  "parcelado": 74.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 110,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 70,
+    "parcelado": 74.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-jenipa-body-spray-150",
+  "nome": "Jenipá",
+  "tipo": "Body spray",
+  "ml": 150,
+  "vista": 110,
+  "parcelado": 119.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 100,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 110,
+    "parcelado": 119.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-bafafa-hidratante-200",
+  "nome": "Bafafá",
+  "tipo": "Hidratante · pitanga e toranja",
+  "ml": 200,
+  "vista": 90,
+  "parcelado": 99.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 60,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 90,
+    "parcelado": 99.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-bafafa-body-spray-150",
+  "nome": "Bafafá",
+  "tipo": "Body spray · pitanga e toranja",
+  "ml": 150,
+  "vista": 110,
+  "parcelado": 119.9,
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 50,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 110,
+    "parcelado": 119.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-amburana-colonia-200",
+  "nome": "Amburana",
+  "tipo": "Colônia",
+  "ml": 200,
+  "vista": 180,
+  "parcelado": 199.9,
+  "acordes": [
+   "Floral branco",
+   "Atalcado",
+   "Amadeirado",
+   "Baunilha",
+   "Especiado quente",
+   "Almiscarado",
+   "Frutado",
+   "Cítrico",
+   "Canela",
+   "Especiado fresco"
+  ],
+  "notas": {
+   "topo": "noz-moscada, carambola, tangerina",
+   "coracao": "gardênia, canela, tuberosa, flor de frutas cítricas",
+   "fundo": "sândalo, baunilha, almíscar, estoraque"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/L-Occitane-Au-Bresil/Amburana-54613.html",
+  "perfil_em": "2026-10-21",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 40,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 180,
+    "parcelado": 199.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-flor-de-carambola-colonia-100",
+  "nome": "Flor de Carambola",
+  "tipo": "Colônia",
+  "ml": 100,
+  "vista": 150,
+  "parcelado": 169.9,
+  "acordes": [
+   "Frutado",
+   "Tropical",
+   "Fresco",
+   "Cítrico",
+   "Floral",
+   "Rosa"
+  ],
+  "notas": {
+   "topo": "carambola, maçã verde, limão",
+   "coracao": "flor de carambola, rosa, pêssego",
+   "fundo": "cedro, sândalo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/L-Occitane-Au-Bresil/Flor-de-Carambola-30765.html",
+  "perfil_em": "2026-10-21",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 90,
+  "criado_em": "2026-10-21T12:08:30Z",
+  "atualizado_em": "2026-10-21T12:08:30Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:08:30Z",
+    "vista": 150,
+    "parcelado": 169.9
    }
   ]
  }

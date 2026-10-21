@@ -4,7 +4,7 @@ Uso (na raiz do repositório):
   python3 -I loja/ferramentas/montar_dados.py loja/dados/perfumes.json loja/dados/config.json <dd/mm/aaaa>
 
 Diferenças para o site principal:
-- Seções em config["outras"] são de outros produtos (sem notas e fora do assistente; volume opcional).
+- Seções em config["outras"] são de outros produtos (fora do assistente; volume opcional; notas só se o item tiver).
 - config["loja"] (endereço, horário, WhatsApp, Instagram) vai junto para o site mostrar.
 - Perfume sem acordes/notas reaproveita o perfil do mesmo perfume no catálogo principal
   (dados/perfumes.json na raiz), se existir lá.
@@ -66,18 +66,19 @@ for d in docs:
             p["parcelas"] = int(d["parcelas"])   # parcelas só deste produto (1 = sem parcelar)
     except (TypeError, ValueError):
         pass
-    if d["secao"] not in outras:
-        perfil = d
-        if not [a for a in (d.get("acordes") or []) if str(a).strip()]:
-            perfil = perfis.get(chave(d), d)
-        ac = [str(a).strip() for a in (perfil.get("acordes") or []) if str(a).strip()]
-        if ac:
-            p["acordes"] = ac[:10]
-        nt = notas(perfil)
-        if nt:
-            p["notas"] = nt
-        if perfil.get("perfil_fonte"):
-            p["fonte"] = perfil["perfil_fonte"]
+    # Seções de "outros produtos" só mostram notas se o próprio item tiver (ex.: colônias L'Occitane);
+    # o assistente do site continua olhando só as seções de perfume.
+    perfil = d
+    if d["secao"] not in outras and not [a for a in (d.get("acordes") or []) if str(a).strip()]:
+        perfil = perfis.get(chave(d), d)
+    ac = [str(a).strip() for a in (perfil.get("acordes") or []) if str(a).strip()]
+    if ac:
+        p["acordes"] = ac[:10]
+    nt = notas(perfil)
+    if nt:
+        p["notas"] = nt
+    if perfil.get("perfil_fonte"):
+        p["fonte"] = perfil["perfil_fonte"]
     prods.append(p)
 
 payload = json.dumps({"atualizado_em": data, "parcelas": cfg.get("parcelas", 6), "secoes": secoes, "outras": outras,
