@@ -283,7 +283,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
-  "ordem": 70,
+  "ordem": 130,
   "acordes": [
    "Especiado quente",
    "Baunilha",
@@ -329,11 +329,11 @@
   "nome": "The Most Wanted Parfum",
   "tipo": "",
   "ml": 100,
-  "vista": 650,
-  "parcelado": 690,
-  "status": "arquivado",
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
   "foto": "402778df53ce9c6c709030320e8c6e56",
-  "ordem": 80,
+  "ordem": 10,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -349,12 +349,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Azzaro/The-Most-Wanted-Parfum-73664.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 690,
     "vista": 650
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 640,
+    "parcelado": 680
    }
   ]
  },
@@ -928,7 +933,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 80,
+  "ordem": 140,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -974,7 +979,7 @@
   "parcelado": 600,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 120,
+  "ordem": 180,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1018,7 +1023,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 130,
+  "ordem": 190,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1062,7 +1067,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 90,
+  "ordem": 150,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1378,13 +1383,13 @@
   "secao": "Masculinos",
   "marca": "Emporio Armani",
   "nome": "Stronger With You Intensely",
-  "tipo": "",
+  "tipo": "EDP",
   "ml": 100,
-  "vista": 550,
-  "parcelado": 590,
-  "status": "arquivado",
+  "vista": 600,
+  "parcelado": 640,
+  "status": "ativo",
   "foto": "fed233ccbea842c3e171b44d8834e4aa",
-  "ordem": 310,
+  "ordem": 90,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1404,12 +1409,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Intensely-52802.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 590,
     "vista": 550
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 600,
+    "parcelado": 640
    }
   ]
  },
@@ -1504,7 +1514,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 180,
+  "ordem": 240,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -2192,7 +2202,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 140,
+  "ordem": 200,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2238,7 +2248,7 @@
   "parcelado": 880,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 150,
+  "ordem": 210,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2330,7 +2340,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
-  "ordem": 60,
+  "ordem": 120,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -2735,7 +2745,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "3ebe46ca6f0366976390657074579a52",
-  "ordem": 150,
+  "ordem": 220,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -2858,10 +2868,10 @@
   "tipo": "EDT",
   "ml": 100,
   "vista": 700,
-  "parcelado": 750,
-  "status": "arquivado",
+  "parcelado": 740,
+  "status": "ativo",
   "foto": "bbc8455e10c4f4ba8774bac04d26ed68",
-  "ordem": 100,
+  "ordem": 20,
   "acordes": [
    "Floral",
    "Amadeirado",
@@ -2882,12 +2892,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Coral-14297.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 700,
+    "parcelado": 740
    }
   ]
  },
@@ -2899,10 +2914,10 @@
   "tipo": "EDT",
   "ml": 100,
   "vista": 700,
-  "parcelado": 750,
-  "status": "arquivado",
+  "parcelado": 740,
+  "status": "ativo",
   "foto": "c43c16fb52dbb03f9fa377eb45727f93",
-  "ordem": 110,
+  "ordem": 30,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -2923,12 +2938,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Crystalline-152.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 700,
+    "parcelado": 740
    }
   ]
  },
@@ -2940,10 +2960,10 @@
   "tipo": "EDT",
   "ml": 100,
   "vista": 700,
-  "parcelado": 750,
-  "status": "arquivado",
+  "parcelado": 740,
+  "status": "ativo",
   "foto": "8dc34792c1ae4e06d8a761ab8f6da742",
-  "ordem": 120,
+  "ordem": 10,
   "acordes": [
    "Atalcado",
    "Íris",
@@ -2964,12 +2984,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Omnia-Amethyste-780.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 700,
+    "parcelado": 740
    }
   ]
  },
@@ -3106,7 +3131,7 @@
   "parcelado": 490,
   "status": "ativo",
   "foto": "ccd1687a221d153e33443957c108e47e",
-  "ordem": 20,
+  "ordem": 50,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -3150,7 +3175,7 @@
   "parcelado": 780,
   "status": "ativo",
   "foto": "e029596c45f2968e59a6a09671d4cc4a",
-  "ordem": 230,
+  "ordem": 340,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3319,9 +3344,9 @@
   "ml": 100,
   "vista": 800,
   "parcelado": 850,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "ef75d1b8869dffc41c47eb087a4a19a0",
-  "ordem": 210,
+  "ordem": 150,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -3339,7 +3364,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-84951.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -3359,7 +3384,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "63a2c6d70bda32feaf9626eafbb0653a",
-  "ordem": 120,
+  "ordem": 180,
   "acordes": [
    "Tropical",
    "Baunilha",
@@ -3485,7 +3510,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "236797194a60f1bca673574eb18b0512",
-  "ordem": 40,
+  "ordem": 70,
   "acordes": [
    "Floral",
    "Almiscarado",
@@ -3568,7 +3593,7 @@
   "parcelado": 540,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 190,
+  "ordem": 300,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3613,7 +3638,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 200,
+  "ordem": 310,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3658,7 +3683,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 210,
+  "ordem": 320,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3785,7 +3810,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "42ebe68564d18e213102f67be49aa1c2",
-  "ordem": 50,
+  "ordem": 80,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4032,7 +4057,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
-  "ordem": 100,
+  "ordem": 160,
   "acordes": [
    "Cítrico",
    "Âmbar",
@@ -4264,11 +4289,11 @@
   "nome": "La Vie Est Belle",
   "tipo": "EDP",
   "ml": 100,
-  "vista": 600,
-  "parcelado": 640,
-  "status": "arquivado",
+  "vista": 640,
+  "parcelado": 680,
+  "status": "ativo",
   "foto": "001fc1f11e83816102ea979a7ef2b077",
-  "ordem": 420,
+  "ordem": 250,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4289,12 +4314,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 640,
     "vista": 600
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 640,
+    "parcelado": 680
    }
   ]
  },
@@ -4539,11 +4569,11 @@
   "nome": "La Vie Est Belle L'Elixir Very Cherry",
   "tipo": "",
   "ml": 100,
-  "vista": 780,
-  "parcelado": 830,
-  "status": "arquivado",
+  "vista": 770,
+  "parcelado": 820,
+  "status": "ativo",
   "foto": "0ef22f1b57679104aed41c73d4e5a163",
-  "ordem": 490,
+  "ordem": 270,
   "acordes": [
    "Cereja",
    "Ozônico",
@@ -4559,12 +4589,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-est-Belle-L-Elixir-Very-Cherry-133579.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
     "parcelado": 830,
     "vista": 780
+   },
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 770,
+    "parcelado": 820
    }
   ]
  },
@@ -4620,7 +4655,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "4e8f8dbda46995c9107603d2a8a72087",
-  "ordem": 60,
+  "ordem": 90,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4658,7 +4693,7 @@
   "ml": 80,
   "vista": 700,
   "parcelado": 750,
-  "ordem": 70,
+  "ordem": 100,
   "acordes": [
    "Floral",
    "Tropical",
@@ -4695,7 +4730,7 @@
   "ml": 50,
   "vista": 620,
   "parcelado": 660,
-  "ordem": 80,
+  "ordem": 110,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4731,7 +4766,7 @@
   "ml": 80,
   "vista": 750,
   "parcelado": 790,
-  "ordem": 90,
+  "ordem": 120,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4767,7 +4802,7 @@
   "ml": 50,
   "vista": 460,
   "parcelado": 500,
-  "ordem": 160,
+  "ordem": 230,
   "acordes": [
    "Frutado",
    "Floral",
@@ -4803,7 +4838,7 @@
   "ml": 30,
   "vista": 270,
   "parcelado": 300,
-  "ordem": 140,
+  "ordem": 210,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -4842,7 +4877,7 @@
   "ml": 50,
   "vista": 350,
   "parcelado": 390,
-  "ordem": 50,
+  "ordem": 110,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -4901,7 +4936,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 20,
+  "ordem": 30,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -4942,7 +4977,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 40,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -4983,7 +5018,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 40,
+  "ordem": 50,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5023,7 +5058,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "status": "ativo",
-  "ordem": 100,
+  "ordem": 160,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5063,7 +5098,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 110,
+  "ordem": 170,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5101,7 +5136,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 220,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5142,7 +5177,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 170,
+  "ordem": 230,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5181,7 +5216,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 180,
+  "ordem": 290,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5222,7 +5257,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 170,
+  "ordem": 280,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5263,7 +5298,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 110,
+  "ordem": 170,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5304,7 +5339,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 220,
+  "ordem": 330,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5345,7 +5380,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 10,
+  "ordem": 20,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5384,7 +5419,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Solar-Elixir-125734.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 60,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5421,7 +5456,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-Amber-Essence-100795.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 10,
+  "ordem": 40,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5457,7 +5492,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Orchid-94979.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 130,
+  "ordem": 200,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5465,6 +5500,357 @@
     "em": "2026-10-21T10:35:35Z",
     "vista": 700,
     "parcelado": 750
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-devotion-50",
+  "secao": "Femininos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Devotion",
+  "tipo": "EDP",
+  "ml": 50,
+  "vista": 620,
+  "parcelado": 660,
+  "foto": "ef75d1b8869dffc41c47eb087a4a19a0",
+  "acordes": [
+   "Baunilha",
+   "Doce",
+   "Floral branco",
+   "Lactônico",
+   "Rum",
+   "Atalcado",
+   "Cítrico"
+  ],
+  "notas": {
+   "coracao": "panna cotta, flor de laranjeira, rum",
+   "fundo": "baunilha",
+   "topo": "limão cristalizado"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-84951.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 140,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 620,
+    "parcelado": 660
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-devotion-pour-homme-100",
+  "secao": "Masculinos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Devotion Pour Homme",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 800,
+  "parcelado": 850,
+  "foto": "",
+  "acordes": [
+   "Café",
+   "Especiado quente",
+   "Cítrico",
+   "Patchouli",
+   "Amadeirado"
+  ],
+  "notas": {
+   "topo": "limão",
+   "coracao": "café",
+   "fundo": "patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 70,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 800,
+    "parcelado": 850
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-devotion-pour-homme-50",
+  "secao": "Masculinos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Devotion Pour Homme",
+  "tipo": "EDP",
+  "ml": 50,
+  "vista": 620,
+  "parcelado": 660,
+  "foto": "",
+  "acordes": [
+   "Café",
+   "Especiado quente",
+   "Cítrico",
+   "Patchouli",
+   "Amadeirado"
+  ],
+  "notas": {
+   "topo": "limão",
+   "coracao": "café",
+   "fundo": "patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 60,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 620,
+    "parcelado": 660
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-the-one-pour-homme-parfum-100",
+  "secao": "Masculinos",
+  "marca": "Dolce & Gabbana",
+  "nome": "The One Pour Homme",
+  "tipo": "Parfum",
+  "ml": 100,
+  "vista": 800,
+  "parcelado": 850,
+  "foto": "",
+  "acordes": [
+   "Âmbar",
+   "Especiado fresco",
+   "Tabaco",
+   "Doce",
+   "Amadeirado",
+   "Cítrico",
+   "Aromático",
+   "Patchouli",
+   "Especiado quente"
+  ],
+  "notas": {
+   "topo": "laranja, noz-moscada, pimenta-do-reino",
+   "coracao": "ládano, patchouli, sálvia esclareia",
+   "fundo": "âmbar, tabaco, vetiver"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-Pour-Homme-Parfum-121009.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 80,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 800,
+    "parcelado": 850
+   }
+  ]
+ },
+ {
+  "id": "emporio-armani-stronger-with-you-powerfully-100",
+  "secao": "Masculinos",
+  "marca": "Emporio Armani",
+  "nome": "Stronger With You Powerfully",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 600,
+  "parcelado": 640,
+  "foto": "",
+  "acordes": [
+   "Especiado quente",
+   "Baunilha",
+   "Cereja",
+   "Âmbar",
+   "Amendoado",
+   "Doce",
+   "Amadeirado",
+   "Balsâmico",
+   "Lavanda",
+   "Atalcado"
+  ],
+  "notas": {
+   "topo": "cereja, tangerina",
+   "coracao": "especiarias, lavanda",
+   "fundo": "baunilha, castanha, madeira de âmbar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Powerfully-123070.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 100,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 600,
+    "parcelado": 640
+   }
+  ]
+ },
+ {
+  "id": "chloe-le-parfum-100",
+  "secao": "Femininos",
+  "marca": "Chloé",
+  "nome": "Le Parfum",
+  "tipo": "",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "foto": "",
+  "acordes": [
+   "Baunilha",
+   "Rosa",
+   "Floral branco",
+   "Doce",
+   "Cítrico",
+   "Âmbar",
+   "Floral"
+  ],
+  "notas": {
+   "topo": "flor de laranjeira",
+   "coracao": "rosa",
+   "fundo": "baunilha, fava tonka"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Chloe/Chloe-Le-Parfum-111273.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 130,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 700,
+    "parcelado": 750
+   }
+  ]
+ },
+ {
+  "id": "lancome-idole-100",
+  "secao": "Femininos",
+  "marca": "Lancôme",
+  "nome": "Idôle",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 620,
+  "parcelado": 660,
+  "foto": "",
+  "acordes": [
+   "Rosa",
+   "Almiscarado",
+   "Frutado",
+   "Doce",
+   "Floral branco",
+   "Atalcado",
+   "Floral",
+   "Cítrico",
+   "Aquático",
+   "Baunilha"
+  ],
+  "notas": {
+   "topo": "pera, bergamota, pimenta rosa",
+   "coracao": "rosa, jasmim",
+   "fundo": "almíscar branco, baunilha, patchouli, cedro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 240,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 620,
+    "parcelado": 660
+   }
+  ]
+ },
+ {
+  "id": "lancome-la-vie-est-belle-kit-100",
+  "secao": "Femininos",
+  "marca": "Lancôme",
+  "nome": "La Vie Est Belle",
+  "tipo": "Kit com hidratante 50 ml e perfume de bolsa 10 ml",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "foto": "",
+  "acordes": [
+   "Doce",
+   "Baunilha",
+   "Frutado",
+   "Patchouli",
+   "Amadeirado",
+   "Floral branco",
+   "Atalcado",
+   "Íris",
+   "Terroso",
+   "Especiado quente"
+  ],
+  "notas": {
+   "coracao": "íris, jasmim, flor de laranjeira",
+   "fundo": "praliné, baunilha, patchouli, fava tonka",
+   "topo": "cassis, pera"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 260,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 700,
+    "parcelado": 750
+   }
+  ]
+ },
+ {
+  "id": "givenchy-l-interdit-kit-80",
+  "secao": "Femininos",
+  "marca": "Givenchy",
+  "nome": "L'Interdit",
+  "tipo": "Kit com batom",
+  "ml": 80,
+  "vista": 640,
+  "parcelado": 680,
+  "foto": "",
+  "acordes": [
+   "Floral branco",
+   "Tuberosa",
+   "Doce",
+   "Cítrico",
+   "Amadeirado",
+   "Patchouli",
+   "Baunilha",
+   "Frutado",
+   "Animálico"
+  ],
+  "notas": {
+   "coracao": "tuberosa, flor de laranjeira, jasmim sambac",
+   "fundo": "patchouli, baunilha, ambroxan, vetiver",
+   "topo": "pera, bergamota"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Givenchy/L-Interdit-Eau-de-Parfum-51488.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 190,
+  "criado_em": "2026-10-21T10:57:41Z",
+  "atualizado_em": "2026-10-21T10:57:41Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:57:41Z",
+    "vista": 640,
+    "parcelado": 680
    }
   ]
  }
