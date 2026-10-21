@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-19.5">
+<meta name="painel-versao" content="2026-10-21.1">
 <title>Painel Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Painel Chamoun">
-<link rel="icon" href="../img/icone.png">
-<link rel="apple-touch-icon" href="../img/icone.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="icone-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
@@ -209,6 +211,12 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
 .fld input[type=date]{-webkit-appearance:none;appearance:none;text-align:left;background:#fff;color:var(--ink)}
 .atalhos{display:flex;gap:6px;flex-wrap:wrap}
 .atalhos button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 11px;min-height:36px;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink)}
+.btn-text svg{width:16px;height:16px;vertical-align:-3px;margin-right:4px}
+.av-estado{margin:0;border-radius:14px;padding:12px 14px;background:var(--ground);color:var(--ink);font-weight:600;line-height:1.45}
+.av-estado.ok{background:#E3F1E8;color:#17603C}
+.av-estado.alerta{background:#FFF1CC;color:#6E5200}
+.av-lista{margin:0;padding-left:20px;color:var(--muted);line-height:1.6}
+.av-acoes{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .fld textarea{min-height:84px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 12px;width:100%;font:inherit;font-size:16px;resize:vertical}
 .escolhido{display:flex;align-items:center;gap:10px;background:var(--ground);border-radius:12px;padding:8px 6px 8px 8px}
 .escolhido .thumb{width:44px;height:44px;flex:none;border-radius:10px}
@@ -232,6 +240,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     <div class="brand"><img src="../img/logo-preto.png" alt="Chamoun Perfumes Importados" width="600" height="132"><span class="tag eyebrow">Painel</span></div>
     <div class="hright">
       <p class="hmsg num" id="hmsg"></p>
+      <button class="btn-text" type="button" id="avisos-btn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>Avisos</button>
       <a class="btn btn-line" href="../" target="_blank" rel="noopener">Ver site</a>
       <button class="btn-text" type="button" id="sair" hidden>Sair</button>
     </div>
@@ -391,6 +400,23 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       <button class="btn-text" type="button" id="e-del">Excluir pedido</button>
       <div class="right"><button class="btn btn-line" type="button" id="e-cancel">Cancelar</button><button class="btn btn-ink" type="button" id="e-save">Salvar</button></div>
     </div>
+  </div>
+</div>
+<div class="scrim" id="avisos" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="av-titulo">
+    <h2 id="av-titulo">Avisos no celular</h2>
+    <p class="av-estado" id="av-estado">Verificando…</p>
+    <ul class="av-lista">
+      <li>Por volta das <strong>12h</strong>, quando um pedido da lista de espera <strong>vence hoje</strong> ou quando faltam <strong>7 dias ou menos</strong> para o prazo.</li>
+      <li>Quando o <strong>site e o PDF terminam de atualizar</strong> depois de publicar.</li>
+    </ul>
+    <div class="av-acoes">
+      <button class="btn btn-ink" type="button" id="av-ativar">Ativar avisos neste aparelho</button>
+      <button class="btn btn-line" type="button" id="av-teste" hidden>Enviar aviso de teste</button>
+      <button class="btn-text" type="button" id="av-desativar" hidden>Desativar neste aparelho</button>
+    </div>
+    <p class="small" id="av-obs">Os avisos chegam em todos os aparelhos onde forem ativados.</p>
+    <div class="sheet-foot"><div class="right"><button class="btn btn-line" type="button" id="av-fechar">Fechar</button></div></div>
   </div>
 </div>
 <datalist id="tipos"><option value="EDP"><option value="EDT"><option value="Parfum"><option value="Parfum Intense"><option value="Elixir de Parfum"><option value="Extrait de Parfum"><option value="Tradicional"></datalist>
@@ -559,7 +585,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       S.base = novo; S.baseCommit = commitSha; S.pend = []; S.fotos = {}; salvarPend();
       S.publicando = false; tudo();
       if (avisos.length) toast(avisos[0], 7000);
-      acompanhar(commitSha);
+      acompanhar(commitSha); avisarSite(commitSha);
     } catch (e) {
       S.publicando = false; tudo();
       toast(e && e.message === 'conflito' ? 'Outra pessoa estava publicando ao mesmo tempo. Toque em Publicar de novo.' : msgErro(e), 7000);
@@ -602,7 +628,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   function renderHeader() {
     const m = $('#hmsg'); m.replaceChildren();
     if (S.chave && S.ultimaPub) m.append('Site atualizado em ', el('strong', { text: S.ultimaPub }));
-    $('#sair').hidden = !S.chave;
+    $('#sair').hidden = !S.chave; $('#avisos-btn').hidden = !S.chave;
   }
   function renderBar(txt) {
     const bar = $('#pubbar');
@@ -823,7 +849,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       try { repo = await gh(ESP_API); } catch (e) { if (e.status !== 404) throw e; }
       if (!repo) S.esp.estado = await espSemRepo();
       else if (!repo.private) S.esp.estado = 'publico';
-      else { await espLerArquivo(); S.esp.estado = 'ok'; }
+      else { await espLerArquivo(); S.esp.estado = 'ok'; avisosCarregar(); }
     } catch (e) { S.esp.estado = 'erro'; S.esp.msg = espErro(e); }
     espRender(); render();
   }
@@ -1130,6 +1156,97 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     if (S.vista === 'esp' && ['erro', 'sem-escopo', 'sem-acesso'].includes(S.esp.estado)) espCarregar(); else espRender();
   }
 
+  /* ---------- avisos no celular (notificações) ----------
+     Chaves e aparelhos ficam no repositório privado da lista de espera (avisos/vapid.json, avisos/inscricoes.json).
+     Quem envia é o robô "Avisos" desse repositório (todo dia por volta das 12h, e quando o painel pede "teste" ou "site"). */
+  S.avisos = { n: 0, carregado: false };
+  const b64uEnc = (b) => btoa(String.fromCharCode(...new Uint8Array(b))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const b64uDec = (s) => { const t = s.replace(/-/g, '+').replace(/_/g, '/'); const r = atob(t + '==='.slice((t.length + 3) % 4)); return Uint8Array.from(r, (c) => c.charCodeAt(0)); };
+  const avSuporte = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  const ehIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const instalado = () => navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
+  function aparelho() { const u = navigator.userAgent; return /iPhone/.test(u) ? 'iPhone' : /iPad/.test(u) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ? 'iPad' : /Android/.test(u) ? 'Android' : /Mac/.test(u) ? 'Mac' : 'Computador'; }
+  async function lerArqEsp(caminho) {
+    try { const f = await gh(ESP_API + '/contents/' + caminho); return { dados: JSON.parse(deB64(f.content)), sha: f.sha }; }
+    catch (e) { if (e.status === 404) return { dados: null, sha: '' }; throw e; }
+  }
+  async function gravarArqEsp(caminho, dados, sha, msg) {
+    const r = await gh(ESP_API + '/contents/' + caminho, { method: 'PUT', body: JSON.stringify({ message: msg, content: b64utf8(JSON.stringify(dados, null, 1) + '\n'), ...(sha ? { sha } : {}) }) });
+    return r.content.sha;
+  }
+  async function mudarInscricoes(fn) {   // lê, altera e grava; se outra pessoa gravou antes, tenta de novo
+    for (let t = 0; t < 4; t++) {
+      const f = await lerArqEsp('avisos/inscricoes.json'); const lista = fn(Array.isArray(f.dados) ? f.dados : []);
+      try { await gravarArqEsp('avisos/inscricoes.json', lista, f.sha, 'Avisos: aparelhos'); S.avisos.n = lista.length; return lista; }
+      catch (e) { if (e.status !== 409 && e.status !== 422) throw e; }
+    }
+    throw new Error('conflito');
+  }
+  async function chavesAvisos() {
+    const f = await lerArqEsp('avisos/vapid.json'); if (f.dados && f.dados.publicKey) return f.dados;
+    const k = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign', 'verify']);
+    const jwk = await crypto.subtle.exportKey('jwk', k.privateKey); const pub = await crypto.subtle.exportKey('raw', k.publicKey);
+    const dados = { publicKey: b64uEnc(pub), privateKey: jwk.d, subject: 'https://chamounperfumes.github.io/painel/', criado_em: nowISO() };
+    await gravarArqEsp('avisos/vapid.json', dados, f.sha, 'Avisos: chaves'); return { ...dados, nova: true };
+  }
+  async function dispararAvisos(tipo, sha = '') {
+    await gh(ESP_API + '/actions/workflows/avisos.yml/dispatches', { method: 'POST', body: JSON.stringify({ ref: 'main', inputs: { tipo, sha } }) });
+  }
+  async function avisosCarregar() {
+    try { const f = await lerArqEsp('avisos/inscricoes.json'); S.avisos.n = Array.isArray(f.dados) ? f.dados.length : 0; S.avisos.carregado = true; } catch {}
+  }
+  function avisarSite(sha) { if (S.avisos.n > 0 && S.esp.estado === 'ok') dispararAvisos('site', sha).catch(() => {}); }
+  async function minhaInscricao() {
+    if (!avSuporte()) return null;
+    try { const reg = await navigator.serviceWorker.getRegistration(); return reg ? await reg.pushManager.getSubscription() : null; } catch { return null; }
+  }
+  async function avisosEstado() {
+    const est = $('#av-estado'), at = $('#av-ativar'), te = $('#av-teste'), de = $('#av-desativar');
+    const mostra = (txt, cls, ativar, outros) => { est.textContent = txt; est.className = 'av-estado' + (cls ? ' ' + cls : ''); at.hidden = !ativar; te.hidden = de.hidden = !outros; };
+    if (!avSuporte()) {
+      if (ehIOS() && !instalado()) return mostra('Para ativar, abra o painel pelo ícone na tela de início do iPhone (no Safari: Compartilhar → Adicionar à Tela de Início).', 'alerta', false, false);
+      return mostra('Este aparelho não aceita avisos. No iPhone é preciso o iOS 16.4 ou mais novo, com o painel aberto pelo ícone da tela de início.', 'alerta', false, false);
+    }
+    if (S.esp.estado !== 'ok') return mostra('Os avisos usam a lista de espera. Abra a aba "Lista de espera" e deixe ela pronta para usar.', 'alerta', false, false);
+    if (Notification.permission === 'denied') return mostra('Os avisos estão bloqueados neste aparelho. No iPhone: Ajustes → Notificações → Painel Chamoun → Permitir Notificações.', 'alerta', false, false);
+    const sub = await minhaInscricao();
+    if (sub && Notification.permission === 'granted') return mostra('Avisos ativados neste aparelho.', 'ok', false, true);
+    return mostra('Avisos desligados neste aparelho.', '', true, false);
+  }
+  function abrirAvisos() { $('#avisos').hidden = false; avisosEstado(); }
+  function fecharAvisos() { $('#avisos').hidden = true; }
+  async function ativarAvisos() {
+    const b = $('#av-ativar');
+    let perm = Notification.permission;
+    try { if (perm !== 'granted') perm = await Notification.requestPermission(); } catch { perm = 'denied'; }   // tem que ser o 1º passo do toque (iPhone)
+    if (perm !== 'granted') { avisosEstado(); return; }
+    b.disabled = true; b.textContent = 'Ativando…';
+    try {
+      const reg = await navigator.serviceWorker.register('sw.js'); await navigator.serviceWorker.ready;
+      const chaves = await chavesAvisos();
+      let sub = await reg.pushManager.getSubscription();
+      if (sub && chaves.nova) { await sub.unsubscribe(); sub = null; }
+      if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64uDec(chaves.publicKey) });
+      const j = sub.toJSON();
+      await mudarInscricoes((l) => [...l.filter((x) => x.endpoint !== j.endpoint), { endpoint: j.endpoint, keys: j.keys, aparelho: aparelho(), criado_em: nowISO() }]);
+      try { await dispararAvisos('teste'); toast('Avisos ativados! Um aviso de teste chega em cerca de 1 minuto.', 7000); }
+      catch { toast('Avisos ativados neste aparelho.', 5000); }
+    } catch (e) {
+      toast('Não consegui ativar os avisos. ' + (e && e.status === 401 ? 'A chave de acesso não funcionou.' : 'Confira a internet e tente de novo.'), 7000);
+    } finally { b.disabled = false; b.textContent = 'Ativar avisos neste aparelho'; avisosEstado(); }
+  }
+  async function desativarAvisos() {
+    const sub = await minhaInscricao(); const ep = sub && sub.endpoint;
+    try { if (sub) await sub.unsubscribe(); if (ep) await mudarInscricoes((l) => l.filter((x) => x.endpoint !== ep)); toast('Avisos desativados neste aparelho.'); }
+    catch { toast('Não consegui desativar agora. Tente de novo.'); }
+    avisosEstado();
+  }
+  async function testarAvisos() {
+    try { await dispararAvisos('teste'); toast('Pedido enviado. O aviso de teste chega em cerca de 1 minuto.', 6000); }
+    catch { toast('Não consegui pedir o aviso de teste agora.'); }
+  }
+  if (avSuporte()) navigator.serviceWorker.register('sw.js').catch(() => {});
+
   /* ---------- entrada ---------- */
   async function entrar(chave, lembrar) {
     S.chave = chave; $('#login-err').textContent = '';
@@ -1141,6 +1258,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       store.set(K_CHAVE, chave, lembrar);
       $('#carregando').hidden = true; $('#app').hidden = false; lerPend(); listChips(); tudo(); infoPub(); prepararSkip(); acessos();
       let aba = 'cat'; try { aba = localStorage.getItem(K_ABA) || 'cat'; } catch {}
+      if (new URLSearchParams(location.search).get('aba') === 'esp') aba = 'esp';
       mostrarVista(aba); espCarregar();
     } catch (e) {
       S.chave = ''; if (e && [401, 403, 404].includes(e.status)) store.del(K_CHAVE);
@@ -1175,6 +1293,9 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   $('#esp-q').addEventListener('input', (e) => { S.esp.q = e.target.value; espRender(); });
   $('#esp-novo').onclick = () => espAbrirEditor(null);
   $('#esp-baixar').onclick = baixarPlanilha; mostrarUltimaCopia();
+  $('#avisos-btn').onclick = abrirAvisos; $('#av-fechar').onclick = fecharAvisos;
+  $('#av-ativar').onclick = ativarAvisos; $('#av-teste').onclick = testarAvisos; $('#av-desativar').onclick = desativarAvisos;
+  $('#avisos').addEventListener('click', (e) => { if (e.target.id === 'avisos') fecharAvisos(); });
   $('#e-prazo').addEventListener('input', editorPrazoInfo); $('#e-prazo').addEventListener('change', editorPrazoInfo);
   $('#e-atalhos').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; $('#e-prazo').value = b.dataset.d ? somarDias(Number(b.dataset.d)) : ''; editorPrazoInfo(); });
   $('#esp-tab-ag').addEventListener('click', () => { S.esp.filtro = 'todos'; espRender(); });
