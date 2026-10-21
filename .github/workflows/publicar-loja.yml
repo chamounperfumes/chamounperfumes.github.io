@@ -2,7 +2,7 @@ name: Publicar loja
 
 # Site da LOJA FÍSICA (chamounperfumes.github.io/loja/), separado do site principal.
 # Toda vez que o painel da loja (ou o Claude) grava em loja/dados/ ou loja/img/, este robô
-# monta o bloco de dados de loja/index.html e o loja/catalogo.pdf e publica.
+# monta o bloco de dados de loja/index.html e publica (a loja não tem PDF).
 on:
   push:
     branches: [main]
@@ -25,17 +25,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: Dependências
-        run: pip install reportlab pillow pypdf
-      - name: Monta a tabela e o PDF da loja
+        run: echo "Sem dependências extras."
+      - name: Monta a tabela da loja
         run: |
           HOJE=$(TZ=America/Sao_Paulo date +%d/%m/%Y)
           python3 -I loja/ferramentas/montar_dados.py loja/dados/perfumes.json loja/dados/config.json "$HOJE"
-          python3 loja/ferramentas/gerar_pdf.py
       - name: Publica
         run: |
           git config user.name "Chamoun Perfumes"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add loja/index.html loja/catalogo.pdf
+          git add loja/index.html
           if git diff --cached --quiet; then echo "Nada mudou."; exit 0; fi
           git commit -m "Loja: atualiza tabela de preços ($(TZ=America/Sao_Paulo date +%d/%m/%Y))"
           for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-20.1">
+<meta name="painel-versao" content="2026-10-20.2">
 <title>Painel da Loja · Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,7 +16,7 @@
 <style>
 /* Painel da LOJA FÍSICA (separado do painel do site online).
    Os dados ficam no GitHub (loja/dados/perfumes.json e loja/dados/config.json); o botão "Publicar"
-   grava lá e o robô "Publicar loja" monta loja/index.html e loja/catalogo.pdf. */
+   grava lá e o robô "Publicar loja" monta loja/index.html (a loja não tem PDF). */
 :root{
   --ground:#F4F4F2; --surface:#FFFFFF; --ink:#121212; --muted:#6B6B66; --faint:#97978F; --line:#E6E6E1;
   --chip:#ECECE8; --ok:#22704A; --warn:#8A5A12; --danger:#B03A2B; --scrim:rgba(18,18,18,.42);
@@ -506,10 +506,10 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       toast(e && e.message === 'conflito' ? 'Outra pessoa estava publicando ao mesmo tempo. Toque em Publicar de novo.' : msgErro(e), 7000);
     }
   }
-  // Acompanha o robô do GitHub que monta o site e o PDF.
+  // Acompanha o robô do GitHub que monta o site da loja.
   async function acompanhar(sha) {
     const bar = $('#pubbar'); bar.hidden = false; bar.classList.remove('ok'); S.acompanhando = true;
-    $('#pub-btns').hidden = true; $('#pub-txt').replaceChildren('Salvo! Atualizando o site e o PDF…', el('small', { text: 'Leva cerca de 1 a 2 minutos. Pode continuar editando.' }));
+    $('#pub-btns').hidden = true; $('#pub-txt').replaceChildren('Salvo! Atualizando o site da loja…', el('small', { text: 'Leva cerca de 1 a 2 minutos. Pode continuar editando.' }));
     const fim = Date.now() + 6 * 60 * 1000; let estado = '';
     while (Date.now() < fim) {
       await new Promise((r) => setTimeout(r, 8000));
@@ -522,7 +522,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     }
     if (S.pend.length || !S.acompanhando) return tudo();
     if (estado === 'success') {
-      bar.classList.add('ok'); $('#pub-txt').replaceChildren('Pronto! O site da loja e o PDF foram atualizados.', el('small', { text: 'Em até 1 minuto aparece no link da loja.' }));
+      bar.classList.add('ok'); $('#pub-txt').replaceChildren('Pronto! O site da loja foi atualizado.', el('small', { text: 'Em até 1 minuto aparece no link da loja.' }));
     } else if (estado) {
       $('#pub-txt').replaceChildren('Os dados foram salvos, mas o robô não conseguiu montar o site.', el('small', { text: 'Avise o Claude no chat para ele verificar.' }));
     } else {
