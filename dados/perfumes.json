@@ -4579,5 +4579,120 @@
     "vista": 700
    }
   ]
+ },
+ {
+  "id": "paco-rabanne-invictus-victory-absolu-100",
+  "secao": "Masculinos",
+  "marca": "Paco Rabanne",
+  "nome": "Invictus Victory Absolu",
+  "tipo": "",
+  "ml": 100,
+  "vista": 500,
+  "parcelado": 540,
+  "foto": "a92f06c17207cbf7e083301090e115b2",
+  "acordes": [
+   "Âmbar",
+   "Amadeirado",
+   "Especiado fresco",
+   "Especiado quente",
+   "Atalcado",
+   "Animálico",
+   "Balsâmico"
+  ],
+  "notas": {
+   "topo": "pimenta-do-reino",
+   "coracao": "âmbar, âmbar cinza, notas amadeiradas",
+   "fundo": "sândalo, olíbano, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
+  "status": "ativo",
+  "ordem": 580,
+  "perfil_em": "2026-10-21",
+  "criado_em": "2026-10-21T15:39:59.000Z",
+  "atualizado_em": "2026-10-21T15:39:59.000Z",
+  "historico": [
+   {
+    "em": "2026-10-21T15:39:59.000Z",
+    "vista": 500,
+    "parcelado": 540
+   }
+  ]
+ },
+ {
+  "id": "dolce-gabbana-devotion-pour-homme-200-parfum",
+  "secao": "Masculinos",
+  "marca": "Dolce & Gabbana",
+  "nome": "Devotion Pour Homme",
+  "tipo": "Parfum",
+  "ml": 200,
+  "vista": 700,
+  "parcelado": 750,
+  "foto": "c27e267e4305017df74bb716132546a1",
+  "acordes": [
+   "Amadeirado",
+   "Lavanda",
+   "Aromático",
+   "Baunilha",
+   "Especiado fresco",
+   "Café",
+   "Especiado quente",
+   "Cítrico",
+   "Musgo",
+   "Atalcado"
+  ],
+  "notas": {
+   "topo": "lavanda, limão, pimenta-do-reino",
+   "coracao": "café, cipreste",
+   "fundo": "baunilha de Madagascar, guaiaco, musgo de carvalho"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-Parfum-112765.html",
+  "status": "ativo",
+  "ordem": 590,
+  "perfil_em": "2026-10-21",
+  "criado_em": "2026-10-21T15:39:59.000Z",
+  "atualizado_em": "2026-10-21T15:39:59.000Z",
+  "historico": [
+   {
+    "em": "2026-10-21T15:39:59.000Z",
+    "vista": 700,
+    "parcelado": 750
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-la-bomba-intensa-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "La Bomba Intensa",
+  "tipo": "",
+  "ml": 80,
+  "vista": 700,
+  "parcelado": 750,
+  "foto": "3826ba50b62d39905690c14da218c54f",
+  "acordes": [
+   "Frutado",
+   "Doce",
+   "Âmbar",
+   "Floral",
+   "Cítrico"
+  ],
+  "notas": {
+   "topo": "frutas vermelhas, framboesa, bergamota",
+   "coracao": "orquídea, flor de laranjeira",
+   "fundo": "âmbar vermelho, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/La-Bomba-Intensa-134882.html",
+  "status": "ativo",
+  "ordem": 520,
+  "perfil_em": "2026-10-21",
+  "criado_em": "2026-10-21T15:39:59.000Z",
+  "atualizado_em": "2026-10-21T15:39:59.000Z",
+  "historico": [
+   {
+    "em": "2026-10-21T15:39:59.000Z",
+    "vista": 700,
+    "parcelado": 750
+   }
+  ]
  }
 ]
