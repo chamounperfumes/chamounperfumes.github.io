@@ -283,7 +283,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
-  "ordem": 60,
+  "ordem": 70,
   "acordes": [
    "Especiado quente",
    "Baunilha",
@@ -928,7 +928,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 70,
+  "ordem": 80,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -974,7 +974,7 @@
   "parcelado": 600,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 110,
+  "ordem": 120,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1018,7 +1018,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 120,
+  "ordem": 130,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1062,7 +1062,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 80,
+  "ordem": 90,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1504,7 +1504,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 170,
+  "ordem": 180,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -2192,7 +2192,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 130,
+  "ordem": 140,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2238,7 +2238,7 @@
   "parcelado": 880,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 140,
+  "ordem": 150,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2330,7 +2330,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
-  "ordem": 50,
+  "ordem": 60,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -2735,7 +2735,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "3ebe46ca6f0366976390657074579a52",
-  "ordem": 110,
+  "ordem": 150,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -3106,7 +3106,7 @@
   "parcelado": 490,
   "status": "ativo",
   "foto": "ccd1687a221d153e33443957c108e47e",
-  "ordem": 10,
+  "ordem": 20,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -3146,11 +3146,11 @@
   "nome": "Libre",
   "tipo": "EDP",
   "ml": 90,
-  "vista": 700,
-  "parcelado": 750,
-  "status": "arquivado",
+  "vista": 730,
+  "parcelado": 780,
+  "status": "ativo",
   "foto": "e029596c45f2968e59a6a09671d4cc4a",
-  "ordem": 170,
+  "ordem": 230,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3171,7 +3171,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -3182,6 +3182,11 @@
     "em": "2026-10-16T10:01:35.000Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 730,
+    "parcelado": 780
    }
   ]
  },
@@ -3346,15 +3351,15 @@
  {
   "id": "giorgio-armani-power-of-you-90",
   "secao": "Femininos",
-  "marca": "Giorgio Armani",
+  "marca": "Emporio Armani",
   "nome": "Power of You",
   "tipo": "EDP",
   "ml": 90,
-  "vista": 620,
-  "parcelado": 660,
-  "status": "arquivado",
+  "vista": 660,
+  "parcelado": 700,
+  "status": "ativo",
   "foto": "63a2c6d70bda32feaf9626eafbb0653a",
-  "ordem": 220,
+  "ordem": 120,
   "acordes": [
    "Tropical",
    "Baunilha",
@@ -3374,12 +3379,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Power-Of-You-121870.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 660,
     "vista": 620
+   },
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 660,
+    "parcelado": 700
    }
   ]
  },
@@ -3475,7 +3485,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "236797194a60f1bca673574eb18b0512",
-  "ordem": 20,
+  "ordem": 40,
   "acordes": [
    "Floral",
    "Almiscarado",
@@ -3554,11 +3564,11 @@
   "nome": "Paradoxe",
   "tipo": "EDP",
   "ml": 30,
-  "vista": 450,
-  "parcelado": 490,
-  "status": "arquivado",
+  "vista": 500,
+  "parcelado": 540,
+  "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 268,
+  "ordem": 190,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3578,12 +3588,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:08:21.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
    {
     "em": "2026-10-16T10:08:21.000Z",
     "parcelado": 490,
     "vista": 450
+   },
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 500,
+    "parcelado": 540
    }
   ]
  },
@@ -3594,11 +3609,11 @@
   "nome": "Paradoxe",
   "tipo": "EDP",
   "ml": 50,
-  "vista": 620,
-  "parcelado": 660,
-  "status": "arquivado",
+  "vista": 650,
+  "parcelado": 690,
+  "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 269,
+  "ordem": 200,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3618,12 +3633,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:08:21.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
    {
     "em": "2026-10-16T10:08:21.000Z",
     "parcelado": 660,
     "vista": 620
+   },
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 650,
+    "parcelado": 690
    }
   ]
  },
@@ -3636,9 +3656,9 @@
   "ml": 90,
   "vista": 750,
   "parcelado": 800,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 270,
+  "ordem": 210,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3658,7 +3678,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-Paradoxe-75668.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -3765,7 +3785,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "42ebe68564d18e213102f67be49aa1c2",
-  "ordem": 30,
+  "ordem": 50,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4012,7 +4032,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
-  "ordem": 80,
+  "ordem": 100,
   "acordes": [
    "Cítrico",
    "Âmbar",
@@ -4600,7 +4620,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "4e8f8dbda46995c9107603d2a8a72087",
-  "ordem": 40,
+  "ordem": 60,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4638,7 +4658,7 @@
   "ml": 80,
   "vista": 700,
   "parcelado": 750,
-  "ordem": 50,
+  "ordem": 70,
   "acordes": [
    "Floral",
    "Tropical",
@@ -4675,7 +4695,7 @@
   "ml": 50,
   "vista": 620,
   "parcelado": 660,
-  "ordem": 60,
+  "ordem": 80,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4711,7 +4731,7 @@
   "ml": 80,
   "vista": 750,
   "parcelado": 790,
-  "ordem": 70,
+  "ordem": 90,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4747,7 +4767,7 @@
   "ml": 50,
   "vista": 460,
   "parcelado": 500,
-  "ordem": 120,
+  "ordem": 160,
   "acordes": [
    "Frutado",
    "Floral",
@@ -4783,7 +4803,7 @@
   "ml": 30,
   "vista": 270,
   "parcelado": 300,
-  "ordem": 100,
+  "ordem": 140,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -4822,7 +4842,7 @@
   "ml": 50,
   "vista": 350,
   "parcelado": 390,
-  "ordem": 40,
+  "ordem": 50,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -4881,7 +4901,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 10,
+  "ordem": 20,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -4922,7 +4942,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 20,
+  "ordem": 30,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -4963,7 +4983,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 40,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5003,7 +5023,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 100,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5043,7 +5063,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 100,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5081,7 +5101,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 150,
+  "ordem": 160,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5122,7 +5142,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 170,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5161,7 +5181,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 140,
+  "ordem": 180,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5202,7 +5222,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 130,
+  "ordem": 170,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5243,7 +5263,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5251,6 +5271,200 @@
     "em": "2026-10-21T10:01:50Z",
     "vista": 800,
     "parcelado": 850
+   }
+  ]
+ },
+ {
+  "id": "yves-saint-laurent-libre-50",
+  "secao": "Femininos",
+  "marca": "Yves Saint Laurent",
+  "nome": "Libre",
+  "tipo": "EDP",
+  "ml": 50,
+  "vista": 620,
+  "parcelado": 660,
+  "foto": "e029596c45f2968e59a6a09671d4cc4a",
+  "acordes": [
+   "Floral branco",
+   "Cítrico",
+   "Lavanda",
+   "Baunilha",
+   "Aromático",
+   "Doce",
+   "Atalcado",
+   "Animálico",
+   "Almiscarado",
+   "Amadeirado"
+  ],
+  "notas": {
+   "coracao": "lavanda, flor de laranjeira, jasmim",
+   "fundo": "baunilha de Madagascar, almíscar, cedro, âmbar cinza",
+   "topo": "lavanda, tangerina, cassis, petitgrain"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
+  "perfil_em": "2026-10-15",
+  "status": "ativo",
+  "ordem": 220,
+  "criado_em": "2026-10-21T10:35:35Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 620,
+    "parcelado": 660
+   }
+  ]
+ },
+ {
+  "id": "calvin-klein-ck-one-200",
+  "secao": "Masculinos",
+  "marca": "Calvin Klein",
+  "nome": "CK One",
+  "tipo": "EDT",
+  "ml": 200,
+  "vista": 350,
+  "parcelado": 390,
+  "foto": "",
+  "acordes": [
+   "Cítrico",
+   "Verde",
+   "Atalcado",
+   "Amadeirado",
+   "Floral branco",
+   "Fresco",
+   "Aromático",
+   "Especiado fresco",
+   "Floral",
+   "Almiscarado"
+  ],
+  "notas": {
+   "topo": "limão, notas verdes, bergamota, tangerina, abacaxi, cardamomo, mamão",
+   "coracao": "lírio-do-vale, jasmim, violeta, rosa, noz-moscada, frésia, raiz de íris",
+   "fundo": "acorde verde, almíscar, cedro, chá verde, sândalo, musgo de carvalho, âmbar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 10,
+  "criado_em": "2026-10-21T10:35:35Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 350,
+    "parcelado": 390
+   }
+  ]
+ },
+ {
+  "id": "calvin-klein-euphoria-solar-elixir-100",
+  "secao": "Femininos",
+  "marca": "Calvin Klein",
+  "nome": "Euphoria Solar Elixir",
+  "tipo": "Parfum Intense",
+  "ml": 100,
+  "vista": 560,
+  "parcelado": 600,
+  "foto": "",
+  "acordes": [
+   "Tropical",
+   "Doce",
+   "Frutado",
+   "Baunilha",
+   "Atalcado",
+   "Floral",
+   "Terpênico",
+   "Amadeirado"
+  ],
+  "notas": {
+   "topo": "manga",
+   "coracao": "orquídea",
+   "fundo": "baunilha, cedro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Solar-Elixir-125734.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 30,
+  "criado_em": "2026-10-21T10:35:35Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 560,
+    "parcelado": 600
+   }
+  ]
+ },
+ {
+  "id": "calvin-klein-eternity-amber-essence-100",
+  "secao": "Femininos",
+  "marca": "Calvin Klein",
+  "nome": "Eternity Amber Essence",
+  "tipo": "Parfum Intense",
+  "ml": 100,
+  "vista": 420,
+  "parcelado": 460,
+  "foto": "",
+  "acordes": [
+   "Âmbar",
+   "Baunilha",
+   "Atalcado",
+   "Floral amarelo",
+   "Doce",
+   "Almiscarado"
+  ],
+  "notas": {
+   "topo": "ylang-ylang, angélica",
+   "coracao": "âmbar",
+   "fundo": "absoluto de baunilha, benjoim"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-Amber-Essence-100795.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 10,
+  "criado_em": "2026-10-21T10:35:35Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 420,
+    "parcelado": 460
+   }
+  ]
+ },
+ {
+  "id": "gucci-flora-gorgeous-orchid-100",
+  "secao": "Femininos",
+  "marca": "Gucci",
+  "nome": "Flora Gorgeous Orchid",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 700,
+  "parcelado": 750,
+  "foto": "",
+  "acordes": [
+   "Baunilha",
+   "Ozônico",
+   "Floral",
+   "Atalcado",
+   "Doce"
+  ],
+  "notas": {
+   "topo": "baunilha",
+   "coracao": "orquídea de baunilha",
+   "fundo": "notas ozônicas"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Orchid-94979.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 130,
+  "criado_em": "2026-10-21T10:35:35Z",
+  "atualizado_em": "2026-10-21T10:35:35Z",
+  "historico": [
+   {
+    "em": "2026-10-21T10:35:35Z",
+    "vista": 700,
+    "parcelado": 750
    }
   ]
  }
