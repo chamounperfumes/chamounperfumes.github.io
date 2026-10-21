@@ -3,10 +3,12 @@
  "secoes": [
   "Masculinos",
   "Femininos",
+  "L'Occitane",
   "Outros produtos"
  ],
  "outras": [
-  "Outros produtos"
+  "Outros produtos",
+  "L'Occitane"
  ],
  "catalogo_url": "https://chamounperfumes.github.io/loja/",
  "loja": {

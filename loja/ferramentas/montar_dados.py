@@ -61,6 +61,11 @@ for d in docs:
     p = {"secao": d["secao"], "marca": d.get("marca", ""), "nome": d.get("nome", ""), "tipo": d.get("tipo", ""),
          "ml": d.get("ml") or None, "vista": d["vista"], "parcelado": d["parcelado"],
          "img": ("img/" + d["foto"] + ".jpg") if d.get("foto") else ""}
+    try:
+        if d.get("parcelas"):
+            p["parcelas"] = int(d["parcelas"])   # parcelas só deste produto (1 = sem parcelar)
+    except (TypeError, ValueError):
+        pass
     if d["secao"] not in outras:
         perfil = d
         if not [a for a in (d.get("acordes") or []) if str(a).strip()]:

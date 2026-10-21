@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="painel-versao" content="2026-10-20.2">
+<meta name="painel-versao" content="2026-10-21.1">
 <title>Painel da Loja · Chamoun</title>
 <meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -303,6 +303,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       <div class="fld"><label for="f-parcelado">Preço a prazo (R$)</label><input id="f-parcelado" type="number" min="0" step="0.01" inputmode="decimal"></div>
       <div class="fld"><label for="f-secao">Seção</label><select id="f-secao"></select></div>
       <div class="fld"><label for="f-status">Situação</label><select id="f-status"><option value="ativo">No catálogo</option><option value="arquivado">Inativo (fora do catálogo)</option></select></div>
+      <div class="fld"><label for="f-parcelas">Parcelar em até</label><select id="f-parcelas"></select></div>
     </div>
     <div class="calc" id="ed-calc"></div>
     <div class="perfil-ed" id="ed-perfil">
@@ -584,7 +585,9 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const info = el('div', { class: 'info' }, el('div', { class: 'mk', text: p.marca || '' }), el('div', { class: 'nm' }, p.nome || '', pend ? el('span', { class: 'dot', text: 'não publicado' }) : null,
         S.espCont.get(p.id) ? el('button', { type: 'button', class: 'dot esp-dot' + ({ vermelho: ' pz-v', amarelo: ' pz-a' }[S.espPior.get(p.id)] || ''), title: 'Ver na lista de espera', onclick: () => { S.esp.aba = 'aguardando'; S.esp.q = label(p); $('#esp-q').value = label(p); mostrarVista('esp'); } }, S.espCont.get(p.id) + ' na espera') : null),
       el('div', { class: 'mt', text: [p.ml ? p.ml + ' ml' : '', p.tipo].filter(Boolean).join(' · ') }));
-    const inst = el('div', { class: 'inst num' }, nParc() + 'x de', el('strong', { text: 'R$ ' + money(parcela(p.parcelado || 0)) }));
+    const np = Number(p.parcelas) || nParc();
+    const inst = np > 1 ? el('div', { class: 'inst num' }, np + 'x de', el('strong', { text: 'R$ ' + money(Math.floor(Math.round(Number(p.parcelado || 0) * 100) / np) / 100) }))
+      : el('div', { class: 'inst num' }, 'Sem', el('strong', { text: 'parcelar' }));
     const field = (key, lbl) => {
       const inp = el('input', { type: 'number', min: '0', step: '0.01', inputmode: 'decimal', value: p[key] ?? '', 'aria-label': lbl + ' de ' + label(p) });
       inp.addEventListener('change', () => {
@@ -608,7 +611,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   function fillSecoes(sel, val) { sel.replaceChildren(...secoes().map((s) => el('option', { value: s, selected: s === val }, s))); }
   function edCalc() {
     const pv = toNum($('#f-parcelado').value), vv = toNum($('#f-vista').value); const c = $('#ed-calc'); c.replaceChildren();
-    if (isFinite(pv) && pv > 0) c.append('No catálogo: ', el('strong', { text: 'R$ ' + money(isFinite(vv) && vv > 0 ? vv : 0) + ' à vista' }), ' ou R$ ' + money(pv) + ' em até ', el('strong', { text: nParc() + 'x de R$ ' + money(parcela(pv)) }));
+    const np = Number($('#f-parcelas').value) || nParc();
+    if (isFinite(pv) && pv > 0) c.append('No catálogo: ', el('strong', { text: 'R$ ' + money(isFinite(vv) && vv > 0 ? vv : 0) + ' à vista' }), ' ou R$ ' + money(pv) + (np > 1 ? ' em até ' : ' a prazo'), np > 1 ? el('strong', { text: np + 'x de R$ ' + money(Math.floor(Math.round(pv * 100) / np) / 100) }) : ' (sem parcelar)');
     else c.textContent = 'Preencha o preço a prazo para ver a parcela.';
   }
   function edPhoto() {
@@ -632,6 +636,8 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     fillSecoes($('#f-secao'), p ? p.secao : (S.secao !== 'Todas' ? S.secao : secoes()[0]));
     edTipoSecao(false); if (!p && !ehPerf($('#f-secao').value)) $('#f-ml').value = '';
     $('#f-status').value = p ? p.status || 'ativo' : 'ativo';
+    $('#f-parcelas').replaceChildren(el('option', { value: '' }, 'Padrão da loja (' + nParc() + 'x)'), el('option', { value: '1' }, 'Sem parcelar'), ...Array.from({ length: 11 }, (_, i) => el('option', { value: String(i + 2) }, 'em até ' + (i + 2) + 'x')));
+    $('#f-parcelas').value = p && p.parcelas ? String(p.parcelas) : '';
     const nt = (p && p.notas) || {};
     $('#f-acordes').value = p && Array.isArray(p.acordes) ? p.acordes.join(', ') : '';
     $('#f-n-topo').value = nt.topo || nt.todas || ''; $('#f-n-coracao').value = nt.coracao || ''; $('#f-n-fundo').value = nt.fundo || '';
@@ -651,7 +657,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
     const d = {
       marca: $('#f-marca').value.trim(), nome: $('#f-nome').value.trim(), tipo: $('#f-tipo').value.trim(),
       ml: (() => { const v = toNum($('#f-ml').value); return isFinite(v) && v > 0 ? Math.round(v) : null; })(), vista: Math.round(toNum($('#f-vista').value) * 100) / 100,
-      parcelado: Math.round(toNum($('#f-parcelado').value) * 100) / 100, secao: $('#f-secao').value, status: $('#f-status').value,
+      parcelado: Math.round(toNum($('#f-parcelado').value) * 100) / 100, secao: $('#f-secao').value, status: $('#f-status').value, parcelas: Number($('#f-parcelas').value) || null,
     };
     const falta = [];
     const perf = ehPerf(d.secao);
@@ -667,7 +673,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
       addPend({ op: 'add', doc: { id, ...d } }); toast(label(d) + ' adicionado. Toque em “Publicar no site” quando terminar.');
     } else {
       const p = atual().find((x) => x.id === S.editing); const c = {};
-      for (const k of ['marca', 'nome', 'tipo', 'ml', 'vista', 'parcelado', 'secao', 'status', 'foto']) if (d[k] !== undefined && (d[k] ?? null) !== (p[k] ?? null)) c[k] = d[k];
+      for (const k of ['marca', 'nome', 'tipo', 'ml', 'vista', 'parcelado', 'secao', 'status', 'foto', 'parcelas']) if (d[k] !== undefined && (d[k] ?? null) !== (p[k] ?? null)) c[k] = d[k];
       if (mudouPerfil) { Object.assign(c, pf, { perfil_em: nowISO().slice(0, 10) }); if (!pf.acordes.length) c.perfil_fonte = ''; }
       else if (c.marca || c.nome) Object.assign(c, { acordes: [], notas: {}, perfil_fonte: '' });
       if (Object.keys(c).length) { addPend({ op: 'upd', id: p.id, campos: c }); toast('Alterações guardadas. Toque em “Publicar no site” quando terminar.'); }
@@ -852,6 +858,7 @@ main.wrap{padding-block:20px 120px;display:flex;flex-direction:column;gap:18px}
   $('#l-nova').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); adicionarSecao(); } });
   ['#l-endereco', '#l-horario', '#l-whatsapp', '#l-instagram', '#l-mapa', '#l-parcelas'].forEach((q) => $(q).addEventListener('input', () => { $('#l-status').textContent = 'Toque em “Guardar dados” para levar ao site.'; }));
   $('#f-secao').addEventListener('change', () => edTipoSecao(true));
+  $('#f-parcelas').addEventListener('change', edCalc);
   { let k = null; try { k = localStorage.getItem(K_CHAVE_SITE); } catch {} const b = $('#usar-principal'); if (k) { b.hidden = false; b.onclick = () => entrar(k, $('#lembrar').checked); } }
 
   /* ---------- versão nova do painel: atualiza sozinho ----------

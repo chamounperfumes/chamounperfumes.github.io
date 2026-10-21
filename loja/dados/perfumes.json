@@ -283,7 +283,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
-  "ordem": 200,
+  "ordem": 240,
   "acordes": [
    "Especiado quente",
    "Baunilha",
@@ -333,7 +333,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "402778df53ce9c6c709030320e8c6e56",
-  "ordem": 20,
+  "ordem": 60,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -933,7 +933,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 290,
+  "ordem": 340,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -979,7 +979,7 @@
   "parcelado": 600,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 330,
+  "ordem": 380,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1023,7 +1023,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 340,
+  "ordem": 390,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1067,7 +1067,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 300,
+  "ordem": 350,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1389,7 +1389,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "fed233ccbea842c3e171b44d8834e4aa",
-  "ordem": 130,
+  "ordem": 170,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1473,7 +1473,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4f6d95be757937934d5f0dd8992dae41",
-  "ordem": 220,
+  "ordem": 260,
   "acordes": [
    "Baunilha",
    "Cacau",
@@ -1514,7 +1514,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 400,
+  "ordem": 450,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -1555,7 +1555,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "cbafa1f1451d7998ff5e43845543cf0c",
-  "ordem": 170,
+  "ordem": 210,
   "acordes": [
    "Baunilha",
    "Floral branco",
@@ -1642,7 +1642,7 @@
   "parcelado": 360,
   "status": "ativo",
   "foto": "db815c7ddccabbcff8fdb27036b7c402",
-  "ordem": 10,
+  "ordem": 50,
   "acordes": [
    "Cítrico",
    "Almiscarado",
@@ -1966,7 +1966,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4b83235a5a228dd825ddd0ec5d7c6454",
-  "ordem": 210,
+  "ordem": 250,
   "acordes": [
    "Âmbar",
    "Especiado fresco",
@@ -2012,7 +2012,7 @@
   "parcelado": 340,
   "status": "ativo",
   "foto": "ee0aae9fc57540a20fddac848d2c7ce0",
-  "ordem": 230,
+  "ordem": 270,
   "acordes": [
    "Âmbar",
    "Amadeirado",
@@ -2217,7 +2217,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 350,
+  "ordem": 400,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2263,7 +2263,7 @@
   "parcelado": 880,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 360,
+  "ordem": 410,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2355,7 +2355,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
-  "ordem": 190,
+  "ordem": 230,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -2396,9 +2396,9 @@
   "ml": 100,
   "vista": 320,
   "parcelado": 360,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "d71308b26769c889bcc444183431e056",
-  "ordem": 550,
+  "ordem": 10,
   "acordes": [
    "Amadeirado",
    "Frutado",
@@ -2419,7 +2419,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/9-PM-Night-Out-123313.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:08:21.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
    {
     "em": "2026-10-16T10:08:21.000Z",
@@ -2442,9 +2442,9 @@
   "ml": 100,
   "vista": 400,
   "parcelado": 440,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "5235c59cb10c44c19f7396fa49432ce0",
-  "ordem": 560,
+  "ordem": 30,
   "acordes": [
    "Frutado",
    "Doce",
@@ -2465,7 +2465,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Collector-s-Edition-Pour-Homme-98689.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
@@ -2479,13 +2479,13 @@
   "secao": "Masculinos",
   "marca": "Afnan",
   "nome": "Rare Reef",
-  "tipo": "EDP",
+  "tipo": "Extrait de Parfum",
   "ml": 100,
   "vista": 270,
   "parcelado": 300,
-  "status": "arquivado",
+  "status": "ativo",
   "foto": "d701d73a14f56dba4e0778a18d41ddc1",
-  "ordem": 570,
+  "ordem": 20,
   "acordes": [
    "Cítrico",
    "Aromático",
@@ -2502,7 +2502,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Rare-Reef-106835.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
@@ -2563,7 +2563,7 @@
   "parcelado": 460,
   "status": "ativo",
   "foto": "16d3331e50f52e7d4d76ec4f390de7f6",
-  "ordem": 360,
+  "ordem": 420,
   "acordes": [
    "Floral",
    "Baunilha",
@@ -2765,7 +2765,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "3ebe46ca6f0366976390657074579a52",
-  "ordem": 280,
+  "ordem": 340,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -2891,7 +2891,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "bbc8455e10c4f4ba8774bac04d26ed68",
-  "ordem": 50,
+  "ordem": 60,
   "acordes": [
    "Floral",
    "Amadeirado",
@@ -2937,7 +2937,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "c43c16fb52dbb03f9fa377eb45727f93",
-  "ordem": 60,
+  "ordem": 70,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -2983,7 +2983,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "8dc34792c1ae4e06d8a761ab8f6da742",
-  "ordem": 40,
+  "ordem": 50,
   "acordes": [
    "Atalcado",
    "Íris",
@@ -3151,7 +3151,7 @@
   "parcelado": 490,
   "status": "ativo",
   "foto": "ccd1687a221d153e33443957c108e47e",
-  "ordem": 80,
+  "ordem": 100,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -3195,7 +3195,7 @@
   "parcelado": 780,
   "status": "ativo",
   "foto": "e029596c45f2968e59a6a09671d4cc4a",
-  "ordem": 540,
+  "ordem": 600,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3246,7 +3246,7 @@
   "parcelado": 390,
   "status": "ativo",
   "foto": "8a39511da809c979d308c0efe5fdb029",
-  "ordem": 20,
+  "ordem": 30,
   "acordes": [
    "Cítrico",
    "Patchouli",
@@ -3371,7 +3371,7 @@
   "parcelado": 850,
   "status": "ativo",
   "foto": "ef75d1b8869dffc41c47eb087a4a19a0",
-  "ordem": 180,
+  "ordem": 210,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -3409,7 +3409,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "63a2c6d70bda32feaf9626eafbb0653a",
-  "ordem": 210,
+  "ordem": 240,
   "acordes": [
    "Tropical",
    "Baunilha",
@@ -3494,7 +3494,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "5c211785692b1de0fa59af2b25b7bfc6",
-  "ordem": 400,
+  "ordem": 460,
   "acordes": [
    "Amadeirado",
    "Especiado quente",
@@ -3540,7 +3540,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "236797194a60f1bca673574eb18b0512",
-  "ordem": 100,
+  "ordem": 120,
   "acordes": [
    "Floral",
    "Almiscarado",
@@ -3623,7 +3623,7 @@
   "parcelado": 540,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 480,
+  "ordem": 540,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3668,7 +3668,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 490,
+  "ordem": 550,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3713,7 +3713,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 500,
+  "ordem": 560,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3840,7 +3840,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "42ebe68564d18e213102f67be49aa1c2",
-  "ordem": 110,
+  "ordem": 130,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -3886,7 +3886,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "2eb2de9cf21e8c492b66bdee32da18e3",
-  "ordem": 410,
+  "ordem": 470,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3932,7 +3932,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "e3abc97a2be9515124a159501d653c70",
-  "ordem": 250,
+  "ordem": 310,
   "acordes": [
    "Floral",
    "Baunilha",
@@ -3978,7 +3978,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "b91f5a90dcdf65b849731172067c424f",
-  "ordem": 420,
+  "ordem": 480,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4102,7 +4102,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
-  "ordem": 190,
+  "ordem": 220,
   "acordes": [
    "Cítrico",
    "Âmbar",
@@ -4142,7 +4142,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "9ad6ad609f2d995f2a853c898fb0fc2a",
-  "ordem": 260,
+  "ordem": 320,
   "acordes": [
    "Amadeirado",
    "Frutado",
@@ -4343,7 +4343,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "001fc1f11e83816102ea979a7ef2b077",
-  "ordem": 320,
+  "ordem": 380,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4504,7 +4504,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "953e1f939c2d45b7e8a9253ba5ef25bc",
-  "ordem": 390,
+  "ordem": 450,
   "acordes": [
    "Floral branco",
    "Frutado",
@@ -4628,7 +4628,7 @@
   "parcelado": 820,
   "status": "ativo",
   "foto": "0ef22f1b57679104aed41c73d4e5a163",
-  "ordem": 340,
+  "ordem": 400,
   "acordes": [
    "Cereja",
    "Ozônico",
@@ -4669,7 +4669,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "dd20e66f4f48afee832f86f772aa0611",
-  "ordem": 520,
+  "ordem": 580,
   "acordes": [
    "Cítrico",
    "Amadeirado",
@@ -4715,7 +4715,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "4e8f8dbda46995c9107603d2a8a72087",
-  "ordem": 120,
+  "ordem": 150,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4753,7 +4753,7 @@
   "ml": 80,
   "vista": 700,
   "parcelado": 750,
-  "ordem": 130,
+  "ordem": 160,
   "acordes": [
    "Floral",
    "Tropical",
@@ -4790,7 +4790,7 @@
   "ml": 50,
   "vista": 620,
   "parcelado": 660,
-  "ordem": 140,
+  "ordem": 170,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4826,7 +4826,7 @@
   "ml": 80,
   "vista": 750,
   "parcelado": 790,
-  "ordem": 150,
+  "ordem": 180,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4862,7 +4862,7 @@
   "ml": 50,
   "vista": 460,
   "parcelado": 500,
-  "ordem": 290,
+  "ordem": 350,
   "acordes": [
    "Frutado",
    "Floral",
@@ -4898,7 +4898,7 @@
   "ml": 30,
   "vista": 270,
   "parcelado": 300,
-  "ordem": 270,
+  "ordem": 330,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -4937,7 +4937,7 @@
   "ml": 50,
   "vista": 350,
   "parcelado": 390,
-  "ordem": 180,
+  "ordem": 220,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -4996,7 +4996,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 50,
+  "ordem": 90,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5037,7 +5037,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 60,
+  "ordem": 100,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5078,7 +5078,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 70,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5118,7 +5118,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "status": "ativo",
-  "ordem": 310,
+  "ordem": 360,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5158,7 +5158,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 320,
+  "ordem": 370,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5196,7 +5196,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 370,
+  "ordem": 420,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5237,7 +5237,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 380,
+  "ordem": 430,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5276,7 +5276,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 470,
+  "ordem": 530,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5317,7 +5317,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 450,
+  "ordem": 510,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5358,7 +5358,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 200,
+  "ordem": 230,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5399,7 +5399,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 530,
+  "ordem": 590,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5440,7 +5440,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 40,
+  "ordem": 80,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5479,7 +5479,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Solar-Elixir-125734.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5516,7 +5516,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-Amber-Essence-100795.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 70,
+  "ordem": 90,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5552,7 +5552,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Orchid-94979.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 240,
+  "ordem": 300,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5590,7 +5590,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-84951.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 170,
+  "ordem": 200,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5626,7 +5626,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 100,
+  "ordem": 140,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5662,7 +5662,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 130,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5702,7 +5702,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-Pour-Homme-Parfum-121009.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 110,
+  "ordem": 150,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5743,7 +5743,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Powerfully-123070.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 140,
+  "ordem": 180,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5781,7 +5781,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Chloe/Chloe-Le-Parfum-111273.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 190,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5822,7 +5822,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 310,
+  "ordem": 370,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5863,7 +5863,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 330,
+  "ordem": 390,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5903,7 +5903,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Givenchy/L-Interdit-Eau-de-Parfum-51488.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 230,
+  "ordem": 290,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5944,7 +5944,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 150,
+  "ordem": 190,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -5985,7 +5985,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 200,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6026,7 +6026,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 120,
+  "ordem": 160,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6064,7 +6064,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 80,
+  "ordem": 120,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6101,7 +6101,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 70,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6142,7 +6142,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 410,
+  "ordem": 470,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6183,7 +6183,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 390,
+  "ordem": 440,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6224,7 +6224,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 250,
+  "ordem": 290,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6265,7 +6265,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 220,
+  "ordem": 280,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6303,7 +6303,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 30,
+  "ordem": 40,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6344,7 +6344,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 300,
+  "ordem": 360,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6385,7 +6385,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 460,
+  "ordem": 520,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6425,7 +6425,7 @@
   "perfil_em": "2026-10-21",
   "foto": "",
   "status": "ativo",
-  "ordem": 380,
+  "ordem": 440,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T11:43:23Z",
   "historico": [
@@ -6499,7 +6499,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 510,
+  "ordem": 570,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6538,7 +6538,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 240,
+  "ordem": 280,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6578,7 +6578,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 370,
+  "ordem": 430,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6619,7 +6619,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 350,
+  "ordem": 410,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6660,7 +6660,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 280,
+  "ordem": 330,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6697,7 +6697,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 270,
+  "ordem": 320,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6738,7 +6738,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 260,
+  "ordem": 310,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6779,7 +6779,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 430,
+  "ordem": 490,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6820,7 +6820,7 @@
   "tipo": "EDP",
   "foto": "",
   "status": "ativo",
-  "ordem": 440,
+  "ordem": 500,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T11:52:06Z",
   "historico": [
@@ -6828,6 +6828,509 @@
     "em": "2026-10-21T11:52:06Z",
     "vista": 300,
     "parcelado": 340
+   }
+  ]
+ },
+ {
+  "id": "afnan-supremacy-not-only-intense-100",
+  "secao": "Masculinos",
+  "marca": "Afnan",
+  "nome": "Supremacy Not Only Intense",
+  "tipo": "",
+  "ml": 100,
+  "vista": 350,
+  "parcelado": 390,
+  "acordes": [
+   "Frutado",
+   "Musgo",
+   "Amadeirado",
+   "Terroso",
+   "Cítrico",
+   "Especiado fresco",
+   "Âmbar",
+   "Animálico",
+   "Aromático",
+   "Especiado quente"
+  ],
+  "notas": {
+   "topo": "cassis, bergamota, maçã",
+   "coracao": "musgo de carvalho, patchouli, lavanda",
+   "fundo": "âmbar cinza, almíscar, açafrão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Supremacy-Not-Only-Intense-68271.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 40,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 350,
+    "parcelado": 390
+   }
+  ]
+ },
+ {
+  "id": "rasasi-hawas-for-him-100",
+  "secao": "Masculinos",
+  "marca": "Rasasi",
+  "nome": "Hawas For Him",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 250,
+  "parcelado": 280,
+  "acordes": [
+   "Frutado",
+   "Cítrico",
+   "Aquático",
+   "Fresco",
+   "Especiado quente",
+   "Doce",
+   "Âmbar",
+   "Almiscarado",
+   "Aromático",
+   "Animálico"
+  ],
+  "notas": {
+   "topo": "maçã, bergamota, limão, canela",
+   "coracao": "notas aquáticas, ameixa, flor de laranjeira, cardamomo",
+   "fundo": "âmbar cinza, almíscar, patchouli, madeira flutuante"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Rasasi/Hawas-for-Him-46890.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 460,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 250,
+    "parcelado": 280
+   }
+  ]
+ },
+ {
+  "id": "lattafa-hayaati-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Hayaati",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 230,
+  "parcelado": 250,
+  "acordes": [
+   "Frutado",
+   "Almiscarado",
+   "Canela",
+   "Atalcado",
+   "Cítrico",
+   "Especiado quente",
+   "Amadeirado",
+   "Baunilha",
+   "Fresco",
+   "Verde"
+  ],
+  "notas": {
+   "topo": "maçã, bergamota",
+   "coracao": "canela, notas amadeiradas",
+   "fundo": "almíscar, baunilha"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Hayaati-75902.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 300,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 230,
+    "parcelado": 250
+   }
+  ]
+ },
+ {
+  "id": "al-wataniah-sabah-al-ward-100",
+  "secao": "Femininos",
+  "marca": "Al Wataniah",
+  "nome": "Sabah Al Ward",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 230,
+  "parcelado": 260,
+  "acordes": [
+   "Floral branco",
+   "Baunilha",
+   "Doce",
+   "Cítrico",
+   "Cacau",
+   "Especiado quente",
+   "Especiado suave"
+  ],
+  "notas": {
+   "topo": "pimenta rosa, tangerina",
+   "coracao": "flor de laranjeira, fava de cacau, jasmim sambac",
+   "fundo": "baunilha, fava tonka, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Al-Wataniah/Sabah-Al-Ward-64579.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 20,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 230,
+    "parcelado": 260
+   }
+  ]
+ },
+ {
+  "id": "etlee-vanilla-amber-30",
+  "secao": "Femininos",
+  "marca": "Etleé",
+  "nome": "Vanilla & Amber",
+  "tipo": "EDP",
+  "ml": 30,
+  "vista": 150,
+  "parcelado": 180,
+  "acordes": [
+   "Baunilha",
+   "Atalcado",
+   "Doce",
+   "Amadeirado",
+   "Coco",
+   "Âmbar",
+   "Amêndoa",
+   "Lactônico",
+   "Especiado quente"
+  ],
+  "notas": {
+   "topo": "notas doces, baunilha",
+   "coracao": "heliotrópio, coco",
+   "fundo": "sândalo, âmbar"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Kiss-New-York/Etlee-Vanilla-Amber-139315.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 260,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 150,
+    "parcelado": 180
+   }
+  ]
+ },
+ {
+  "id": "etlee-vanilla-lavender-30",
+  "secao": "Femininos",
+  "marca": "Etleé",
+  "nome": "Vanilla & Lavender",
+  "tipo": "EDP",
+  "ml": 30,
+  "vista": 150,
+  "parcelado": 180,
+  "acordes": [
+   "Baunilha",
+   "Floral branco",
+   "Lavanda",
+   "Cítrico",
+   "Aromático",
+   "Especiado fresco",
+   "Amadeirado",
+   "Doce",
+   "Cacau",
+   "Fresco"
+  ],
+  "notas": {
+   "topo": "lavanda, baunilha, laranja, gengibre, cassis, cacau",
+   "coracao": "lavanda, baunilha, flor de laranjeira, jasmim",
+   "fundo": "baunilha, cedro"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Kiss-New-York/Etlee-Vanilla-Lavender-139317.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 270,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 150,
+    "parcelado": 180
+   }
+  ]
+ },
+ {
+  "id": "etlee-caramel-pistachio-30",
+  "secao": "Femininos",
+  "marca": "Etleé",
+  "nome": "Caramel & Pistachio",
+  "tipo": "EDP",
+  "ml": 30,
+  "vista": 150,
+  "parcelado": 180,
+  "acordes": [
+   "Doce",
+   "Floral branco",
+   "Baunilha",
+   "Floral",
+   "Caramelo",
+   "Fresco",
+   "Especiado quente",
+   "Frutado",
+   "Lactônico",
+   "Aromático"
+  ],
+  "notas": {
+   "topo": "pistache, bergamota, cardamomo, amêndoa, leite",
+   "coracao": "lírio-do-vale, jasmim, pêssego, peônia",
+   "fundo": "algodão-doce, fava tonka, baunilha, caramelo"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Kiss-New-York/Etlee-Caramel-Pistachio-139316.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 250,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 150,
+    "parcelado": 180
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-good-girl-kit-80",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "Good Girl",
+  "tipo": "EDP · Kit com hidratante",
+  "ml": 80,
+  "vista": 640,
+  "parcelado": 680,
+  "acordes": [
+   "Doce",
+   "Floral branco",
+   "Baunilha",
+   "Especiado quente",
+   "Âmbar",
+   "Cacau",
+   "Amadeirado",
+   "Tuberosa",
+   "Amêndoa",
+   "Atalcado"
+  ],
+  "notas": {
+   "coracao": "tuberosa, jasmim sambac, flor de laranjeira, rosa búlgara, íris",
+   "fundo": "fava tonka, cacau, baunilha, praliné, sândalo, almíscar, âmbar, madeira de cashmere, patchouli, canela, cedro",
+   "topo": "amêndoa, café, bergamota, limão"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Good-Girl-39681.html",
+  "perfil_em": "2026-10-15",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 140,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 640,
+    "parcelado": 680
+   }
+  ]
+ },
+ {
+  "id": "calvin-klein-eternity-kit-100",
+  "secao": "Femininos",
+  "marca": "Calvin Klein",
+  "nome": "Eternity",
+  "tipo": "EDP · Kit com perfume de bolsa 10 ml, hidratante 100 ml e miniatura",
+  "ml": 100,
+  "vista": 560,
+  "parcelado": 600,
+  "acordes": [
+   "Floral",
+   "Floral branco",
+   "Verde",
+   "Aromático",
+   "Especiado quente",
+   "Atalcado",
+   "Fresco",
+   "Herbal",
+   "Cítrico",
+   "Especiado suave"
+  ],
+  "notas": {
+   "topo": "notas verdes, frésia, sálvia, frutas cítricas, tangerina",
+   "coracao": "cravo, lírio, lírio-do-vale, narciso, calêndula, violeta, rosa, jasmim",
+   "fundo": "almíscar, heliotrópio, sândalo, âmbar, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-257.html",
+  "perfil_em": "2026-10-21",
+  "foto": "",
+  "status": "ativo",
+  "ordem": 80,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 560,
+    "parcelado": 600
+   }
+  ]
+ },
+ {
+  "id": "loccitane-chamego-body-spray-150",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Chamego",
+  "tipo": "Body spray · coco e framboesa",
+  "ml": 150,
+  "vista": 110,
+  "parcelado": 119.9,
+  "parcelas": 3,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 20,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 110,
+    "parcelado": 119.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-chamego-hidratante-200",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Chamego",
+  "tipo": "Hidratante · coco e framboesa",
+  "ml": 200,
+  "vista": 90,
+  "parcelado": 99.9,
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 30,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 90,
+    "parcelado": 99.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-roma-gelatina-banho-55g",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Romã",
+  "tipo": "Gelatina de banho · 55 g",
+  "ml": null,
+  "vista": 39.9,
+  "parcelado": 44.9,
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 40,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 39.9,
+    "parcelado": 44.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-roma-esfoliante-200",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Romã",
+  "tipo": "Geleia esfoliante corporal",
+  "ml": 200,
+  "vista": 69.9,
+  "parcelado": 74.9,
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 60,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 69.9,
+    "parcelado": 74.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-roma-hidratante-200",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Romã",
+  "tipo": "Geleia corporal hidratante",
+  "ml": 200,
+  "vista": 89.9,
+  "parcelado": 99.9,
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 50,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 89.9,
+    "parcelado": 99.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-acerola-hidratante-200",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Acerola",
+  "tipo": "Polpa corporal hidratante",
+  "ml": 200,
+  "vista": 89.9,
+  "parcelado": 99.9,
+  "parcelas": 1,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 10,
+  "criado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-21T12:00:06Z",
+  "historico": [
+   {
+    "em": "2026-10-21T12:00:06Z",
+    "vista": 89.9,
+    "parcelado": 99.9
    }
   ]
  }
