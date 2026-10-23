@@ -188,8 +188,8 @@
   "nome": "Y",
   "tipo": "EDP",
   "ml": 100,
-  "vista": 680,
-  "parcelado": 720,
+  "vista": 650,
+  "parcelado": 690,
   "status": "ativo",
   "foto": "4b4d89e573d9ae416f411d73bd15e451",
   "ordem": 50,
@@ -213,7 +213,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Y-Eau-de-Parfum-50757.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-23T16:51:56.728Z",
+  "atualizado_em": "2026-10-23T16:52:26.411Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -234,6 +234,11 @@
     "em": "2026-10-23T16:51:56.728Z",
     "vista": 680,
     "parcelado": 720
+   },
+   {
+    "em": "2026-10-23T16:52:26.411Z",
+    "vista": 650,
+    "parcelado": 690
    }
   ]
  },
@@ -1292,8 +1297,8 @@
   "nome": "MYSLF",
   "tipo": "EDP",
   "ml": 100,
-  "vista": 650,
-  "parcelado": 690,
+  "vista": 680,
+  "parcelado": 720,
   "status": "ativo",
   "foto": "39755d6991574b6bdd1fca444d4ff414",
   "ordem": 290,
@@ -1313,12 +1318,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/MYSLF-Eau-de-Parfum-84094.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-10-23T16:52:26.411Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 690,
     "vista": 650
+   },
+   {
+    "em": "2026-10-23T16:52:26.411Z",
+    "vista": 680,
+    "parcelado": 720
    }
   ]
  },
