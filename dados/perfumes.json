@@ -188,8 +188,8 @@
   "nome": "Y",
   "tipo": "EDP",
   "ml": 100,
-  "vista": 650,
-  "parcelado": 690,
+  "vista": 680,
+  "parcelado": 720,
   "status": "ativo",
   "foto": "4b4d89e573d9ae416f411d73bd15e451",
   "ordem": 50,
@@ -213,7 +213,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Y-Eau-de-Parfum-50757.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-15T21:24:51.215Z",
+  "atualizado_em": "2026-10-23T16:51:56.728Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -229,6 +229,11 @@
     "em": "2026-10-15T21:24:51.213Z",
     "parcelado": 690,
     "vista": 650
+   },
+   {
+    "em": "2026-10-23T16:51:56.728Z",
+    "vista": 680,
+    "parcelado": 720
    }
   ]
  },
