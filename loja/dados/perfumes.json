@@ -7259,7 +7259,7 @@
   "parcelas": 1,
   "foto": "900d7e9257c2db9b589987170cb1f57f",
   "status": "ativo",
-  "ordem": 150,
+  "ordem": 160,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-28T23:03:47Z",
   "historico": [
@@ -7282,7 +7282,7 @@
   "parcelas": 1,
   "foto": "0d8199d27e13174affb27356930110dd",
   "status": "ativo",
-  "ordem": 170,
+  "ordem": 180,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-28T23:03:47Z",
   "historico": [
@@ -7305,7 +7305,7 @@
   "parcelas": 1,
   "foto": "4be325d92f0ff8389c4da63fdcac9e42",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 170,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-28T23:03:47Z",
   "historico": [
@@ -7671,7 +7671,7 @@
   "parcelas": 1,
   "foto": "",
   "status": "ativo",
-  "ordem": 140,
+  "ordem": 150,
   "criado_em": "2026-10-28T23:46:23Z",
   "atualizado_em": "2026-10-28T23:46:23Z",
   "historico": [
@@ -7725,6 +7725,29 @@
     "em": "2026-10-28T23:46:23Z",
     "vista": 60,
     "parcelado": 69.9
+   }
+  ]
+ },
+ {
+  "id": "loccitane-jenipa-souffle-200",
+  "secao": "L'Occitane",
+  "marca": "L'Occitane",
+  "nome": "Jenipá",
+  "tipo": "Soufflé corporal hidratante",
+  "ml": 200,
+  "vista": 110,
+  "parcelado": 119.9,
+  "parcelas": 1,
+  "foto": "7f563d2e9aff96e35c821e535f223122",
+  "status": "ativo",
+  "ordem": 140,
+  "criado_em": "2026-10-28T23:51:05Z",
+  "atualizado_em": "2026-10-28T23:51:05Z",
+  "historico": [
+   {
+    "em": "2026-10-28T23:51:05Z",
+    "vista": 110,
+    "parcelado": 119.9
    }
   ]
  }
