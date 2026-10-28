@@ -12,9 +12,10 @@
  ],
  "catalogo_url": "https://chamounperfumes.github.io/loja/",
  "loja": {
-  "endereco": "",
-  "horario": "",
+  "endereco": "Shopping Cachoeiro, 2º andar",
+  "horario": "Seg a sex: 10h às 19h\nSábado: 10h às 15h",
   "whatsapp": "+55 28 99944-1543",
-  "instagram": ""
+  "instagram": "@chamoumperfumesechocolate",
+  "mapa": "https://www.google.com/maps/search/?api=1&query=Shopping%20Cachoeiro%2C%20Cachoeiro%20de%20Itapemirim%20-%20ES"
  }
 }
