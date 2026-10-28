@@ -933,7 +933,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 340,
+  "ordem": 360,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -979,7 +979,7 @@
   "parcelado": 600,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 380,
+  "ordem": 400,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1023,7 +1023,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 390,
+  "ordem": 410,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1067,7 +1067,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 350,
+  "ordem": 370,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1473,7 +1473,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4f6d95be757937934d5f0dd8992dae41",
-  "ordem": 260,
+  "ordem": 270,
   "acordes": [
    "Baunilha",
    "Cacau",
@@ -1514,7 +1514,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 450,
+  "ordem": 470,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -1966,7 +1966,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4b83235a5a228dd825ddd0ec5d7c6454",
-  "ordem": 250,
+  "ordem": 260,
   "acordes": [
    "Âmbar",
    "Especiado fresco",
@@ -2012,7 +2012,7 @@
   "parcelado": 340,
   "status": "ativo",
   "foto": "ee0aae9fc57540a20fddac848d2c7ce0",
-  "ordem": 270,
+  "ordem": 280,
   "acordes": [
    "Âmbar",
    "Amadeirado",
@@ -2217,7 +2217,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 400,
+  "ordem": 420,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2263,7 +2263,7 @@
   "parcelado": 880,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 410,
+  "ordem": 430,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2563,7 +2563,7 @@
   "parcelado": 460,
   "status": "ativo",
   "foto": "16d3331e50f52e7d4d76ec4f390de7f6",
-  "ordem": 420,
+  "ordem": 450,
   "acordes": [
    "Floral",
    "Baunilha",
@@ -2765,7 +2765,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "3ebe46ca6f0366976390657074579a52",
-  "ordem": 340,
+  "ordem": 370,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -2846,9 +2846,9 @@
   "nome": "Rose Goldea Blossom Delight",
   "tipo": "EDP",
   "ml": 75,
-  "vista": 700,
-  "parcelado": 750,
-  "status": "arquivado",
+  "vista": 660,
+  "parcelado": 700,
+  "status": "ativo",
   "foto": "e4d424aec054fdc7cb801a3a78d0d47f",
   "ordem": 90,
   "acordes": [
@@ -2871,12 +2871,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Bvlgari/Rose-Goldea-Blossom-Delight-55754.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T09:50:05Z",
+  "atualizado_em": "2026-10-28T23:42:27Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-10-28T23:42:27Z",
+    "vista": 660,
+    "parcelado": 700
    }
   ]
  },
@@ -2891,7 +2896,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "bbc8455e10c4f4ba8774bac04d26ed68",
-  "ordem": 60,
+  "ordem": 70,
   "acordes": [
    "Floral",
    "Amadeirado",
@@ -2937,7 +2942,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "c43c16fb52dbb03f9fa377eb45727f93",
-  "ordem": 70,
+  "ordem": 80,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -2983,7 +2988,7 @@
   "parcelado": 740,
   "status": "ativo",
   "foto": "8dc34792c1ae4e06d8a761ab8f6da742",
-  "ordem": 50,
+  "ordem": 60,
   "acordes": [
    "Atalcado",
    "Íris",
@@ -3151,7 +3156,7 @@
   "parcelado": 490,
   "status": "ativo",
   "foto": "ccd1687a221d153e33443957c108e47e",
-  "ordem": 100,
+  "ordem": 120,
   "acordes": [
    "Amadeirado",
    "Floral",
@@ -3195,7 +3200,7 @@
   "parcelado": 780,
   "status": "ativo",
   "foto": "e029596c45f2968e59a6a09671d4cc4a",
-  "ordem": 600,
+  "ordem": 630,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3246,7 +3251,7 @@
   "parcelado": 390,
   "status": "ativo",
   "foto": "8a39511da809c979d308c0efe5fdb029",
-  "ordem": 30,
+  "ordem": 40,
   "acordes": [
    "Cítrico",
    "Patchouli",
@@ -3371,7 +3376,7 @@
   "parcelado": 850,
   "status": "ativo",
   "foto": "ef75d1b8869dffc41c47eb087a4a19a0",
-  "ordem": 210,
+  "ordem": 240,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -3409,7 +3414,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "63a2c6d70bda32feaf9626eafbb0653a",
-  "ordem": 240,
+  "ordem": 270,
   "acordes": [
    "Tropical",
    "Baunilha",
@@ -3494,7 +3499,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "5c211785692b1de0fa59af2b25b7bfc6",
-  "ordem": 460,
+  "ordem": 490,
   "acordes": [
    "Amadeirado",
    "Especiado quente",
@@ -3540,7 +3545,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "236797194a60f1bca673574eb18b0512",
-  "ordem": 120,
+  "ordem": 140,
   "acordes": [
    "Floral",
    "Almiscarado",
@@ -3623,7 +3628,7 @@
   "parcelado": 540,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 540,
+  "ordem": 570,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3668,7 +3673,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 550,
+  "ordem": 580,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3713,7 +3718,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 560,
+  "ordem": 590,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3840,7 +3845,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "42ebe68564d18e213102f67be49aa1c2",
-  "ordem": 130,
+  "ordem": 150,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -3886,7 +3891,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "2eb2de9cf21e8c492b66bdee32da18e3",
-  "ordem": 470,
+  "ordem": 500,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3932,7 +3937,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "e3abc97a2be9515124a159501d653c70",
-  "ordem": 310,
+  "ordem": 340,
   "acordes": [
    "Floral",
    "Baunilha",
@@ -3978,7 +3983,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "b91f5a90dcdf65b849731172067c424f",
-  "ordem": 480,
+  "ordem": 510,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4102,7 +4107,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "bec8e8b0c1abe9f8f9f58183c3bf5ab7",
-  "ordem": 220,
+  "ordem": 250,
   "acordes": [
    "Cítrico",
    "Âmbar",
@@ -4142,7 +4147,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "9ad6ad609f2d995f2a853c898fb0fc2a",
-  "ordem": 320,
+  "ordem": 350,
   "acordes": [
    "Amadeirado",
    "Frutado",
@@ -4343,7 +4348,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "001fc1f11e83816102ea979a7ef2b077",
-  "ordem": 380,
+  "ordem": 410,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4504,7 +4509,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "953e1f939c2d45b7e8a9253ba5ef25bc",
-  "ordem": 450,
+  "ordem": 480,
   "acordes": [
    "Floral branco",
    "Frutado",
@@ -4628,7 +4633,7 @@
   "parcelado": 820,
   "status": "ativo",
   "foto": "0ef22f1b57679104aed41c73d4e5a163",
-  "ordem": 400,
+  "ordem": 430,
   "acordes": [
    "Cereja",
    "Ozônico",
@@ -4669,7 +4674,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "dd20e66f4f48afee832f86f772aa0611",
-  "ordem": 580,
+  "ordem": 610,
   "acordes": [
    "Cítrico",
    "Amadeirado",
@@ -4715,7 +4720,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "4e8f8dbda46995c9107603d2a8a72087",
-  "ordem": 150,
+  "ordem": 170,
   "acordes": [
    "Doce",
    "Floral branco",
@@ -4753,7 +4758,7 @@
   "ml": 80,
   "vista": 700,
   "parcelado": 750,
-  "ordem": 160,
+  "ordem": 180,
   "acordes": [
    "Floral",
    "Tropical",
@@ -4790,7 +4795,7 @@
   "ml": 50,
   "vista": 620,
   "parcelado": 660,
-  "ordem": 170,
+  "ordem": 200,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4826,7 +4831,7 @@
   "ml": 80,
   "vista": 750,
   "parcelado": 790,
-  "ordem": 180,
+  "ordem": 210,
   "acordes": [
    "Frutado",
    "Doce",
@@ -4862,7 +4867,7 @@
   "ml": 50,
   "vista": 460,
   "parcelado": 500,
-  "ordem": 350,
+  "ordem": 380,
   "acordes": [
    "Frutado",
    "Floral",
@@ -4898,7 +4903,7 @@
   "ml": 30,
   "vista": 270,
   "parcelado": 300,
-  "ordem": 330,
+  "ordem": 360,
   "acordes": [
    "Floral",
    "Âmbar",
@@ -5118,7 +5123,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "status": "ativo",
-  "ordem": 360,
+  "ordem": 380,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5158,7 +5163,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 370,
+  "ordem": 390,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5196,7 +5201,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 420,
+  "ordem": 440,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5237,7 +5242,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 430,
+  "ordem": 450,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5276,7 +5281,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 530,
+  "ordem": 560,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -5317,7 +5322,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 510,
+  "ordem": 540,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -5358,7 +5363,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-698.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 230,
+  "ordem": 260,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5399,7 +5404,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 590,
+  "ordem": 620,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5479,7 +5484,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Euphoria-Solar-Elixir-125734.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 110,
+  "ordem": 130,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5516,7 +5521,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/Eternity-Amber-Essence-100795.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5552,7 +5557,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Orchid-94979.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 300,
+  "ordem": 330,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5590,7 +5595,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-84951.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 200,
+  "ordem": 230,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T10:57:41Z",
   "historico": [
@@ -5781,7 +5786,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Chloe/Chloe-Le-Parfum-111273.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 190,
+  "ordem": 220,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5822,7 +5827,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/Idole-55795.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 370,
+  "ordem": 400,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -5863,7 +5868,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lancome/La-Vie-Est-Belle-14982.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 390,
+  "ordem": 420,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-28T23:24:53Z",
   "historico": [
@@ -5903,7 +5908,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Givenchy/L-Interdit-Eau-de-Parfum-51488.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 290,
+  "ordem": 320,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-28T23:24:53Z",
   "historico": [
@@ -6142,7 +6147,7 @@
   "perfil_em": "2026-10-21",
   "foto": "9d1b0504adeb17d8bbb041db85844058",
   "status": "ativo",
-  "ordem": 470,
+  "ordem": 490,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6183,7 +6188,7 @@
   "perfil_em": "2026-10-21",
   "foto": "30a23df79d4a8cb30e8450c45df60ac5",
   "status": "ativo",
-  "ordem": 440,
+  "ordem": 460,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6224,7 +6229,7 @@
   "perfil_em": "2026-10-21",
   "foto": "c0de01bb4f7fc1ef8aab7364f0ed5df0",
   "status": "ativo",
-  "ordem": 290,
+  "ordem": 300,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6265,7 +6270,7 @@
   "perfil_em": "2026-10-21",
   "foto": "4f05abeea9a958aca8b9d5293d4a101b",
   "status": "ativo",
-  "ordem": 280,
+  "ordem": 310,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6303,7 +6308,7 @@
   "perfil_em": "2026-10-21",
   "foto": "3b20f33b98e4f4ffe01c239835a9baba",
   "status": "ativo",
-  "ordem": 40,
+  "ordem": 50,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6344,7 +6349,7 @@
   "perfil_em": "2026-10-21",
   "foto": "660e82f6c788f8e2c7a5702b473fe4e7",
   "status": "ativo",
-  "ordem": 360,
+  "ordem": 390,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6385,7 +6390,7 @@
   "perfil_em": "2026-10-21",
   "foto": "9035b0ffa9a16b3f41a6bd5ef3b0199a",
   "status": "ativo",
-  "ordem": 520,
+  "ordem": 550,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6425,7 +6430,7 @@
   "perfil_em": "2026-10-21",
   "foto": "ee25d7b478a07d883cdf8aabeb9e94d6",
   "status": "ativo",
-  "ordem": 440,
+  "ordem": 470,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6499,7 +6504,7 @@
   "tipo": "EDP",
   "foto": "25144d02fa87505aa63cdf64d60c76d3",
   "status": "ativo",
-  "ordem": 570,
+  "ordem": 600,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6538,7 +6543,7 @@
   "tipo": "EDP",
   "foto": "bd6a71234f9158cf652c3331a987166c",
   "status": "ativo",
-  "ordem": 280,
+  "ordem": 290,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6578,7 +6583,7 @@
   "tipo": "EDP",
   "foto": "60fbe304ed517f3bf8d11a4979f37212",
   "status": "ativo",
-  "ordem": 430,
+  "ordem": 460,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6619,7 +6624,7 @@
   "tipo": "EDP",
   "foto": "8c744796953f3ab49b0375cf5c30eda5",
   "status": "ativo",
-  "ordem": 410,
+  "ordem": 440,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6660,7 +6665,7 @@
   "tipo": "EDP",
   "foto": "11af16044c49a9eb4ca99b9305fdc6ee",
   "status": "ativo",
-  "ordem": 330,
+  "ordem": 340,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6697,7 +6702,7 @@
   "tipo": "EDP",
   "foto": "271428b2b0396cd6be5441c1865f0577",
   "status": "ativo",
-  "ordem": 320,
+  "ordem": 330,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6738,7 +6743,7 @@
   "tipo": "EDP",
   "foto": "3b9e4188be8e9a07a718b34a934d811f",
   "status": "ativo",
-  "ordem": 310,
+  "ordem": 320,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6779,7 +6784,7 @@
   "tipo": "EDP",
   "foto": "e3b9d6867f6004174d50f4d11ec48ba4",
   "status": "ativo",
-  "ordem": 490,
+  "ordem": 520,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6820,7 +6825,7 @@
   "tipo": "EDP",
   "foto": "022d3e327bdd8a7041945c090d7bd1ff",
   "status": "ativo",
-  "ordem": 500,
+  "ordem": 530,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6902,7 +6907,7 @@
   "perfil_em": "2026-10-21",
   "foto": "fd655e81e7cdbfd71415ecd011cbe2ee",
   "status": "ativo",
-  "ordem": 460,
+  "ordem": 480,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6943,7 +6948,7 @@
   "perfil_em": "2026-10-21",
   "foto": "44c82875146574914024c7d82e567169",
   "status": "ativo",
-  "ordem": 300,
+  "ordem": 310,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -7021,7 +7026,7 @@
   "perfil_em": "2026-10-21",
   "foto": "245846427a4af3dde43a9faa26dafaa7",
   "status": "ativo",
-  "ordem": 260,
+  "ordem": 290,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -7062,7 +7067,7 @@
   "perfil_em": "2026-10-21",
   "foto": "d53bc664076097b1687d7d2b62b17234",
   "status": "ativo",
-  "ordem": 270,
+  "ordem": 300,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -7103,7 +7108,7 @@
   "perfil_em": "2026-10-21",
   "foto": "add7905770f4d3e15a60283b6ca250ec",
   "status": "ativo",
-  "ordem": 250,
+  "ordem": 280,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -7144,7 +7149,7 @@
   "perfil_em": "2026-10-15",
   "foto": "5e713f8c969ca99a4783c9569f546289",
   "status": "ativo",
-  "ordem": 140,
+  "ordem": 160,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-28T23:24:53Z",
   "historico": [
@@ -7185,7 +7190,7 @@
   "perfil_em": "2026-10-21",
   "foto": "8e5e3e460695db4743fdd77dcc59354b",
   "status": "ativo",
-  "ordem": 80,
+  "ordem": 100,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-28T23:24:53Z",
   "historico": [
@@ -7549,6 +7554,108 @@
     "em": "2026-10-21T12:08:30Z",
     "vista": 150,
     "parcelado": 169.9
+   }
+  ]
+ },
+ {
+  "id": "carolina-herrera-la-bomba-intensa-30",
+  "secao": "Femininos",
+  "marca": "Carolina Herrera",
+  "nome": "La Bomba Intensa",
+  "tipo": "EDP",
+  "ml": 30,
+  "vista": 480,
+  "parcelado": 520,
+  "foto": "3826ba50b62d39905690c14da218c54f",
+  "acordes": [
+   "Frutado",
+   "Doce",
+   "Âmbar",
+   "Floral",
+   "Cítrico"
+  ],
+  "notas": {
+   "topo": "frutas vermelhas, framboesa, bergamota",
+   "coracao": "orquídea, flor de laranjeira",
+   "fundo": "âmbar vermelho, patchouli"
+  },
+  "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/La-Bomba-Intensa-134882.html",
+  "perfil_em": "2026-10-21",
+  "status": "ativo",
+  "ordem": 190,
+  "criado_em": "2026-10-28T23:42:27Z",
+  "atualizado_em": "2026-10-28T23:42:27Z",
+  "historico": [
+   {
+    "em": "2026-10-28T23:42:27Z",
+    "vista": 480,
+    "parcelado": 520
+   }
+  ]
+ },
+ {
+  "id": "lattafa-ameer-al-noble-100",
+  "secao": "Masculinos",
+  "marca": "Lattafa",
+  "nome": "Ameer Al Noble",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 270,
+  "parcelado": 300,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 250,
+  "criado_em": "2026-10-28T23:42:27Z",
+  "atualizado_em": "2026-10-28T23:42:27Z",
+  "historico": [
+   {
+    "em": "2026-10-28T23:42:27Z",
+    "vista": 270,
+    "parcelado": 300
+   }
+  ]
+ },
+ {
+  "id": "al-wataniah-tibyan-100",
+  "secao": "Femininos",
+  "marca": "Al Wataniah",
+  "nome": "Tibyan",
+  "tipo": "EDP",
+  "ml": 100,
+  "vista": 130,
+  "parcelado": 150,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 30,
+  "criado_em": "2026-10-28T23:42:27Z",
+  "atualizado_em": "2026-10-28T23:42:27Z",
+  "historico": [
+   {
+    "em": "2026-10-28T23:42:27Z",
+    "vista": 130,
+    "parcelado": 150
+   }
+  ]
+ },
+ {
+  "id": "mercedes-benz-sign-your-attitude-100",
+  "secao": "Masculinos",
+  "marca": "Mercedes-Benz",
+  "nome": "Sign Your Attitude",
+  "tipo": "EDT",
+  "ml": 100,
+  "vista": 200,
+  "parcelado": 250,
+  "foto": "",
+  "status": "ativo",
+  "ordem": 350,
+  "criado_em": "2026-10-28T23:42:27Z",
+  "atualizado_em": "2026-10-28T23:42:27Z",
+  "historico": [
+   {
+    "em": "2026-10-28T23:42:27Z",
+    "vista": 200,
+    "parcelado": 250
    }
   ]
  }
