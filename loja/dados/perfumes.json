@@ -283,7 +283,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "52c176eeaadc201e97e8c3ad4b14eb3a",
-  "ordem": 240,
+  "ordem": 210,
   "acordes": [
    "Especiado quente",
    "Baunilha",
@@ -333,7 +333,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "402778df53ce9c6c709030320e8c6e56",
-  "ordem": 60,
+  "ordem": 40,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -933,7 +933,7 @@
   "parcelado": 700,
   "status": "ativo",
   "foto": "dcc068c928c34246be190e6f42f40681",
-  "ordem": 360,
+  "ordem": 270,
   "acordes": [
    "Especiado quente",
    "Canela",
@@ -979,7 +979,7 @@
   "parcelado": 600,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 400,
+  "ordem": 310,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1023,7 +1023,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "8f4bdfbc56850a2d1c90952dfa8bb418",
-  "ordem": 410,
+  "ordem": 320,
   "acordes": [
    "Floral branco",
    "Tuberosa",
@@ -1067,7 +1067,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "ba551c1491aa2deb07a0f059e5ca0af0",
-  "ordem": 370,
+  "ordem": 280,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1389,7 +1389,7 @@
   "parcelado": 640,
   "status": "ativo",
   "foto": "fed233ccbea842c3e171b44d8834e4aa",
-  "ordem": 170,
+  "ordem": 140,
   "acordes": [
    "Baunilha",
    "Doce",
@@ -1473,7 +1473,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4f6d95be757937934d5f0dd8992dae41",
-  "ordem": 270,
+  "ordem": 230,
   "acordes": [
    "Baunilha",
    "Cacau",
@@ -1514,7 +1514,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "87a0b0260330ec05a6843844ae1ee661",
-  "ordem": 470,
+  "ordem": 380,
   "acordes": [
    "Especiado fresco",
    "Âmbar",
@@ -1555,7 +1555,7 @@
   "parcelado": 750,
   "status": "ativo",
   "foto": "cbafa1f1451d7998ff5e43845543cf0c",
-  "ordem": 210,
+  "ordem": 180,
   "acordes": [
    "Baunilha",
    "Floral branco",
@@ -1642,7 +1642,7 @@
   "parcelado": 360,
   "status": "ativo",
   "foto": "db815c7ddccabbcff8fdb27036b7c402",
-  "ordem": 50,
+  "ordem": 30,
   "acordes": [
    "Cítrico",
    "Almiscarado",
@@ -1966,7 +1966,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "4b83235a5a228dd825ddd0ec5d7c6454",
-  "ordem": 260,
+  "ordem": 220,
   "acordes": [
    "Âmbar",
    "Especiado fresco",
@@ -2012,7 +2012,7 @@
   "parcelado": 340,
   "status": "ativo",
   "foto": "ee0aae9fc57540a20fddac848d2c7ce0",
-  "ordem": 280,
+  "ordem": 240,
   "acordes": [
    "Âmbar",
    "Amadeirado",
@@ -2217,7 +2217,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 420,
+  "ordem": 330,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2263,7 +2263,7 @@
   "parcelado": 880,
   "status": "ativo",
   "foto": "a0f2fd0243be937c5a2dffe500436336",
-  "ordem": 430,
+  "ordem": 340,
   "acordes": [
    "Baunilha",
    "Amadeirado",
@@ -2355,7 +2355,7 @@
   "parcelado": 680,
   "status": "ativo",
   "foto": "f50cb0050f32e2b7ed204a6dc193d7c5",
-  "ordem": 230,
+  "ordem": 200,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -2389,7 +2389,7 @@
  },
  {
   "id": "afnan-9-pm-night-out-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Afnan",
   "nome": "9 PM Night Out",
   "tipo": "Extrait de Parfum",
@@ -2419,7 +2419,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/9-PM-Night-Out-123313.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:08:21.000Z",
-  "atualizado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-16T10:08:21.000Z",
@@ -2444,7 +2444,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "5235c59cb10c44c19f7396fa49432ce0",
-  "ordem": 30,
+  "ordem": 10,
   "acordes": [
    "Frutado",
    "Doce",
@@ -2476,7 +2476,7 @@
  },
  {
   "id": "afnan-rare-reef-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Afnan",
   "nome": "Rare Reef",
   "tipo": "Extrait de Parfum",
@@ -2502,7 +2502,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Afnan/Rare-Reef-106835.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T12:00:06Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
@@ -2563,7 +2563,7 @@
   "parcelado": 460,
   "status": "ativo",
   "foto": "16d3331e50f52e7d4d76ec4f390de7f6",
-  "ordem": 450,
+  "ordem": 440,
   "acordes": [
    "Floral",
    "Baunilha",
@@ -3200,7 +3200,7 @@
   "parcelado": 780,
   "status": "ativo",
   "foto": "e029596c45f2968e59a6a09671d4cc4a",
-  "ordem": 630,
+  "ordem": 590,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3490,7 +3490,7 @@
  },
  {
   "id": "lattafa-musaman-white-intense-100",
-  "secao": "Femininos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Musamam White Intense",
   "tipo": "EDP",
@@ -3499,7 +3499,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "5c211785692b1de0fa59af2b25b7bfc6",
-  "ordem": 490,
+  "ordem": 110,
   "acordes": [
    "Amadeirado",
    "Especiado quente",
@@ -3520,7 +3520,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Lattafa-Perfumes/Musamam-White-Intense-85087.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-21T11:52:06Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
@@ -3628,7 +3628,7 @@
   "parcelado": 540,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 570,
+  "ordem": 540,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3673,7 +3673,7 @@
   "parcelado": 690,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 580,
+  "ordem": 550,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3718,7 +3718,7 @@
   "parcelado": 800,
   "status": "ativo",
   "foto": "f3b7274e9d3dead4b6a3174ce22af378",
-  "ordem": 590,
+  "ordem": 560,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3891,7 +3891,7 @@
   "parcelado": 440,
   "status": "ativo",
   "foto": "2eb2de9cf21e8c492b66bdee32da18e3",
-  "ordem": 500,
+  "ordem": 470,
   "acordes": [
    "Floral branco",
    "Cítrico",
@@ -3983,7 +3983,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "b91f5a90dcdf65b849731172067c424f",
-  "ordem": 510,
+  "ordem": 480,
   "acordes": [
    "Doce",
    "Baunilha",
@@ -4509,7 +4509,7 @@
   "parcelado": 300,
   "status": "ativo",
   "foto": "953e1f939c2d45b7e8a9253ba5ef25bc",
-  "ordem": 480,
+  "ordem": 460,
   "acordes": [
    "Floral branco",
    "Frutado",
@@ -4674,7 +4674,7 @@
   "parcelado": 580,
   "status": "ativo",
   "foto": "dd20e66f4f48afee832f86f772aa0611",
-  "ordem": 610,
+  "ordem": 570,
   "acordes": [
    "Cítrico",
    "Amadeirado",
@@ -4942,7 +4942,7 @@
   "ml": 50,
   "vista": 350,
   "parcelado": 390,
-  "ordem": 220,
+  "ordem": 190,
   "acordes": [
    "Especiado quente",
    "Lavanda",
@@ -5001,7 +5001,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 90,
+  "ordem": 60,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5042,7 +5042,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Black-46093.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 100,
+  "ordem": 70,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T15:37:21Z",
   "historico": [
@@ -5083,7 +5083,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 110,
+  "ordem": 80,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5123,7 +5123,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Black-136741.html",
   "perfil_em": "2026-10-16",
   "status": "ativo",
-  "ordem": 380,
+  "ordem": 290,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5163,7 +5163,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/1-Million-Night-Elixir-125545.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 390,
+  "ordem": 300,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5201,7 +5201,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-Absolu-103462.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 440,
+  "ordem": 350,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5242,7 +5242,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 450,
+  "ordem": 360,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T10:01:50Z",
   "historico": [
@@ -5281,7 +5281,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Rabanne/Olympea-Absolu-103469.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 560,
+  "ordem": 530,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -5322,7 +5322,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Mugler/Angel-704.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 540,
+  "ordem": 510,
   "criado_em": "2026-10-21T10:01:50Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -5404,7 +5404,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-56077.html",
   "perfil_em": "2026-10-15",
   "status": "ativo",
-  "ordem": 620,
+  "ordem": 580,
   "criado_em": "2026-10-21T10:35:35Z",
   "atualizado_em": "2026-10-21T10:35:35Z",
   "historico": [
@@ -5417,7 +5417,7 @@
  },
  {
   "id": "calvin-klein-ck-one-200",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Calvin Klein",
   "nome": "CK One",
   "tipo": "EDT",
@@ -5445,9 +5445,9 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Calvin-Klein/CK-One-276.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 80,
+  "ordem": 30,
   "criado_em": "2026-10-21T10:35:35Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T10:35:35Z",
@@ -5631,7 +5631,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 140,
+  "ordem": 110,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5667,7 +5667,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/Devotion-Pour-Homme-101353.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 130,
+  "ordem": 100,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5707,7 +5707,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Dolce-Gabbana/The-One-Pour-Homme-Parfum-121009.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 150,
+  "ordem": 120,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5748,7 +5748,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Giorgio-Armani/Emporio-Armani-Stronger-With-You-Powerfully-123070.html",
   "perfil_em": "2026-10-21",
   "status": "ativo",
-  "ordem": 180,
+  "ordem": 150,
   "criado_em": "2026-10-21T10:57:41Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5949,7 +5949,7 @@
   "perfil_em": "2026-10-21",
   "foto": "63858d3f610165b03b12c085e0806478",
   "status": "ativo",
-  "ordem": 190,
+  "ordem": 160,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -5990,7 +5990,7 @@
   "perfil_em": "2026-10-21",
   "foto": "63858d3f610165b03b12c085e0806478",
   "status": "ativo",
-  "ordem": 200,
+  "ordem": 170,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6031,7 +6031,7 @@
   "perfil_em": "2026-10-21",
   "foto": "0d0b29ce85534a72ee3cf5f10682a75a",
   "status": "ativo",
-  "ordem": 160,
+  "ordem": 130,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T15:37:21Z",
   "historico": [
@@ -6069,7 +6069,7 @@
   "perfil_em": "2026-10-21",
   "foto": "4e90844957fa389d03c5750372490f83",
   "status": "ativo",
-  "ordem": 120,
+  "ordem": 90,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6106,7 +6106,7 @@
   "perfil_em": "2026-10-21",
   "foto": "ce73f85e18de2f976cb8a8c46434a587",
   "status": "ativo",
-  "ordem": 70,
+  "ordem": 50,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6147,7 +6147,7 @@
   "perfil_em": "2026-10-21",
   "foto": "9d1b0504adeb17d8bbb041db85844058",
   "status": "ativo",
-  "ordem": 490,
+  "ordem": 400,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6188,7 +6188,7 @@
   "perfil_em": "2026-10-21",
   "foto": "30a23df79d4a8cb30e8450c45df60ac5",
   "status": "ativo",
-  "ordem": 460,
+  "ordem": 370,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6201,7 +6201,7 @@
  },
  {
   "id": "lattafa-badee-al-oud-oud-for-glory-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Bade'e Al Oud Oud for Glory",
   "tipo": "EDP",
@@ -6229,9 +6229,9 @@
   "perfil_em": "2026-10-21",
   "foto": "c0de01bb4f7fc1ef8aab7364f0ed5df0",
   "status": "ativo",
-  "ordem": 300,
+  "ordem": 70,
   "criado_em": "2026-10-21T11:43:23Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:43:23Z",
@@ -6390,7 +6390,7 @@
   "perfil_em": "2026-10-21",
   "foto": "9035b0ffa9a16b3f41a6bd5ef3b0199a",
   "status": "ativo",
-  "ordem": 550,
+  "ordem": 520,
   "criado_em": "2026-10-21T11:43:23Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6403,7 +6403,7 @@
  },
  {
   "id": "lattafa-fakhar-gold-100",
-  "secao": "Femininos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Fakhar Gold",
   "tipo": "EDP",
@@ -6430,9 +6430,9 @@
   "perfil_em": "2026-10-21",
   "foto": "ee25d7b478a07d883cdf8aabeb9e94d6",
   "status": "ativo",
-  "ordem": 470,
+  "ordem": 80,
   "criado_em": "2026-10-21T11:43:23Z",
-  "atualizado_em": "2026-10-21T12:28:01Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:43:23Z",
@@ -6481,7 +6481,7 @@
  },
  {
   "id": "riiffs-prive-rouge-80",
-  "secao": "Femininos",
+  "secao": "Unissex",
   "marca": "Riiffs",
   "nome": "Privé Rouge",
   "ml": 80,
@@ -6504,9 +6504,9 @@
   "tipo": "EDP",
   "foto": "25144d02fa87505aa63cdf64d60c76d3",
   "status": "ativo",
-  "ordem": 600,
+  "ordem": 130,
   "criado_em": "2026-10-21T11:52:06Z",
-  "atualizado_em": "2026-10-21T12:31:32Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:52:06Z",
@@ -6517,7 +6517,7 @@
  },
  {
   "id": "lattafa-badee-al-oud-honor-glory-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Bade'e Al Oud Honor & Glory",
   "ml": 100,
@@ -6543,9 +6543,9 @@
   "tipo": "EDP",
   "foto": "bd6a71234f9158cf652c3331a987166c",
   "status": "ativo",
-  "ordem": 290,
+  "ordem": 60,
   "criado_em": "2026-10-21T11:52:06Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:52:06Z",
@@ -6583,7 +6583,7 @@
   "tipo": "EDP",
   "foto": "60fbe304ed517f3bf8d11a4979f37212",
   "status": "ativo",
-  "ordem": 460,
+  "ordem": 450,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:28:01Z",
   "historico": [
@@ -6596,7 +6596,7 @@
  },
  {
   "id": "lattafa-angham-100",
-  "secao": "Femininos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Angham",
   "ml": 100,
@@ -6624,9 +6624,9 @@
   "tipo": "EDP",
   "foto": "8c744796953f3ab49b0375cf5c30eda5",
   "status": "ativo",
-  "ordem": 440,
+  "ordem": 50,
   "criado_em": "2026-10-21T11:52:06Z",
-  "atualizado_em": "2026-10-21T12:28:01Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:52:06Z",
@@ -6665,7 +6665,7 @@
   "tipo": "EDP",
   "foto": "11af16044c49a9eb4ca99b9305fdc6ee",
   "status": "ativo",
-  "ordem": 340,
+  "ordem": 250,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6678,7 +6678,7 @@
  },
  {
   "id": "lattafa-teriaq-intense-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Teriaq Intense",
   "ml": 100,
@@ -6702,9 +6702,9 @@
   "tipo": "EDP",
   "foto": "271428b2b0396cd6be5441c1865f0577",
   "status": "ativo",
-  "ordem": 330,
+  "ordem": 120,
   "criado_em": "2026-10-21T11:52:06Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:52:06Z",
@@ -6715,7 +6715,7 @@
  },
  {
   "id": "lattafa-mishlah-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Mishlah",
   "ml": 100,
@@ -6743,9 +6743,9 @@
   "tipo": "EDP",
   "foto": "3b9e4188be8e9a07a718b34a934d811f",
   "status": "ativo",
-  "ordem": 320,
+  "ordem": 100,
   "criado_em": "2026-10-21T11:52:06Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T11:52:06Z",
@@ -6784,7 +6784,7 @@
   "tipo": "EDP",
   "foto": "e3b9d6867f6004174d50f4d11ec48ba4",
   "status": "ativo",
-  "ordem": 520,
+  "ordem": 490,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6825,7 +6825,7 @@
   "tipo": "EDP",
   "foto": "022d3e327bdd8a7041945c090d7bd1ff",
   "status": "ativo",
-  "ordem": 530,
+  "ordem": 500,
   "criado_em": "2026-10-21T11:52:06Z",
   "atualizado_em": "2026-10-21T12:31:32Z",
   "historico": [
@@ -6866,7 +6866,7 @@
   "perfil_em": "2026-10-21",
   "foto": "197bb552b6607959e82d1d3fbd8d386c",
   "status": "ativo",
-  "ordem": 40,
+  "ordem": 20,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6907,7 +6907,7 @@
   "perfil_em": "2026-10-21",
   "foto": "fd655e81e7cdbfd71415ecd011cbe2ee",
   "status": "ativo",
-  "ordem": 480,
+  "ordem": 390,
   "criado_em": "2026-10-21T12:00:06Z",
   "atualizado_em": "2026-10-21T12:21:11Z",
   "historico": [
@@ -6920,7 +6920,7 @@
  },
  {
   "id": "lattafa-hayaati-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Hayaati",
   "tipo": "EDP",
@@ -6948,9 +6948,9 @@
   "perfil_em": "2026-10-21",
   "foto": "44c82875146574914024c7d82e567169",
   "status": "ativo",
-  "ordem": 310,
+  "ordem": 90,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-21T12:21:11Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7595,7 +7595,7 @@
  },
  {
   "id": "lattafa-ameer-al-noble-100",
-  "secao": "Masculinos",
+  "secao": "Unissex",
   "marca": "Lattafa",
   "nome": "Ameer Al Noble",
   "tipo": "EDP",
@@ -7604,9 +7604,9 @@
   "parcelado": 300,
   "foto": "18c6a725ba2ccb34acf96c1d0ba54fec",
   "status": "ativo",
-  "ordem": 250,
+  "ordem": 40,
   "criado_em": "2026-10-28T23:42:27Z",
-  "atualizado_em": "2026-10-29T00:07:01Z",
+  "atualizado_em": "2026-10-29T00:14:18Z",
   "historico": [
    {
     "em": "2026-10-28T23:42:27Z",
@@ -7673,7 +7673,7 @@
   "parcelado": 250,
   "foto": "e3dab766cc399bc2b562d33d5cb9b8f6",
   "status": "ativo",
-  "ordem": 350,
+  "ordem": 260,
   "criado_em": "2026-10-28T23:42:27Z",
   "atualizado_em": "2026-10-29T00:07:01Z",
   "historico": [
