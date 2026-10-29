@@ -7606,14 +7606,28 @@
   "status": "ativo",
   "ordem": 250,
   "criado_em": "2026-10-28T23:42:27Z",
-  "atualizado_em": "2026-10-28T23:48:50Z",
+  "atualizado_em": "2026-10-29T00:07:01Z",
   "historico": [
    {
     "em": "2026-10-28T23:42:27Z",
     "vista": 270,
     "parcelado": 300
    }
-  ]
+  ],
+  "acordes": [
+   "Floral",
+   "Frutado",
+   "Cremoso",
+   "Fresco",
+   "Doce"
+  ],
+  "notas": {
+   "topo": "toranja rosa, pêssego",
+   "coracao": "jasmim, peônia",
+   "fundo": "sândalo, almíscar, narciso"
+  },
+  "perfil_fonte": "https://www.parfumo.com/Perfumes/Lattafa/al-noble-ameer",
+  "perfil_em": "2026-10-29"
  },
  {
   "id": "al-wataniah-tibyan-100",
@@ -7628,14 +7642,25 @@
   "status": "ativo",
   "ordem": 30,
   "criado_em": "2026-10-28T23:42:27Z",
-  "atualizado_em": "2026-10-28T23:48:50Z",
+  "atualizado_em": "2026-10-29T00:07:01Z",
   "historico": [
    {
     "em": "2026-10-28T23:42:27Z",
     "vista": 130,
     "parcelado": 150
    }
-  ]
+  ],
+  "acordes": [
+   "Floral",
+   "Âmbar"
+  ],
+  "notas": {
+   "topo": "tangerina, heliotrópio, bergamota, orquídea",
+   "coracao": "jasmim, rosa",
+   "fundo": "sândalo, patchouli, baunilha, almíscar"
+  },
+  "perfil_fonte": "https://www.arabianperfumeryandmore.com/products/al-wataniah-tibyan",
+  "perfil_em": "2026-10-29"
  },
  {
   "id": "mercedes-benz-sign-your-attitude-100",
@@ -7650,14 +7675,28 @@
   "status": "ativo",
   "ordem": 350,
   "criado_em": "2026-10-28T23:42:27Z",
-  "atualizado_em": "2026-10-28T23:48:50Z",
+  "atualizado_em": "2026-10-29T00:07:01Z",
   "historico": [
    {
     "em": "2026-10-28T23:42:27Z",
     "vista": 200,
     "parcelado": 250
    }
-  ]
+  ],
+  "acordes": [
+   "Fresco",
+   "Cítrico",
+   "Sintético",
+   "Verde",
+   "Atalcado"
+  ],
+  "notas": {
+   "topo": "bergamota, gengibre, tangerina",
+   "coracao": "cipreste, lavanda, canela, noz-moscada",
+   "fundo": "madeira de âmbar"
+  },
+  "perfil_fonte": "https://www.parfumo.com/Perfumes/Mercedes_Benz/sign-your-attitude",
+  "perfil_em": "2026-10-29"
  },
  {
   "id": "loccitane-roma-chantilly-banho-175",
@@ -7669,11 +7708,11 @@
   "secao": "L'Occitane",
   "marca": "L'Occitane",
   "parcelas": 1,
-  "foto": "",
+  "foto": "ef6f18eeccb4da5cfdc857fee7d2c00f",
   "status": "ativo",
   "ordem": 150,
   "criado_em": "2026-10-28T23:46:23Z",
-  "atualizado_em": "2026-10-28T23:46:23Z",
+  "atualizado_em": "2026-10-29T00:07:01Z",
   "historico": [
    {
     "em": "2026-10-28T23:46:23Z",
