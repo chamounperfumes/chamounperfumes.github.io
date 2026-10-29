@@ -7233,12 +7233,12 @@
   "ml": 200,
   "vista": 90,
   "parcelado": 99.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "a914448e2c0efd8e7e90da584b654073",
   "status": "ativo",
   "ordem": 110,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7256,12 +7256,12 @@
   "ml": null,
   "vista": 39.9,
   "parcelado": 44.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "900d7e9257c2db9b589987170cb1f57f",
   "status": "ativo",
   "ordem": 180,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-28T23:03:47Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7279,12 +7279,12 @@
   "ml": 200,
   "vista": 69.9,
   "parcelado": 74.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "0d8199d27e13174affb27356930110dd",
   "status": "ativo",
   "ordem": 200,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-28T23:03:47Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7302,12 +7302,12 @@
   "ml": 200,
   "vista": 89.9,
   "parcelado": 99.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "4be325d92f0ff8389c4da63fdcac9e42",
   "status": "ativo",
   "ordem": 190,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-28T23:03:47Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7325,12 +7325,12 @@
   "ml": 200,
   "vista": 89.9,
   "parcelado": 99.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "0d42ec6c40f059aa27431cb490bdc343",
   "status": "ativo",
   "ordem": 30,
   "criado_em": "2026-10-21T12:00:06Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:00:06Z",
@@ -7348,12 +7348,12 @@
   "parcelado": 119.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "83ceebd14db0c7e2d300a38b149b4625",
   "status": "ativo",
   "ordem": 10,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7371,12 +7371,12 @@
   "parcelado": 64.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "05d6c35071c295e147f4bcfb576dea14",
   "status": "ativo",
   "ordem": 20,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7394,12 +7394,12 @@
   "parcelado": 74.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "23208e045672b6c6af7901b6284b4643",
   "status": "ativo",
   "ordem": 150,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7417,12 +7417,12 @@
   "parcelado": 119.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "982bf003e457e0d900f2f99e7cb16121",
   "status": "ativo",
   "ordem": 140,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7440,12 +7440,12 @@
   "parcelado": 99.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "5b6aa024d65f7da9d89ef0a9da43192f",
   "status": "ativo",
   "ordem": 70,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7463,12 +7463,12 @@
   "parcelado": 119.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "5db9d8282415f7a4b1f48c69706ca535",
   "status": "ativo",
   "ordem": 60,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T22:57:21Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7505,12 +7505,12 @@
   "perfil_em": "2026-10-21",
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "d226d09c0b098891fd9a66a83ba6e194",
   "status": "ativo",
   "ordem": 40,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T23:03:47Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7543,12 +7543,12 @@
   "perfil_em": "2026-10-21",
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "bdee87af219ecb718e14c55e2df0dd36",
   "status": "ativo",
   "ordem": 120,
   "criado_em": "2026-10-21T12:08:30Z",
-  "atualizado_em": "2026-10-28T23:03:47Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-21T12:08:30Z",
@@ -7707,12 +7707,12 @@
   "parcelado": 74.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "ef6f18eeccb4da5cfdc857fee7d2c00f",
   "status": "ativo",
   "ordem": 170,
   "criado_em": "2026-10-28T23:46:23Z",
-  "atualizado_em": "2026-10-29T00:07:01Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-28T23:46:23Z",
@@ -7730,12 +7730,12 @@
   "parcelado": 119.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "b82e08aeae8200e8d60153392f413510",
   "status": "ativo",
   "ordem": 50,
   "criado_em": "2026-10-28T23:46:23Z",
-  "atualizado_em": "2026-10-28T23:54:03Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-28T23:46:23Z",
@@ -7753,12 +7753,12 @@
   "parcelado": 69.9,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "081806b6193a56877dbc7817e1355187",
   "status": "ativo",
   "ordem": 130,
   "criado_em": "2026-10-28T23:46:23Z",
-  "atualizado_em": "2026-10-28T23:54:03Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-28T23:46:23Z",
@@ -7776,12 +7776,12 @@
   "ml": 200,
   "vista": 110,
   "parcelado": 119.9,
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "7f563d2e9aff96e35c821e535f223122",
   "status": "ativo",
   "ordem": 160,
   "criado_em": "2026-10-28T23:51:05Z",
-  "atualizado_em": "2026-10-28T23:51:05Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-28T23:51:05Z",
@@ -7799,12 +7799,12 @@
   "parcelado": 150,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "",
   "status": "ativo",
   "ordem": 90,
   "criado_em": "2026-10-29T15:46:15Z",
-  "atualizado_em": "2026-10-29T15:46:15Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-29T15:46:15Z",
@@ -7822,12 +7822,12 @@
   "parcelado": 150,
   "secao": "L'Occitane",
   "marca": "L'Occitane",
-  "parcelas": 1,
+  "parcelas": 3,
   "foto": "",
   "status": "ativo",
   "ordem": 80,
   "criado_em": "2026-10-29T15:46:15Z",
-  "atualizado_em": "2026-10-29T15:46:15Z",
+  "atualizado_em": "2026-10-29T15:48:51Z",
   "historico": [
    {
     "em": "2026-10-29T15:46:15Z",
