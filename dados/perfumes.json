@@ -2275,8 +2275,8 @@
   "nome": "L'Homme",
   "tipo": "",
   "ml": 100,
-  "vista": 700,
-  "parcelado": 750,
+  "vista": 750,
+  "parcelado": 800,
   "status": "ativo",
   "foto": "c334b97ccd2df5a92bdbce7d5151ddef",
   "ordem": 530,
@@ -2300,12 +2300,17 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Prada/Prada-L-Homme-39029.html",
   "perfil_em": "2026-10-15",
   "criado_em": "2026-10-15T17:36:14Z",
-  "atualizado_em": "2026-10-15T17:36:14Z",
+  "atualizado_em": "2026-11-23T23:43:31.000Z",
   "historico": [
    {
     "em": "2026-10-15T17:36:14Z",
     "parcelado": 750,
     "vista": 700
+   },
+   {
+    "em": "2026-11-23T23:43:31.000Z",
+    "vista": 750,
+    "parcelado": 800
    }
   ]
  },
