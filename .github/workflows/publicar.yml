@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Dependências
-        run: pip install reportlab pillow pypdf
+        run: pip install "reportlab>=4,<6" "pillow>=10,<14" "pypdf>=4,<8"
       - name: Monta a tabela e o PDF
         run: |
           HOJE=$(TZ=America/Sao_Paulo date +%d/%m/%Y)

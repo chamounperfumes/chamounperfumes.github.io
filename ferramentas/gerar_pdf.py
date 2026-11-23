@@ -168,7 +168,8 @@ def main(out):
         fc.drawString(M, 6 * mm, "chamounperfumes.github.io")
         fc.drawRightString(W - M, 6 * mm, f"Página {i} de {n}")
         fc.save(); buf.seek(0)
-        page.merge_page(PdfReader(buf).pages[0]); wr.add_page(page)
+        # pypdf 7: a página tem que estar no writer antes de juntar o rodapé
+        wr.add_page(page).merge_page(PdfReader(buf).pages[0])
     wr.add_metadata({"/Title": "Catálogo Chamoun Perfumes"})
     with open(out, "wb") as fh:
         wr.write(fh)
