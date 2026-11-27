@@ -7810,11 +7810,11 @@
   "secao": "L'Occitane",
   "marca": "L'Occitane",
   "parcelas": 3,
-  "foto": "",
+  "foto": "781744c54d08260276381f13664e0676",
   "status": "ativo",
   "ordem": 90,
   "criado_em": "2026-10-29T15:46:15Z",
-  "atualizado_em": "2026-10-29T15:48:51Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-10-29T15:46:15Z",
@@ -7833,11 +7833,11 @@
   "secao": "L'Occitane",
   "marca": "L'Occitane",
   "parcelas": 3,
-  "foto": "",
+  "foto": "5bbb4c2e7c0eaba25dfcc5d09ff93cfa",
   "status": "ativo",
   "ordem": 80,
   "criado_em": "2026-10-29T15:46:15Z",
-  "atualizado_em": "2026-10-29T15:48:51Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-10-29T15:46:15Z",
@@ -7896,7 +7896,7 @@
   "ml": 100,
   "vista": 480,
   "parcelado": 520,
-  "foto": "",
+  "foto": "22bc628abbb66f1adb0ebba9836250b4",
   "acordes": [
    "Frutado",
    "Doce",
@@ -7919,7 +7919,7 @@
   "status": "ativo",
   "ordem": 40,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -7937,7 +7937,7 @@
   "ml": 100,
   "vista": 280,
   "parcelado": 320,
-  "foto": "",
+  "foto": "04895382eeea806d0b242562c3739100",
   "acordes": [
    "Doce",
    "Frutado",
@@ -7960,7 +7960,7 @@
   "status": "ativo",
   "ordem": 490,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -7978,7 +7978,7 @@
   "ml": 100,
   "vista": 200,
   "parcelado": 230,
-  "foto": "",
+  "foto": "a9891f7eb2af1ce75097b893b416cf22",
   "acordes": [
    "Cítrico",
    "Floral branco",
@@ -8000,7 +8000,7 @@
   "status": "ativo",
   "ordem": 440,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -8018,7 +8018,7 @@
   "ml": 50,
   "vista": 250,
   "parcelado": 280,
-  "foto": "",
+  "foto": "08551d41a06649f0872c4f800d2094bc",
   "acordes": [
    "Baunilha",
    "Âmbar",
@@ -8036,7 +8036,7 @@
   "status": "ativo",
   "ordem": 240,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -8054,7 +8054,7 @@
   "ml": 100,
   "vista": 500,
   "parcelado": 540,
-  "foto": "",
+  "foto": "08551d41a06649f0872c4f800d2094bc",
   "acordes": [
    "Baunilha",
    "Âmbar",
@@ -8072,7 +8072,7 @@
   "status": "ativo",
   "ordem": 250,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -8090,7 +8090,7 @@
   "ml": 200,
   "vista": 600,
   "parcelado": 640,
-  "foto": "",
+  "foto": "b69dfa86d6ca7cbae700040809cb3a42",
   "acordes": [
    "Amadeirado",
    "Couro",
@@ -8110,7 +8110,7 @@
   "status": "ativo",
   "ordem": 210,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
@@ -8128,7 +8128,7 @@
   "ml": 90,
   "vista": 640,
   "parcelado": 680,
-  "foto": "",
+  "foto": "f16844bed21de7a3f663c058b02a8d83",
   "acordes": [
    "Floral branco",
    "Rosa",
@@ -8146,7 +8146,7 @@
   "status": "ativo",
   "ordem": 550,
   "criado_em": "2026-11-27T00:22:17Z",
-  "atualizado_em": "2026-11-27T00:22:17Z",
+  "atualizado_em": "2026-11-27T00:42:04Z",
   "historico": [
    {
     "em": "2026-11-27T00:22:17Z",
