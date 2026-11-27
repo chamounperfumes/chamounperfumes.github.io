@@ -4607,8 +4607,8 @@
   "nome": "Invictus Victory Absolu",
   "tipo": "",
   "ml": 100,
-  "vista": 500,
-  "parcelado": 540,
+  "vista": 560,
+  "parcelado": 600,
   "foto": "a92f06c17207cbf7e083301090e115b2",
   "acordes": [
    "Âmbar",
@@ -4629,12 +4629,17 @@
   "ordem": 580,
   "perfil_em": "2026-10-21",
   "criado_em": "2026-10-21T15:39:59.000Z",
-  "atualizado_em": "2026-10-21T15:39:59.000Z",
+  "atualizado_em": "2026-11-27T00:16:40.059Z",
   "historico": [
    {
     "em": "2026-10-21T15:39:59.000Z",
     "vista": 500,
     "parcelado": 540
+   },
+   {
+    "em": "2026-11-27T00:16:40.059Z",
+    "vista": 560,
+    "parcelado": 600
    }
   ]
  },
