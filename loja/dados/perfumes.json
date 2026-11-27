@@ -4675,8 +4675,8 @@
   "nome": "Dylan Turquoise",
   "tipo": "EDT",
   "ml": 100,
-  "vista": 540,
-  "parcelado": 580,
+  "vista": 600,
+  "parcelado": 640,
   "status": "ativo",
   "foto": "dd20e66f4f48afee832f86f772aa0611",
   "ordem": 600,
@@ -4700,7 +4700,7 @@
   "perfil_fonte": "https://www.fragrantica.com/perfume/Versace/Versace-Pour-Femme-Dylan-Turquoise-62966.html",
   "perfil_em": "2026-10-16",
   "criado_em": "2026-10-16T10:44:01.000Z",
-  "atualizado_em": "2026-10-21T11:43:23Z",
+  "atualizado_em": "2026-11-27T00:36:33Z",
   "historico": [
    {
     "em": "2026-10-16T10:44:01.000Z",
@@ -4711,6 +4711,11 @@
     "em": "2026-10-21T11:43:23Z",
     "vista": 540,
     "parcelado": 580
+   },
+   {
+    "em": "2026-11-27T00:36:33Z",
+    "vista": 600,
+    "parcelado": 640
    }
   ]
  },
